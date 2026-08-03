@@ -1,0 +1,14 @@
+{
+  "name": "statistics-learning-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A bilingual static statistics, analytics, data science and data engineering learning hub.",
+  "scripts": {
+    "generate": "python scripts/generate.py",
+    "audit:links": "python scripts/audit_links.py",
+    "test:stats": "node scripts/test_stats.mjs",
+    "test": "npm run test:stats && npm run audit:links",
+    "serve": "python -m http.server 8080"
+  }
+}
