@@ -1,0 +1,145 @@
+record_id,month,project,expense_head,approved_budget_bdt,actual_expense_bdt,variance_bdt,utilization_pct
+EXP-0001,2025-01,Education,Salary,5000,3900.0,1100.0,78.0
+EXP-0002,2025-02,Education,Learning Materials,6100,5368.0,732.0,88.0
+EXP-0003,2025-03,Education,Medicine Support,7200,6840.0,360.0,95.0
+EXP-0004,2025-04,Education,Transport,8300,8300.0,0.0,100.0
+EXP-0005,2025-05,Education,Training,9400,10152.0,-752.0,108.0
+EXP-0006,2025-06,Education,Office Utilities,10500,0.0,10500.0,0.0
+EXP-0007,2025-07,Primary Health,Salary,11600,9048.0,2552.0,78.0
+EXP-0008,2025-08,Primary Health,Learning Materials,12700,11176.0,1524.0,88.0
+EXP-0009,2025-09,Primary Health,Medicine Support,13800,13110.0,690.0,95.0
+EXP-0010,2025-10,Primary Health,Transport,14900,14900.0,0.0,100.0
+EXP-0011,2025-11,Primary Health,Training,16000,17280.0,-1280.0,108.0
+EXP-0012,2025-12,Primary Health,Office Utilities,17100,0.0,17100.0,0.0
+EXP-0013,2025-01,Climate Action,Salary,18200,14196.0,4004.0,78.0
+EXP-0014,2025-02,Climate Action,Learning Materials,19300,16984.0,2316.0,88.0
+EXP-0015,2025-03,Climate Action,Medicine Support,20400,19380.0,1020.0,95.0
+EXP-0016,2025-04,Climate Action,Transport,21500,21500.0,0.0,100.0
+EXP-0017,2025-05,Climate Action,Training,22600,24408.0,-1808.0,108.0
+EXP-0018,2025-06,Climate Action,Office Utilities,23700,0.0,23700.0,0.0
+EXP-0019,2025-07,Central Office,Salary,24800,19344.0,5456.0,78.0
+EXP-0020,2025-08,Central Office,Learning Materials,25900,22792.0,3108.0,88.0
+EXP-0021,2025-09,Central Office,Medicine Support,27000,25650.0,1350.0,95.0
+EXP-0022,2025-10,Central Office,Transport,28100,28100.0,0.0,100.0
+EXP-0023,2025-11,Central Office,Training,29200,31536.0,-2336.0,108.0
+EXP-0024,2025-12,Central Office,Office Utilities,30300,0.0,30300.0,0.0
+EXP-0025,2025-01,Education,Salary,5400,4212.0,1188.0,78.0
+EXP-0026,2025-02,Education,Learning Materials,6500,5720.0,780.0,88.0
+EXP-0027,2025-03,Education,Medicine Support,7600,7220.0,380.0,95.0
+EXP-0028,2025-04,Education,Transport,8700,8700.0,0.0,100.0
+EXP-0029,2025-05,Education,Training,9800,10584.0,-784.0,108.0
+EXP-0030,2025-06,Education,Office Utilities,10900,0.0,10900.0,0.0
+EXP-0031,2025-07,Primary Health,Salary,12000,9360.0,2640.0,78.0
+EXP-0032,2025-08,Primary Health,Learning Materials,13100,11528.0,1572.0,88.0
+EXP-0033,2025-09,Primary Health,Medicine Support,14200,13490.0,710.0,95.0
+EXP-0034,2025-10,Primary Health,Transport,15300,15300.0,0.0,100.0
+EXP-0035,2025-11,Primary Health,Training,16400,17712.0,-1312.0,108.0
+EXP-0036,2025-12,Primary Health,Office Utilities,17500,0.0,17500.0,0.0
+EXP-0037,2025-01,Climate Action,Salary,18600,14508.0,4092.0,78.0
+EXP-0038,2025-02,Climate Action,Learning Materials,19700,17336.0,2364.0,88.0
+EXP-0039,2025-03,Climate Action,Medicine Support,20800,19760.0,1040.0,95.0
+EXP-0040,2025-04,Climate Action,Transport,21900,21900.0,0.0,100.0
+EXP-0041,2025-05,Climate Action,Training,23000,24840.0,-1840.0,108.0
+EXP-0042,2025-06,Climate Action,Office Utilities,24100,0.0,24100.0,0.0
+EXP-0043,2025-07,Central Office,Salary,25200,19656.0,5544.0,78.0
+EXP-0044,2025-08,Central Office,Learning Materials,26300,23144.0,3156.0,88.0
+EXP-0045,2025-09,Central Office,Medicine Support,27400,26030.0,1370.0,95.0
+EXP-0046,2025-10,Central Office,Transport,28500,28500.0,0.0,100.0
+EXP-0047,2025-11,Central Office,Training,29600,31968.0,-2368.0,108.0
+EXP-0048,2025-12,Central Office,Office Utilities,30700,0.0,30700.0,0.0
+EXP-0049,2025-01,Education,Salary,5800,4524.0,1276.0,78.0
+EXP-0050,2025-02,Education,Learning Materials,6900,6072.0,828.0,88.0
+EXP-0051,2025-03,Education,Medicine Support,8000,7600.0,400.0,95.0
+EXP-0052,2025-04,Education,Transport,9100,9100.0,0.0,100.0
+EXP-0053,2025-05,Education,Training,10200,11016.0,-816.0,108.0
+EXP-0054,2025-06,Education,Office Utilities,11300,0.0,11300.0,0.0
+EXP-0055,2025-07,Primary Health,Salary,12400,9672.0,2728.0,78.0
+EXP-0056,2025-08,Primary Health,Learning Materials,13500,11880.0,1620.0,88.0
+EXP-0057,2025-09,Primary Health,Medicine Support,14600,13870.0,730.0,95.0
+EXP-0058,2025-10,Primary Health,Transport,15700,15700.0,0.0,100.0
+EXP-0059,2025-11,Primary Health,Training,16800,18144.0,-1344.0,108.0
+EXP-0060,2025-12,Primary Health,Office Utilities,17900,0.0,17900.0,0.0
+EXP-0061,2025-01,Climate Action,Salary,19000,14820.0,4180.0,78.0
+EXP-0062,2025-02,Climate Action,Learning Materials,20100,17688.0,2412.0,88.0
+EXP-0063,2025-03,Climate Action,Medicine Support,21200,20140.0,1060.0,95.0
+EXP-0064,2025-04,Climate Action,Transport,22300,22300.0,0.0,100.0
+EXP-0065,2025-05,Climate Action,Training,23400,25272.0,-1872.0,108.0
+EXP-0066,2025-06,Climate Action,Office Utilities,24500,0.0,24500.0,0.0
+EXP-0067,2025-07,Central Office,Salary,25600,19968.0,5632.0,78.0
+EXP-0068,2025-08,Central Office,Learning Materials,26700,23496.0,3204.0,88.0
+EXP-0069,2025-09,Central Office,Medicine Support,27800,26410.0,1390.0,95.0
+EXP-0070,2025-10,Central Office,Transport,28900,28900.0,0.0,100.0
+EXP-0071,2025-11,Central Office,Training,30000,32400.0,-2400.0,108.0
+EXP-0072,2025-12,Central Office,Office Utilities,5100,0.0,5100.0,0.0
+EXP-0073,2026-01,Education,Salary,6200,4836.0,1364.0,78.0
+EXP-0074,2026-02,Education,Learning Materials,7300,6424.0,876.0,88.0
+EXP-0075,2026-03,Education,Medicine Support,8400,7980.0,420.0,95.0
+EXP-0076,2026-04,Education,Transport,9500,9500.0,0.0,100.0
+EXP-0077,2026-05,Education,Training,10600,11448.0,-848.0,108.0
+EXP-0078,2026-06,Education,Office Utilities,11700,0.0,11700.0,0.0
+EXP-0079,2026-07,Primary Health,Salary,12800,9984.0,2816.0,78.0
+EXP-0080,2026-08,Primary Health,Learning Materials,13900,12232.0,1668.0,88.0
+EXP-0081,2026-09,Primary Health,Medicine Support,15000,14250.0,750.0,95.0
+EXP-0082,2026-10,Primary Health,Transport,16100,16100.0,0.0,100.0
+EXP-0083,2026-11,Primary Health,Training,17200,18576.0,-1376.0,108.0
+EXP-0084,2026-12,Primary Health,Office Utilities,18300,0.0,18300.0,0.0
+EXP-0085,2026-01,Climate Action,Salary,19400,15132.0,4268.0,78.0
+EXP-0086,2026-02,Climate Action,Learning Materials,20500,18040.0,2460.0,88.0
+EXP-0087,2026-03,Climate Action,Medicine Support,21600,20520.0,1080.0,95.0
+EXP-0088,2026-04,Climate Action,Transport,22700,22700.0,0.0,100.0
+EXP-0089,2026-05,Climate Action,Training,23800,25704.0,-1904.0,108.0
+EXP-0090,2026-06,Climate Action,Office Utilities,24900,0.0,24900.0,0.0
+EXP-0091,2026-07,Central Office,Salary,26000,20280.0,5720.0,78.0
+EXP-0092,2026-08,Central Office,Learning Materials,27100,23848.0,3252.0,88.0
+EXP-0093,2026-09,Central Office,Medicine Support,28200,26790.0,1410.0,95.0
+EXP-0094,2026-10,Central Office,Transport,29300,29300.0,0.0,100.0
+EXP-0095,2026-11,Central Office,Training,30400,32832.0,-2432.0,108.0
+EXP-0096,2026-12,Central Office,Office Utilities,5500,0.0,5500.0,0.0
+EXP-0097,2026-01,Education,Salary,6600,5148.0,1452.0,78.0
+EXP-0098,2026-02,Education,Learning Materials,7700,6776.0,924.0,88.0
+EXP-0099,2026-03,Education,Medicine Support,8800,8360.0,440.0,95.0
+EXP-0100,2026-04,Education,Transport,9900,9900.0,0.0,100.0
+EXP-0101,2026-05,Education,Training,11000,11880.0,-880.0,108.0
+EXP-0102,2026-06,Education,Office Utilities,12100,0.0,12100.0,0.0
+EXP-0103,2026-07,Primary Health,Salary,13200,10296.0,2904.0,78.0
+EXP-0104,2026-08,Primary Health,Learning Materials,14300,12584.0,1716.0,88.0
+EXP-0105,2026-09,Primary Health,Medicine Support,15400,14630.0,770.0,95.0
+EXP-0106,2026-10,Primary Health,Transport,16500,16500.0,0.0,100.0
+EXP-0107,2026-11,Primary Health,Training,17600,19008.0,-1408.0,108.0
+EXP-0108,2026-12,Primary Health,Office Utilities,18700,0.0,18700.0,0.0
+EXP-0109,2026-01,Climate Action,Salary,19800,15444.0,4356.0,78.0
+EXP-0110,2026-02,Climate Action,Learning Materials,20900,18392.0,2508.0,88.0
+EXP-0111,2026-03,Climate Action,Medicine Support,22000,20900.0,1100.0,95.0
+EXP-0112,2026-04,Climate Action,Transport,23100,23100.0,0.0,100.0
+EXP-0113,2026-05,Climate Action,Training,24200,26136.0,-1936.0,108.0
+EXP-0114,2026-06,Climate Action,Office Utilities,25300,0.0,25300.0,0.0
+EXP-0115,2026-07,Central Office,Salary,26400,20592.0,5808.0,78.0
+EXP-0116,2026-08,Central Office,Learning Materials,27500,24200.0,3300.0,88.0
+EXP-0117,2026-09,Central Office,Medicine Support,28600,27170.0,1430.0,95.0
+EXP-0118,2026-10,Central Office,Transport,29700,29700.0,0.0,100.0
+EXP-0119,2026-11,Central Office,Training,30800,33264.0,-2464.0,108.0
+EXP-0120,2026-12,Central Office,Office Utilities,5900,0.0,5900.0,0.0
+EXP-0121,2026-01,Education,Salary,7000,5460.0,1540.0,78.0
+EXP-0122,2026-02,Education,Learning Materials,8100,7128.0,972.0,88.0
+EXP-0123,2026-03,Education,Medicine Support,9200,8740.0,460.0,95.0
+EXP-0124,2026-04,Education,Transport,10300,10300.0,0.0,100.0
+EXP-0125,2026-05,Education,Training,11400,12312.0,-912.0,108.0
+EXP-0126,2026-06,Education,Office Utilities,12500,0.0,12500.0,0.0
+EXP-0127,2026-07,Primary Health,Salary,13600,10608.0,2992.0,78.0
+EXP-0128,2026-08,Primary Health,Learning Materials,14700,12936.0,1764.0,88.0
+EXP-0129,2026-09,Primary Health,Medicine Support,15800,15010.0,790.0,95.0
+EXP-0130,2026-10,Primary Health,Transport,16900,16900.0,0.0,100.0
+EXP-0131,2026-11,Primary Health,Training,18000,19440.0,-1440.0,108.0
+EXP-0132,2026-12,Primary Health,Office Utilities,19100,0.0,19100.0,0.0
+EXP-0133,2026-01,Climate Action,Salary,20200,15756.0,4444.0,78.0
+EXP-0134,2026-02,Climate Action,Learning Materials,21300,18744.0,2556.0,88.0
+EXP-0135,2026-03,Climate Action,Medicine Support,22400,21280.0,1120.0,95.0
+EXP-0136,2026-04,Climate Action,Transport,23500,23500.0,0.0,100.0
+EXP-0137,2026-05,Climate Action,Training,24600,26568.0,-1968.0,108.0
+EXP-0138,2026-06,Climate Action,Office Utilities,25700,0.0,25700.0,0.0
+EXP-0139,2026-07,Central Office,Salary,26800,20904.0,5896.0,78.0
+EXP-0140,2026-08,Central Office,Learning Materials,27900,24552.0,3348.0,88.0
+EXP-0141,2026-09,Central Office,Medicine Support,29000,27550.0,1450.0,95.0
+EXP-0142,2026-10,Central Office,Transport,30100,30100.0,0.0,100.0
+EXP-0143,2026-11,Central Office,Training,5200,5616.0,-416.0,108.0
+EXP-0144,2026-12,Central Office,Office Utilities,6300,0.0,6300.0,0.0

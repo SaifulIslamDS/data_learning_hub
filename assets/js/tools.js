@@ -4,7 +4,7 @@ import {
   regularizedGammaQ, binomialPMF, binomialCDF, poissonPMF, poissonCDF, format, twoSidedNormalP
 } from './stats-core.js';
 
-const SLH = window.SLH;
+const DLH = window.DLH;
 const { DATA, toolMap, t, escapeHtml } = SLH;
 const slug = document.body.dataset.tool;
 const tool = toolMap[slug];
@@ -173,6 +173,6 @@ function calcPi(fd){const n=getInteger(fd,'points');if(n<100||n>100000)throw new
 function calcMoving(fd){const v=parseNumbers(fd.get('values')),w=getInteger(fd,'window');if(w<2||w>v.length)throw new Error('Window size must be between 2 and the number of observations.');const ma=v.map((_,i)=>i<w-1?null:mean(v.slice(i-w+1,i+1)));const card=result([metric(t('Observations','অবজারভেশন'),v.length),metric(t('Window','উইন্ডো'),w),metric(t('First moving average','প্রথম মুভিং এভারেজ'),format(ma[w-1])),metric(t('Latest moving average','সর্বশেষ মুভিং এভারেজ'),format(ma.at(-1)))],interpretation(t('Smoothing, not forecasting by itself','স্মুথিং; নিজে ফোরকাস্ট নয়'),t('A larger window removes more short-term variation but reacts more slowly to turning points.','বড় window বেশি short-term variation সরায়, তবে turning point-এ ধীরে প্রতিক্রিয়া দেয়।')),'<div class="chart-wrap"><canvas id="result-chart"></canvas></div>',t('Trailing simple moving average.','Trailing simple moving average।'));makeChart(card.querySelector('canvas'),{type:'line',data:{labels:v.map((_,i)=>i+1),datasets:[{label:t('Observed','অবজার্ভড'),data:v,borderColor:chartColors().primary,tension:.15},{label:t('Moving average','মুভিং এভারেজ'),data:ma,borderColor:chartColors().success,tension:.15}]},options:{scales:{x:{},y:{}}}});}
 function calcSampleSize(fd){const kind=fd.get('kind'),conf=getNumber(fd,'confidence'),margin=getNumber(fd,'margin');if(!(margin>0))throw new Error('Margin of error must be positive.');const z=inverseNormal((1+conf)/2);let n,method;if(kind==='proportion'){const p=getNumber(fd,'proportion');if(p<0||p>1)throw new Error('Expected proportion must be between 0 and 1.');n=z*z*p*(1-p)/(margin*margin);method='n = z²p(1−p)/E²';}else{const s=getNumber(fd,'sigma');if(!(s>0))throw new Error('Expected standard deviation must be positive.');n=(z*s/margin)**2;method='n = (zσ/E)²';}result([metric(t('Required sample size','প্রয়োজনীয় স্যাম্পল সাইজ'),Math.ceil(n)),metric(t('Unrounded n','আনরাউন্ডেড n'),format(n)),metric(t('Critical z','ক্রিটিক্যাল z'),format(z)),metric(t('Confidence','কনফিডেন্স'),`${format(conf*100,0)}%`),metric(t('Margin of error','মার্জিন অব এরর'),format(margin))],interpretation(t('Planning estimate','প্ল্যানিং এস্টিমেট'),t('This is a simple-random-sample planning formula. Increase the result for design effects, expected nonresponse, subgroup analysis or finite operational constraints.','এটি simple-random-sample planning formula। design effect, expected nonresponse, subgroup analysis বা operational constraint-এর জন্য result বাড়ান।')),'',method);}
 
-window.addEventListener('slh:language',()=>{renderShell();});
-window.addEventListener('slh:theme',()=>{if(chart){const form=document.getElementById('tool-form');if(form)calculate(new FormData(form));}});
+window.addEventListener('dlh:language',()=>{renderShell();});
+window.addEventListener('dlh:theme',()=>{if(chart){const form=document.getElementById('tool-form');if(form)calculate(new FormData(form));}});
 renderShell();

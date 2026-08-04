@@ -1,0 +1,92 @@
+"""Reviewed curriculum maps for the v2.x Data Analyst tool tracks.
+
+These are curriculum definitions, not published lesson claims. Individual tool lessons
+will be implemented and validated in their scheduled releases.
+"""
+from __future__ import annotations
+
+TOOL_CURRICULA = [
+    {
+        "id": "excel",
+        "title_en": "Excel for Data Analytics",
+        "title_bn": "ডেটা অ্যানালিটিক্সের জন্য Excel",
+        "status": "curriculum-ready",
+        "target_release": "v2.1.0",
+        "prerequisites": ["Data Foundations", "Essential descriptive statistics"],
+        "outcome_en": "Clean a business dataset, analyze it with formulas and PivotTables, and build an auditable dashboard.",
+        "outcome_bn": "Business dataset clean করে formula ও PivotTable দিয়ে analyze এবং auditable dashboard তৈরি করতে পারবেন।",
+        "reference_url": "https://support.microsoft.com/en-us/excel/",
+        "modules": [
+            {"title_en": "Excel Interface and Analytical Data", "title_bn": "Excel Interface ও Analytical Data", "lessons": ["Workbooks, worksheets, cells and ranges", "Analytical table design", "Data types and number formats", "Relative, absolute and mixed references", "Excel Tables", "Sorting, filtering and validation"]},
+            {"title_en": "Core Formulas and Logic", "title_bn": "Core Formula ও Logic", "lessons": ["Arithmetic and operator precedence", "SUM, AVERAGE, MIN and MAX", "COUNT family", "IF and IFS", "SUMIF/S, COUNTIF/S and AVERAGEIF/S", "IFERROR and defensive formulas"]},
+            {"title_en": "Lookup, Text and Date Analysis", "title_bn": "Lookup, Text ও Date Analysis", "lessons": ["XLOOKUP", "INDEX and MATCH", "Text cleaning functions", "Date and time functions", "Dynamic array concepts", "Formula auditing"]},
+            {"title_en": "Data Cleaning with Excel and Power Query", "title_bn": "Excel ও Power Query দিয়ে Data Cleaning", "lessons": ["Duplicate and blank handling", "Standardizing text and categories", "Splitting and combining columns", "Importing with Power Query", "Transform, merge and append", "Refreshable cleaning workflows"]},
+            {"title_en": "Analysis with PivotTables", "title_bn": "PivotTable দিয়ে Analysis", "lessons": ["PivotTable anatomy", "Grouping and calculated analysis", "PivotCharts", "Slicers and timelines", "Comparisons and percent-of-total", "Common PivotTable errors"]},
+            {"title_en": "Reporting and Dashboard Design", "title_bn": "Reporting ও Dashboard Design", "lessons": ["Chart selection", "Conditional formatting", "KPI cards", "Dashboard layout", "Interactivity", "Accessibility and print-ready reporting"]},
+            {"title_en": "Excel Analytics Project", "title_bn": "Excel Analytics Project", "lessons": ["Retail sales cleaning", "Metric definition", "Pivot analysis", "Dashboard build", "Insight writing", "Workbook quality audit"]},
+        ],
+    },
+    {
+        "id": "sql",
+        "title_en": "SQL for Data Analytics",
+        "title_bn": "ডেটা অ্যানালিটিক্সের জন্য SQL",
+        "status": "curriculum-ready",
+        "target_release": "v2.2.0",
+        "prerequisites": ["Data Foundations", "Tables, rows, columns and keys"],
+        "outcome_en": "Write readable PostgreSQL queries that answer business questions across multiple related tables.",
+        "outcome_bn": "একাধিক related table থেকে business question-এর উত্তর দিতে readable PostgreSQL query লিখতে পারবেন।",
+        "reference_url": "https://www.postgresql.org/docs/current/tutorial.html",
+        "modules": [
+            {"title_en": "Relational and SQL Foundations", "title_bn": "Relational ও SQL Foundation", "lessons": ["Databases, schemas and tables", "Rows, columns and data types", "Primary and foreign keys", "SELECT and aliases", "DISTINCT", "Query readability"]},
+            {"title_en": "Filtering and Ordering", "title_bn": "Filtering ও Ordering", "lessons": ["WHERE", "Comparison and logical operators", "NULL", "IN, BETWEEN and LIKE", "ORDER BY", "LIMIT and sampling cautions"]},
+            {"title_en": "Aggregation", "title_bn": "Aggregation", "lessons": ["COUNT, SUM, AVG, MIN and MAX", "GROUP BY", "HAVING", "Conditional aggregation", "Distinct counts", "Grain-aware metrics"]},
+            {"title_en": "Joining Tables", "title_bn": "Table Join", "lessons": ["INNER JOIN", "LEFT JOIN", "FULL JOIN concepts", "Multi-table joins", "Self joins", "Join duplication and reconciliation"]},
+            {"title_en": "Analytical SQL", "title_bn": "Analytical SQL", "lessons": ["CASE", "String and date functions", "Subqueries", "Common table expressions", "Window functions", "Ranking and running totals"]},
+            {"title_en": "Business Analysis Patterns", "title_bn": "Business Analysis Pattern", "lessons": ["Period comparison", "Customer segmentation", "Funnel analysis", "Cohort retention", "Moving averages", "Top-N within groups"]},
+            {"title_en": "SQL Quality and Performance Concepts", "title_bn": "SQL Quality ও Performance Concept", "lessons": ["Query validation", "Views", "Indexes conceptually", "Execution plans conceptually", "Safe transformations", "Documenting assumptions"]},
+            {"title_en": "SQL Analytics Project", "title_bn": "SQL Analytics Project", "lessons": ["Load the retail schema", "Answer stakeholder questions", "Validate joins and totals", "Build reusable views", "Write findings", "Query review"]},
+        ],
+    },
+    {
+        "id": "power-bi",
+        "title_en": "Power BI for Data Analytics",
+        "title_bn": "ডেটা অ্যানালিটিক্সের জন্য Power BI",
+        "status": "curriculum-ready",
+        "target_release": "v2.3.0",
+        "prerequisites": ["Data Foundations", "Excel or SQL basics", "Essential statistics"],
+        "outcome_en": "Prepare data, build a star-schema semantic model, create reliable DAX measures and communicate decisions through a report.",
+        "outcome_bn": "Data prepare, star-schema semantic model build, reliable DAX measure এবং decision-ready report তৈরি করতে পারবেন।",
+        "reference_url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+        "modules": [
+            {"title_en": "Power BI Ecosystem", "title_bn": "Power BI Ecosystem", "lessons": ["Desktop, Service and semantic models", "Reports and dashboards", "Import and DirectQuery concepts", "Data sources", "File organization", "Analyst workflow"]},
+            {"title_en": "Power Query", "title_bn": "Power Query", "lessons": ["Connect and profile", "Data types", "Cleaning transformations", "Merge and append", "Pivot and unpivot", "Query dependencies and refresh"]},
+            {"title_en": "Dimensional Modeling", "title_bn": "Dimensional Modeling", "lessons": ["Fact and dimension tables", "Grain", "Star schema", "Relationships and cardinality", "Filter direction", "Date tables"]},
+            {"title_en": "DAX Foundations", "title_bn": "DAX Foundation", "lessons": ["Measures vs calculated columns", "Row and filter context", "CALCULATE", "Iterators", "Variables", "Safe division and blanks"]},
+            {"title_en": "Analytical DAX", "title_bn": "Analytical DAX", "lessons": ["Time intelligence", "Running totals", "Period variance", "Ranking", "Contribution and share", "KPI status"]},
+            {"title_en": "Visual Analytics", "title_bn": "Visual Analytics", "lessons": ["Chart selection", "Slicers and interactions", "Drill-down and drill-through", "Tooltips", "Conditional formatting", "Accessible design"]},
+            {"title_en": "Publishing and Governance Concepts", "title_bn": "Publishing ও Governance Concept", "lessons": ["Workspaces", "Refresh concepts", "Security concepts", "Documentation", "Performance review", "Report QA"]},
+            {"title_en": "Power BI Portfolio Project", "title_bn": "Power BI Portfolio Project", "lessons": ["Business requirements", "Power Query cleaning", "Star schema", "DAX measures", "Report pages", "Executive insight narrative"]},
+        ],
+    },
+    {
+        "id": "python",
+        "title_en": "Python for Data Analytics",
+        "title_bn": "ডেটা অ্যানালিটিক্সের জন্য Python",
+        "status": "curriculum-ready",
+        "target_release": "v2.4.0",
+        "prerequisites": ["Data Foundations", "Essential statistics"],
+        "outcome_en": "Use a reproducible notebook workflow to clean, analyze, visualize and communicate a real dataset.",
+        "outcome_bn": "Reproducible notebook workflow দিয়ে real dataset clean, analyze, visualize ও communicate করতে পারবেন।",
+        "reference_url": "https://docs.python.org/3/tutorial/",
+        "modules": [
+            {"title_en": "Python and Notebook Foundations", "title_bn": "Python ও Notebook Foundation", "lessons": ["Python and Jupyter workflow", "Variables and data types", "Lists, tuples and dictionaries", "Conditions and loops", "Functions", "Errors and debugging"]},
+            {"title_en": "NumPy Foundations", "title_bn": "NumPy Foundation", "lessons": ["Arrays", "Shape and dtype", "Indexing", "Vectorized operations", "Aggregation", "Missing and invalid numeric values"]},
+            {"title_en": "pandas DataFrames", "title_bn": "pandas DataFrame", "lessons": ["Series and DataFrames", "Reading CSV and Excel", "Inspecting data", "Selecting and filtering", "Sorting", "Writing outputs"]},
+            {"title_en": "Cleaning and Transformation", "title_bn": "Cleaning ও Transformation", "lessons": ["Missing values", "Duplicates", "Text and category cleaning", "Dates", "GroupBy", "Merge, join and reshape"]},
+            {"title_en": "Exploratory Data Analysis", "title_bn": "Exploratory Data Analysis", "lessons": ["Descriptive summaries", "Distribution analysis", "Relationships", "Outliers", "Segment comparison", "Insight notes"]},
+            {"title_en": "Visualization with Matplotlib", "title_bn": "Matplotlib দিয়ে Visualization", "lessons": ["Figure anatomy", "Bar and line charts", "Histograms", "Scatter plots", "Labels and annotations", "Responsible chart design"]},
+            {"title_en": "Statistics in Python", "title_bn": "Python-এ Statistics", "lessons": ["Sampling", "Confidence intervals", "Hypothesis tests", "Correlation", "Regression", "A/B test workflow"]},
+            {"title_en": "Python Analytics Project", "title_bn": "Python Analytics Project", "lessons": ["Notebook planning", "Data-quality audit", "EDA", "Statistical analysis", "Visual story", "Reproducibility checklist"]},
+        ],
+    },
+]

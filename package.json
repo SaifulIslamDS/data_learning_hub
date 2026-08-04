@@ -1,15 +1,18 @@
 {
-  "name": "statistics-learning-hub",
-  "version": "1.2.0",
+  "name": "data-learning-hub",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "A comprehensive guided bilingual static statistics, analytics, data science and data engineering learning hub.",
+  "description": "An English-first bilingual static Data Analytics learning platform with guided statistics foundations and curriculum-ready Excel, SQL, Power BI and Python tracks.",
   "scripts": {
     "generate": "python scripts/generate.py",
+    "audit:curriculum": "python scripts/audit_curriculum.py",
+    "audit:lessons": "python scripts/audit_lessons.py",
     "audit:links": "python scripts/audit_links.py",
     "test:stats": "node scripts/test_stats.mjs",
-    "test": "npm run test:stats && npm run audit:lessons && npm run audit:links",
-    "serve": "python -m http.server 8080",
-    "audit:lessons": "python scripts/audit_lessons.py"
+    "test:syntax": "node --check assets/js/site.js && node --check assets/js/start.js && node --check assets/js/dashboard.js && node --check assets/js/catalog.js && node --check assets/js/tools-index.js && node --check assets/js/tools.js && node --check assets/js/topic.js && node --check assets/js/glossary.js && node --check assets/js/career-paths.js && node --check assets/js/curriculum.js && node --check assets/js/projects.js",
+    "test": "npm run test:stats && npm run audit:lessons && npm run audit:curriculum && npm run audit:links && npm run test:syntax",
+    "test:browser": "python scripts/browser_smoke.py",
+    "serve": "python -m http.server 8080"
   }
 }

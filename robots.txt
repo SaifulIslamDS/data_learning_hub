@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://statistics-learning-hub.netlify.app/sitemap.xml
+Sitemap: https://data-learning-hub.netlify.app/sitemap.xml

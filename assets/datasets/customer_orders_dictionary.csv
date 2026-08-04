@@ -1,0 +1,8 @@
+column,type,description
+order_id,text,Synthetic unique order identifier
+customer_id,text,Synthetic customer identifier
+order_date,date,Order date
+city,category,Customer city
+segment,category,Customer segment
+order_value_bdt,number,Order value in BDT
+returned,category,Whether the order was returned

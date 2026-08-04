@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "assets" / "js" / "content.js"
 
 raw = CONTENT.read_text(encoding="utf-8")
-prefix = "window.SLH_CONTENT = "
+prefix = "window.DLH_CONTENT = "
 if not raw.startswith(prefix):
     raise SystemExit("content.js does not contain the expected generated payload")
 data = json.loads(raw[len(prefix):].rstrip().rstrip(";"))

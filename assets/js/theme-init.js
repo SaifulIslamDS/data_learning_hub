@@ -1,6 +1,6 @@
 (() => {
   try {
-    const stored = localStorage.getItem('slh-theme');
+    const stored = localStorage.getItem('dlh-theme') || localStorage.getItem('slh-theme');
     const preferred = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.dataset.theme = stored || preferred;
   } catch {

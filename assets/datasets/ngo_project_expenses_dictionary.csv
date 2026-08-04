@@ -1,0 +1,9 @@
+column,type,description
+record_id,text,Synthetic expense record identifier
+month,month,Reporting month
+project,category,Project or cost center
+expense_head,category,Budget or expense category
+approved_budget_bdt,number,Approved budget in BDT
+actual_expense_bdt,number,Recorded expense in BDT
+variance_bdt,number,Budget minus actual
+utilization_pct,number,Actual divided by budget times 100

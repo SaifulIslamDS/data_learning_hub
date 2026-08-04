@@ -1,0 +1,241 @@
+transaction_id,order_date,region,channel,product,category,quantity,unit_price_bdt,discount_rate,revenue_bdt,cost_bdt,profit_bdt
+TX-0001,2026-01-01,Dhaka,Store,T-Shirt,Apparel,2,650,0.15,1105.0,720,385.0
+TX-0002,2026-01-01,Chattogram,Store,T-Shirt,Apparel,8,650,0,5200,2880,2320
+TX-0003,2026-01-02,Rajshahi,Store,Sneakers,Footwear,1,2400,0.1,2160.0,1550,610.0
+TX-0004,2026-01-02,Khulna,Online,Backpack,Accessories,6,1800,0.1,9720.0,6720,3000.0
+TX-0005,2026-01-03,Dhaka,Online,Polo Shirt,Apparel,1,1200,0.05,1140.0,720,420.0
+TX-0006,2026-01-03,Chattogram,Online,Formal Shirt,Apparel,4,1450,0,5800,3520,2280
+TX-0007,2026-01-04,Rajshahi,Partner,Polo Shirt,Apparel,6,1200,0.15,6120.0,4320,1800.0
+TX-0008,2026-01-04,Khulna,Partner,Notebook Set,Stationery,5,320,0,1600,850,750
+TX-0009,2026-01-05,Dhaka,Partner,Sneakers,Footwear,4,2400,0,9600,6200,3400
+TX-0010,2026-01-05,Chattogram,Store,Sneakers,Footwear,4,2400,0,9600,6200,3400
+TX-0011,2026-01-06,Rajshahi,Store,T-Shirt,Apparel,3,650,0.05,1852.5,1080,772.5
+TX-0012,2026-01-06,Khulna,Store,Sneakers,Footwear,8,2400,0.05,18240.0,12400,5840.0
+TX-0013,2026-01-07,Dhaka,Online,Formal Shirt,Apparel,6,1450,0.05,8265.0,5280,2985.0
+TX-0014,2026-01-07,Chattogram,Online,Polo Shirt,Apparel,4,1200,0.15,4080.0,2880,1200.0
+TX-0015,2026-01-08,Rajshahi,Online,Sneakers,Footwear,3,2400,0.1,6480.0,4650,1830.0
+TX-0016,2026-01-08,Khulna,Partner,Polo Shirt,Apparel,2,1200,0.05,2280.0,1440,840.0
+TX-0017,2026-01-09,Dhaka,Partner,Notebook Set,Stationery,2,320,0,640,340,300
+TX-0018,2026-01-09,Chattogram,Partner,Notebook Set,Stationery,4,320,0.05,1216.0,680,536.0
+TX-0019,2026-01-10,Rajshahi,Store,Notebook Set,Stationery,1,320,0.1,288.0,170,118.0
+TX-0020,2026-01-10,Khulna,Store,T-Shirt,Apparel,1,650,0,650,360,290
+TX-0021,2026-01-11,Dhaka,Store,Backpack,Accessories,6,1800,0,10800,6720,4080
+TX-0022,2026-01-11,Chattogram,Online,T-Shirt,Apparel,5,650,0,3250,1800,1450
+TX-0023,2026-01-12,Rajshahi,Online,Polo Shirt,Apparel,7,1200,0,8400,5040,3360
+TX-0024,2026-01-12,Khulna,Online,Backpack,Accessories,2,1800,0.15,3060.0,2240,820.0
+TX-0025,2026-01-13,Dhaka,Partner,Sneakers,Footwear,2,2400,0,4800,3100,1700
+TX-0026,2026-01-13,Chattogram,Partner,Sneakers,Footwear,1,2400,0.05,2280.0,1550,730.0
+TX-0027,2026-01-14,Rajshahi,Partner,T-Shirt,Apparel,1,650,0.1,585.0,360,225.0
+TX-0028,2026-01-14,Khulna,Store,Polo Shirt,Apparel,2,1200,0,2400,1440,960
+TX-0029,2026-01-15,Dhaka,Store,Formal Shirt,Apparel,8,1450,0.15,9860.0,7040,2820.0
+TX-0030,2026-01-15,Chattogram,Store,Polo Shirt,Apparel,8,1200,0,9600,5760,3840
+TX-0031,2026-01-16,Rajshahi,Online,Backpack,Accessories,7,1800,0.1,11340.0,7840,3500.0
+TX-0032,2026-01-16,Khulna,Online,Backpack,Accessories,2,1800,0,3600,2240,1360
+TX-0033,2026-01-17,Dhaka,Online,T-Shirt,Apparel,3,650,0.1,1755.0,1080,675.0
+TX-0034,2026-01-17,Chattogram,Partner,T-Shirt,Apparel,4,650,0,2600,1440,1160
+TX-0035,2026-01-18,Rajshahi,Partner,Notebook Set,Stationery,1,320,0.05,304.0,170,134.0
+TX-0036,2026-01-18,Khulna,Partner,Sneakers,Footwear,1,2400,0,2400,1550,850
+TX-0037,2026-01-19,Dhaka,Store,T-Shirt,Apparel,6,650,0.1,3510.0,2160,1350.0
+TX-0038,2026-01-19,Chattogram,Store,Sneakers,Footwear,6,2400,0.1,12960.0,9300,3660.0
+TX-0039,2026-01-20,Rajshahi,Store,Formal Shirt,Apparel,5,1450,0.1,6525.0,4400,2125.0
+TX-0040,2026-01-20,Khulna,Online,Sneakers,Footwear,3,2400,0.1,6480.0,4650,1830.0
+TX-0041,2026-01-21,Dhaka,Online,Notebook Set,Stationery,2,320,0.05,608.0,340,268.0
+TX-0042,2026-01-21,Chattogram,Online,T-Shirt,Apparel,2,650,0,1300,720,580
+TX-0043,2026-01-22,Rajshahi,Partner,Formal Shirt,Apparel,7,1450,0.15,8627.5,6160,2467.5
+TX-0044,2026-01-22,Khulna,Partner,Polo Shirt,Apparel,8,1200,0.1,8640.0,5760,2880.0
+TX-0045,2026-01-23,Dhaka,Partner,Formal Shirt,Apparel,5,1450,0.1,6525.0,4400,2125.0
+TX-0046,2026-01-23,Chattogram,Store,T-Shirt,Apparel,6,650,0,3900,2160,1740
+TX-0047,2026-01-24,Rajshahi,Store,Sneakers,Footwear,3,2400,0.05,6840.0,4650,2190.0
+TX-0048,2026-01-24,Khulna,Store,Polo Shirt,Apparel,5,1200,0.05,5700.0,3600,2100.0
+TX-0049,2026-01-25,Dhaka,Online,Formal Shirt,Apparel,3,1450,0,4350,2640,1710
+TX-0050,2026-01-25,Chattogram,Online,Backpack,Accessories,3,1800,0.05,5130.0,3360,1770.0
+TX-0051,2026-01-26,Rajshahi,Online,T-Shirt,Apparel,3,650,0,1950,1080,870
+TX-0052,2026-01-26,Khulna,Partner,Sneakers,Footwear,8,2400,0,19200,12400,6800
+TX-0053,2026-01-27,Dhaka,Partner,Backpack,Accessories,1,1800,0.15,1530.0,1120,410.0
+TX-0054,2026-01-27,Chattogram,Partner,Sneakers,Footwear,7,2400,0.15,14280.0,10850,3430.0
+TX-0055,2026-01-28,Rajshahi,Store,Formal Shirt,Apparel,5,1450,0.15,6162.5,4400,1762.5
+TX-0056,2026-01-28,Khulna,Store,Formal Shirt,Apparel,3,1450,0.05,4132.5,2640,1492.5
+TX-0057,2026-01-29,Dhaka,Store,T-Shirt,Apparel,4,650,0.1,2340.0,1440,900.0
+TX-0058,2026-01-29,Chattogram,Online,Polo Shirt,Apparel,1,1200,0.1,1080.0,720,360.0
+TX-0059,2026-01-30,Rajshahi,Online,Backpack,Accessories,8,1800,0,14400,8960,5440
+TX-0060,2026-01-30,Khulna,Online,Polo Shirt,Apparel,6,1200,0,7200,4320,2880
+TX-0061,2026-01-31,Dhaka,Partner,T-Shirt,Apparel,8,650,0,5200,2880,2320
+TX-0062,2026-01-31,Chattogram,Partner,Notebook Set,Stationery,7,320,0.05,2128.0,1190,938.0
+TX-0063,2026-02-01,Rajshahi,Partner,Sneakers,Footwear,5,2400,0.1,10800.0,7750,3050.0
+TX-0064,2026-02-01,Khulna,Store,Notebook Set,Stationery,3,320,0.1,864.0,510,354.0
+TX-0065,2026-02-02,Dhaka,Store,Polo Shirt,Apparel,3,1200,0.15,3060.0,2160,900.0
+TX-0066,2026-02-02,Chattogram,Store,Sneakers,Footwear,1,2400,0.15,2040.0,1550,490.0
+TX-0067,2026-02-03,Rajshahi,Online,Backpack,Accessories,1,1800,0.05,1710.0,1120,590.0
+TX-0068,2026-02-03,Khulna,Online,Sneakers,Footwear,8,2400,0,19200,12400,6800
+TX-0069,2026-02-04,Dhaka,Online,Formal Shirt,Apparel,7,1450,0.1,9135.0,6160,2975.0
+TX-0070,2026-02-04,Chattogram,Partner,Sneakers,Footwear,7,2400,0.1,15120.0,10850,4270.0
+TX-0071,2026-02-05,Rajshahi,Partner,Sneakers,Footwear,6,2400,0.15,12240.0,9300,2940.0
+TX-0072,2026-02-05,Khulna,Partner,Polo Shirt,Apparel,6,1200,0,7200,4320,2880
+TX-0073,2026-02-06,Dhaka,Store,Sneakers,Footwear,3,2400,0,7200,4650,2550
+TX-0074,2026-02-06,Chattogram,Store,Polo Shirt,Apparel,4,1200,0,4800,2880,1920
+TX-0075,2026-02-07,Rajshahi,Store,Formal Shirt,Apparel,2,1450,0.15,2465.0,1760,705.0
+TX-0076,2026-02-07,Khulna,Online,Notebook Set,Stationery,6,320,0,1920,1020,900
+TX-0077,2026-02-08,Dhaka,Online,Backpack,Accessories,6,1800,0,10800,6720,4080
+TX-0078,2026-02-08,Chattogram,Online,Formal Shirt,Apparel,8,1450,0.15,9860.0,7040,2820.0
+TX-0079,2026-02-09,Rajshahi,Partner,T-Shirt,Apparel,6,650,0.05,3705.0,2160,1545.0
+TX-0080,2026-02-09,Khulna,Partner,Sneakers,Footwear,6,2400,0.15,12240.0,9300,2940.0
+TX-0081,2026-02-10,Dhaka,Partner,Formal Shirt,Apparel,5,1450,0.15,6162.5,4400,1762.5
+TX-0082,2026-02-10,Chattogram,Store,Polo Shirt,Apparel,4,1200,0.1,4320.0,2880,1440.0
+TX-0083,2026-02-11,Rajshahi,Store,T-Shirt,Apparel,2,650,0,1300,720,580
+TX-0084,2026-02-11,Khulna,Store,Formal Shirt,Apparel,6,1450,0.1,7830.0,5280,2550.0
+TX-0085,2026-02-12,Dhaka,Online,Sneakers,Footwear,5,2400,0.15,10200.0,7750,2450.0
+TX-0086,2026-02-12,Chattogram,Online,Sneakers,Footwear,5,2400,0.15,10200.0,7750,2450.0
+TX-0087,2026-02-13,Rajshahi,Online,Notebook Set,Stationery,3,320,0,960,510,450
+TX-0088,2026-02-13,Khulna,Partner,Polo Shirt,Apparel,5,1200,0.05,5700.0,3600,2100.0
+TX-0089,2026-02-14,Dhaka,Partner,Sneakers,Footwear,4,2400,0.05,9120.0,6200,2920.0
+TX-0090,2026-02-14,Chattogram,Partner,Backpack,Accessories,3,1800,0.1,4860.0,3360,1500.0
+TX-0091,2026-02-15,Rajshahi,Store,Formal Shirt,Apparel,8,1450,0,11600,7040,4560
+TX-0092,2026-02-15,Khulna,Store,Sneakers,Footwear,2,2400,0,4800,3100,1700
+TX-0093,2026-02-16,Dhaka,Store,Notebook Set,Stationery,6,320,0.1,1728.0,1020,708.0
+TX-0094,2026-02-16,Chattogram,Online,Notebook Set,Stationery,5,320,0,1600,850,750
+TX-0095,2026-02-17,Rajshahi,Online,Polo Shirt,Apparel,3,1200,0.15,3060.0,2160,900.0
+TX-0096,2026-02-17,Khulna,Online,Formal Shirt,Apparel,4,1450,0,5800,3520,2280
+TX-0097,2026-02-18,Dhaka,Partner,Polo Shirt,Apparel,1,1200,0,1200,720,480
+TX-0098,2026-02-18,Chattogram,Partner,Formal Shirt,Apparel,3,1450,0,4350,2640,1710
+TX-0099,2026-02-19,Rajshahi,Partner,Backpack,Accessories,8,1800,0,14400,8960,5440
+TX-0100,2026-02-19,Khulna,Store,Sneakers,Footwear,8,2400,0,19200,12400,6800
+TX-0101,2026-02-20,Dhaka,Store,Polo Shirt,Apparel,5,1200,0.05,5700.0,3600,2100.0
+TX-0102,2026-02-20,Chattogram,Store,Notebook Set,Stationery,5,320,0,1600,850,750
+TX-0103,2026-02-21,Rajshahi,Online,Notebook Set,Stationery,7,320,0.05,2128.0,1190,938.0
+TX-0104,2026-02-21,Khulna,Online,Polo Shirt,Apparel,2,1200,0,2400,1440,960
+TX-0105,2026-02-22,Dhaka,Online,Sneakers,Footwear,4,2400,0,9600,6200,3400
+TX-0106,2026-02-22,Chattogram,Partner,Backpack,Accessories,2,1800,0.1,3240.0,2240,1000.0
+TX-0107,2026-02-23,Rajshahi,Partner,Notebook Set,Stationery,3,320,0,960,510,450
+TX-0108,2026-02-23,Khulna,Partner,Polo Shirt,Apparel,6,1200,0.15,6120.0,4320,1800.0
+TX-0109,2026-02-24,Dhaka,Store,Sneakers,Footwear,5,2400,0.05,11400.0,7750,3650.0
+TX-0110,2026-02-24,Chattogram,Store,Notebook Set,Stationery,5,320,0,1600,850,750
+TX-0111,2026-02-25,Rajshahi,Store,Formal Shirt,Apparel,7,1450,0.1,9135.0,6160,2975.0
+TX-0112,2026-02-25,Khulna,Online,Sneakers,Footwear,4,2400,0,9600,6200,3400
+TX-0113,2026-02-26,Dhaka,Online,Formal Shirt,Apparel,1,1450,0,1450,880,570
+TX-0114,2026-02-26,Chattogram,Online,Sneakers,Footwear,8,2400,0.05,18240.0,12400,5840.0
+TX-0115,2026-02-27,Rajshahi,Partner,Polo Shirt,Apparel,2,1200,0.05,2280.0,1440,840.0
+TX-0116,2026-02-27,Khulna,Partner,Notebook Set,Stationery,1,320,0,320,170,150
+TX-0117,2026-02-28,Dhaka,Partner,Formal Shirt,Apparel,6,1450,0.05,8265.0,5280,2985.0
+TX-0118,2026-02-28,Chattogram,Store,Polo Shirt,Apparel,8,1200,0,9600,5760,3840
+TX-0119,2026-03-01,Rajshahi,Store,Polo Shirt,Apparel,5,1200,0,6000,3600,2400
+TX-0120,2026-03-01,Khulna,Store,Sneakers,Footwear,2,2400,0,4800,3100,1700
+TX-0121,2026-03-02,Dhaka,Online,Notebook Set,Stationery,3,320,0,960,510,450
+TX-0122,2026-03-02,Chattogram,Online,T-Shirt,Apparel,3,650,0.1,1755.0,1080,675.0
+TX-0123,2026-03-03,Rajshahi,Online,Polo Shirt,Apparel,1,1200,0,1200,720,480
+TX-0124,2026-03-03,Khulna,Partner,Sneakers,Footwear,2,2400,0.1,4320.0,3100,1220.0
+TX-0125,2026-03-04,Dhaka,Partner,T-Shirt,Apparel,6,650,0.1,3510.0,2160,1350.0
+TX-0126,2026-03-04,Chattogram,Partner,Formal Shirt,Apparel,6,1450,0,8700,5280,3420
+TX-0127,2026-03-05,Rajshahi,Store,Notebook Set,Stationery,7,320,0,2240,1190,1050
+TX-0128,2026-03-05,Khulna,Store,Sneakers,Footwear,4,2400,0.15,8160.0,6200,1960.0
+TX-0129,2026-03-06,Dhaka,Store,Sneakers,Footwear,4,2400,0.1,8640.0,6200,2440.0
+TX-0130,2026-03-06,Chattogram,Online,T-Shirt,Apparel,8,650,0.05,4940.0,2880,2060.0
+TX-0131,2026-03-07,Rajshahi,Online,Sneakers,Footwear,8,2400,0.05,18240.0,12400,5840.0
+TX-0132,2026-03-07,Khulna,Online,Notebook Set,Stationery,1,320,0.1,288.0,170,118.0
+TX-0133,2026-03-08,Dhaka,Partner,Polo Shirt,Apparel,6,1200,0,7200,4320,2880
+TX-0134,2026-03-08,Chattogram,Partner,Polo Shirt,Apparel,4,1200,0.1,4320.0,2880,1440.0
+TX-0135,2026-03-09,Rajshahi,Partner,T-Shirt,Apparel,6,650,0,3900,2160,1740
+TX-0136,2026-03-09,Khulna,Store,Backpack,Accessories,4,1800,0.05,6840.0,4480,2360.0
+TX-0137,2026-03-10,Dhaka,Store,Backpack,Accessories,1,1800,0.05,1710.0,1120,590.0
+TX-0138,2026-03-10,Chattogram,Store,Polo Shirt,Apparel,1,1200,0.1,1080.0,720,360.0
+TX-0139,2026-03-11,Rajshahi,Online,Notebook Set,Stationery,7,320,0.1,2016.0,1190,826.0
+TX-0140,2026-03-11,Khulna,Online,Polo Shirt,Apparel,8,1200,0.05,9120.0,5760,3360.0
+TX-0141,2026-03-12,Dhaka,Online,Backpack,Accessories,6,1800,0.15,9180.0,6720,2460.0
+TX-0142,2026-03-12,Chattogram,Partner,Backpack,Accessories,7,1800,0.1,11340.0,7840,3500.0
+TX-0143,2026-03-13,Rajshahi,Partner,Notebook Set,Stationery,4,320,0.15,1088.0,680,408.0
+TX-0144,2026-03-13,Khulna,Partner,Formal Shirt,Apparel,5,1450,0,7250,4400,2850
+TX-0145,2026-03-14,Dhaka,Store,T-Shirt,Apparel,1,650,0.15,552.5,360,192.5
+TX-0146,2026-03-14,Chattogram,Store,Notebook Set,Stationery,1,320,0.05,304.0,170,134.0
+TX-0147,2026-03-15,Rajshahi,Store,Polo Shirt,Apparel,1,1200,0,1200,720,480
+TX-0148,2026-03-15,Khulna,Online,Notebook Set,Stationery,8,320,0.05,2432.0,1360,1072.0
+TX-0149,2026-03-16,Dhaka,Online,Notebook Set,Stationery,8,320,0.05,2432.0,1360,1072.0
+TX-0150,2026-03-16,Chattogram,Online,Backpack,Accessories,6,1800,0,10800,6720,4080
+TX-0151,2026-03-17,Rajshahi,Partner,Backpack,Accessories,7,1800,0.15,10710.0,7840,2870.0
+TX-0152,2026-03-17,Khulna,Partner,Sneakers,Footwear,2,2400,0.15,4080.0,3100,980.0
+TX-0153,2026-03-18,Dhaka,Partner,Sneakers,Footwear,1,2400,0.15,2040.0,1550,490.0
+TX-0154,2026-03-18,Chattogram,Store,Sneakers,Footwear,8,2400,0.05,18240.0,12400,5840.0
+TX-0155,2026-03-19,Rajshahi,Store,Backpack,Accessories,8,1800,0,14400,8960,5440
+TX-0156,2026-03-19,Khulna,Store,Notebook Set,Stationery,2,320,0.1,576.0,340,236.0
+TX-0157,2026-03-20,Dhaka,Online,Formal Shirt,Apparel,8,1450,0,11600,7040,4560
+TX-0158,2026-03-20,Chattogram,Online,Polo Shirt,Apparel,4,1200,0.15,4080.0,2880,1200.0
+TX-0159,2026-03-21,Rajshahi,Online,Notebook Set,Stationery,4,320,0.15,1088.0,680,408.0
+TX-0160,2026-03-21,Khulna,Partner,Sneakers,Footwear,5,2400,0,12000,7750,4250
+TX-0161,2026-03-22,Dhaka,Partner,Notebook Set,Stationery,2,320,0,640,340,300
+TX-0162,2026-03-22,Chattogram,Partner,Formal Shirt,Apparel,3,1450,0.15,3697.5,2640,1057.5
+TX-0163,2026-03-23,Rajshahi,Store,Polo Shirt,Apparel,2,1200,0,2400,1440,960
+TX-0164,2026-03-23,Khulna,Store,Notebook Set,Stationery,7,320,0,2240,1190,1050
+TX-0165,2026-03-24,Dhaka,Store,T-Shirt,Apparel,1,650,0,650,360,290
+TX-0166,2026-03-24,Chattogram,Online,Formal Shirt,Apparel,8,1450,0,11600,7040,4560
+TX-0167,2026-03-25,Rajshahi,Online,Formal Shirt,Apparel,6,1450,0.1,7830.0,5280,2550.0
+TX-0168,2026-03-25,Khulna,Online,Formal Shirt,Apparel,5,1450,0.1,6525.0,4400,2125.0
+TX-0169,2026-03-26,Dhaka,Partner,Notebook Set,Stationery,5,320,0.15,1360.0,850,510.0
+TX-0170,2026-03-26,Chattogram,Partner,Polo Shirt,Apparel,8,1200,0.15,8160.0,5760,2400.0
+TX-0171,2026-03-27,Rajshahi,Partner,Formal Shirt,Apparel,7,1450,0.1,9135.0,6160,2975.0
+TX-0172,2026-03-27,Khulna,Store,Sneakers,Footwear,2,2400,0.05,4560.0,3100,1460.0
+TX-0173,2026-03-28,Dhaka,Store,Notebook Set,Stationery,8,320,0.15,2176.0,1360,816.0
+TX-0174,2026-03-28,Chattogram,Store,Sneakers,Footwear,8,2400,0.05,18240.0,12400,5840.0
+TX-0175,2026-03-29,Rajshahi,Online,Polo Shirt,Apparel,3,1200,0,3600,2160,1440
+TX-0176,2026-03-29,Khulna,Online,Formal Shirt,Apparel,5,1450,0.05,6887.5,4400,2487.5
+TX-0177,2026-03-30,Dhaka,Online,Notebook Set,Stationery,4,320,0,1280,680,600
+TX-0178,2026-03-30,Chattogram,Partner,Notebook Set,Stationery,1,320,0.1,288.0,170,118.0
+TX-0179,2026-03-31,Rajshahi,Partner,Formal Shirt,Apparel,7,1450,0,10150,6160,3990
+TX-0180,2026-03-31,Khulna,Partner,Sneakers,Footwear,6,2400,0.15,12240.0,9300,2940.0
+TX-0181,2026-04-01,Dhaka,Store,Polo Shirt,Apparel,7,1200,0,8400,5040,3360
+TX-0182,2026-04-01,Chattogram,Store,Backpack,Accessories,5,1800,0,9000,5600,3400
+TX-0183,2026-04-02,Rajshahi,Store,Formal Shirt,Apparel,5,1450,0.1,6525.0,4400,2125.0
+TX-0184,2026-04-02,Khulna,Online,T-Shirt,Apparel,2,650,0,1300,720,580
+TX-0185,2026-04-03,Dhaka,Online,T-Shirt,Apparel,3,650,0,1950,1080,870
+TX-0186,2026-04-03,Chattogram,Online,Notebook Set,Stationery,3,320,0,960,510,450
+TX-0187,2026-04-04,Rajshahi,Partner,Polo Shirt,Apparel,1,1200,0,1200,720,480
+TX-0188,2026-04-04,Khulna,Partner,Formal Shirt,Apparel,8,1450,0.15,9860.0,7040,2820.0
+TX-0189,2026-04-05,Dhaka,Partner,Polo Shirt,Apparel,6,1200,0.1,6480.0,4320,2160.0
+TX-0190,2026-04-05,Chattogram,Store,Backpack,Accessories,4,1800,0.15,6120.0,4480,1640.0
+TX-0191,2026-04-06,Rajshahi,Store,Notebook Set,Stationery,3,320,0.15,816.0,510,306.0
+TX-0192,2026-04-06,Khulna,Store,T-Shirt,Apparel,5,650,0.15,2762.5,1800,962.5
+TX-0193,2026-04-07,Dhaka,Online,Sneakers,Footwear,4,2400,0.05,9120.0,6200,2920.0
+TX-0194,2026-04-07,Chattogram,Online,T-Shirt,Apparel,3,650,0,1950,1080,870
+TX-0195,2026-04-08,Rajshahi,Online,Polo Shirt,Apparel,8,1200,0,9600,5760,3840
+TX-0196,2026-04-08,Khulna,Partner,Formal Shirt,Apparel,8,1450,0.15,9860.0,7040,2820.0
+TX-0197,2026-04-09,Dhaka,Partner,Notebook Set,Stationery,7,320,0.15,1904.0,1190,714.0
+TX-0198,2026-04-09,Chattogram,Partner,Sneakers,Footwear,6,2400,0,14400,9300,5100
+TX-0199,2026-04-10,Rajshahi,Store,T-Shirt,Apparel,4,650,0.15,2210.0,1440,770.0
+TX-0200,2026-04-10,Khulna,Store,Sneakers,Footwear,4,2400,0.15,8160.0,6200,1960.0
+TX-0201,2026-04-11,Dhaka,Store,Backpack,Accessories,3,1800,0.1,4860.0,3360,1500.0
+TX-0202,2026-04-11,Chattogram,Online,Polo Shirt,Apparel,2,1200,0.1,2160.0,1440,720.0
+TX-0203,2026-04-12,Rajshahi,Online,Backpack,Accessories,8,1800,0.15,12240.0,8960,3280.0
+TX-0204,2026-04-12,Khulna,Online,T-Shirt,Apparel,6,650,0,3900,2160,1740
+TX-0205,2026-04-13,Dhaka,Partner,Sneakers,Footwear,5,2400,0.05,11400.0,7750,3650.0
+TX-0206,2026-04-13,Chattogram,Partner,Sneakers,Footwear,4,2400,0.05,9120.0,6200,2920.0
+TX-0207,2026-04-14,Rajshahi,Partner,T-Shirt,Apparel,4,650,0,2600,1440,1160
+TX-0208,2026-04-14,Khulna,Store,Notebook Set,Stationery,2,320,0,640,340,300
+TX-0209,2026-04-15,Dhaka,Store,Sneakers,Footwear,2,2400,0.1,4320.0,3100,1220.0
+TX-0210,2026-04-15,Chattogram,Store,Notebook Set,Stationery,1,320,0.1,288.0,170,118.0
+TX-0211,2026-04-16,Rajshahi,Online,Polo Shirt,Apparel,7,1200,0.1,7560.0,5040,2520.0
+TX-0212,2026-04-16,Khulna,Online,Polo Shirt,Apparel,6,1200,0.15,6120.0,4320,1800.0
+TX-0213,2026-04-17,Dhaka,Online,Backpack,Accessories,6,1800,0.15,9180.0,6720,2460.0
+TX-0214,2026-04-17,Chattogram,Partner,Sneakers,Footwear,6,2400,0,14400,9300,5100
+TX-0215,2026-04-18,Rajshahi,Partner,Backpack,Accessories,7,1800,0,12600,7840,4760
+TX-0216,2026-04-18,Khulna,Partner,Sneakers,Footwear,5,2400,0,12000,7750,4250
+TX-0217,2026-04-19,Dhaka,Store,Polo Shirt,Apparel,3,1200,0,3600,2160,1440
+TX-0218,2026-04-19,Chattogram,Store,Formal Shirt,Apparel,2,1450,0.1,2610.0,1760,850.0
+TX-0219,2026-04-20,Rajshahi,Store,T-Shirt,Apparel,1,650,0,650,360,290
+TX-0220,2026-04-20,Khulna,Online,Sneakers,Footwear,6,2400,0,14400,9300,5100
+TX-0221,2026-04-21,Dhaka,Online,Formal Shirt,Apparel,6,1450,0,8700,5280,3420
+TX-0222,2026-04-21,Chattogram,Online,Formal Shirt,Apparel,6,1450,0.15,7395.0,5280,2115.0
+TX-0223,2026-04-22,Rajshahi,Partner,Sneakers,Footwear,5,2400,0.15,10200.0,7750,2450.0
+TX-0224,2026-04-22,Khulna,Partner,Polo Shirt,Apparel,5,1200,0.1,5400.0,3600,1800.0
+TX-0225,2026-04-23,Dhaka,Partner,Notebook Set,Stationery,4,320,0.1,1152.0,680,472.0
+TX-0226,2026-04-23,Chattogram,Store,Polo Shirt,Apparel,1,1200,0.1,1080.0,720,360.0
+TX-0227,2026-04-24,Rajshahi,Store,Backpack,Accessories,8,1800,0.1,12960.0,8960,4000.0
+TX-0228,2026-04-24,Khulna,Store,Backpack,Accessories,1,1800,0.15,1530.0,1120,410.0
+TX-0229,2026-04-25,Dhaka,Online,Formal Shirt,Apparel,8,1450,0.1,10440.0,7040,3400.0
+TX-0230,2026-04-25,Chattogram,Online,Formal Shirt,Apparel,6,1450,0.15,7395.0,5280,2115.0
+TX-0231,2026-04-26,Rajshahi,Online,Polo Shirt,Apparel,3,1200,0.1,3240.0,2160,1080.0
+TX-0232,2026-04-26,Khulna,Partner,Formal Shirt,Apparel,4,1450,0,5800,3520,2280
+TX-0233,2026-04-27,Dhaka,Partner,Sneakers,Footwear,5,2400,0.1,10800.0,7750,3050.0
+TX-0234,2026-04-27,Chattogram,Partner,Backpack,Accessories,2,1800,0.05,3420.0,2240,1180.0
+TX-0235,2026-04-28,Rajshahi,Store,T-Shirt,Apparel,3,650,0,1950,1080,870
+TX-0236,2026-04-28,Khulna,Store,Polo Shirt,Apparel,6,1200,0,7200,4320,2880
+TX-0237,2026-04-29,Dhaka,Store,Notebook Set,Stationery,1,320,0.1,288.0,170,118.0
+TX-0238,2026-04-29,Chattogram,Online,Backpack,Accessories,6,1800,0.05,10260.0,6720,3540.0
+TX-0239,2026-04-30,Rajshahi,Online,Notebook Set,Stationery,6,320,0,1920,1020,900
+TX-0240,2026-04-30,Khulna,Online,Polo Shirt,Apparel,5,1200,0.05,5700.0,3600,2100.0

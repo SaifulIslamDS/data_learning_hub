@@ -1,28 +1,36 @@
 # Credits and Attribution
 
-## Creator
+## Product
 
-**Idea and developed by Saiful Islam**
+**Data Learning Hub**
 
-- Website: <https://saifulshuvo.com>
-- GitHub: <https://github.com/SaifulIslamDS/>
-- LinkedIn: <https://www.linkedin.com/in/saifulislampro/>
+Idea and developed by **Saiful Islam**.
+
+- Website: https://saifulshuvo.com
+- GitHub: https://github.com/SaifulIslamDS/
+- LinkedIn: https://www.linkedin.com/in/saifulislampro/
 
 ## Inspiration
 
-The initial concept was inspired by the public repository:
+The original idea was conceptually inspired by the public repository:
 
-- <https://github.com/tafshir027/stats>
+- https://github.com/tafshir027/stats
 
-This project is a ground-up rebuild with an original curriculum architecture, interface, shared code structure, bilingual educational copy, statistical engine, navigation system, learning paths, local progress features, and deployment configuration.
+This project is a ground-up rebuild with its own architecture, interface, curriculum organization, code, datasets, and educational copy. The inspiration link is retained for transparent acknowledgement.
 
-## Runtime libraries and services
+## Educational and technical references
 
-- Chart.js — interactive browser charts
-- Google Fonts — Manrope and Hind Siliguri
-- jsDelivr — Chart.js delivery
-- Netlify — intended static production hosting
+Tool behavior is grounded in official documentation, including:
 
-## Educational responsibility
+- Microsoft Excel Support
+- Microsoft Learn for Power BI
+- PostgreSQL documentation
+- Python documentation
+- Official NumPy, pandas, and Matplotlib documentation where those tracks are implemented
+- OpenStax and NIST statistical references for relevant statistical lessons
 
-The site is an educational resource. Statistical results depend on input quality, study design, assumptions, and context. High-stakes decisions should receive qualified domain and statistical review.
+Each published lesson should identify suitable references and avoid presenting generated text as authority by itself.
+
+## Dataset notice
+
+The bundled practice datasets are synthetic. They do not contain real people, customers, organizations, transactions, or confidential records.

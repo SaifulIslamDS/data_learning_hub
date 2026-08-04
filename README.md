@@ -1,230 +1,150 @@
-# Statistics Learning Hub
+# Data Learning Hub
 
-A comprehensive, English-first, bilingual learning platform for statistics, data analytics, data science, data engineering, research, and evidence-based decision-making.
+**Data Analytics first. Data Science and Data Engineering next.**
 
-The production site is completely static: HTML, CSS, and Vanilla JavaScript. It has no backend framework, API, database, authentication system, or server-side calculator. A learner's guided plan, progress, bookmarks, language, and theme remain in the browser through `localStorage`.
+Data Learning Hub is an English-first, bilingual, browser-only learning platform for structured Data Analytics education. It begins with comprehensive Data Foundations and Statistics, then provides reviewed curriculum foundations for Excel, SQL, Power BI, Python, and cross-tool portfolio projects.
 
-## Current release: v1.2.0 — Comprehensive Lesson Experience
+## Current release
 
-v1.2.0 preserves the successful guided workflow from v1.1.0 and rebuilds the lesson experience around actual teaching depth.
+### v2.0.0 — Data Analytics Platform Architecture and Curriculum Foundation
 
-Each published lesson now follows four clear phases:
+This is a major product transformation from the tagged Statistics Learning Hub v1.2.0 baseline.
 
-```text
-Learn
-→ Explore
-→ Apply
-→ Check
-```
+Available now:
 
-A learner no longer receives only a short definition and generic study instructions. Every one of the 108 bilingual lessons now includes:
+- 108 comprehensive English/Bangla lessons retained from v1.2.0
+- 20 browser-based statistical labs
+- Active Data Analyst learning route
+- Supporting Research & Decision Analyst route
+- Five-step guided onboarding
+- Browser-local progress, bookmarks, language, theme, and learning preferences
+- Three documented synthetic datasets
+- One complete foundation project
+- Reviewed curriculum maps for Excel, SQL, Power BI, and Python
+- Netlify-ready static deployment
 
-- a plain-language topic explanation;
-- a topic-specific explanation of why the concept matters;
-- at least three important terms or concepts;
-- clear learning outcomes;
-- a definition, formula, or formal decision rule;
-- a unique real-world scenario;
-- a worked reasoning sequence;
-- responsible and incorrect interpretation examples;
-- a repeatable analytical workflow;
-- at least two implementation guides relevant to the module;
-- an interactive lab connection where a real lab exists;
-- a practical mini-assignment;
-- a three-option knowledge check with explanation;
-- common mistakes and cautions;
-- a lesson recap;
-- authoritative sources and further reading.
+Curriculum-ready, not yet published as lessons:
 
-Advanced details are progressively disclosed through accordions, so lessons remain readable without becoming shallow.
+- Excel — target v2.1.0
+- SQL — target v2.2.0
+- Power BI — target v2.3.0
+- Python — target v2.4.0
+- Cross-tool projects and portfolio — target v2.5.0
 
-## Release scope
+Planned entries are never exposed as fake lesson pages or dead links.
 
-- 9 structured learning modules
-- 108 comprehensive English/Bangla lesson routes
-- 20 interactive statistical labs
-- 5 guided learning paths
-- Three-step onboarding wizard
-- Personalized `My Learning` dashboard
-- Goal-, level-, and learning-style-aware recommendations
-- Learn → Explore → Apply → Check lesson architecture
-- 108 unique practical lesson scenarios
-- Module-relevant spreadsheet, SQL, BI, Python, modelling, or engineering implementation guidance
-- 40-term bilingual glossary
-- English-first EN/BN language switching
-- Persistent light/dark theme
-- Global search, module filters, bookmarks, and completion tracking
-- Responsive desktop, tablet, and mobile layouts
-- SEO metadata, sitemap, robots file, web manifest, 404 page, and social artwork
-- Netlify headers, cache policy, and fallback configuration
-- Automated statistical, lesson-completeness, JavaScript-syntax, and local-link validation
-
-## Learning model
-
-The primary learning loop is:
+## Product learning model
 
 ```text
-Understand the concept and vocabulary
-→ Work through a practical scenario
-→ Implement the idea in a suitable tool or workflow
-→ Interpret the result and test understanding
-→ Transfer the concept to a real dataset or professional tool
+Learn → Practice → Build → Explain
 ```
 
-The site teaches statistical reasoning and transparent implementation. It does not claim that reading lessons alone replaces real datasets, Excel, SQL, Python, R, Power BI, portfolio projects, production data systems, domain expertise, or formal academic study.
+A learner should finish each skill with an observable output: a calculation, analytical note, query, report, notebook, project deliverable, or decision-ready explanation.
 
-## Learning modules
+## Architecture
 
-1. Data & Statistics Foundations
-2. Descriptive Statistics & Visualization
-3. Probability & Distributions
-4. Statistical Inference & Experimentation
-5. Correlation & Regression Modeling
-6. Data Analytics & Business Statistics
-7. Data Science Statistics
-8. Data Engineering Foundations
-9. Advanced Statistical Methods
-
-Every module contains 12 published lessons. Every lesson card resolves to an implemented route.
-
-## Guided paths
-
-- Statistics Foundations
-- Data Analyst
-- Data Scientist
-- Data Engineer
-- Research & Business Decisions
-
-The guided system still presents one recommended next step instead of exposing all 108 lessons at once. The comprehensive lesson release improves depth inside that focused route; it does not bring back the previous content-wall experience.
-
-## Interactive labs
-
-The browser-based labs cover summary statistics, weighted means, z-scores, quantiles, histograms, box plots and outliers, Pearson correlation, ordinary least-squares regression, normal/binomial/Poisson probabilities, confidence intervals, one- and two-sample t tests, chi-square independence, A/B proportions, the Central Limit Theorem, Monte Carlo estimation, moving averages, and sample-size planning.
-
-Calculator inputs are processed locally. The statistical engine is implemented in `assets/js/stats-core.js`, with deterministic reference checks in `scripts/test_stats.mjs`.
-
-## Local use
-
-The site uses root-relative URLs, so serve it through a local web server rather than opening an HTML file directly.
-
-```bash
-npm run serve
-```
-
-Then open:
+The authored source is modular but the deployed site is ordinary static HTML, CSS, and JavaScript.
 
 ```text
-http://localhost:8080
+content/
+├── platform/       # identity, domains, glossary, compatibility paths
+├── statistics/     # retained lessons, labs and lesson enrichment
+├── tracks/         # career paths and Excel/SQL/Power BI/Python curricula
+└── datasets/       # dataset and project metadata
+
+scripts/
+├── generate.py
+├── audit_curriculum.py
+├── audit_lessons.py
+├── audit_links.py
+├── browser_smoke.py
+└── test_stats.mjs
 ```
 
-No package installation is required for the deployed site itself.
+Generated pages are committed to the repository so Netlify does not require a build command.
 
-## Quality checks
+## Main routes
 
-```bash
-npm test
-```
+- `/` — product home and current learning status
+- `/start/` — five-step guided setup
+- `/my-learning/` — browser-local learning dashboard
+- `/learn/` — available lessons and domain overview
+- `/practice/` — statistical labs and datasets
+- `/projects/` — available projects and dataset library
+- `/career-paths/` — active and future career routes
+- `/curriculum/` — reviewed tool-track scope and release sequence
+- `/glossary/` — bilingual glossary
 
-This runs:
+Legacy `/catalog/` and `/paths/` routes redirect to the new information architecture.
 
-```bash
-npm run test:stats
-npm run audit:lessons
-npm run audit:links
-```
+## Generate and validate
 
-The lesson audit verifies that all 108 lessons contain the complete bilingual v1.2.0 structure and unique scenarios.
+Python and Node.js are used only for development and validation.
 
-Regenerate all static routes and the sitemap after editing curriculum or lesson source data:
-
-```bash
+```powershell
 npm run generate
 npm test
+npm run test:browser
 ```
 
-Optional browser smoke test for the representative comprehensive lesson:
-
-```bash
-python scripts/browser_smoke.py
-```
-
-## Netlify deployment
-
-The repository includes `netlify.toml` and does not require a build command.
-
-1. Push this directory to the `main` branch of `statistics_learning_hub`.
-2. In Netlify, choose **Add new site → Import an existing project**.
-3. Select the GitHub repository.
-4. Keep the base directory and build command empty.
-5. The publish directory is configured as `.` in `netlify.toml`.
-6. Deploy the site.
-7. Replace the placeholder production origin `https://statistics-learning-hub.netlify.app` if Netlify assigns another subdomain or a custom domain is connected.
-8. Run `npm run generate` after changing that origin so canonical URLs, Open Graph URLs, `robots.txt`, and `sitemap.xml` remain correct.
-
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the complete checklist.
-
-## Repository structure
+Expected core result:
 
 ```text
-.
-├── index.html
-├── 404.html
-├── start/                       # Guided onboarding
-├── my-learning/                 # Browser-local dashboard
-├── about/
-├── catalog/
-├── glossary/
-├── paths/
-├── topics/                      # 108 generated lesson routes
-├── tools/                       # 20 interactive labs + index
-├── assets/
-│   ├── css/main.css
-│   ├── icons/
-│   └── js/
-├── scripts/
-│   ├── generate.py
-│   ├── topic_details.py
-│   ├── comprehensive_content.py
-│   ├── audit_lessons.py
-│   ├── audit_links.py
-│   ├── browser_smoke.py
-│   └── test_stats.mjs
-├── docs/
-├── manifest.webmanifest
-├── robots.txt
-├── sitemap.xml
-├── netlify.toml
-└── package.json
+All statistical core tests passed.
+Validated 108 comprehensive bilingual lessons.
+Validated 9 domains, 4 curriculum-ready tool tracks and 3 synthetic datasets.
+0 broken local references found.
 ```
 
-## Content and architecture
+## Deploy to Netlify
 
-The curriculum and routes are maintained in `scripts/generate.py`. Reviewed concise definitions live in `scripts/topic_details.py`. The comprehensive bilingual lesson schema, practical scenarios, implementation patterns, quizzes, recaps, and reference groups live in `scripts/comprehensive_content.py`.
+Use:
 
-The generator exports the complete browser dataset to `assets/js/content.js`. Generated lesson pages remain intentionally thin and reuse the shared renderer in `assets/js/topic.js`. Do not hand-edit generated topic routes; update source data and regenerate instead.
+```text
+Base directory:     leave empty
+Build command:      leave empty
+Publish directory:  .
+Production branch:  main
+```
 
-Read:
+The repository includes `netlify.toml` for security headers, cache policy, compatibility redirects, and custom 404 handling.
+
+After Netlify assigns the final production URL, update `site_url` in `content/platform/config.py`, then run:
+
+```powershell
+npm run generate
+npm test
+git add .
+git commit -m "chore: configure production site URL"
+git push origin main
+```
+
+## Progress migration
+
+On first use, v2 copies compatible browser-local settings from legacy `slh-*` keys into `dlh-*` keys. The old keys are not deleted. Existing completion IDs are preserved wherever the lesson ID remains valid.
+
+## Privacy
+
+There is no backend, API, database, analytics account, or cloud learner profile. User preferences and progress remain in the browser through `localStorage`. Statistical lab input is processed locally.
+
+## Credits
+
+Idea and developed by **Saiful Islam**.
+
+- Website: https://saifulshuvo.com
+- GitHub: https://github.com/SaifulIslamDS/
+- LinkedIn: https://www.linkedin.com/in/saifulislampro/
+- Inspired by: https://github.com/tafshir027/stats
+
+See [CREDITS.md](CREDITS.md) and [docs/CONTENT-STANDARDS.md](docs/CONTENT-STANDARDS.md).
+
+## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Curriculum](docs/CURRICULUM.md)
 - [Content standards](docs/CONTENT-STANDARDS.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Migration from v1](docs/MIGRATION-v1-to-v2.md)
 - [Testing](docs/TESTING.md)
 - [Deployment](docs/DEPLOYMENT.md)
-- [v1.2.0 release report](docs/RELEASE-REPORT-v1.2.0.md)
-
-## Credits
-
-**Idea and developed by Saiful Islam**
-
-- Website: <https://saifulshuvo.com>
-- GitHub: <https://github.com/SaifulIslamDS/>
-- LinkedIn: <https://www.linkedin.com/in/saifulislampro/>
-
-Conceptually inspired by the public repository maintained by `tafshir027`:
-<https://github.com/tafshir027/stats>
-
-This rebuild uses an original architecture, interface, codebase, curriculum organization, and educational copy. The inspiration repository is credited for the initial idea rather than treated as the implementation source.
-
-## License
-
-Released under the [MIT License](LICENSE).
+- [v2.0.0 release report](docs/RELEASE-REPORT-v2.0.0.md)

@@ -1,109 +1,71 @@
 # Netlify Deployment
 
-## Recommended repository
+## Repository
 
-Push the project root to:
+The current GitHub repository can remain:
 
 ```text
 https://github.com/SaifulIslamDS/statistics_learning_hub
 ```
 
-## Initial deployment
+The product displayed to learners is Data Learning Hub. Repository renaming is optional and not required for v2.0.0.
 
-1. Create or open the GitHub repository.
-2. Commit the complete project at repository root.
-3. Push to `main`.
-4. In Netlify, select **Add new site → Import an existing project**.
-5. Authorize GitHub and select `statistics_learning_hub`.
-6. Leave **Base directory** empty.
-7. Leave **Build command** empty.
-8. `netlify.toml` sets **Publish directory** to `.`.
-9. Deploy.
-
-## Production-origin update
-
-The generated metadata currently uses:
+## Netlify settings
 
 ```text
-https://statistics-learning-hub.netlify.app
+Production branch:  main
+Base directory:     leave empty
+Build command:      leave empty
+Publish directory:  .
 ```
 
-After Netlify assigns the final production URL or after a custom domain is connected:
+Generated HTML is committed, so deployment needs no build command.
 
-1. Update `SITE_URL` in `scripts/generate.py`.
-2. Update the sitemap address in `robots.txt` if necessary.
-3. Run:
-
-```bash
-npm run generate
-npm test
-```
-
-4. Commit the regenerated HTML files and sitemap.
-
-This keeps canonical URLs, Open Graph URLs, robots metadata, and sitemap entries aligned with the real production origin.
-
-## Netlify configuration included
+## Configuration
 
 `netlify.toml` provides:
 
-- static publish directory;
-- custom 404 fallback;
-- clickjacking, MIME-sniffing, referrer, permissions, and content-security headers;
-- cache rules for assets and HTML.
+- custom 404 behavior
+- compatibility redirects
+- security headers and CSP
+- cache-control rules
 
-## Post-deploy validation
+## Production origin
 
-Verify these production URLs:
+The source currently uses:
 
 ```text
-/
-/start/
-/my-learning/
-/catalog/
-/paths/
-/tools/
-/glossary/
-/about/
-/topics/central-limit-theorem/
-/tools/summary-statistics/
-/a-route-that-does-not-exist
+https://data-learning-hub.netlify.app
 ```
 
-Then confirm:
+When the final Netlify site name or custom domain differs, edit:
 
-- onboarding saves a plan and redirects to My Learning;
-- My Learning recommends one valid lesson;
-- changing the plan updates recommendations;
-- the missing route displays the custom 404 page and HTTP 404 status;
-- all fonts and Chart.js load without CSP errors;
-- EN/BN and theme preferences survive navigation;
-- completion, bookmarks, and the learner plan survive reload;
-- one representative calculator works on desktop and mobile;
-- the Netlify deploy log reports no build failure;
-- `sitemap.xml` and `robots.txt` use the production origin.
-
-## Suggested Git commands for v1.1.0
-
-For a new repository:
-
-```bash
-git init
-git branch -M main
-git add .
-git commit -m "feat: launch guided Statistics Learning Hub v1.1.0"
-git remote add origin https://github.com/SaifulIslamDS/statistics_learning_hub.git
-git push -u origin main
-git tag -a v1.1.0 -m "Statistics Learning Hub v1.1.0 — Guided Learning Experience"
-git push origin v1.1.0
+```text
+content/platform/config.py
 ```
 
-For a repository that already contains v1.0.0:
+Then regenerate and validate:
 
-```bash
+```powershell
+npm run generate
+npm test
+npm run test:browser
+```
+
+Commit the regenerated canonical URLs, sitemap, and robots file.
+
+## Direct-main release workflow
+
+```powershell
+git checkout main
+git pull origin main
+npm test
+npm run test:browser
 git add .
-git commit -m "feat: add guided learning experience"
+git commit -m "feat: transform platform into Data Learning Hub v2"
 git push origin main
-git tag -a v1.1.0 -m "Statistics Learning Hub v1.1.0 — Guided Learning Experience"
-git push origin v1.1.0
+git tag -a v2.0.0 -m "Data Learning Hub v2.0.0 — Architecture and Curriculum Foundation"
+git push origin v2.0.0
 ```
+
+Netlify should deploy automatically from `main`.

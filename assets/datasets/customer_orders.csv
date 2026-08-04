@@ -1,0 +1,181 @@
+order_id,customer_id,order_date,city,segment,order_value_bdt,returned
+ORD-0001,C-001,2025-07-01,Gazipur,Small Business,540,Yes
+ORD-0002,C-012,2025-07-04,Narayanganj,Consumer,767,No
+ORD-0003,C-023,2025-07-07,Chattogram,Corporate,994,No
+ORD-0004,C-034,2025-07-10,Sylhet,Small Business,1221,No
+ORD-0005,C-045,2025-07-13,Dhaka,Consumer,998,No
+ORD-0006,C-056,2025-07-16,Gazipur,Corporate,1225,No
+ORD-0007,C-007,2025-07-19,Narayanganj,Small Business,1452,No
+ORD-0008,C-018,2025-07-22,Chattogram,Consumer,1679,No
+ORD-0009,C-029,2025-07-25,Sylhet,Corporate,1906,No
+ORD-0010,C-040,2025-07-28,Dhaka,Small Business,1683,No
+ORD-0011,C-051,2025-07-31,Gazipur,Consumer,1910,No
+ORD-0012,C-002,2025-08-03,Narayanganj,Corporate,2137,No
+ORD-0013,C-013,2025-08-06,Chattogram,Small Business,2364,No
+ORD-0014,C-024,2025-08-09,Sylhet,Consumer,2591,No
+ORD-0015,C-035,2025-08-12,Dhaka,Corporate,2368,No
+ORD-0016,C-046,2025-08-15,Gazipur,Small Business,2595,No
+ORD-0017,C-057,2025-08-18,Narayanganj,Consumer,2822,No
+ORD-0018,C-008,2025-08-21,Chattogram,Corporate,3049,No
+ORD-0019,C-019,2025-08-24,Sylhet,Small Business,3276,No
+ORD-0020,C-030,2025-08-27,Dhaka,Consumer,3053,No
+ORD-0021,C-041,2025-08-30,Gazipur,Corporate,3280,No
+ORD-0022,C-052,2025-09-02,Narayanganj,Small Business,3507,No
+ORD-0023,C-003,2025-09-05,Chattogram,Consumer,3734,No
+ORD-0024,C-014,2025-09-08,Sylhet,Corporate,3961,No
+ORD-0025,C-025,2025-09-11,Dhaka,Small Business,3738,No
+ORD-0026,C-036,2025-09-14,Gazipur,Consumer,3965,No
+ORD-0027,C-047,2025-09-17,Narayanganj,Corporate,4192,No
+ORD-0028,C-058,2025-09-20,Chattogram,Small Business,4419,No
+ORD-0029,C-009,2025-09-23,Sylhet,Consumer,4646,No
+ORD-0030,C-020,2025-09-26,Dhaka,Corporate,4423,Yes
+ORD-0031,C-031,2025-09-29,Gazipur,Small Business,4650,No
+ORD-0032,C-042,2025-10-02,Narayanganj,Consumer,4877,No
+ORD-0033,C-053,2025-10-05,Chattogram,Corporate,5104,No
+ORD-0034,C-004,2025-10-08,Sylhet,Small Business,5331,No
+ORD-0035,C-015,2025-10-11,Dhaka,Consumer,5108,No
+ORD-0036,C-026,2025-10-14,Gazipur,Corporate,5335,No
+ORD-0037,C-037,2025-10-17,Narayanganj,Small Business,762,No
+ORD-0038,C-048,2025-10-20,Chattogram,Consumer,989,No
+ORD-0039,C-059,2025-10-23,Sylhet,Corporate,1216,No
+ORD-0040,C-010,2025-10-26,Dhaka,Small Business,993,No
+ORD-0041,C-021,2025-10-29,Gazipur,Consumer,1220,No
+ORD-0042,C-032,2025-11-01,Narayanganj,Corporate,1447,No
+ORD-0043,C-043,2025-11-04,Chattogram,Small Business,1674,No
+ORD-0044,C-054,2025-11-07,Sylhet,Consumer,1901,No
+ORD-0045,C-005,2025-11-10,Dhaka,Corporate,1678,No
+ORD-0046,C-016,2025-11-13,Gazipur,Small Business,1905,No
+ORD-0047,C-027,2025-11-16,Narayanganj,Consumer,2132,No
+ORD-0048,C-038,2025-11-19,Chattogram,Corporate,2359,No
+ORD-0049,C-049,2025-11-22,Sylhet,Small Business,2586,No
+ORD-0050,C-060,2025-11-25,Dhaka,Consumer,2363,No
+ORD-0051,C-011,2025-11-28,Gazipur,Corporate,2590,No
+ORD-0052,C-022,2025-12-01,Narayanganj,Small Business,2817,No
+ORD-0053,C-033,2025-12-04,Chattogram,Consumer,3044,No
+ORD-0054,C-044,2025-12-07,Sylhet,Corporate,3271,No
+ORD-0055,C-055,2025-12-10,Dhaka,Small Business,3048,No
+ORD-0056,C-006,2025-12-13,Gazipur,Consumer,3275,No
+ORD-0057,C-017,2025-12-16,Narayanganj,Corporate,3502,No
+ORD-0058,C-028,2025-12-19,Chattogram,Small Business,3729,No
+ORD-0059,C-039,2025-12-22,Sylhet,Consumer,3956,Yes
+ORD-0060,C-050,2025-12-25,Dhaka,Corporate,3733,No
+ORD-0061,C-001,2025-12-28,Gazipur,Small Business,3960,No
+ORD-0062,C-012,2025-12-31,Narayanganj,Consumer,4187,No
+ORD-0063,C-023,2026-01-03,Chattogram,Corporate,4414,No
+ORD-0064,C-034,2026-01-06,Sylhet,Small Business,4641,No
+ORD-0065,C-045,2026-01-09,Dhaka,Consumer,4418,No
+ORD-0066,C-056,2026-01-12,Gazipur,Corporate,4645,No
+ORD-0067,C-007,2026-01-15,Narayanganj,Small Business,4872,No
+ORD-0068,C-018,2026-01-18,Chattogram,Consumer,5099,No
+ORD-0069,C-029,2026-01-21,Sylhet,Corporate,5326,No
+ORD-0070,C-040,2026-01-24,Dhaka,Small Business,5103,No
+ORD-0071,C-051,2026-01-27,Gazipur,Consumer,5330,No
+ORD-0072,C-002,2026-01-30,Narayanganj,Corporate,757,No
+ORD-0073,C-013,2026-02-02,Chattogram,Small Business,984,No
+ORD-0074,C-024,2026-02-05,Sylhet,Consumer,1211,No
+ORD-0075,C-035,2026-02-08,Dhaka,Corporate,988,No
+ORD-0076,C-046,2026-02-11,Gazipur,Small Business,1215,No
+ORD-0077,C-057,2026-02-14,Narayanganj,Consumer,1442,No
+ORD-0078,C-008,2026-02-17,Chattogram,Corporate,1669,No
+ORD-0079,C-019,2026-02-20,Sylhet,Small Business,1896,No
+ORD-0080,C-030,2026-02-23,Dhaka,Consumer,1673,No
+ORD-0081,C-041,2026-02-26,Gazipur,Corporate,1900,No
+ORD-0082,C-052,2026-03-01,Narayanganj,Small Business,2127,No
+ORD-0083,C-003,2026-03-04,Chattogram,Consumer,2354,No
+ORD-0084,C-014,2026-03-07,Sylhet,Corporate,2581,No
+ORD-0085,C-025,2026-03-10,Dhaka,Small Business,2358,No
+ORD-0086,C-036,2026-03-13,Gazipur,Consumer,2585,No
+ORD-0087,C-047,2026-03-16,Narayanganj,Corporate,2812,No
+ORD-0088,C-058,2026-03-19,Chattogram,Small Business,3039,Yes
+ORD-0089,C-009,2026-03-22,Sylhet,Consumer,3266,No
+ORD-0090,C-020,2026-03-25,Dhaka,Corporate,3043,No
+ORD-0091,C-031,2026-03-28,Gazipur,Small Business,3270,No
+ORD-0092,C-042,2026-03-31,Narayanganj,Consumer,3497,No
+ORD-0093,C-053,2026-04-03,Chattogram,Corporate,3724,No
+ORD-0094,C-004,2026-04-06,Sylhet,Small Business,3951,No
+ORD-0095,C-015,2026-04-09,Dhaka,Consumer,3728,No
+ORD-0096,C-026,2026-04-12,Gazipur,Corporate,3955,No
+ORD-0097,C-037,2026-04-15,Narayanganj,Small Business,4182,No
+ORD-0098,C-048,2026-04-18,Chattogram,Consumer,4409,No
+ORD-0099,C-059,2026-04-21,Sylhet,Corporate,4636,No
+ORD-0100,C-010,2026-04-24,Dhaka,Small Business,4413,No
+ORD-0101,C-021,2026-04-27,Gazipur,Consumer,4640,No
+ORD-0102,C-032,2026-04-30,Narayanganj,Corporate,4867,No
+ORD-0103,C-043,2026-05-03,Chattogram,Small Business,5094,No
+ORD-0104,C-054,2026-05-06,Sylhet,Consumer,5321,No
+ORD-0105,C-005,2026-05-09,Dhaka,Corporate,5098,No
+ORD-0106,C-016,2026-05-12,Gazipur,Small Business,5325,No
+ORD-0107,C-027,2026-05-15,Narayanganj,Consumer,752,No
+ORD-0108,C-038,2026-05-18,Chattogram,Corporate,979,No
+ORD-0109,C-049,2026-05-21,Sylhet,Small Business,1206,No
+ORD-0110,C-060,2026-05-24,Dhaka,Consumer,983,No
+ORD-0111,C-011,2026-05-27,Gazipur,Corporate,1210,No
+ORD-0112,C-022,2026-05-30,Narayanganj,Small Business,1437,No
+ORD-0113,C-033,2026-06-02,Chattogram,Consumer,1664,No
+ORD-0114,C-044,2026-06-05,Sylhet,Corporate,1891,No
+ORD-0115,C-055,2026-06-08,Dhaka,Small Business,1668,No
+ORD-0116,C-006,2026-06-11,Gazipur,Consumer,1895,No
+ORD-0117,C-017,2026-06-14,Narayanganj,Corporate,2122,Yes
+ORD-0118,C-028,2026-06-17,Chattogram,Small Business,2349,No
+ORD-0119,C-039,2026-06-20,Sylhet,Consumer,2576,No
+ORD-0120,C-050,2026-06-23,Dhaka,Corporate,2353,No
+ORD-0121,C-001,2025-07-01,Gazipur,Small Business,2580,No
+ORD-0122,C-012,2025-07-04,Narayanganj,Consumer,2807,No
+ORD-0123,C-023,2025-07-07,Chattogram,Corporate,3034,No
+ORD-0124,C-034,2025-07-10,Sylhet,Small Business,3261,No
+ORD-0125,C-045,2025-07-13,Dhaka,Consumer,3038,No
+ORD-0126,C-056,2025-07-16,Gazipur,Corporate,3265,No
+ORD-0127,C-007,2025-07-19,Narayanganj,Small Business,3492,No
+ORD-0128,C-018,2025-07-22,Chattogram,Consumer,3719,No
+ORD-0129,C-029,2025-07-25,Sylhet,Corporate,3946,No
+ORD-0130,C-040,2025-07-28,Dhaka,Small Business,3723,No
+ORD-0131,C-051,2025-07-31,Gazipur,Consumer,3950,No
+ORD-0132,C-002,2025-08-03,Narayanganj,Corporate,4177,No
+ORD-0133,C-013,2025-08-06,Chattogram,Small Business,4404,No
+ORD-0134,C-024,2025-08-09,Sylhet,Consumer,4631,No
+ORD-0135,C-035,2025-08-12,Dhaka,Corporate,4408,No
+ORD-0136,C-046,2025-08-15,Gazipur,Small Business,4635,No
+ORD-0137,C-057,2025-08-18,Narayanganj,Consumer,4862,No
+ORD-0138,C-008,2025-08-21,Chattogram,Corporate,5089,No
+ORD-0139,C-019,2025-08-24,Sylhet,Small Business,5316,No
+ORD-0140,C-030,2025-08-27,Dhaka,Consumer,5093,No
+ORD-0141,C-041,2025-08-30,Gazipur,Corporate,5320,No
+ORD-0142,C-052,2025-09-02,Narayanganj,Small Business,747,No
+ORD-0143,C-003,2025-09-05,Chattogram,Consumer,974,No
+ORD-0144,C-014,2025-09-08,Sylhet,Corporate,1201,No
+ORD-0145,C-025,2025-09-11,Dhaka,Small Business,978,No
+ORD-0146,C-036,2025-09-14,Gazipur,Consumer,1205,Yes
+ORD-0147,C-047,2025-09-17,Narayanganj,Corporate,1432,No
+ORD-0148,C-058,2025-09-20,Chattogram,Small Business,1659,No
+ORD-0149,C-009,2025-09-23,Sylhet,Consumer,1886,No
+ORD-0150,C-020,2025-09-26,Dhaka,Corporate,1663,No
+ORD-0151,C-031,2025-09-29,Gazipur,Small Business,1890,No
+ORD-0152,C-042,2025-10-02,Narayanganj,Consumer,2117,No
+ORD-0153,C-053,2025-10-05,Chattogram,Corporate,2344,No
+ORD-0154,C-004,2025-10-08,Sylhet,Small Business,2571,No
+ORD-0155,C-015,2025-10-11,Dhaka,Consumer,2348,No
+ORD-0156,C-026,2025-10-14,Gazipur,Corporate,2575,No
+ORD-0157,C-037,2025-10-17,Narayanganj,Small Business,2802,No
+ORD-0158,C-048,2025-10-20,Chattogram,Consumer,3029,No
+ORD-0159,C-059,2025-10-23,Sylhet,Corporate,3256,No
+ORD-0160,C-010,2025-10-26,Dhaka,Small Business,3033,No
+ORD-0161,C-021,2025-10-29,Gazipur,Consumer,3260,No
+ORD-0162,C-032,2025-11-01,Narayanganj,Corporate,3487,No
+ORD-0163,C-043,2025-11-04,Chattogram,Small Business,3714,No
+ORD-0164,C-054,2025-11-07,Sylhet,Consumer,3941,No
+ORD-0165,C-005,2025-11-10,Dhaka,Corporate,3718,No
+ORD-0166,C-016,2025-11-13,Gazipur,Small Business,3945,No
+ORD-0167,C-027,2025-11-16,Narayanganj,Consumer,4172,No
+ORD-0168,C-038,2025-11-19,Chattogram,Corporate,4399,No
+ORD-0169,C-049,2025-11-22,Sylhet,Small Business,4626,No
+ORD-0170,C-060,2025-11-25,Dhaka,Consumer,4403,No
+ORD-0171,C-011,2025-11-28,Gazipur,Corporate,4630,No
+ORD-0172,C-022,2025-12-01,Narayanganj,Small Business,4857,No
+ORD-0173,C-033,2025-12-04,Chattogram,Consumer,5084,No
+ORD-0174,C-044,2025-12-07,Sylhet,Corporate,5311,No
+ORD-0175,C-055,2025-12-10,Dhaka,Small Business,5088,Yes
+ORD-0176,C-006,2025-12-13,Gazipur,Consumer,5315,No
+ORD-0177,C-017,2025-12-16,Narayanganj,Corporate,742,No
+ORD-0178,C-028,2025-12-19,Chattogram,Small Business,969,No
+ORD-0179,C-039,2025-12-22,Sylhet,Consumer,1196,No
+ORD-0180,C-050,2025-12-25,Dhaka,Corporate,973,No

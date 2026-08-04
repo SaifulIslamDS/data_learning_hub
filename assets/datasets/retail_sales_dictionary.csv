@@ -1,0 +1,13 @@
+column,type,description
+transaction_id,text,Synthetic unique transaction identifier
+order_date,date,Transaction date in ISO format
+region,category,Sales region
+channel,category,"Store, Online or Partner"
+product,category,Product name
+category,category,Product category
+quantity,integer,Units sold
+unit_price_bdt,number,List price per unit in BDT
+discount_rate,decimal,Applied discount as a proportion
+revenue_bdt,number,Net sales after discount
+cost_bdt,number,Estimated product cost
+profit_bdt,number,Revenue minus cost

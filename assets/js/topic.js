@@ -5,7 +5,7 @@
     DATA, topicMap, moduleMap, toolMap, pathMap, t, escapeHtml, isCompleted,
     toggleCompleted, getBookmarks, toggleBookmark, getProfile, getPlanTopics,
     getNextPlanTopic, getRecommendedLab, safeStorage,
-  } = window.SLH;
+  } = window.DLH;
 
   const id = document.body.dataset.topic;
   const topic = topicMap[id];
@@ -13,7 +13,7 @@
   const module = moduleMap[topic.module];
   const lesson = topic.lesson;
   const root = document.getElementById('topic-content');
-  safeStorage.set('slh-last-topic', id);
+  safeStorage.set('dlh-last-topic', id);
 
   const h = value => escapeHtml(value);
   const tx = pair => h(t(pair.en, pair.bn));
@@ -307,7 +307,7 @@
     toggleBookmark(id);
     updateActions();
   });
-  window.addEventListener('slh:language', render);
-  window.addEventListener('slh:profile', render);
+  window.addEventListener('dlh:language', render);
+  window.addEventListener('dlh:profile', render);
   render();
 })();

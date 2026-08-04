@@ -1,96 +1,70 @@
-# Content Standards
+# Content and Accuracy Standards
 
-## Accuracy principles
+## 1. English-first bilingual publication
 
-1. Define the target quantity, population, unit, and data-generating process before presenting a method.
-2. Separate description, prediction, inference, and causal claims.
-3. State the assumptions or conditions that make a result meaningful.
-4. Treat p-values as compatibility measures under a null model, not probabilities that a hypothesis is true.
-5. Distinguish statistical significance from practical importance.
-6. Avoid deleting outliers automatically; investigate cause and analytical impact.
-7. Identify calculation conventions when software can legitimately differ, especially quantiles and variance.
-8. Explain uncertainty and limitations alongside point estimates.
-9. Do not imply that correlation alone establishes causation.
-10. Distinguish conceptual data-engineering education from executable production infrastructure.
-11. Label implementation patterns clearly and do not invent nonexistent software functions.
-12. Prefer authoritative textbooks, standards, and primary software documentation for further reading.
+English is the default interface and lesson language. Published learner-facing content must include a meaningful Bangla equivalent. Bangla copy may retain established English technical terms where forced translation would reduce clarity.
 
-## Bilingual policy
+## 2. No fake completeness
 
-- English is the default language.
-- Every user-facing instructional element requires both English and Bangla text.
-- Bangla may retain established English technical terms when forced translation would reduce clarity.
-- Form labels, validation, results, chart labels, navigation, quiz feedback, scenarios, implementation steps, and accessibility labels belong to the bilingual system—not only headings.
-- The selected language persists through `localStorage`.
+A curriculum title is not a lesson. A topic becomes `available` only when it has:
 
-## Comprehensive lesson standard
+- complete bilingual teaching content
+- examples and implementation guidance
+- practice or assessment
+- working navigation
+- reviewed references
+- validation coverage
 
-Every lesson must contain:
+Planned items must not have pretend lesson URLs.
 
-- plain-language explanation;
-- why the topic matters;
-- at least three topic concepts;
-- measurable learning outcomes;
-- formal definition, rule, formula, or procedural statement;
-- unique practical scenario and analytical question;
-- worked reasoning steps;
-- responsible interpretation and overclaim warning;
-- repeatable workflow;
-- at least two implementation guides;
-- mini-assignment;
-- interactive knowledge check and explanation;
-- common mistakes;
-- recap;
-- further-reading sources;
-- related and next lesson controls.
+## 3. Authority and freshness
 
-A lesson must not be published when it contains only a title, short definition, generic workflow, or placeholder application text.
+Use primary or authoritative sources for version-sensitive behavior:
 
-## Progressive disclosure
+- Microsoft documentation for Excel and Power BI
+- PostgreSQL documentation for the primary SQL dialect
+- Python and official library documentation for Python behavior
+- recognized statistics references for statistical definitions and methods
 
-Comprehensive content should not create a new content wall.
+Clearly distinguish stable concepts from tool-specific or version-sensitive behavior.
 
-- Essential explanations and examples remain visible.
-- Formal rules, implementation details, cautions, and references may use accessible accordions.
-- The page presents four phases in a stable sequence.
-- Mobile layouts remain single-column and avoid horizontal scrolling.
-- One primary completion action and one next action are shown at the end.
+## 4. Originality
 
-## Scenario standard
+Do not copy code, page text, or explanations from the inspiration repository. Statistical names, formulas, and general concepts may be taught using original explanations and properly acknowledged references.
 
-A scenario must:
+## 5. Practical relevance
 
-- use a realistic analytical, research, business, scientific, or engineering context;
-- identify a specific question;
-- avoid unsupported numerical conclusions;
-- show what data, unit, design, parameter, or workflow is relevant;
-- include an interpretation boundary or limitation.
+Every tool lesson should answer:
 
-## Implementation standard
+- What problem does this solve?
+- When should an analyst use it?
+- What input is required?
+- What output is produced?
+- How should the output be checked?
+- What business or analytical interpretation is justified?
+- What common mistake should be avoided?
 
-Implementation guidance must:
+## 6. Statistical responsibility
 
-- match the topic and module;
-- distinguish executable code from conceptual workflow;
-- state important defaults, grain, assumptions, or validation checks;
-- encourage use of established libraries and official documentation;
-- avoid implying that a browser-only lesson reproduces production infrastructure.
+- Do not imply causation from association alone.
+- State assumptions and limitations.
+- Separate statistical significance from practical importance.
+- Explain sample, population, unit, context, and uncertainty.
+- Do not hide invalid or undefined input behind fabricated outputs.
 
-## Lab standard
+## 7. Dataset integrity
 
-Each lab includes:
+Bundled practice data must be synthetic or openly licensed, documented, and safe to redistribute. Every dataset requires a data dictionary and explicit grain.
 
-- documented input convention;
-- example values;
-- validation and actionable errors;
-- numerical outputs;
-- interpretation guidance;
-- method or assumption note;
-- visualization where useful;
-- local-only processing notice.
+## 8. Code and formula quality
 
-## Source and review practice
+Examples should be executable with the stated baseline, use consistent naming, include expected output where appropriate, and avoid unexplained shortcuts. SQL dialect differences must be disclosed.
 
-Specialized formulas and reference values should be checked against authoritative textbooks, peer-reviewed sources, standards, or primary software documentation. Reference groups used in lessons include OpenStax, NIST/SEMATECH, official scikit-learn documentation, Apache Parquet, PostgreSQL, and dbt documentation.
+## 9. Accessibility and UX
 
-Sources support learning and verification; lesson copy remains original and is not copied verbatim from external material.
+- preserve semantic headings and landmarks
+- label icon-only controls accessibly
+- support keyboard use
+- keep contrast readable in light and dark themes
+- use progressive disclosure rather than removing necessary content
+- keep one clear next action in guided flows

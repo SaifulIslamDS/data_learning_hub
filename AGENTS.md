@@ -1,40 +1,55 @@
-# Repository Working Rules
+# AGENTS.md
+
+## Product
+
+Data Learning Hub is a static, English-first bilingual Data Analytics learning platform. The active career route is Data Analyst. Data Science and Data Engineering are future advanced routes.
 
 ## Source of truth
 
-- Curriculum structure and page metadata: `scripts/generate.py`
-- Topic definitions: `scripts/topic_details.py`
-- Comprehensive lesson content and scenarios: `scripts/comprehensive_content.py`
-- Generated browser dataset: `assets/js/content.js`
-- Shared visual system: `assets/css/main.css`
-- Shared site behavior: `assets/js/site.js`
-- Statistical functions: `assets/js/stats-core.js`
-- Lab UI and calculations: `assets/js/tools.js`
+Read these before changing the product:
 
-## Editing policy
+1. `docs/ARCHITECTURE.md`
+2. `docs/CURRICULUM.md`
+3. `docs/CONTENT-STANDARDS.md`
+4. `docs/ROADMAP.md`
+5. `docs/TESTING.md`
 
-1. Do not manually edit files under `topics/*/index.html`; they are generated.
-2. Do not manually duplicate shared header, footer, theme, language, or search logic.
-3. Add or modify curriculum data in the generator, then run `npm run generate`.
-4. Every published card must resolve to a real route. Do not publish placeholder or `#` links.
-5. English and Bangla text must be updated together.
-6. Statistical claims must state assumptions and avoid causal overclaiming.
-7. New calculators require deterministic tests where applicable.
-8. Preserve static deployment: no backend, API, database, authentication, or server runtime.
-9. Run `npm test` before every commit.
-10. Run `python scripts/browser_smoke.py` after changing lesson UI or interaction.
-11. Update documentation and `CHANGELOG.md` for material releases.
+Curriculum and content metadata live under `content/`. Generated HTML and `assets/js/content.js` must not be edited as the primary source.
 
-## Release gate
+## Non-negotiable rules
 
-A release is acceptable only when:
+- Keep the deployed product static: HTML, CSS, and Vanilla JavaScript.
+- No backend, API, database, authentication, or server-side learner state.
+- English is the default language; published learner content must include Bangla.
+- Only implemented lessons, labs, and projects may have working content URLs.
+- Curriculum-ready and roadmap items must be labeled honestly.
+- Preserve stable lesson IDs and migrate browser storage deliberately.
+- Use authoritative documentation for tool-specific behavior.
+- Do not copy source code or educational prose from the inspiration repository.
+- Keep synthetic datasets clearly labeled as synthetic.
+- Never weaken statistical interpretation cautions merely to simplify copy.
 
-- statistical tests pass;
-- the comprehensive lesson audit validates all 108 lessons;
-- the link audit reports zero broken local references;
-- English and Bangla switching works;
-- both themes work;
-- mobile navigation works;
-- every changed calculator is browser-tested with valid and invalid input;
-- canonical production origin is correct;
-- Netlify deploy preview has no console-breaking errors.
+## Development cycle on main
+
+The project owner works directly on `main` and uses release tags as stable recovery points.
+
+Before every commit:
+
+```powershell
+npm run generate
+npm test
+npm run test:browser
+```
+
+Do not tag a release until generated files, documentation, checks, and release notes agree.
+
+## Release boundaries
+
+- v2.0.0: architecture, product transformation, curriculum foundation
+- v2.1.0: complete Excel track
+- v2.2.0: complete SQL track
+- v2.3.0: complete Power BI track
+- v2.4.0: complete Python track
+- v2.5.0: cross-tool projects and portfolio
+
+Do not add shallow partial tracks to v2.0.0.
