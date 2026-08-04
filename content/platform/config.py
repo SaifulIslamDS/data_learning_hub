@@ -21,13 +21,13 @@ SITE = {
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.1.0",
+    "version": "2.2.0",
 }
 
 STORAGE = {
     "prefix": "dlh-",
     "legacy_prefix": "slh-",
-    "schema_version": 3,
+    "schema_version": 4,
 }
 
 TOOL_BASELINES = [

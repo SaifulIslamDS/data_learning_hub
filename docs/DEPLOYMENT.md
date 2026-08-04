@@ -1,6 +1,24 @@
-# Netlify Deployment
+# Netlify Deployment — v2.2.0
 
-## Settings
+## Validate before publishing
+
+```powershell
+npm run generate
+npm test
+npm run test:browser
+```
+
+## Commit to main
+
+```powershell
+git checkout main
+git pull origin main
+git add -A
+git commit -m "feat: add complete Excel analytics tutorial"
+git push origin main
+```
+
+## Netlify configuration
 
 ```text
 Production branch:  main
@@ -9,44 +27,26 @@ Build command:      leave empty
 Publish directory:  .
 ```
 
-The generated HTML is committed to the repository. Netlify does not need Python, Node.js, or a build command.
+The repository contains generated HTML, CSS, JavaScript, datasets, and the practice workbook, so Netlify serves the root directly.
 
 ## Production URL
 
-The source currently uses:
+The placeholder origin is configured in `content/platform/config.py`. After Netlify assigns or confirms the final URL:
 
-```text
-https://data-learning-hub.netlify.app
-```
+1. update `SITE["site_url"]`;
+2. run `npm run generate`;
+3. run `npm test` and `npm run test:browser`;
+4. commit and push the regenerated metadata and sitemap.
 
-If the assigned Netlify URL or custom domain differs, update `site_url` in `content/platform/config.py`, then run:
+## Release tag
 
-```powershell
-npm run generate
-npm test
-npm run test:browser
-```
-
-Commit the regenerated canonical URLs, sitemap, and robots file.
-
-## Direct-main release workflow
+After the production deployment is verified:
 
 ```powershell
-git checkout main
-git pull origin main
-
-npm run generate
-npm test
-npm run test:browser
-
-git add -A
-git commit -m "feat: add tutorial platform and Data Foundations course"
-git push origin main
-
-git tag -a v2.1.0 -m "Data Learning Hub v2.1.0 — Tutorial Platform Core and Complete Data Foundations"
-git push origin v2.1.0
+git tag -a v2.2.0 -m "Data Learning Hub v2.2.0 — Complete Excel for Data Analytics Tutorial"
+git push origin v2.2.0
 ```
 
-## Configuration
+## Rollback
 
-`netlify.toml` provides custom 404 handling, compatibility redirects, security headers, CSP, and cache-control rules.
+Netlify can roll back to a previous deploy, and Git tags preserve the source baseline for each release.

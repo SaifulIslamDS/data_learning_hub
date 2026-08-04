@@ -1,6 +1,6 @@
 {
   "name": "data-learning-hub",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "type": "module",
   "description": "A tutorial-first bilingual static Data Analytics learning platform with complete Data Foundations chapters, examples, exercises, references and final assessment.",

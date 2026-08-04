@@ -2,6 +2,36 @@
 
 All notable changes are documented here.
 
+## [2.2.0] — Complete Excel for Data Analytics Tutorial
+
+### Added
+
+- Complete 56-chapter Excel for Data Analytics Tutorial across eight modules
+- Microsoft 365-first coverage of workbook foundations, formulas, analytical functions, lookups, dynamic arrays, PivotTables, charts, Power Query, the Data Model, Power Pivot/DAX basics, auditing, dashboards, and a final project
+- Fifty-six chapter-specific interactive Excel activities
+- One hundred sixty-eight Excel chapter exercises
+- Randomized 30-question Excel final quiz
+- Excel worked-example and reference libraries
+- Downloadable multi-sheet Excel practice workbook
+- Excel course modules in the persistent chapter sidebar and course landing page
+- Multi-course Tutorials, Exercises, Examples, Quiz, and References index pages
+- Browser tests for XLOOKUP, Excel progress, exercise filtering, final quiz, and mobile navigation
+
+### Changed
+
+- Shared site header is sticky on every route and uses an opaque blurred surface while scrolling
+- Excel domain and curriculum status changed from `curriculum-ready` to `tutorial-published`
+- Main homepage now presents both published tutorials and starts with the Excel course
+- Resource navigation now opens multi-course indexes rather than Data Foundations-only pages
+- Storage schema advances to version 4 without deleting prior progress
+- SQL, Power BI, Python, and portfolio releases move to v2.3.0–v2.6.0
+
+### Preserved
+
+- Complete 21-chapter Data Foundations tutorial
+- 108 comprehensive lessons and 20 statistical laboratories
+- Existing routes, theme, language, bookmarks, progress, datasets, projects, and static Netlify deployment
+
 ## [2.1.0] — Tutorial Platform Core and Complete Data Foundations Tutorial
 
 ### Added

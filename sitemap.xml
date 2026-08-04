@@ -140,6 +140,10 @@
   <url><loc>https://data-learning-hub.netlify.app/tools/moving-average/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tools/sample-size-estimator/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/exercises/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/quiz/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/examples/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/references/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/exercises/data-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/quiz/data-foundations/</loc></url>
@@ -166,4 +170,65 @@
   <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/reproducible-analysis-and-documentation/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/data-ethics-privacy-and-responsible-use/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/mini-project-retail-data-audit/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/exercises/excel-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/quiz/excel-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/examples/excel-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/references/excel-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/welcome-to-excel-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/excel-interface-and-ribbon/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/workbooks-and-worksheets/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/cells-ranges-and-names/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/data-types-and-number-formats/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/navigation-and-shortcuts/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/enter-edit-and-fill-data/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/import-csv-and-text/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/sort-data-safely/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/filter-data/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/excel-tables/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/data-validation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/find-replace-go-to-special/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/formula-syntax-and-operators/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/relative-absolute-and-mixed-references/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/sum-average-min-max/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/count-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/rounding-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/logical-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/excel-errors-and-iferror/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/sumif-and-sumifs/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/countif-and-countifs/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/averageif-and-averageifs/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/text-cleaning-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/text-extraction-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/text-combining-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/modern-text-splitting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/dates-times-and-serials/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/date-analysis-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/xlookup/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/index-and-match/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/lookup-design-and-errors/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/dynamic-arrays-and-spill/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/filter-function/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/sort-sortby-and-unique/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/let-and-readable-formulas/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/conditional-formatting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/descriptive-statistics-in-excel/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/correlation-and-trend-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/what-if-analysis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/pivottable-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/pivot-grouping-calculations-and-slicers/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/charts-for-data-analysis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/dashboard-design/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/power-query-fundamentals/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/power-query-transformations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/power-query-merge-append-group-refresh/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/data-model-and-relationships/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/power-pivot-and-dax-basics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/analysis-toolpak/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/formula-auditing-and-controls/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/workbook-performance-and-maintainability/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/sharing-protection-and-version-control/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/excel-analyst-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/retail-sales-project-data-preparation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/retail-sales-project-dashboard/</loc></url>
 </urlset>

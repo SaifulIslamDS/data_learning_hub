@@ -21,11 +21,11 @@ CAREER_PATHS = [
         "phases": [
             {"id": "foundations", "title_en": "Data Foundations", "title_bn": "ডেটা ফাউন্ডেশন", "status": "available", "release": "v2.0.0"},
             {"id": "statistics", "title_en": "Statistics for Analytics", "title_bn": "অ্যানালিটিক্সের জন্য স্ট্যাটিস্টিকস", "status": "available", "release": "v2.0.0"},
-            {"id": "excel", "title_en": "Excel", "title_bn": "Excel", "status": "curriculum-ready", "release": "v2.1.0"},
-            {"id": "sql", "title_en": "SQL", "title_bn": "SQL", "status": "curriculum-ready", "release": "v2.2.0"},
-            {"id": "power-bi", "title_en": "Power BI", "title_bn": "Power BI", "status": "curriculum-ready", "release": "v2.3.0"},
-            {"id": "python", "title_en": "Python", "title_bn": "Python", "status": "curriculum-ready", "release": "v2.4.0"},
-            {"id": "projects", "title_en": "Portfolio Projects", "title_bn": "পোর্টফোলিও প্রজেক্ট", "status": "foundation-ready", "release": "v2.5.0"},
+            {"id": "excel", "title_en": "Excel", "title_bn": "Excel", "status": "tutorial-published", "release": "v2.2.0"},
+            {"id": "sql", "title_en": "SQL", "title_bn": "SQL", "status": "curriculum-ready", "release": "v2.3.0"},
+            {"id": "power-bi", "title_en": "Power BI", "title_bn": "Power BI", "status": "curriculum-ready", "release": "v2.4.0"},
+            {"id": "python", "title_en": "Python", "title_bn": "Python", "status": "curriculum-ready", "release": "v2.5.0"},
+            {"id": "projects", "title_en": "Portfolio Projects", "title_bn": "পোর্টফোলিও প্রজেক্ট", "status": "foundation-ready", "release": "v2.6.0"},
         ],
     },
     {

@@ -79,8 +79,9 @@ img, svg, canvas { max-width: 100%; }
 .skip-link { position: fixed; left: 16px; top: -60px; z-index: 9999; padding: 10px 16px; border-radius: 10px; background: var(--primary); color: white; transition: top .2s; }
 .skip-link:focus { top: 16px; }
 
-.site-header { position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid transparent; transition: .25s ease; }
-.site-header.scrolled { background: color-mix(in srgb, var(--bg) 82%, transparent); border-color: var(--line); backdrop-filter: blur(18px); }
+#site-header { position: sticky; top: 0; z-index: 1200; }
+.site-header { position: relative; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); transition: .25s ease; }
+.site-header.scrolled { background: color-mix(in srgb, var(--bg) 95%, transparent); box-shadow: 0 10px 30px rgba(20,23,38,.08); }
 .navbar { min-height: 76px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 28px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: -.02em; }
 .brand-mark { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; color: white; background: linear-gradient(135deg, var(--primary), #1cc7bb); box-shadow: 0 12px 28px rgba(101,87,245,.28); }
@@ -1013,6 +1014,59 @@ html { scroll-behavior: smooth; }
 .reference-term h3 { margin: 0 0 5px; font-size: .95rem; }
 .reference-term p { margin: 0; color: var(--muted); font-size: .84rem; }
 
+
+
+/* v2.2.0 multi-course tutorial and Excel activity components */
+.tutorial-module-label { display:flex; align-items:center; gap:9px; margin:20px 8px 8px; color:var(--muted); font-size:.72rem; letter-spacing:.02em; text-transform:uppercase; }
+.tutorial-module-label span { display:grid; place-items:center; min-width:25px; height:25px; padding:0 6px; border-radius:8px; background:var(--primary-soft); color:var(--primary); font-weight:900; }
+.tutorial-module-label strong { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.tutorial-module-links { display:grid; gap:2px; }
+.tutorial-index-module { margin:0 0 36px; }
+.tutorial-module-heading { display:flex; gap:14px; align-items:center; margin:0 0 15px; padding-bottom:14px; border-bottom:1px solid var(--line); }
+.tutorial-module-heading > span { display:grid; place-items:center; width:42px; height:42px; border-radius:13px; color:#fff; background:linear-gradient(135deg,var(--primary),var(--primary-2)); font-weight:900; }
+.tutorial-module-heading h2 { margin:0; }
+.formula-block { position:relative; display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:12px; align-items:center; margin:19px 0; padding:15px 16px; border:1px solid var(--line); border-radius:15px; background:#15182a; color:#f5f7ff; overflow:auto; }
+.formula-block > span { color:#89e0c1; font-size:.72rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+.formula-block code { min-width:max-content; color:#f5f7ff; font:600 .91rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.copy-code { min-height:34px; padding:0 11px; border:1px solid rgba(255,255,255,.18); border-radius:9px; color:#fff; background:rgba(255,255,255,.08); font:700 .72rem/1 var(--font-body); cursor:pointer; }
+.copy-code:hover { background:rgba(255,255,255,.15); }
+.course-downloads { margin:30px 0; padding:25px; border:1px solid var(--line); border-radius:22px; background:var(--surface-2); }
+.course-downloads h2 { margin:0 0 16px; }
+.course-downloads > div { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.download-card { display:flex; align-items:center; gap:12px; min-height:82px; padding:15px; border:1px solid var(--line); border-radius:15px; color:var(--text); background:var(--surface); }
+.download-card > span { display:grid; place-items:center; width:40px; height:40px; flex:0 0 auto; border-radius:12px; color:var(--primary); background:var(--primary-soft); font-size:1.25rem; }
+.download-card strong,.download-card small { display:block; }
+.download-card small { margin-top:4px; color:var(--muted); }
+.resource-subject-grid,.home-course-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.resource-subject-card,.home-course-card { padding:27px; border:1px solid var(--line); border-radius:23px; background:var(--surface); box-shadow:var(--shadow-sm); }
+.resource-subject-card h2,.home-course-card h2 { margin:14px 0 9px; }
+.resource-subject-card p,.home-course-card p { color:var(--muted); }
+.resource-subject-card .button,.home-course-card .button { margin-top:20px; }
+.excel-control-row { display:flex; flex-wrap:wrap; gap:10px; align-items:end; margin:15px 0; }
+.excel-control-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:11px; margin:15px 0; }
+.excel-control-row label,.excel-control-grid label { display:grid; gap:6px; min-width:140px; color:var(--muted); font-size:.78rem; font-weight:750; }
+.excel-control-row input,.excel-control-row select,.excel-control-grid input,.excel-control-grid select { width:100%; min-height:42px; padding:8px 10px; border:1px solid var(--line); border-radius:11px; color:var(--text); background:var(--surface); }
+.excel-result { margin-top:15px; padding:16px; border:1px solid var(--line); border-radius:14px; color:var(--text); background:var(--surface); overflow:auto; }
+.excel-result table { width:100%; border-collapse:collapse; font-size:.83rem; }
+.excel-result th,.excel-result td { padding:9px 10px; border:1px solid var(--line); text-align:left; white-space:nowrap; }
+.excel-result th { background:var(--surface-2); }
+.activity-formula { margin:0 0 13px; padding:11px 13px; border-radius:11px; color:var(--primary); background:var(--primary-soft); font:700 .82rem/1.55 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.conditional-demo { display:grid; gap:7px; grid-template-columns:repeat(5,minmax(54px,1fr)); margin-top:13px; }
+.conditional-demo span { padding:11px 8px; border:1px solid var(--line); border-radius:10px; text-align:center; background:var(--surface); }
+.conditional-demo .excel-highlight { color:#075c3f; border-color:var(--success); background:var(--success-soft); font-weight:900; }
+.query-pipeline,.model-diagram { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:14px; }
+.query-pipeline span,.model-diagram span { padding:10px 12px; border:1px solid var(--line); border-radius:11px; background:var(--surface); font-weight:750; }
+.query-pipeline span + span::before,.model-diagram span + span::before { content:'→'; margin-right:8px; color:var(--primary); }
+.success-text { color:var(--success); font-weight:800; }
+.danger-text { color:var(--danger); font-weight:800; }
+.checklist-progress { margin-top:12px; color:var(--muted); font-size:.85rem; font-weight:750; }
+@media (max-width:760px) {
+  .course-downloads > div,.resource-subject-grid,.home-course-grid,.excel-control-grid { grid-template-columns:1fr; }
+  .formula-block { grid-template-columns:1fr auto; }
+  .formula-block > span { grid-column:1 / -1; }
+  .conditional-demo { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+
 @media (max-width: 1260px) {
   .nav-links a { padding-inline: 7px; font-size: .78rem; }
   .tutorial-layout { grid-template-columns: 275px minmax(0,1fr); }
@@ -1048,7 +1102,7 @@ html { scroll-behavior: smooth; }
   .exercise-toolbar { flex-direction: column; }
 }
 @media print {
-  .site-header,.site-footer,.tutorial-sidebar,.tutorial-drawer-backdrop,.chapter-jump,.tutorial-header-actions,.chapter-meta .button,.tutorial-complete-panel,.tutorial-pager,.scroll-top,.search-overlay { display:none!important; }
+  #site-header,.site-header,.site-footer,.tutorial-sidebar,.tutorial-drawer-backdrop,.chapter-jump,.tutorial-header-actions,.chapter-meta .button,.tutorial-complete-panel,.tutorial-pager,.scroll-top,.search-overlay { display:none!important; }
   .tutorial-layout { display:block; }
   .tutorial-content { width:100%; max-width:none; padding:0; }
   .tutorial-section,.worked-example,.exercise-card { break-inside:avoid; box-shadow:none; }

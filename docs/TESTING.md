@@ -1,6 +1,6 @@
-# Testing — v2.1.0
+# Testing — v2.2.0
 
-## Full validation
+## Commands
 
 ```powershell
 npm run generate
@@ -8,66 +8,56 @@ npm test
 npm run test:browser
 ```
 
-## Automated checks
+## Automated test layers
 
 ### Statistical core
 
-Validates the retained browser statistical engine.
+Validates the retained browser-statistics functions.
 
 ### Comprehensive lesson audit
 
-Validates all 108 retained bilingual lessons.
+Confirms that all 108 retained lessons preserve their required content structure.
 
 ### Tutorial audit
 
-Validates:
+Validates both published tutorials, chapter IDs, modules, bilingual fields, teaching-section depth, terms, worked examples, activities, exercise types, references, downloads, and generated routes.
 
-- One published tutorial
-- Exactly 21 Data Foundations chapters
-- Stable, unique chapter IDs
-- Complete English/Bangla content
-- Minimum teaching depth
-- Objectives, sections, terms, examples, activities, exercises, recaps, and references
-- Required tutorial routes
+Expected tutorial totals:
+
+- Data Foundations: 21 chapters and 63 exercises
+- Excel for Data Analytics: 56 chapters and 168 exercises
+- Combined: 77 chapters and 231 exercises
 
 ### Curriculum audit
 
-Validates domain status, paths, datasets, projects, and honest publication boundaries.
+Checks publication status, domain URLs, curriculum relationships, datasets, project references, tool baselines, active career route, storage migration, and release identity.
 
 ### Link audit
 
-Checks all local HTML links and assets across generated pages.
+Scans every generated HTML file and local asset/download reference. The v2.2.0 baseline is 235 HTML files, 6,704 checked references, and zero broken local references.
 
 ### JavaScript syntax
 
-Checks all shared platform and tutorial JavaScript files.
+Runs `node --check` against every shared browser module.
 
 ### Browser smoke test
 
-Uses headless Chromium to verify:
+Covers:
 
-- Tutorial-first homepage and navigation
-- Published tutorial index
-- 21-chapter course contents
-- Topic-specific chapter content
-- Interactive classification activity
-- EN/BN switching
-- Chapter completion storage
-- 63-exercise library and chapter filtering
-- 30-question final quiz generation
-- Mobile chapter drawer
+- sticky header at initial and scrolled positions
+- homepage and tutorial library
+- 56-chapter, eight-module Excel course landing
+- downloadable workbook link
+- XLOOKUP chapter, formula, activity, and completion state
+- EN/BN switch and theme-compatible rendering
+- 168-item Excel exercise library and filtering
+- randomized 30-question Excel quiz
+- retained Data Foundations route
+- retained statistical lab route
+- 56-link mobile course drawer
 
-Screenshots are written to `docs/screenshots-v2.1.0/`.
+Screenshots are written to `docs/screenshots-v2.2.0/`.
 
-## v2.1.0 release result
+## Spreadsheet validation
 
-```text
-All statistical core tests passed.
-Validated 108 comprehensive bilingual lessons.
-Validated 1 published tutorial with 21 complete bilingual chapters.
-Validated 84 objectives, 63+ teaching sections, 84+ terms,
-21 examples, 21 activities, and 63 exercises.
-Checked 2,233 local references across 170 HTML files.
-0 broken local references found.
-Browser smoke test passed.
-```
+The Excel practice workbook is built with `artifact_tool`, inspected for sheet structure and key formula regions, imported back from the exported `.xlsx`, and checked for formula errors.

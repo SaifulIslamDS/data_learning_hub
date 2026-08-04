@@ -1,69 +1,72 @@
 # Curriculum — Tutorial-first Data Analytics
 
-## Published tutorial
+## Published course 1: Data Foundations — v2.1.0
 
-### Data Foundations — v2.1.0
+Twenty-one chapters cover data language and structure, collection and inference foundations, data readiness and analysis, reproducibility, ethics, and a retail-data audit mini-project.
 
-The 21-chapter course is the common prerequisite for future Excel, SQL, Power BI, Python, Data Science, and Data Engineering tutorials.
+## Published course 2: Excel for Data Analytics — v2.2.0
 
-The sequence moves through four phases:
+### Module 1 — Excel Foundations
 
-### Phase 1 — Data language and structure
+Excel in the analyst workflow, interface, workbooks and worksheets, cells and named ranges, data types and number formats, navigation and shortcuts.
 
-1. Welcome to Data Analytics
-2. Data and Statistics
-3. Observations, Variables, and Values
-4. Rows, Columns, Tables, and Datasets
-5. Categorical and Numerical Data
-6. Discrete and Continuous Data
-7. Measurement Scales
-8. Structured, Semi-structured, and Unstructured Data
+### Module 2 — Organize and Control Data
 
-### Phase 2 — Collection and inference foundations
+Entry and fill, CSV/text import, safe sorting, filtering, Excel Tables, data validation, Find/Replace, and Go To Special.
 
-9. Data Sources and Collection Methods
-10. Population, Sample, Parameter, and Statistic
-11. Sampling Methods
-12. Bias, Confounding, and Error
+### Module 3 — Formula Foundations
 
-### Phase 3 — Data readiness and analysis
+Formula syntax and operators, relative/absolute/mixed references, core aggregations, count functions, rounding, logical functions, and error handling.
 
-13. Data Quality Dimensions
-14. Missing, Duplicate, Invalid, and Outlier Values
-15. Tidy Data and Data Organization
-16. Frequency Tables and Summary Views
-17. Analytical Questions and Defining Metrics
-18. Exploratory Data Analysis Workflow
+### Module 4 — Analytical Functions
 
-### Phase 4 — Professional practice
+SUMIF/S, COUNTIF/S, AVERAGEIF/S, text cleaning, text extraction and combination, modern text splitting, dates, times, and date analysis.
 
-19. Reproducible Analysis and Documentation
-20. Data Ethics, Privacy, and Responsible Use
-21. Mini Project: Audit a Retail Dataset
+### Module 5 — Lookups and Dynamic Arrays
 
-## Assessment
+XLOOKUP, INDEX/MATCH, lookup quality and duplicate-key risk, spill behavior, FILTER, SORT/SORTBY/UNIQUE, and LET-based readable formulas.
 
-- Three exercises per chapter
-- 63 exercises in the complete library
-- Interactive activities inside every chapter
+### Module 6 — Analysis, PivotTables, and Visualization
+
+Conditional formatting, descriptive statistics, correlation and trend functions, What-If Analysis, PivotTables, grouping, calculations, slicers, charts, and dashboard design.
+
+### Module 7 — Power Query, Data Model, and Advanced Analysis
+
+Power Query fundamentals and transformations, merge/append/group/refresh, Data Model relationships, introductory Power Pivot and DAX, and Analysis ToolPak.
+
+### Module 8 — Quality, Delivery, and Final Project
+
+Formula auditing, control checks, workbook performance, maintainability, sharing and protection, end-to-end analyst workflow, retail-sales preparation, and dashboard delivery.
+
+## Excel assessment model
+
+- 3 exercises per chapter
+- 168 exercises in the complete Excel library
+- Interactive activity in every chapter
 - Randomized 30-question final quiz
-- Passing target: 75%
-- Final applied retail-data audit
+- Downloadable practice workbook
+- Two-part retail-sales final project
 
-## Retained statistics content
+## Combined published tutorial footprint
 
-The existing 108 comprehensive lessons and 20 laboratories remain available. They will later be reorganized into a complete sequential Statistics for Data Analytics tutorial rather than removed.
+- 77 chapters
+- 231 exercises
+- 77 interactive activities
+- 2 final assessments
+- 2 worked-example libraries
+- 2 reference libraries
 
-## Planned tutorial releases
+## Retained statistics material
 
-| Release | Complete tutorial scope |
+The 108 comprehensive statistics and analytics lessons and 20 laboratories remain available. A future release may reorganize the most relevant material into a sequential Statistics for Data Analytics tutorial without removing existing URLs.
+
+## Next tutorial releases
+
+| Release | Scope |
 |---|---|
-| v2.2.0 | Excel for Data Analytics |
-| v2.3.0 | SQL for Data Analytics with browser practice |
-| v2.4.0 | Power BI for Data Analytics |
-| v2.5.0 | Python for Data Analytics |
-| v2.6.0 | End-to-end Data Analytics workflows and portfolio projects |
+| v2.3.0 | Complete SQL for Data Analytics tutorial with browser practice |
+| v2.4.0 | Complete Power BI for Data Analytics tutorial |
+| v2.5.0 | Complete Python for Data Analytics tutorial |
+| v2.6.0 | Cross-tool Data Analytics workflows and portfolio projects |
 | v3.0.0 | Data Science tutorials |
 | v4.0.0 | Data Engineering tutorials |
-
-Planned subject cards may describe scope, but must not imitate published tutorial chapters.
