@@ -7,7 +7,7 @@ SITE = {
     "tagline_en": "From data foundations to portfolio-ready analytics.",
     "tagline_bn": "ডেটার ভিত্তি থেকে পোর্টফোলিও-রেডি অ্যানালিটিক্স পর্যন্ত।",
     "description_en": (
-        "An English-first bilingual static learning platform for Data Analytics, beginning with "
+        "A tutorial-first English-first bilingual static learning platform for Data Analytics, beginning with "
         "data foundations and statistics, then expanding through Excel, SQL, Power BI, Python and projects."
     ),
     "description_bn": (
@@ -21,13 +21,13 @@ SITE = {
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.0.0",
+    "version": "2.1.0",
 }
 
 STORAGE = {
     "prefix": "dlh-",
     "legacy_prefix": "slh-",
-    "schema_version": 2,
+    "schema_version": 3,
 }
 
 TOOL_BASELINES = [

@@ -1,59 +1,115 @@
 # Data Learning Hub
 
-**Data Analytics first. Data Science and Data Engineering next.**
+**A tutorial-first, English-first bilingual platform for learning Data Analytics.**
 
-Data Learning Hub is an English-first, bilingual, browser-only learning platform for structured Data Analytics education. It begins with comprehensive Data Foundations and Statistics, then provides reviewed curriculum foundations for Excel, SQL, Power BI, Python, and cross-tool portfolio projects.
+Data Learning Hub is a completely static learning website built with HTML, CSS, Vanilla JavaScript, and a Python-based page generator used only during development. The published site requires no backend, API, database, account, or build process on Netlify.
 
 ## Current release
 
-### v2.0.0 — Data Analytics Platform Architecture and Curriculum Foundation
+### v2.1.0 — Tutorial Platform Core and Complete Data Foundations Tutorial
 
-This is a major product transformation from the tagged Statistics Learning Hub v1.2.0 baseline.
+The primary product is now a chapter-based tutorial system rather than a curriculum or study-plan dashboard.
 
-Available now:
+Published in this release:
 
-- 108 comprehensive English/Bangla lessons retained from v1.2.0
-- 20 browser-based statistical labs
-- Active Data Analyst learning route
-- Supporting Research & Decision Analyst route
-- Five-step guided onboarding
-- Browser-local progress, bookmarks, language, theme, and learning preferences
+- Complete **Data Foundations Tutorial**
+- 21 sequential bilingual chapters
+- 84 learning objectives
+- 63+ topic-specific teaching sections
+- 84+ key terms and definitions
+- 21 worked analytical examples
+- 21 interactive “Try it yourself” activities
+- 63 chapter exercises
+- 30-question randomized final quiz
+- Dedicated example and reference libraries
+- Persistent desktop chapter sidebar
+- Mobile chapter drawer
+- Previous/next chapter navigation
+- Browser-local chapter completion and quiz result
+- Tutorial chapter search
+- Print-friendly tutorial pages
+
+The previous platform features remain available as supporting resources:
+
+- 108 comprehensive statistics and analytics lessons
+- 20 browser-based statistical laboratories
 - Three documented synthetic datasets
-- One complete foundation project
-- Reviewed curriculum maps for Excel, SQL, Power BI, and Python
-- Netlify-ready static deployment
+- Data Analytics project foundation
+- Career paths, curriculum maps, bookmarks, and guided learning plan
 
-Curriculum-ready, not yet published as lessons:
-
-- Excel — target v2.1.0
-- SQL — target v2.2.0
-- Power BI — target v2.3.0
-- Python — target v2.4.0
-- Cross-tool projects and portfolio — target v2.5.0
-
-Planned entries are never exposed as fake lesson pages or dead links.
-
-## Product learning model
+## Primary learning experience
 
 ```text
-Learn → Practice → Build → Explain
+Tutorials
+→ Open a subject
+→ Read Chapter 1
+→ Learn the concept
+→ Study the worked example
+→ Try the activity
+→ Complete exercises
+→ Continue to the next chapter
+→ Take the final quiz
 ```
 
-A learner should finish each skill with an observable output: a calculation, analytical note, query, report, notebook, project deliverable, or decision-ready explanation.
+A learner does not need to create a study plan before starting.
 
-## Architecture
+## Data Foundations course
 
-The authored source is modular but the deployed site is ordinary static HTML, CSS, and JavaScript.
+The complete course covers:
+
+1. Welcome to Data Analytics
+2. Data and Statistics
+3. Observations, Variables, and Values
+4. Rows, Columns, Tables, and Datasets
+5. Categorical and Numerical Data
+6. Discrete and Continuous Data
+7. Measurement Scales
+8. Structured, Semi-structured, and Unstructured Data
+9. Data Sources and Collection Methods
+10. Population, Sample, Parameter, and Statistic
+11. Sampling Methods
+12. Bias, Confounding, and Error
+13. Data Quality Dimensions
+14. Missing, Duplicate, Invalid, and Outlier Values
+15. Tidy Data and Data Organization
+16. Frequency Tables and Summary Views
+17. Analytical Questions and Defining Metrics
+18. Exploratory Data Analysis Workflow
+19. Reproducible Analysis and Documentation
+20. Data Ethics, Privacy, and Responsible Use
+21. Mini Project: Audit a Retail Dataset
+
+## Main routes
+
+- `/tutorials/` — tutorial library
+- `/tutorials/data-foundations/` — complete course contents
+- `/tutorials/data-foundations/<chapter>/` — tutorial chapters
+- `/exercises/data-foundations/` — complete exercise library
+- `/quiz/data-foundations/` — final assessment
+- `/examples/data-foundations/` — worked-example library
+- `/references/data-foundations/` — source and term reference
+- `/projects/` — datasets and applied projects
+- `/career-paths/` — role-oriented routes
+- `/practice/` — statistics laboratories and datasets
+- `/learn/` — retained comprehensive lesson library
+- `/my-learning/` — optional browser-local learning dashboard
+
+## Source architecture
 
 ```text
 content/
-├── platform/       # identity, domains, glossary, compatibility paths
-├── statistics/     # retained lessons, labs and lesson enrichment
-├── tracks/         # career paths and Excel/SQL/Power BI/Python curricula
-└── datasets/       # dataset and project metadata
+├── tutorials/
+│   ├── data_foundations.json
+│   └── loader.py
+├── platform/
+├── statistics/
+├── tracks/
+└── datasets/
 
 scripts/
 ├── generate.py
+├── tutorial_generator.py
+├── audit_tutorials.py
 ├── audit_curriculum.py
 ├── audit_lessons.py
 ├── audit_links.py
@@ -61,25 +117,9 @@ scripts/
 └── test_stats.mjs
 ```
 
-Generated pages are committed to the repository so Netlify does not require a build command.
-
-## Main routes
-
-- `/` — product home and current learning status
-- `/start/` — five-step guided setup
-- `/my-learning/` — browser-local learning dashboard
-- `/learn/` — available lessons and domain overview
-- `/practice/` — statistical labs and datasets
-- `/projects/` — available projects and dataset library
-- `/career-paths/` — active and future career routes
-- `/curriculum/` — reviewed tool-track scope and release sequence
-- `/glossary/` — bilingual glossary
-
-Legacy `/catalog/` and `/paths/` routes redirect to the new information architecture.
+Authored tutorial content lives in `content/tutorials/`. Generated HTML and `assets/js/content.js` should not be edited as the primary source.
 
 ## Generate and validate
-
-Python and Node.js are used only for development and validation.
 
 ```powershell
 npm run generate
@@ -87,45 +127,31 @@ npm test
 npm run test:browser
 ```
 
-Expected core result:
+Expected release result:
 
 ```text
 All statistical core tests passed.
 Validated 108 comprehensive bilingual lessons.
-Validated 9 domains, 4 curriculum-ready tool tracks and 3 synthetic datasets.
+Validated 1 published tutorial with 21 complete bilingual chapters.
+Checked 2,233 local HTML and asset references across 170 HTML files.
 0 broken local references found.
+Browser smoke test passed.
 ```
 
-## Deploy to Netlify
-
-Use:
+## Netlify deployment
 
 ```text
+Production branch:  main
 Base directory:     leave empty
 Build command:      leave empty
 Publish directory:  .
-Production branch:  main
 ```
 
-The repository includes `netlify.toml` for security headers, cache policy, compatibility redirects, and custom 404 handling.
-
-After Netlify assigns the final production URL, update `site_url` in `content/platform/config.py`, then run:
-
-```powershell
-npm run generate
-npm test
-git add .
-git commit -m "chore: configure production site URL"
-git push origin main
-```
-
-## Progress migration
-
-On first use, v2 copies compatible browser-local settings from legacy `slh-*` keys into `dlh-*` keys. The old keys are not deleted. Existing completion IDs are preserved wherever the lesson ID remains valid.
+Generated files are committed to the repository, so Netlify serves the site directly.
 
 ## Privacy
 
-There is no backend, API, database, analytics account, or cloud learner profile. User preferences and progress remain in the browser through `localStorage`. Statistical lab input is processed locally.
+Tutorial progress, quiz results, language, theme, bookmarks, and optional learning preferences remain in the visitor’s browser through `localStorage`. No learner data are sent to a server.
 
 ## Credits
 
@@ -136,15 +162,13 @@ Idea and developed by **Saiful Islam**.
 - LinkedIn: https://www.linkedin.com/in/saifulislampro/
 - Inspired by: https://github.com/tafshir027/stats
 
-See [CREDITS.md](CREDITS.md) and [docs/CONTENT-STANDARDS.md](docs/CONTENT-STANDARDS.md).
-
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Curriculum](docs/CURRICULUM.md)
 - [Content standards](docs/CONTENT-STANDARDS.md)
 - [Roadmap](docs/ROADMAP.md)
-- [Migration from v1](docs/MIGRATION-v1-to-v2.md)
 - [Testing](docs/TESTING.md)
 - [Deployment](docs/DEPLOYMENT.md)
-- [v2.0.0 release report](docs/RELEASE-REPORT-v2.0.0.md)
+- [v2.1.0 release report](docs/RELEASE-REPORT-v2.1.0.md)
+- [v1-to-v2 migration](docs/MIGRATION-v1-to-v2.md)

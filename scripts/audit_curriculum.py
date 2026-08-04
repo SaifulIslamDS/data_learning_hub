@@ -68,6 +68,8 @@ for domain in data.get("domains", []):
     url = domain.get("url") or ""
     if status == "available" and not url.startswith("/learn/"):
         errors.append(f"domain {domain.get('id')}: available domain must point to /learn/")
+    if status == "tutorial-published" and not url.startswith("/tutorials/"):
+        errors.append(f"domain {domain.get('id')}: tutorial-published domain must point to /tutorials/")
     if status == "curriculum-ready" and not url.startswith("/curriculum/"):
         errors.append(f"domain {domain.get('id')}: curriculum-ready domain must point to curriculum")
 
@@ -104,8 +106,8 @@ for project in data.get("projects", []):
 
 site = data.get("site", {})
 storage = data.get("storage", {})
-if site.get("name") != "Data Learning Hub" or site.get("version") != "2.0.0":
-    errors.append("site identity/version is not Data Learning Hub v2.0.0")
+if site.get("name") != "Data Learning Hub" or site.get("version") != "2.1.0":
+    errors.append("site identity/version is not Data Learning Hub v2.1.0")
 if storage.get("prefix") != "dlh-" or storage.get("legacy_prefix") != "slh-":
     errors.append("storage migration prefixes are not configured")
 if not any(c.get("id") == "data-analyst" and c.get("status") == "active" for c in data.get("career_paths", [])):

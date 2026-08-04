@@ -1,56 +1,6 @@
-# Testing and Quality Gates
+# Testing — v2.1.0
 
-## Run all source-level checks
-
-```powershell
-npm test
-```
-
-This runs:
-
-1. statistical numerical tests
-2. comprehensive lesson audit
-3. curriculum architecture audit
-4. local link and asset audit
-5. JavaScript syntax checks
-
-## Browser smoke test
-
-```powershell
-npm run test:browser
-```
-
-Representative browser checks cover:
-
-- Data Learning Hub identity
-- v1 `slh-*` to v2 `dlh-*` browser-state migration
-- English/Bangla controls
-- light/dark theme
-- guided setup
-- learning catalog
-- curriculum publication honesty
-- datasets and projects
-- comprehensive lesson rendering
-- responsive mobile header
-
-Screenshots are written to `docs/screenshots-v2.0.0/`.
-
-## Current release evidence
-
-- 108 comprehensive bilingual lessons validated
-- 20 statistical labs retained
-- 9 domains validated
-- 4 curriculum-ready tool tracks validated
-- 3 synthetic datasets and dictionaries validated
-- 2 project definitions validated
-- 143 generated HTML pages
-- 1,250 local HTML and asset references checked
-- 0 broken local references
-- statistical tests passed
-- JavaScript syntax checks passed
-- browser smoke test passed
-
-## Before every release
+## Full validation
 
 ```powershell
 npm run generate
@@ -58,11 +8,66 @@ npm test
 npm run test:browser
 ```
 
-Then inspect:
+## Automated checks
 
-- generated diff
-- navigation and mobile layout
-- curriculum statuses
-- release documentation
-- sitemap and production URL
-- Netlify deploy preview or production deploy
+### Statistical core
+
+Validates the retained browser statistical engine.
+
+### Comprehensive lesson audit
+
+Validates all 108 retained bilingual lessons.
+
+### Tutorial audit
+
+Validates:
+
+- One published tutorial
+- Exactly 21 Data Foundations chapters
+- Stable, unique chapter IDs
+- Complete English/Bangla content
+- Minimum teaching depth
+- Objectives, sections, terms, examples, activities, exercises, recaps, and references
+- Required tutorial routes
+
+### Curriculum audit
+
+Validates domain status, paths, datasets, projects, and honest publication boundaries.
+
+### Link audit
+
+Checks all local HTML links and assets across generated pages.
+
+### JavaScript syntax
+
+Checks all shared platform and tutorial JavaScript files.
+
+### Browser smoke test
+
+Uses headless Chromium to verify:
+
+- Tutorial-first homepage and navigation
+- Published tutorial index
+- 21-chapter course contents
+- Topic-specific chapter content
+- Interactive classification activity
+- EN/BN switching
+- Chapter completion storage
+- 63-exercise library and chapter filtering
+- 30-question final quiz generation
+- Mobile chapter drawer
+
+Screenshots are written to `docs/screenshots-v2.1.0/`.
+
+## v2.1.0 release result
+
+```text
+All statistical core tests passed.
+Validated 108 comprehensive bilingual lessons.
+Validated 1 published tutorial with 21 complete bilingual chapters.
+Validated 84 objectives, 63+ teaching sections, 84+ terms,
+21 examples, 21 activities, and 63 exercises.
+Checked 2,233 local references across 170 HTML files.
+0 broken local references found.
+Browser smoke test passed.
+```

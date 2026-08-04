@@ -1,110 +1,69 @@
-# Curriculum Foundation — Data Learning Hub v2
+# Curriculum — Tutorial-first Data Analytics
 
-## Product priority
+## Published tutorial
 
-The platform teaches **Data Analytics first**. Data Science and Data Engineering will build on the same shared foundations in later major releases.
+### Data Foundations — v2.1.0
 
-## Active Data Analyst sequence
+The 21-chapter course is the common prerequisite for future Excel, SQL, Power BI, Python, Data Science, and Data Engineering tutorials.
 
-```text
-Data Foundations
-→ Statistics for Analytics
-→ Excel
-→ SQL
-→ Power BI
-→ Python
-→ Cross-tool Projects and Portfolio
-```
+The sequence moves through four phases:
 
-## Available in v2.0.0
+### Phase 1 — Data language and structure
 
-### Data Foundations
+1. Welcome to Data Analytics
+2. Data and Statistics
+3. Observations, Variables, and Values
+4. Rows, Columns, Tables, and Datasets
+5. Categorical and Numerical Data
+6. Discrete and Continuous Data
+7. Measurement Scales
+8. Structured, Semi-structured, and Unstructured Data
 
-Covers data literacy, variables, measurement, collection, quality, analytical workflow, EDA, KPI thinking, data cleaning, time-oriented analysis, and communication.
+### Phase 2 — Collection and inference foundations
 
-### Statistics for Analytics
+9. Data Sources and Collection Methods
+10. Population, Sample, Parameter, and Statistic
+11. Sampling Methods
+12. Bias, Confounding, and Error
 
-Covers descriptive statistics, probability, sampling, inference, correlation, regression, experimentation, uncertainty, and advanced optional statistical topics.
+### Phase 3 — Data readiness and analysis
 
-The complete retained library contains 108 lessons and 20 labs. The active Data Analyst route intentionally selects only the most relevant 23 lessons rather than requiring all advanced content.
+13. Data Quality Dimensions
+14. Missing, Duplicate, Invalid, and Outlier Values
+15. Tidy Data and Data Organization
+16. Frequency Tables and Summary Views
+17. Analytical Questions and Defining Metrics
+18. Exploratory Data Analysis Workflow
 
-## Tool curriculum foundations
+### Phase 4 — Professional practice
 
-### Excel — v2.1.0
+19. Reproducible Analysis and Documentation
+20. Data Ethics, Privacy, and Responsible Use
+21. Mini Project: Audit a Retail Dataset
 
-Eight modules covering analytical spreadsheet design, formulas, lookups, cleaning, Power Query, PivotTables, visualization, dashboards, and a complete project.
+## Assessment
 
-### SQL — v2.2.0
+- Three exercises per chapter
+- 63 exercises in the complete library
+- Interactive activities inside every chapter
+- Randomized 30-question final quiz
+- Passing target: 75%
+- Final applied retail-data audit
 
-Eight modules covering relational foundations, filtering, aggregation, joins, transformation, window functions, analytical patterns, quality, performance concepts, and a complete project.
+## Retained statistics content
 
-### Power BI — v2.3.0
+The existing 108 comprehensive lessons and 20 laboratories remain available. They will later be reorganized into a complete sequential Statistics for Data Analytics tutorial rather than removed.
 
-Eight modules covering Power BI workflow, Power Query, semantic modeling, DAX, visualization, interaction, publication concepts, governance, and a complete project.
+## Planned tutorial releases
 
-### Python — v2.4.0
+| Release | Complete tutorial scope |
+|---|---|
+| v2.2.0 | Excel for Data Analytics |
+| v2.3.0 | SQL for Data Analytics with browser practice |
+| v2.4.0 | Power BI for Data Analytics |
+| v2.5.0 | Python for Data Analytics |
+| v2.6.0 | End-to-end Data Analytics workflows and portfolio projects |
+| v3.0.0 | Data Science tutorials |
+| v4.0.0 | Data Engineering tutorials |
 
-Eight modules covering Python and notebooks, NumPy, pandas, cleaning, EDA, Matplotlib, statistics, reproducibility, and a complete project.
-
-Full module and planned lesson lists are maintained in `content/tracks/tool_curricula.py` and displayed transparently at `/curriculum/`.
-
-## Dataset continuity
-
-The platform uses recurring synthetic datasets so learners can solve the same business problem in multiple tools.
-
-Current datasets:
-
-- Retail Sales
-- Customer Orders
-- NGO Project Expenses
-
-Example continuity:
-
-```text
-Data-quality audit
-→ statistical summary
-→ Excel analysis
-→ SQL queries
-→ Power BI model and report
-→ Python EDA
-→ portfolio narrative
-```
-
-## Learning unit standard
-
-Concept lessons retain:
-
-```text
-Learn → Explore → Apply → Check
-```
-
-Tool lessons added later must include:
-
-- concept and purpose
-- interface, syntax, or workflow
-- worked example
-- expected output
-- practical exercise
-- common error or debugging case
-- interpretation or business use
-- assessment
-- downloadable asset when useful
-- authoritative reference
-
-## Career routes
-
-### Active
-
-- Data Analyst
-
-### Supporting
-
-- Research & Decision Analyst
-
-### Future roadmaps
-
-- Business Intelligence Analyst
-- Data Scientist
-- Data Engineer
-
-Future routes are not selectable until enough complete lessons exist to provide an honest learning path.
+Planned subject cards may describe scope, but must not imitate published tutorial chapters.

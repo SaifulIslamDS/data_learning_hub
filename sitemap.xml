@@ -139,4 +139,31 @@
   <url><loc>https://data-learning-hub.netlify.app/tools/monte-carlo-pi/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tools/moving-average/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tools/sample-size-estimator/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/exercises/data-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/quiz/data-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/examples/data-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/references/data-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/welcome-to-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/data-and-statistics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/observations-variables-and-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/rows-columns-tables-and-datasets/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/categorical-and-numerical-data/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/discrete-and-continuous-data/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/measurement-scales/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/data-structures-and-formats/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/data-sources-and-collection/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/population-sample-parameter-and-statistic/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/sampling-methods/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/bias-confounding-and-error/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/data-quality-dimensions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/missing-duplicate-invalid-and-outlier-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/tidy-data-and-organization/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/frequency-tables-and-summary-views/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/analytical-questions-and-metrics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/exploratory-data-analysis-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/reproducible-analysis-and-documentation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/data-ethics-privacy-and-responsible-use/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/mini-project-retail-data-audit/</loc></url>
 </urlset>

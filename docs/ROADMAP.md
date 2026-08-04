@@ -1,66 +1,64 @@
 # Product Roadmap
 
-## v2.0.0 — Architecture and Curriculum Foundation
+## Completed
 
-Status: complete in this package.
+### v2.0.0 — Architecture and Curriculum Foundation
 
-- Data Learning Hub rebrand
-- modular content architecture
-- active Data Analyst route
-- retained Statistics foundation
-- curriculum maps for Excel, SQL, Power BI, and Python
-- synthetic datasets and foundation project
-- progress migration and quality gates
+- Data Learning Hub identity
+- Modular content architecture
+- Career and curriculum foundation
+- Shared datasets and projects
+- Existing Statistics Learning Hub migration
 
-## v2.1.0 — Excel for Data Analytics
+### v2.1.0 — Tutorial Platform Core and Complete Data Foundations
 
-- complete bilingual Excel track
-- Microsoft 365 baseline
-- formulas, tables, cleaning, Power Query, PivotTables, charts, dashboards
-- downloadable workbooks and exercises
-- Excel portfolio project
+- W3Schools-style chapter navigation model
+- Complete 21-chapter Data Foundations tutorial
+- Interactive examples and activities
+- Exercise engine and full exercise library
+- Final quiz system
+- Example and reference libraries
+- Tutorial search, progress, mobile drawer, and print support
 
-## v2.2.0 — SQL for Data Analytics
+## Next releases
 
-- PostgreSQL-focused complete SQL track
-- downloadable schema and queries
-- browser-friendly expected result tables
-- joins, CTEs, window functions, analytical patterns
-- SQL portfolio project
+### v2.2.0 — Complete Excel for Data Analytics Tutorial
 
-## v2.3.0 — Power BI for Data Analytics
+- Excel interface and workbook foundations
+- Formulas and references
+- Core, conditional, lookup, text, and date functions
+- Tables, sorting, filtering, validation, and conditional formatting
+- PivotTables and charts
+- Power Query foundations
+- Guided exercises, downloadable workbooks, and project
 
-- Power Query, modeling, DAX, visualization, reporting, governance
-- screenshots and guided build instructions
-- downloadable CSV/XLSX assets
-- PBIX assets only when produced and validated in Power BI Desktop
-- Power BI portfolio project
+### v2.3.0 — Complete SQL for Data Analytics Tutorial
 
-## v2.4.0 — Python for Data Analytics
+- Relational foundations
+- Querying, filtering, aggregation, joins, CTEs, and window functions
+- PostgreSQL-primary syntax with portability notes
+- Browser-side SQL practice
+- Exercises, reference library, and project
 
-- Python 3, Jupyter, NumPy, pandas, Matplotlib
-- downloadable notebooks and scripts
-- cleaning, EDA, statistics, reproducibility
-- Python portfolio project
+### v2.4.0 — Complete Power BI for Data Analytics Tutorial
 
-## v2.5.0 — Projects and Portfolio
+- Power Query, modeling, DAX, visuals, reports, and accessibility
+- Guided datasets and downloadable practice files
 
-- cross-tool projects using shared datasets
-- project briefs, deliverables, checklists, and solution guidance
-- portfolio documentation and analytical storytelling
+### v2.5.0 — Complete Python for Data Analytics Tutorial
 
-## v2.6.0 — Assessment and Career Readiness
+- Python foundations, NumPy, pandas, Matplotlib, EDA, and statistics
+- Editable examples where practical
+- Notebooks, exercises, and project
 
-- revision plans
-- cumulative assessments
-- debugging challenges
-- interview preparation
-- portfolio quality checks
+### v2.6.0 — Data Analytics Workflows and Portfolio
 
-## v3.0.0 — Data Science Path
+- Cross-tool case studies
+- Portfolio projects
+- Business interpretation
+- Interview and presentation preparation
 
-Begins only after the analytics and Python foundations are stable.
+### v3.0.0 and v4.0.0
 
-## v4.0.0 — Data Engineering Path
-
-Begins only after SQL, Python, modeling, and data-quality foundations are stable.
+- Data Science tutorial platform
+- Data Engineering tutorial platform

@@ -2,6 +2,41 @@
 
 All notable changes are documented here.
 
+## [2.1.0] — Tutorial Platform Core and Complete Data Foundations Tutorial
+
+### Added
+
+- Tutorial-first homepage and primary navigation
+- Complete 21-chapter English/Bangla Data Foundations Tutorial
+- Persistent desktop chapter sidebar and searchable mobile chapter drawer
+- Static, topic-specific chapter content with objectives, definitions, vocabulary, worked examples, and recaps
+- Twenty-one interactive “Try it yourself” activities
+- Sixty-three chapter exercises with answer checking and model responses
+- Randomized 30-question final quiz with browser-local result storage
+- Dedicated exercise, example, and reference libraries
+- Previous/next chapter navigation and browser-local chapter completion
+- Print-friendly tutorial pages
+- Tutorial content schema and generator under `content/tutorials` and `scripts/tutorial_generator.py`
+- Automated tutorial completeness audit
+- Browser smoke tests for the full tutorial workflow
+
+### Changed
+
+- Primary navigation is now Tutorials, Exercises, Examples, Projects, References, and Career Paths
+- Study-plan and curriculum features are supporting tools rather than the main product
+- Data Foundations is marked `tutorial-published`
+- Excel, SQL, Power BI, and Python tutorial targets move to v2.2.0–v2.5.0
+- Storage schema advances to version 3 while preserving existing `dlh-*` and migrated `slh-*` progress
+- Search includes individual tutorial chapters
+
+### Preserved
+
+- 108 comprehensive bilingual lessons
+- 20 statistical laboratories
+- Existing topic and lab URLs
+- Guided My Learning dashboard
+- Datasets, projects, curriculum maps, theme, language, bookmarks, and Netlify deployment
+
 ## [2.0.0] — Data Analytics Platform Architecture and Curriculum Foundation
 
 ### Added

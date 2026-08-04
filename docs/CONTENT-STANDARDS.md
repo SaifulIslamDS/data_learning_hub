@@ -68,3 +68,34 @@ Examples should be executable with the stated baseline, use consistent naming, i
 - keep contrast readable in light and dark themes
 - use progressive disclosure rather than removing necessary content
 - keep one clear next action in guided flows
+
+## Tutorial publication standard — v2.1+
+
+A course may be labeled `tutorial-published` only when:
+
+- Its full intended chapter sequence is present.
+- Every chapter teaches the subject directly rather than describing a study plan.
+- English and Bangla content are complete.
+- Definitions are explained in beginner-friendly language.
+- Examples are topic-specific and show context, process, result, and interpretation.
+- Each chapter includes an activity and at least three exercises.
+- Previous/next navigation, course contents, progress, examples, references, and assessment work.
+- Primary or authoritative references support factual claims.
+- Automated content, relationship, link, syntax, and browser checks pass.
+
+A tutorial chapter should normally include:
+
+```text
+Introduction
+→ Learning objectives
+→ Core explanations
+→ Key vocabulary
+→ Worked example
+→ Try it yourself
+→ Exercises
+→ Summary
+→ References
+→ Previous / Next
+```
+
+Progressive disclosure may simplify the first view, but it must not replace substantive teaching content.

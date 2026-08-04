@@ -1,121 +1,96 @@
-# Architecture — Data Learning Hub v2
+# Architecture — v2.1.0
 
-## 1. Architectural objective
+## Product model
 
-Data Learning Hub must support a growing bilingual curriculum without turning hundreds of lessons into manually duplicated HTML files. The source is structured and generated; the deployed output remains static.
+Data Learning Hub is now tutorial-first. The primary content unit is a **tutorial chapter**, while learning plans, career paths, the retained statistics lesson library, laboratories, and projects provide optional support.
 
-## 2. Runtime boundary
+## Runtime
 
-Production uses only:
+The deployed website contains only:
 
-- HTML
-- CSS
+- Static HTML
+- Shared CSS
 - Vanilla JavaScript
-- static CSV files
-- selected client-side visualization libraries for existing labs
-- browser `localStorage`
+- Local downloadable datasets
+- Optional CDN-loaded Chart.js for existing statistics laboratories
 
-There is no backend, API, database, authentication, server session, or cloud learner state.
+There is no server application, API, database, authentication, or cloud learner state.
 
-## 3. Authoring layers
-
-### Platform layer
-
-`content/platform/`
-
-Contains product identity, domain definitions, glossary content, storage namespace, tool baselines, and compatibility paths.
-
-### Statistics layer
-
-`content/statistics/`
-
-Contains the tagged v1.2.0 lesson foundation migrated into v2: modules, topics, formulas, comprehensive lesson content, and lab definitions.
-
-### Track layer
-
-`content/tracks/`
-
-Contains career routes and reviewed curriculum maps for Excel, SQL, Power BI, and Python. Curriculum-ready entries are metadata only until a later release supplies complete bilingual lesson content and validation.
-
-### Dataset layer
-
-`content/datasets/`
-
-Contains synthetic dataset and project metadata. Actual CSV files and dictionaries live under `assets/datasets/`.
-
-## 4. Generation
-
-`scripts/generate.py` creates:
-
-- `assets/js/content.js`
-- site index and shared product pages
-- all 108 lesson pages
-- all 20 lab pages
-- project pages
-- redirects and compatibility pages
-- sitemap and robots files
-
-Generated output may be reviewed, but content changes should be made in the source modules and regenerated.
-
-## 5. Publication states
-
-- `available`: complete, tested, and clickable
-- `active`: selectable career route
-- `supporting`: selectable secondary route
-- `foundation-ready`: supporting structure exists but full project track is incomplete
-- `curriculum-ready`: reviewed scope exists; lessons are not published
-- `roadmap`: future direction only
-- `legacy`: compatibility metadata, hidden from primary navigation
-
-The UI and audits enforce this distinction.
-
-## 6. Browser storage
-
-Current keys use `dlh-*`. During first load, compatible legacy `slh-*` values are copied when the corresponding v2 key is absent.
-
-Migration principles:
-
-- do not delete legacy values
-- preserve stable lesson IDs
-- map obsolete career goals to an active v2 route
-- keep migration idempotent
-- allow users to reset v2 state independently
-
-## 7. URL design
-
-- `/learn/`: published lesson catalog
-- `/practice/`: published labs and datasets
-- `/projects/`: published projects and roadmap
-- `/career-paths/`: career routes
-- `/curriculum/`: planned tool curricula
-- `/topics/<id>/`: published lessons
-- `/tools/<id>/`: published labs
-
-Legacy routes redirect rather than becoming duplicate content.
-
-## 8. Validation architecture
-
-- `test_stats.mjs`: numerical statistical core
-- `audit_lessons.py`: comprehensive lesson completeness
-- `audit_curriculum.py`: IDs, relationships, statuses, datasets, projects, and migration configuration
-- `audit_links.py`: local HTML and asset references
-- JavaScript syntax checks
-- `browser_smoke.py`: representative runtime and responsive checks
-
-## 9. Growth rule
-
-A new tool track should be added as a complete vertical slice:
+## Authoring layers
 
 ```text
-curriculum source
-→ bilingual lessons
-→ examples
-→ exercises/assets
-→ assessments
-→ project integration
-→ audits
-→ generated pages
-→ release documentation
+content/tutorials/
+├── data_foundations.json  # authored tutorial source
+└── loader.py
+
+scripts/
+├── generate.py            # existing platform generator
+└── tutorial_generator.py  # tutorial pages, indices, libraries, homepage
 ```
 
-Do not expose placeholder lesson URLs during partial development.
+`generate.py` loads all product data, emits `assets/js/content.js`, creates retained platform pages, then invokes the tutorial generator. Generated files are committed for direct Netlify deployment.
+
+## Tutorial content schema
+
+Each course defines:
+
+- Identity, language titles, description, status, version, estimated hours
+- Ordered chapters
+- Final quiz policy
+- Reference groups
+
+Each chapter contains:
+
+- Stable ID and sequence
+- English/Bangla title and summary
+- Estimated study time
+- Four learning objectives
+- Three or more topic-specific teaching sections
+- Four or more key terms
+- One worked example with steps and conclusion
+- One interactive activity definition
+- Three exercises: multiple choice, fill, and short response
+- Four-point recap
+- Two or more authoritative references
+
+## Generated tutorial routes
+
+```text
+/tutorials/
+/tutorials/data-foundations/
+/tutorials/data-foundations/<chapter>/
+/exercises/data-foundations/
+/quiz/data-foundations/
+/examples/data-foundations/
+/references/data-foundations/
+```
+
+## Browser modules
+
+- `tutorial-core.js` — tutorial lookup, progress, drawer, exercise primitives
+- `tutorial-index.js` — course and example-library behavior
+- `tutorial.js` — chapter activity, chapter exercises, completion
+- `tutorial-exercises.js` — all-chapter exercise library
+- `tutorial-quiz.js` — randomized final assessment and scoring
+
+## Learner state
+
+Stored under the `dlh-*` namespace:
+
+- `dlh-tutorial-data-foundations-completed`
+- `dlh-tutorial-data-foundations-quiz`
+- Existing language, theme, bookmarks, lesson completion, and profile keys
+
+The storage schema is version 3. Existing v1/v2 progress remains compatible.
+
+## Publication rules
+
+A subject can be labeled:
+
+- `tutorial-published` — complete chapter-based tutorial exists
+- `available` — comprehensive legacy lesson/library content exists
+- `curriculum-ready` — reviewed scope exists but tutorial is not published
+- `foundation-ready` — shared project or dataset foundation exists
+- `roadmap` — future path only
+
+Only published or available content receives working learning URLs.

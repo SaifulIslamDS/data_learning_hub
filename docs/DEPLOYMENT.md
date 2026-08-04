@@ -1,16 +1,6 @@
 # Netlify Deployment
 
-## Repository
-
-The current GitHub repository can remain:
-
-```text
-https://github.com/SaifulIslamDS/statistics_learning_hub
-```
-
-The product displayed to learners is Data Learning Hub. Repository renaming is optional and not required for v2.0.0.
-
-## Netlify settings
+## Settings
 
 ```text
 Production branch:  main
@@ -19,18 +9,9 @@ Build command:      leave empty
 Publish directory:  .
 ```
 
-Generated HTML is committed, so deployment needs no build command.
+The generated HTML is committed to the repository. Netlify does not need Python, Node.js, or a build command.
 
-## Configuration
-
-`netlify.toml` provides:
-
-- custom 404 behavior
-- compatibility redirects
-- security headers and CSP
-- cache-control rules
-
-## Production origin
+## Production URL
 
 The source currently uses:
 
@@ -38,13 +19,7 @@ The source currently uses:
 https://data-learning-hub.netlify.app
 ```
 
-When the final Netlify site name or custom domain differs, edit:
-
-```text
-content/platform/config.py
-```
-
-Then regenerate and validate:
+If the assigned Netlify URL or custom domain differs, update `site_url` in `content/platform/config.py`, then run:
 
 ```powershell
 npm run generate
@@ -59,13 +34,19 @@ Commit the regenerated canonical URLs, sitemap, and robots file.
 ```powershell
 git checkout main
 git pull origin main
+
+npm run generate
 npm test
 npm run test:browser
-git add .
-git commit -m "feat: transform platform into Data Learning Hub v2"
+
+git add -A
+git commit -m "feat: add tutorial platform and Data Foundations course"
 git push origin main
-git tag -a v2.0.0 -m "Data Learning Hub v2.0.0 — Architecture and Curriculum Foundation"
-git push origin v2.0.0
+
+git tag -a v2.1.0 -m "Data Learning Hub v2.1.0 — Tutorial Platform Core and Complete Data Foundations"
+git push origin v2.1.0
 ```
 
-Netlify should deploy automatically from `main`.
+## Configuration
+
+`netlify.toml` provides custom 404 handling, compatibility redirects, security headers, CSP, and cache-control rules.
