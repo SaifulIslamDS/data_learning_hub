@@ -6,6 +6,7 @@ from pathlib import Path
 from html import escape
 
 from topic_details import TOPIC_DETAILS
+from comprehensive_content import build_lesson_content
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = "https://statistics-learning-hub.netlify.app"
@@ -461,7 +462,7 @@ def build_content() -> dict:
                 "summary_bn": summary_bn,
                 "difficulty": difficulty,
                 "kind": kind,
-                "minutes": 20 if difficulty == "Beginner" else 35 if difficulty == "Intermediate" else 50,
+                "minutes": 30 if difficulty == "Beginner" else 45 if difficulty == "Intermediate" else 60,
                 "formula_en": formula_en,
                 "formula_bn": formula_bn,
                 "example_en": example_en,
@@ -471,6 +472,7 @@ def build_content() -> dict:
                 "lab": lab,
                 "url": f"topics/{slug}/",
             }
+            topic["lesson"] = build_lesson_content(topic, module)
             topics.append(topic)
             module_topics.append(slug)
             order += 1

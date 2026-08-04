@@ -1,33 +1,55 @@
 # Statistics Learning Hub
 
-A guided, English-first, bilingual learning platform for statistics, data analytics, data science, data engineering, research, and evidence-based decision-making.
+A comprehensive, English-first, bilingual learning platform for statistics, data analytics, data science, data engineering, research, and evidence-based decision-making.
 
-The production site is completely static: HTML, CSS, and Vanilla JavaScript. It has no backend framework, API, database, authentication system, or server-side calculator. The learner's guided plan, progress, bookmarks, language, and theme remain in the browser through `localStorage`.
+The production site is completely static: HTML, CSS, and Vanilla JavaScript. It has no backend framework, API, database, authentication system, or server-side calculator. A learner's guided plan, progress, bookmarks, language, and theme remain in the browser through `localStorage`.
 
-## Current release: v1.1.0 — Guided Learning Experience
+## Current release: v1.2.0 — Comprehensive Lesson Experience
 
-The v1.1.0 release keeps the complete v1.0.0 curriculum and statistical labs, but changes the primary experience from a large content catalog into a focused learning journey.
+v1.2.0 preserves the successful guided workflow from v1.1.0 and rebuilds the lesson experience around actual teaching depth.
 
-A learner can now:
+Each published lesson now follows four clear phases:
 
-1. Choose a goal: Statistics Foundations, Data Analyst, Data Scientist, Data Engineer, or Research & Business Decisions.
-2. Choose a starting level: Beginner, Some Experience, or Strong Foundation.
-3. Choose a learning preference: Concept-first, Balanced, or Practice-first.
-4. Receive a private browser-local plan with one recommended next lesson.
-5. Follow a simple **Learn → Practice → Apply** session.
-6. See only the next few roadmap items instead of the complete library.
-7. Change the plan or reveal the full catalog at any time.
+```text
+Learn
+→ Explore
+→ Apply
+→ Check
+```
+
+A learner no longer receives only a short definition and generic study instructions. Every one of the 108 bilingual lessons now includes:
+
+- a plain-language topic explanation;
+- a topic-specific explanation of why the concept matters;
+- at least three important terms or concepts;
+- clear learning outcomes;
+- a definition, formula, or formal decision rule;
+- a unique real-world scenario;
+- a worked reasoning sequence;
+- responsible and incorrect interpretation examples;
+- a repeatable analytical workflow;
+- at least two implementation guides relevant to the module;
+- an interactive lab connection where a real lab exists;
+- a practical mini-assignment;
+- a three-option knowledge check with explanation;
+- common mistakes and cautions;
+- a lesson recap;
+- authoritative sources and further reading.
+
+Advanced details are progressively disclosed through accordions, so lessons remain readable without becoming shallow.
 
 ## Release scope
 
 - 9 structured learning modules
-- 108 complete English/Bangla lesson routes
+- 108 comprehensive English/Bangla lesson routes
 - 20 interactive statistical labs
 - 5 guided learning paths
 - Three-step onboarding wizard
 - Personalized `My Learning` dashboard
 - Goal-, level-, and learning-style-aware recommendations
-- Guided lesson flow and guided lab workflow
+- Learn → Explore → Apply → Check lesson architecture
+- 108 unique practical lesson scenarios
+- Module-relevant spreadsheet, SQL, BI, Python, modelling, or engineering implementation guidance
 - 40-term bilingual glossary
 - English-first EN/BN language switching
 - Persistent light/dark theme
@@ -35,20 +57,21 @@ A learner can now:
 - Responsive desktop, tablet, and mobile layouts
 - SEO metadata, sitemap, robots file, web manifest, 404 page, and social artwork
 - Netlify headers, cache policy, and fallback configuration
-- Automated statistical-core tests and local-link auditing
+- Automated statistical, lesson-completeness, JavaScript-syntax, and local-link validation
 
 ## Learning model
 
-The site's primary learning loop is:
+The primary learning loop is:
 
 ```text
-Learn the concept
-→ Practice with a small example or browser lab
-→ Interpret the result in context
-→ Reproduce important work in Excel, SQL, Python, R, or Power BI
+Understand the concept and vocabulary
+→ Work through a practical scenario
+→ Implement the idea in a suitable tool or workflow
+→ Interpret the result and test understanding
+→ Transfer the concept to a real dataset or professional tool
 ```
 
-The site teaches statistical reasoning and transparent calculation. It does not claim that reading lessons alone replaces real datasets, analytical tools, portfolio projects, domain knowledge, or formal academic study.
+The site teaches statistical reasoning and transparent implementation. It does not claim that reading lessons alone replaces real datasets, Excel, SQL, Python, R, Power BI, portfolio projects, production data systems, domain expertise, or formal academic study.
 
 ## Learning modules
 
@@ -62,7 +85,7 @@ The site teaches statistical reasoning and transparent calculation. It does not 
 8. Data Engineering Foundations
 9. Advanced Statistical Methods
 
-Every module contains 12 published lessons. Every lesson card resolves to an implemented page.
+Every module contains 12 published lessons. Every lesson card resolves to an implemented route.
 
 ## Guided paths
 
@@ -72,13 +95,13 @@ Every module contains 12 published lessons. Every lesson card resolves to an imp
 - Data Engineer
 - Research & Business Decisions
 
-A selected path is displayed in four manageable phases. Only the current phase is expanded by default.
+The guided system still presents one recommended next step instead of exposing all 108 lessons at once. The comprehensive lesson release improves depth inside that focused route; it does not bring back the previous content-wall experience.
 
 ## Interactive labs
 
 The browser-based labs cover summary statistics, weighted means, z-scores, quantiles, histograms, box plots and outliers, Pearson correlation, ordinary least-squares regression, normal/binomial/Poisson probabilities, confidence intervals, one- and two-sample t tests, chi-square independence, A/B proportions, the Central Limit Theorem, Monte Carlo estimation, moving averages, and sample-size planning.
 
-Calculator inputs are processed locally. The statistical engine is implemented in `assets/js/stats-core.js`, with automated reference checks in `scripts/test_stats.mjs`.
+Calculator inputs are processed locally. The statistical engine is implemented in `assets/js/stats-core.js`, with deterministic reference checks in `scripts/test_stats.mjs`.
 
 ## Local use
 
@@ -94,7 +117,7 @@ Then open:
 http://localhost:8080
 ```
 
-No package installation is required for the site itself.
+No package installation is required for the deployed site itself.
 
 ## Quality checks
 
@@ -106,14 +129,23 @@ This runs:
 
 ```bash
 npm run test:stats
+npm run audit:lessons
 npm run audit:links
 ```
 
-Regenerate all static routes and the sitemap after editing curriculum or guided-path source data:
+The lesson audit verifies that all 108 lessons contain the complete bilingual v1.2.0 structure and unique scenarios.
+
+Regenerate all static routes and the sitemap after editing curriculum or lesson source data:
 
 ```bash
 npm run generate
 npm test
+```
+
+Optional browser smoke test for the representative comprehensive lesson:
+
+```bash
+python scripts/browser_smoke.py
 ```
 
 ## Netlify deployment
@@ -124,7 +156,7 @@ The repository includes `netlify.toml` and does not require a build command.
 2. In Netlify, choose **Add new site → Import an existing project**.
 3. Select the GitHub repository.
 4. Keep the base directory and build command empty.
-5. The publish directory is already configured as `.` in `netlify.toml`.
+5. The publish directory is configured as `.` in `netlify.toml`.
 6. Deploy the site.
 7. Replace the placeholder production origin `https://statistics-learning-hub.netlify.app` if Netlify assigns another subdomain or a custom domain is connected.
 8. Run `npm run generate` after changing that origin so canonical URLs, Open Graph URLs, `robots.txt`, and `sitemap.xml` remain correct.
@@ -137,14 +169,14 @@ See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the complete checklist.
 .
 ├── index.html
 ├── 404.html
-├── start/                  # Three-step guided onboarding
-├── my-learning/            # Browser-local personalized dashboard
+├── start/                       # Guided onboarding
+├── my-learning/                 # Browser-local dashboard
 ├── about/
 ├── catalog/
 ├── glossary/
 ├── paths/
-├── topics/                 # 108 generated lesson routes
-├── tools/                  # 20 interactive labs + index
+├── topics/                      # 108 generated lesson routes
+├── tools/                       # 20 interactive labs + index
 ├── assets/
 │   ├── css/main.css
 │   ├── icons/
@@ -152,7 +184,10 @@ See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the complete checklist.
 ├── scripts/
 │   ├── generate.py
 │   ├── topic_details.py
+│   ├── comprehensive_content.py
+│   ├── audit_lessons.py
 │   ├── audit_links.py
+│   ├── browser_smoke.py
 │   └── test_stats.mjs
 ├── docs/
 ├── manifest.webmanifest
@@ -164,7 +199,9 @@ See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the complete checklist.
 
 ## Content and architecture
 
-The curriculum and guided paths are maintained in the Python generator and exported to `assets/js/content.js`. Generated lesson and lab pages remain intentionally thin and reuse shared rendering logic. Do not hand-edit generated topic routes; update source data and regenerate instead.
+The curriculum and routes are maintained in `scripts/generate.py`. Reviewed concise definitions live in `scripts/topic_details.py`. The comprehensive bilingual lesson schema, practical scenarios, implementation patterns, quizzes, recaps, and reference groups live in `scripts/comprehensive_content.py`.
+
+The generator exports the complete browser dataset to `assets/js/content.js`. Generated lesson pages remain intentionally thin and reuse the shared renderer in `assets/js/topic.js`. Do not hand-edit generated topic routes; update source data and regenerate instead.
 
 Read:
 
@@ -173,7 +210,7 @@ Read:
 - [Content standards](docs/CONTENT-STANDARDS.md)
 - [Testing](docs/TESTING.md)
 - [Deployment](docs/DEPLOYMENT.md)
-- [v1.1.0 release report](docs/RELEASE-REPORT-v1.1.0.md)
+- [v1.2.0 release report](docs/RELEASE-REPORT-v1.2.0.md)
 
 ## Credits
 

@@ -2,6 +2,39 @@
 
 All notable changes to this project are documented here.
 
+## [1.2.0] - 2026-08-04
+
+### Added
+
+- Learn → Explore → Apply → Check architecture across all 108 lessons.
+- Plain-language explanations, topic importance, core vocabulary, formal rules, and measurable outcomes.
+- 108 unique bilingual real-world scenarios and analytical questions.
+- Worked reasoning sequences and responsible-versus-overstated interpretation panels.
+- Concept-, formula-, method-, and workflow-specific practical sequences.
+- At least two module-relevant implementation guides per lesson.
+- Mini-assignments, interactive three-option knowledge checks, answer explanations, and recaps.
+- Authoritative further-reading groups using OpenStax, NIST/SEMATECH, scikit-learn, Apache Parquet, PostgreSQL, and dbt documentation.
+- `scripts/comprehensive_content.py` as the deterministic comprehensive lesson source.
+- `scripts/audit_lessons.py` to validate all 108 generated lessons.
+- `scripts/browser_smoke.py` for representative browser-level lesson QA.
+- New desktop and mobile screenshots for the comprehensive Statistics and Data lesson.
+
+### Changed
+
+- Replaced generic three-pass lesson summaries with topic-focused comprehensive teaching units.
+- Increased study-time estimates to 30, 45, or 60 minutes by difficulty.
+- Added four-phase page navigation and a sticky desktop lesson table of contents.
+- Added progressive disclosure for formal rules, implementation guidance, cautions, and sources.
+- Preserved v1.1.0 onboarding, dashboard, guided paths, local progress, and static architecture.
+
+### Validated
+
+- Statistical-core automated tests pass.
+- 108 comprehensive bilingual lessons pass structural and uniqueness validation.
+- All JavaScript files pass syntax validation.
+- 1,219 local references across 137 HTML files audit with zero broken links.
+- Browser smoke testing passes for English-first content, Bangla switching, quiz interaction, theme switching, and mobile rendering.
+
 ## [1.1.0] - 2026-08-04
 
 ### Added

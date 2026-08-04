@@ -2,61 +2,91 @@
 
 ## Design objective
 
-Statistics Learning Hub is authored as a maintainable, data-driven project but deployed as ordinary static files. The browser receives only HTML, CSS, JavaScript, icons, and structured content data. There is no application server, API, database, authentication system, or server-side calculator.
+Statistics Learning Hub is authored as a maintainable, data-driven project but deployed as ordinary static files. The browser receives only HTML, CSS, JavaScript, icons, and generated content data.
 
-The v1.1.0 architecture adds a guided experience layer without changing that static deployment model. Personalization is calculated entirely in the browser from the learner's selected goal, starting level, preferred learning mode, completion state, and bookmarks.
+There is no backend framework, API, database, authentication service, or server-side calculation runtime.
 
-## Runtime layers
+## Architectural layers
 
-### Static route layer
+### Generated static routes
 
-The repository contains explicit routes for:
+`scripts/generate.py` generates:
 
-- homepage;
+- homepage and shared pages;
 - guided onboarding;
 - personalized learning dashboard;
-- catalog;
-- learning paths;
-- glossary;
-- about page;
-- 108 lessons;
-- 20 interactive labs;
-- custom 404 page.
+- catalog and career paths;
+- glossary and about page;
+- 108 lesson routes;
+- 20 interactive lab routes;
+- custom 404 page;
+- `assets/js/content.js`;
+- `sitemap.xml`.
 
-This provides crawlable URLs, reliable Netlify routing, shareable pages, and useful per-page metadata.
+This provides crawlable, shareable routes with per-page metadata while avoiding hand-maintained navigation duplication.
+
+### Curriculum source
+
+`scripts/generate.py` contains:
+
+- modules;
+- lesson ordering;
+- difficulty and lesson format;
+- lab relationships;
+- learning paths;
+- glossary entries;
+- route metadata.
+
+`scripts/topic_details.py` contains the concise reviewed English/Bangla definition for every topic.
+
+### Comprehensive lesson source
+
+`scripts/comprehensive_content.py` contains the v1.2.0 lesson-enrichment model:
+
+- unique bilingual practical scenarios for all 108 lessons;
+- explicit analytical questions;
+- custom concept definitions for foundational and high-value topics;
+- lesson-type classification;
+- module-aware implementation guidance;
+- practical workflows;
+- interpretation standards;
+- mini-assignments;
+- quizzes and explanations;
+- recaps;
+- authoritative reference groups.
+
+`build_lesson_content()` combines this material with topic metadata during generation. No remote generation occurs in the browser or during deployment.
 
 ### Shared presentation layer
 
 `assets/css/main.css` defines:
 
-- design tokens and themes;
-- responsive layouts;
-- navigation and footer;
-- onboarding controls;
-- personalized dashboard panels;
-- lesson and laboratory workspaces;
-- cards, forms, progress indicators, and callouts;
-- accessibility helpers;
-- print behavior.
+- design tokens and light/dark themes;
+- responsive header and footer;
+- guided onboarding and dashboard;
+- catalog, paths, glossary, lessons, and labs;
+- the four-phase lesson map;
+- concept cards, scenario panels, workflow lists, implementation accordions, quizzes, recaps, and sticky lesson navigation;
+- accessibility helpers and print behavior.
 
-The guided release intentionally uses progressive disclosure: the full curriculum remains available, but primary pages show only the next useful choices.
+The lesson design uses progressive disclosure: essential explanations remain visible while deeper rules, implementation guidance, cautions, and sources can be expanded.
 
 ### Shared application shell
 
-`assets/js/site.js` renders and manages:
+`assets/js/site.js` manages:
 
 - header and footer;
 - responsive navigation;
 - English/Bangla switching;
 - global search;
 - light/dark theme events;
-- learner profile helpers;
-- guided path selection helpers;
-- local bookmarks and completion state;
+- local learner-profile helpers;
+- guided-path selection;
+- bookmarks and completion state;
 - homepage recommendations;
 - scroll-to-top behavior.
 
-`assets/js/theme-init.js` applies the saved or operating-system theme before the page renders to reduce theme flashing.
+`assets/js/theme-init.js` applies the saved or operating-system theme before normal rendering to reduce theme flashing.
 
 ### Guided experience layer
 
@@ -66,108 +96,94 @@ The guided release intentionally uses progressive disclosure: the full curriculu
 2. starting level;
 3. preferred learning mode.
 
-`assets/js/dashboard.js` converts the selected profile into a focused dashboard containing:
+`assets/js/dashboard.js` converts the selected profile into one recommended next lesson, a focused session, a short roadmap, bookmarks, and progress controls.
 
-- one recommended next lesson;
-- a Learn → Practice → Apply session;
-- a short visible roadmap;
-- saved bookmarks;
-- completion controls.
+`assets/js/paths.js` presents five learning paths in four phases.
 
-`assets/js/paths.js` renders five path choices and reveals one selected path in four manageable phases.
+`assets/js/catalog.js` defaults to the learner's selected path while preserving access to the full catalog.
 
-`assets/js/catalog.js` defaults to the learner's selected path when a profile exists, while preserving a clear way to display the full 108-lesson catalog.
+### Comprehensive lesson renderer
 
-`assets/js/topic.js` renders lessons as guided passes and connects each lesson to reflection, practice, and a next action.
+`assets/js/topic.js` renders the nested `topic.lesson` data into four phases:
 
-`assets/js/tools.js` provides both the statistical laboratory runtime and the guided practice shell used to frame input changes, observation, interpretation, and transfer to professional tools.
+1. **Learn** — plain explanation, importance, concepts, outcomes, and formal rule.
+2. **Explore** — real-world scenario, analytical question, worked reasoning, and interpretation boundary.
+3. **Apply** — workflow, implementation guidance, related lab, and mini-assignment.
+4. **Check** — quiz, explanation, cautions, recap, references, completion, and next lesson.
 
-### Content model
+The renderer also manages:
 
-`scripts/generate.py` contains the module, topic, tool, path, glossary, route, and metadata structures. `scripts/topic_details.py` contains reviewed bilingual topic definitions. The generator writes:
+- language-aware dynamic text;
+- local completion and bookmarking;
+- guided-path position;
+- related laboratory recommendation;
+- adjacent and next-plan navigation;
+- quiz interaction.
 
-- `assets/js/content.js`;
-- topic HTML routes;
-- tool HTML routes;
-- onboarding and dashboard routes;
-- shared static pages;
-- `sitemap.xml`.
+### Statistical engine and labs
 
-This gives the site one curriculum source of truth instead of manually maintaining hundreds of independent navigation lists.
+`assets/js/stats-core.js` contains reusable numerical functions for descriptive statistics, quantiles, correlation, ordinary least squares, distributions, t critical values, gamma/beta approximations, and discrete probability calculations.
 
-### Statistical engine
-
-`assets/js/stats-core.js` contains reusable numerical functions, including descriptive statistics, quantiles, correlation, ordinary least squares, distribution functions, t critical values, gamma/beta approximations, and discrete probability functions.
-
-`assets/js/tools.js` provides the input forms, validation, interpretations, tables, and visual output for the 20 labs. Chart.js is loaded only on lab pages and is used as a visualization layer; numerical results do not depend on the chart library.
+`assets/js/tools.js` provides forms, validation, interpretations, tables, and visual output for the 20 labs. Chart.js is a visualization layer; numerical output does not depend on the chart library.
 
 ## Browser storage
 
-The following values may be stored in `localStorage`:
+The following optional values may be stored in `localStorage`:
 
-- selected language;
-- selected theme;
-- learner profile (`slh-profile`);
+- language;
+- theme;
+- learner profile;
 - bookmarked lessons;
-- completed lessons.
+- completed lessons;
+- last opened topic.
 
-The learner profile contains only the selected goal, level, and learning mode. No personal identity, learner profile, progress record, or calculator dataset is transmitted to a server by the application.
-
-## Recommendation model
-
-The recommendation system is deterministic rather than AI-generated.
-
-- The selected goal maps to one of five reviewed learning paths.
-- The selected level determines a reasonable starting index in that ordered path.
-- The selected learning mode changes the order and emphasis of concept, practice, and application actions.
-- Completion state determines the next unfinished lesson.
-- A linked laboratory is recommended only when an implemented lab exists for the current lesson.
-
-This avoids fake personalization, unsupported content generation, and hidden remote processing.
+No personal identity, calculator dataset, profile, or progress record is transmitted by the application.
 
 ## External dependencies
 
 - Google Fonts for Manrope and Hind Siliguri
-- Chart.js 4.5.1 from jsDelivr on interactive lab pages
+- Chart.js 4.5.1 from jsDelivr on lab pages
 
-The site continues to render textual calculations if Chart.js is unavailable, although charts will not appear.
+Lesson text remains available if fonts fail. Textual lab results remain available if Chart.js fails, although charts will not render.
 
 ## URL strategy
 
-Routes use clean folder URLs such as:
+Clean folder routes are used:
 
 ```text
 /start/
 /my-learning/
-/topics/central-limit-theorem/
-/tools/clt-simulator/
+/topics/statistics-and-data/
+/tools/summary-statistics/
 ```
 
-Root-relative links are intentional for Netlify deployment at the domain root.
+Root-relative links are intentional for deployment at the Netlify domain root.
+
+## Editing a lesson
+
+1. Update the topic definition in `scripts/topic_details.py` when the core definition changes.
+2. Update the scenario, custom concepts, implementation model, or references in `scripts/comprehensive_content.py`.
+3. Do not hand-edit `topics/*/index.html` or `assets/js/content.js`.
+4. Run `npm run generate`.
+5. Run `npm test`.
+6. Run `python scripts/browser_smoke.py` when lesson layout or interaction changes.
+7. Review English, Bangla, light, dark, desktop, and mobile presentation.
 
 ## Adding a lesson
 
-1. Add the topic metadata to the appropriate module in `scripts/generate.py`.
-2. Add reviewed English and Bangla definitions to `scripts/topic_details.py`.
-3. Link a real lab only when that lab is implemented.
-4. Add the lesson to a guided path only when its sequence is educationally justified.
-5. Run `npm run generate`.
-6. Run `npm test`.
-7. Browser-check the route in both languages, both themes, and the relevant guided path.
+1. Add topic metadata to the correct module in `scripts/generate.py`.
+2. Add the concise bilingual definition to `scripts/topic_details.py`.
+3. Add a unique scenario to `SCENARIO_SEEDS`.
+4. Add custom concepts when the generated concept structure would be insufficient.
+5. Link a lab only when it is fully implemented and pedagogically relevant.
+6. Add the topic to a guided path only when sequence is justified.
+7. Generate and pass all release gates.
 
 ## Adding a lab
 
-1. Add lab metadata to the generator.
-2. Add form markup, sample values, validation, calculation, interpretation, and visualization in `assets/js/tools.js`.
+1. Add metadata to the generator.
+2. Add forms, examples, validation, calculations, interpretation, and visualization in `assets/js/tools.js`.
 3. Add or reuse numerical functions in `assets/js/stats-core.js`.
 4. Add deterministic reference assertions to `scripts/test_stats.mjs`.
-5. Connect the lab only to lessons for which it provides meaningful practice.
+5. Connect the lab only to suitable lessons.
 6. Generate routes and run all tests.
-
-## Modifying guided paths
-
-1. Update the reviewed ordered path in `scripts/generate.py`.
-2. Confirm that every referenced topic exists.
-3. Confirm that level-based entry points remain sensible.
-4. Review the path in `/start/`, `/my-learning/`, `/paths/`, and `/catalog/`.
-5. Run generation and link validation before release.

@@ -4,6 +4,7 @@
 
 - Curriculum structure and page metadata: `scripts/generate.py`
 - Topic definitions: `scripts/topic_details.py`
+- Comprehensive lesson content and scenarios: `scripts/comprehensive_content.py`
 - Generated browser dataset: `assets/js/content.js`
 - Shared visual system: `assets/css/main.css`
 - Shared site behavior: `assets/js/site.js`
@@ -21,13 +22,15 @@
 7. New calculators require deterministic tests where applicable.
 8. Preserve static deployment: no backend, API, database, authentication, or server runtime.
 9. Run `npm test` before every commit.
-10. Update documentation and `CHANGELOG.md` for material releases.
+10. Run `python scripts/browser_smoke.py` after changing lesson UI or interaction.
+11. Update documentation and `CHANGELOG.md` for material releases.
 
 ## Release gate
 
 A release is acceptable only when:
 
 - statistical tests pass;
+- the comprehensive lesson audit validates all 108 lessons;
 - the link audit reports zero broken local references;
 - English and Bangla switching works;
 - both themes work;

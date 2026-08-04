@@ -22,55 +22,81 @@ The release contains 108 lessons arranged into nine equal modules. The sequence 
 - Intermediate: 56 lessons
 - Advanced: 33 lessons
 
-## Learning formats
+## Guided curriculum model
 
-- Concept lessons: 75
-- Lab-linked lessons: 22
-- Practice-oriented lessons: 11
+The curriculum is not intended to be consumed as a 108-item checklist.
 
-A format label indicates the dominant presentation style; every page still includes objectives, a core idea, application guidance, interpretation standards, common mistakes, related lessons, and completion controls.
+1. The learner chooses a goal, level, and learning preference.
+2. The system recommends one next lesson.
+3. The learner completes the lesson through Learn → Explore → Apply → Check.
+4. A relevant lab is offered only when an implemented lab exists.
+5. The learner transfers the topic to a small assignment or professional tool.
+6. The next unfinished lesson becomes the primary action.
 
-## Guided learning model
+The full library remains public and searchable, but it is secondary to the guided sequence.
 
-The curriculum is not intended to be consumed as a 108-item checklist. The default experience uses progressive disclosure:
+## Comprehensive lesson anatomy
 
-1. Select a learning goal.
-2. Select a realistic starting level.
-3. Select a preferred learning mode.
-4. Receive one recommended lesson.
-5. Follow Learn → Practice → Apply.
-6. Reveal only the next few roadmap items.
-7. Open the complete catalog only when needed.
+### Learn
 
-The full library remains public and searchable. The guided layer changes presentation and sequencing, not access.
+- plain-language definition;
+- topic-specific reason the concept matters;
+- at least three key terms or concepts;
+- clear learning outcomes;
+- formal rule, formula, or explicit procedural definition.
 
-## Learning modes
+### Explore
 
-### Concept-first
+- a unique real-world scenario;
+- one explicit analytical question;
+- a five-step worked reasoning sequence;
+- a responsible interpretation example;
+- an overclaim or misuse warning.
 
-Prioritizes explanation, terminology, assumptions, and interpretation before opening a laboratory or application prompt.
+### Apply
 
-### Balanced
+- a five-step repeatable workflow;
+- at least two implementation guides selected for the module;
+- an interactive lab link where one genuinely exists;
+- a mini-assignment requiring data, method, interpretation, and limitation.
 
-Uses the standard sequence:
+### Check
 
-```text
-Learn → Practice → Apply
-```
+- a three-option knowledge check;
+- immediate explanation;
+- common mistakes and cautions;
+- four-point recap;
+- authoritative further reading.
 
-### Practice-first
+## Lesson types
 
-Begins with an example or implemented lab when appropriate, then returns to the concept and interpretation needed to explain the result correctly.
+The lesson renderer adapts to four educational types.
+
+### Concept lessons
+
+Emphasize definitions, classification, data structure, vocabulary, and decision boundaries.
+
+### Formula lessons
+
+Emphasize the quantity being measured, notation, calculation convention, units, visual checks, and sensitivity.
+
+### Method lessons
+
+Emphasize research question, estimand or model, assumptions, validated procedure, uncertainty, diagnostics, and defensible reporting.
+
+### Workflow lessons
+
+Emphasize inputs, grain, ownership, transformations, validation, publication, monitoring, and reproducibility.
 
 ## Guided paths
 
 ### Statistics Foundations
 
-For learners who need a calm entry point before choosing a specialist route. It focuses on data types, variables, populations and samples, measurement, quality, descriptive statistics, probability, sampling behavior, and responsible interpretation.
+A calm entry route covering data, variables, measurement, sampling, quality, descriptive statistics, probability, sampling behavior, and responsible interpretation.
 
 ### Data Analyst
 
-Focuses on data foundations, descriptive statistics, cleaning, exploratory analysis, analytical SQL concepts, KPI design, cohorts, funnels, A/B testing, forecasting, regression, and communication.
+Focuses on data foundations, descriptive statistics, cleaning, exploratory analysis, SQL concepts, KPI design, cohorts, funnels, A/B testing, forecasting, regression, and communication.
 
 ### Data Scientist
 
@@ -78,31 +104,14 @@ Adds probability, inference, regression diagnostics, feature engineering, resamp
 
 ### Data Engineer
 
-Focuses on data representation, relational modeling, analytical SQL, normalization, ETL/ELT, batch and streaming concepts, warehouses/lakes/lakehouses, dimensional modeling, testing, orchestration, lineage, and semantic layers. Statistical lessons are included where they support data quality and analytical reliability.
+Focuses on data representation, relational modeling, analytical SQL, normalization, ETL/ELT, batch and streaming, warehouses/lakes/lakehouses, dimensional modeling, testing, orchestration, lineage, and semantic layers.
 
 ### Research & Business Decisions
 
-Focuses on sampling, measurement, uncertainty, experiments, comparisons, regression, forecasting, and defensible interpretation.
-
-## Path phases
-
-Each guided path is divided into four visible phases. Only one selected path is expanded at a time. This makes the route understandable while preventing the interface from presenting dozens of equal-priority choices.
-
-The phases are presentation groups, not credentials or claims of professional mastery.
-
-## Recommended session pattern
-
-A focused learning session should normally contain:
-
-1. one lesson;
-2. one small example or related lab when available;
-3. one plain-language interpretation;
-4. one transfer task using Excel, SQL, Python, R, Power BI, or a relevant real dataset.
-
-This model positions the site as a bridge between conceptual understanding and professional implementation.
+Focuses on sampling, measurement, uncertainty, experiments, group comparisons, regression, forecasting, and defensible interpretation.
 
 ## Curriculum boundaries
 
-The site teaches concepts and offers browser-sized demonstrations. It does not claim that a static browser lab replaces production data engineering systems, statistical software, peer-reviewed research design, domain expertise, or hands-on portfolio work.
+The site provides structured learning and browser-scale demonstrations. It does not claim that one lesson provides professional mastery or that a static lab replaces production infrastructure, statistical software, peer review, real projects, or domain expertise.
 
-Data engineering pages are conceptual learning pages rather than simulated production infrastructure. Advanced statistical pages introduce methods and assumptions without pretending that one short page provides complete professional mastery.
+Advanced topics introduce the problem, assumptions, workflow, interpretation, and implementation direction. Learners are explicitly directed to authoritative sources and specialist software documentation for deeper work.
