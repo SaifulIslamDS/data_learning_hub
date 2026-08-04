@@ -58,6 +58,8 @@ Verify these production URLs:
 
 ```text
 /
+/start/
+/my-learning/
 /catalog/
 /paths/
 /tools/
@@ -70,22 +72,38 @@ Verify these production URLs:
 
 Then confirm:
 
+- onboarding saves a plan and redirects to My Learning;
+- My Learning recommends one valid lesson;
+- changing the plan updates recommendations;
 - the missing route displays the custom 404 page and HTTP 404 status;
 - all fonts and Chart.js load without CSP errors;
 - EN/BN and theme preferences survive navigation;
+- completion, bookmarks, and the learner plan survive reload;
 - one representative calculator works on desktop and mobile;
 - the Netlify deploy log reports no build failure;
 - `sitemap.xml` and `robots.txt` use the production origin.
 
-## Suggested Git commands
+## Suggested Git commands for v1.1.0
+
+For a new repository:
 
 ```bash
 git init
 git branch -M main
 git add .
-git commit -m "feat: launch Statistics Learning Hub v1.0.0"
+git commit -m "feat: launch guided Statistics Learning Hub v1.1.0"
 git remote add origin https://github.com/SaifulIslamDS/statistics_learning_hub.git
 git push -u origin main
-git tag -a v1.0.0 -m "Statistics Learning Hub v1.0.0"
-git push origin v1.0.0
+git tag -a v1.1.0 -m "Statistics Learning Hub v1.1.0 — Guided Learning Experience"
+git push origin v1.1.0
+```
+
+For a repository that already contains v1.0.0:
+
+```bash
+git add .
+git commit -m "feat: add guided learning experience"
+git push origin main
+git tag -a v1.1.0 -m "Statistics Learning Hub v1.1.0 — Guided Learning Experience"
+git push origin v1.1.0
 ```

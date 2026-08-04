@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://statistics-learning-hub.netlify.app/</loc></url>
+  <url><loc>https://statistics-learning-hub.netlify.app/start/</loc></url>
+  <url><loc>https://statistics-learning-hub.netlify.app/my-learning/</loc></url>
   <url><loc>https://statistics-learning-hub.netlify.app/catalog/</loc></url>
   <url><loc>https://statistics-learning-hub.netlify.app/paths/</loc></url>
   <url><loc>https://statistics-learning-hub.netlify.app/tools/</loc></url>

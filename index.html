@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A modern English-first, bilingual statistics, data analytics, data science and data engineering learning hub.">
+  <meta name="description" content="A guided English-first bilingual statistics, analytics, data science and data engineering learning hub.">
   <meta name="theme-color" content="#6d5dfc">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Statistics Learning Hub">
-  <meta property="og:description" content="A modern English-first, bilingual statistics, data analytics, data science and data engineering learning hub.">
+  <meta property="og:description" content="A guided English-first bilingual statistics, analytics, data science and data engineering learning hub.">
   <meta property="og:image" content="https://statistics-learning-hub.netlify.app/assets/icons/social-card.svg">
   <link rel="canonical" href="https://statistics-learning-hub.netlify.app/">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
@@ -21,31 +21,25 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <div id="site-header"></div>
   <main id="main-content" tabindex="-1">
-<section class="hero home-hero">
+<section class="hero home-hero guided-home">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
-      <span class="eyebrow" data-en="Free, bilingual and browser-based" data-bn="বিনামূল্যে, দ্বিভাষিক ও ব্রাউজারভিত্তিক">Free, bilingual and browser-based</span>
-      <h1 data-en="Learn statistics by understanding, calculating and experimenting." data-bn="বোঝা, হিসাব ও এক্সপেরিমেন্টের মাধ্যমে পরিসংখ্যান শিখুন।">Learn statistics by understanding, calculating and experimenting.</h1>
-      <p data-en="A complete static learning hub for future data analysts, data scientists, data engineers, researchers and evidence-driven professionals." data-bn="ভবিষ্যৎ ডেটা অ্যানালিস্ট, ডেটা সায়েন্টিস্ট, ডেটা ইঞ্জিনিয়ার, গবেষক ও প্রমাণভিত্তিক পেশাজীবীদের জন্য একটি পূর্ণাঙ্গ স্ট্যাটিক লার্নিং হাব।">A complete static learning hub for future data analysts, data scientists, data engineers, researchers and evidence-driven professionals.</p>
+      <span class="eyebrow" data-en="Guided, bilingual and browser-based" data-bn="গাইডেড, দ্বিভাষিক ও ব্রাউজারভিত্তিক">Guided, bilingual and browser-based</span>
+      <h1 data-en="Learn one useful statistics concept at a time." data-bn="একবারে একটি প্রয়োজনীয় পরিসংখ্যান ধারণা শিখুন।">Learn one useful statistics concept at a time.</h1>
+      <p data-en="Tell the hub your goal and current level. It will turn 108 lessons and 20 labs into one clear next step—then help you learn, practice and apply it." data-bn="হাবকে আপনার লক্ষ্য ও বর্তমান লেভেল বলুন। এটি ১০৮টি lesson ও ২০টি lab-কে একটি পরিষ্কার next step-এ রূপ দেবে—তারপর learn, practice ও apply করতে সাহায্য করবে।">Tell the hub your goal and current level. It will turn 108 lessons and 20 labs into one clear next step—then help you learn, practice and apply it.</p>
       <div class="hero-actions">
-        <a class="button primary" href="/paths/" data-en="Choose a learning path" data-bn="লার্নিং পাথ বেছে নিন">Choose a learning path</a>
-        <a class="button ghost" href="/tools/" data-en="Open interactive labs" data-bn="ইন্টারঅ্যাকটিভ ল্যাব খুলুন">Open interactive labs</a>
+        <a class="button primary" id="home-primary-cta" href="/start/">Build my learning plan</a>
+        <a class="button ghost" id="home-secondary-cta" href="/catalog/">Explore without a plan</a>
       </div>
       <div class="hero-proof" id="hero-stats"></div>
     </div>
-    <div class="hero-visual reveal" aria-label="Statistics learning dashboard preview">
-      <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
-      <div class="preview-card preview-main"><span>μ</span><strong data-en="From data to decisions" data-bn="ডেটা থেকে সিদ্ধান্ত">From data to decisions</strong><small data-en="Theory · labs · practice · career paths" data-bn="থিওরি · ল্যাব · প্র্যাকটিস · ক্যারিয়ার পাথ">Theory · labs · practice · career paths</small></div>
-      <div class="preview-card preview-float a"><span>σ</span><small>Spread</small></div>
-      <div class="preview-card preview-float b"><span>r</span><small>Relation</small></div>
-      <div class="preview-card preview-float c"><span>p</span><small>Evidence</small></div>
-    </div>
+    <aside class="home-plan-preview reveal" id="home-plan-preview" aria-live="polite"></aside>
   </div>
 </section>
-<section class="section"><div class="container"><div class="section-heading"><div><span class="eyebrow" data-en="Structured curriculum" data-bn="স্ট্রাকচার্ড কারিকুলাম">Structured curriculum</span><h2 data-en="Nine modules from first principles to advanced methods" data-bn="প্রাথমিক ধারণা থেকে অ্যাডভান্সড মেথড পর্যন্ত নয়টি মডিউল">Nine modules from first principles to advanced methods</h2></div><a href="/catalog/" class="text-link" data-en="Browse all lessons →" data-bn="সব লেসন দেখুন →">Browse all lessons →</a></div><div id="module-grid" class="card-grid modules-grid"></div></div></section>
-<section class="section section-muted"><div class="container"><div class="section-heading"><div><span class="eyebrow" data-en="Practice in the browser" data-bn="ব্রাউজারেই প্র্যাকটিস">Practice in the browser</span><h2 data-en="Interactive statistical labs with transparent methods" data-bn="স্বচ্ছ পদ্ধতিসহ ইন্টারঅ্যাকটিভ স্ট্যাটিস্টিক্যাল ল্যাব">Interactive statistical labs with transparent methods</h2></div><a href="/tools/" class="text-link" data-en="View every lab →" data-bn="সব ল্যাব দেখুন →">View every lab →</a></div><div id="featured-tools" class="card-grid tool-grid"></div></div></section>
-<section class="section"><div class="container"><div class="section-heading center"><div><span class="eyebrow" data-en="Career-oriented learning" data-bn="ক্যারিয়ারভিত্তিক শেখা">Career-oriented learning</span><h2 data-en="Follow a path built around your goal" data-bn="আপনার লক্ষ্য অনুযায়ী তৈরি পাথ অনুসরণ করুন">Follow a path built around your goal</h2></div></div><div id="featured-paths" class="path-grid"></div></div></section>
-<section class="section final-cta"><div class="container cta-card"><div><span class="eyebrow" data-en="Private by design" data-bn="ডিজাইনেই প্রাইভেট">Private by design</span><h2 data-en="Your inputs and progress stay in your browser." data-bn="আপনার ইনপুট ও অগ্রগতি আপনার ব্রাউজারেই থাকে।">Your inputs and progress stay in your browser.</h2><p data-en="The site has no account, backend, database or tracking API. Calculator inputs are processed locally, and optional progress is saved with localStorage." data-bn="সাইটে account, backend, database বা tracking API নেই। Calculator input locally process হয় এবং optional progress localStorage-এ সংরক্ষিত থাকে।">The site has no account, backend, database or tracking API. Calculator inputs are processed locally, and optional progress is saved with localStorage.</p></div><a class="button primary" href="/about/" data-en="How the hub works" data-bn="হাব কীভাবে কাজ করে">How the hub works</a></div></section>
+<section class="section method-section"><div class="container"><div class="section-heading center"><div><span class="eyebrow" data-en="A simple learning loop" data-bn="সহজ learning loop">A simple learning loop</span><h2 data-en="Learn → Practice → Apply" data-bn="শিখুন → প্র্যাকটিস করুন → প্রয়োগ করুন">Learn → Practice → Apply</h2><p class="section-intro" data-en="The hub is designed around understanding and interpretation—not racing through a catalog." data-bn="হাবটি catalog দ্রুত শেষ করার জন্য নয়; understanding ও interpretation-এর জন্য ডিজাইন করা।">The hub is designed around understanding and interpretation—not racing through a catalog.</p></div></div><div id="home-method-grid" class="method-grid"></div></div></section>
+<section class="section section-muted"><div class="container"><div class="home-next-step" id="home-next-step"></div></div></section>
+<section class="section"><div class="container"><div class="section-heading"><div><span class="eyebrow" data-en="Practice when it helps" data-bn="প্রয়োজন অনুযায়ী প্র্যাকটিস">Practice when it helps</span><h2 data-en="A few useful labs—not twenty choices at once" data-bn="একসঙ্গে বিশটি choice নয়—কয়েকটি প্রয়োজনীয় lab">A few useful labs—not twenty choices at once</h2></div><a href="/tools/" class="text-link" data-en="View all labs →" data-bn="সব lab দেখুন →">View all labs →</a></div><div id="featured-tools" class="card-grid featured-tool-grid"></div></div></section>
+<section class="section final-cta"><div class="container cta-card"><div><span class="eyebrow" data-en="Private by design" data-bn="ডিজাইনেই প্রাইভেট">Private by design</span><h2 data-en="Your plan, progress and calculator inputs stay in your browser." data-bn="আপনার plan, progress ও calculator input আপনার browser-এই থাকে।">Your plan, progress and calculator inputs stay in your browser.</h2><p data-en="No account, backend, database or tracking API is required." data-bn="কোনো account, backend, database বা tracking API প্রয়োজন নেই।">No account, backend, database or tracking API is required.</p></div><a class="button primary" href="/about/" data-en="How the hub works" data-bn="হাব কীভাবে কাজ করে">How the hub works</a></div></section>
 </main>
   <div id="site-footer"></div>
   <div id="search-root"></div>

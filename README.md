@@ -1,15 +1,33 @@
 # Statistics Learning Hub
 
-A modern, English-first, bilingual learning platform for statistics, data analytics, data science, data engineering, research, and evidence-based decision-making.
+A guided, English-first, bilingual learning platform for statistics, data analytics, data science, data engineering, research, and evidence-based decision-making.
 
-The production site is completely static: HTML, CSS, and Vanilla JavaScript. It has no backend framework, API, database, authentication system, or server-side calculator. Learning progress, bookmarks, language, and theme preferences remain in the visitor's browser through `localStorage`.
+The production site is completely static: HTML, CSS, and Vanilla JavaScript. It has no backend framework, API, database, authentication system, or server-side calculator. The learner's guided plan, progress, bookmarks, language, and theme remain in the browser through `localStorage`.
+
+## Current release: v1.1.0 — Guided Learning Experience
+
+The v1.1.0 release keeps the complete v1.0.0 curriculum and statistical labs, but changes the primary experience from a large content catalog into a focused learning journey.
+
+A learner can now:
+
+1. Choose a goal: Statistics Foundations, Data Analyst, Data Scientist, Data Engineer, or Research & Business Decisions.
+2. Choose a starting level: Beginner, Some Experience, or Strong Foundation.
+3. Choose a learning preference: Concept-first, Balanced, or Practice-first.
+4. Receive a private browser-local plan with one recommended next lesson.
+5. Follow a simple **Learn → Practice → Apply** session.
+6. See only the next few roadmap items instead of the complete library.
+7. Change the plan or reveal the full catalog at any time.
 
 ## Release scope
 
 - 9 structured learning modules
 - 108 complete English/Bangla lesson routes
 - 20 interactive statistical labs
-- 4 career-oriented learning paths
+- 5 guided learning paths
+- Three-step onboarding wizard
+- Personalized `My Learning` dashboard
+- Goal-, level-, and learning-style-aware recommendations
+- Guided lesson flow and guided lab workflow
 - 40-term bilingual glossary
 - English-first EN/BN language switching
 - Persistent light/dark theme
@@ -18,6 +36,19 @@ The production site is completely static: HTML, CSS, and Vanilla JavaScript. It 
 - SEO metadata, sitemap, robots file, web manifest, 404 page, and social artwork
 - Netlify headers, cache policy, and fallback configuration
 - Automated statistical-core tests and local-link auditing
+
+## Learning model
+
+The site's primary learning loop is:
+
+```text
+Learn the concept
+→ Practice with a small example or browser lab
+→ Interpret the result in context
+→ Reproduce important work in Excel, SQL, Python, R, or Power BI
+```
+
+The site teaches statistical reasoning and transparent calculation. It does not claim that reading lessons alone replaces real datasets, analytical tools, portfolio projects, domain knowledge, or formal academic study.
 
 ## Learning modules
 
@@ -32,6 +63,16 @@ The production site is completely static: HTML, CSS, and Vanilla JavaScript. It 
 9. Advanced Statistical Methods
 
 Every module contains 12 published lessons. Every lesson card resolves to an implemented page.
+
+## Guided paths
+
+- Statistics Foundations
+- Data Analyst
+- Data Scientist
+- Data Engineer
+- Research & Business Decisions
+
+A selected path is displayed in four manageable phases. Only the current phase is expanded by default.
 
 ## Interactive labs
 
@@ -68,7 +109,7 @@ npm run test:stats
 npm run audit:links
 ```
 
-Regenerate all static topic/tool routes and the sitemap after editing the curriculum source:
+Regenerate all static routes and the sitemap after editing curriculum or guided-path source data:
 
 ```bash
 npm run generate
@@ -88,7 +129,7 @@ The repository includes `netlify.toml` and does not require a build command.
 7. Replace the placeholder production origin `https://statistics-learning-hub.netlify.app` if Netlify assigns another subdomain or a custom domain is connected.
 8. Run `npm run generate` after changing that origin so canonical URLs, Open Graph URLs, `robots.txt`, and `sitemap.xml` remain correct.
 
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the full checklist.
+See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the complete checklist.
 
 ## Repository structure
 
@@ -96,6 +137,8 @@ See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the full checklist.
 .
 ├── index.html
 ├── 404.html
+├── start/                  # Three-step guided onboarding
+├── my-learning/            # Browser-local personalized dashboard
 ├── about/
 ├── catalog/
 ├── glossary/
@@ -121,7 +164,7 @@ See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the full checklist.
 
 ## Content and architecture
 
-The curriculum catalog is maintained in the Python generator and exported to `assets/js/content.js`. The generated HTML pages are intentionally thin and reuse a shared design system and rendering logic. Do not hand-edit generated topic pages; update the source data and regenerate instead.
+The curriculum and guided paths are maintained in the Python generator and exported to `assets/js/content.js`. Generated lesson and lab pages remain intentionally thin and reuse shared rendering logic. Do not hand-edit generated topic routes; update source data and regenerate instead.
 
 Read:
 
@@ -130,6 +173,7 @@ Read:
 - [Content standards](docs/CONTENT-STANDARDS.md)
 - [Testing](docs/TESTING.md)
 - [Deployment](docs/DEPLOYMENT.md)
+- [v1.1.0 release report](docs/RELEASE-REPORT-v1.1.0.md)
 
 ## Credits
 
