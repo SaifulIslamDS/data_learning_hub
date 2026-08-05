@@ -1,140 +1,78 @@
 # Data Learning Hub
 
-**A tutorial-first, English-first bilingual platform for learning Data Analytics.**
-
-Data Learning Hub is a completely static learning website built with HTML, CSS, Vanilla JavaScript, and a Python page generator used only during development. The deployed site requires no backend, API, database, account, or Netlify build process.
+A static, bilingual, tutorial-first platform for learning Data Analytics through complete tutorials, exercises, examples, references, browser practice, datasets, and projects.
 
 ## Current release
 
-### v2.3.0 — Complete SQL for Data Analytics Tutorial
+### v2.4.0 — Complete Power BI for Data Analytics Tutorial
 
-Published tutorial content now includes:
+This release adds a complete 77-chapter Power BI course across Power BI Desktop and Service, Power Query, semantic modeling, DAX, visual analytics, publishing, security, governance, performance, accessibility, QA, and a portfolio project.
 
-- Complete **Data Foundations Tutorial** — 21 chapters
-- Complete **Excel for Data Analytics Tutorial** — 56 chapters across 8 modules
-- Complete **SQL for Data Analytics Tutorial** — 66 chapters across 9 modules
-- 143 sequential tutorial chapters in total
-- 429 chapter exercises
-- Interactive activity in every chapter
-- Randomized 30-question final quiz for each tutorial
-- Dedicated exercise, example, quiz, and reference libraries
-- Downloadable Excel practice workbook, SQL database scripts, query collection, data dictionaries, and synthetic datasets
-- Browser-side SQL playground powered by SQLite-compatible sql.js; no backend or server-executed query
-- Persistent desktop chapter sidebar and mobile chapter drawer
-- Browser-local chapter completion and quiz results
-- English-first EN/BN content
-- Print-friendly tutorial chapters
-- Sticky shared header on every generated route
+The shared sticky header remains active on every route. The footer now contains one bottom link—`About`—and no longer displays the original inspiration link.
 
-The previous platform resources remain available:
+## Published tutorials
 
-- 108 comprehensive statistics and analytics lessons
-- 20 browser-based statistical laboratories
-- Three documented synthetic datasets
-- Projects, career paths, curriculum maps, bookmarks, and optional guided learning
+| Tutorial | Chapters | Exercises |
+|---|---:|---:|
+| Data Foundations | 21 | 63 |
+| Excel for Data Analytics | 56 | 168 |
+| SQL for Data Analytics | 66 | 198 |
+| Power BI for Data Analytics | 77 | 231 |
+| **Total** | **220** | **660** |
 
-## Excel tutorial modules
+The platform also retains 108 comprehensive statistics lessons and 20 interactive statistical labs.
 
-1. Excel Foundations
-2. Organize and Control Data
-3. Formula Foundations
-4. Analytical Functions
-5. Lookups and Dynamic Arrays
-6. Analysis, PivotTables, and Visualization
-7. Power Query, Data Model, and Advanced Analysis
-8. Quality, Delivery, and Final Project
+## Power BI course modules
 
-The course progresses from workbook and data-entry fundamentals through formulas, conditional aggregation, text/date functions, XLOOKUP, INDEX/MATCH, dynamic arrays, PivotTables, charts, Power Query, the Data Model, introductory Power Pivot/DAX, auditing, dashboard design, and a two-part retail-sales project.
+1. Power BI Foundations and Workflow
+2. Connect and Transform with Power Query
+3. Design the Semantic Model
+4. DAX Foundations
+5. Analytical DAX and Time Intelligence
+6. Visual Analytics and Report Experience
+7. Publish, Secure, Refresh, and Govern
+8. Performance, Accessibility, and Quality Assurance
+9. Portfolio Project
 
-## SQL tutorial modules
+## Power BI practice assets
 
-1. SQL and Relational Foundations
-2. Select, Filter, and Sort
-3. Expressions and Functions
-4. Aggregation and Metrics
-5. Joins and Set Operations
-6. Subqueries and Common Table Expressions
-7. Window Functions and Analytical Patterns
-8. Modeling, Quality, and Performance
-9. Portfolio Analytics Projects
+- `assets/downloads/power-bi-retail-practice-data.zip`
+- `assets/downloads/power-bi-dax-measures.txt`
+- `assets/downloads/power-bi-power-query-m-examples.txt`
+- `assets/downloads/power-bi-project-qa-checklist.csv`
+- `assets/datasets/power_bi_data_dictionary.csv`
 
-The tutorial uses PostgreSQL as the primary explanatory dialect while browser practice runs SQLite-compatible queries locally through sql.js. Every chapter identifies dialect-sensitive behavior where relevant.
+The practice ZIP contains a connected retail star-schema dataset:
 
-## Primary learning experience
+- `DimDate.csv` — 730 rows
+- `DimProduct.csv` — 12 rows
+- `DimCustomer.csv` — 60 rows
+- `DimRegion.csv` — 4 rows
+- `FactSales.csv` — 360 rows
+- `FactTargets.csv` — 96 rows
 
-```text
-Tutorials
-→ Open a subject
-→ Read the next chapter
-→ Learn the concept
-→ Study the worked example
-→ Try the interactive activity
-→ Complete exercises
-→ Continue to the next chapter
-→ Take the final quiz
-→ Complete the project
+All data is synthetic.
+
+## Technology
+
+- HTML5
+- Modern CSS
+- Vanilla JavaScript
+- Python static-page generator
+- Chart.js for retained statistical visualizations
+- sql.js for browser-side SQL practice
+- Browser `localStorage` for optional progress, bookmarks, theme, and language
+- No backend, API, account, or database service
+
+## Run locally
+
+```powershell
+python -m http.server 8080
 ```
 
-No learning-plan setup is required before studying.
+Open `http://localhost:8080`.
 
-## Important routes
-
-- `/tutorials/` — published tutorial library
-- `/tutorials/data-foundations/` — 21-chapter foundations course
-- `/tutorials/excel-data-analytics/` — 56-chapter Excel course
-- `/tutorials/sql-data-analytics/` — 66-chapter SQL course
-- `/playground/sql/` — standalone browser SQL playground
-- `/exercises/` — tutorial exercise libraries
-- `/quiz/` — tutorial assessments
-- `/examples/` — worked-example libraries
-- `/references/` — official references, glossary, and downloads
-- `/projects/` — datasets and applied projects
-- `/practice/` — retained statistics laboratories
-- `/learn/` — retained comprehensive lesson library
-- `/my-learning/` — optional browser-local dashboard
-
-## Practice files
-
-- `assets/downloads/excel-analytics-practice-workbook.xlsx`
-- `assets/datasets/retail_sales.csv`
-- `assets/datasets/retail_sales_dictionary.csv`
-
-The workbook contains Raw Sales, Formula Practice, Lookup Tables, Cleaning Practice, Pivot Practice, Dashboard Brief, and Answer Guide sheets. SQL practice assets include a deterministic six-table retail database, 66 starter queries, and a CSV data dictionary.
-
-- `assets/downloads/sql-analytics-practice-database.sql`
-- `assets/downloads/sql-analytics-practice-queries.sql`
-- `assets/datasets/sql_practice_data_dictionary.csv`
-
-## Source architecture
-
-```text
-content/
-├── tutorials/
-│   ├── data_foundations.json
-│   ├── excel_data_analytics.json
-│   ├── sql_data_analytics.json
-│   └── loader.py
-├── platform/
-├── statistics/
-├── tracks/
-└── datasets/
-
-scripts/
-├── generate.py
-├── tutorial_generator.py
-├── audit_tutorials.py
-├── audit_curriculum.py
-├── audit_lessons.py
-├── audit_links.py
-├── audit_sql.py
-├── build_sql_course.py
-├── browser_smoke.py
-└── test_stats.mjs
-```
-
-Authored tutorial content lives in `content/tutorials/`. Generated HTML and `assets/js/content.js` are derived outputs.
-
-## Generate and validate
+## Generate and test
 
 ```powershell
 npm run generate
@@ -142,32 +80,46 @@ npm test
 npm run test:browser
 ```
 
-Expected v2.3.0 validation includes:
+The main test suite validates:
+
+- Statistical core
+- 108 retained lessons
+- 220 tutorial chapters
+- 660 chapter exercises
+- Curriculum relationships
+- SQL database and 66 starter queries
+- Power BI star-schema practice data and downloads
+- Local links and assets
+- JavaScript syntax
+
+## Main routes
 
 ```text
-All statistical core tests passed.
-Validated 108 comprehensive bilingual lessons.
-Validated 3 published tutorials with 143 complete chapters.
-Executed 66/66 SQL chapter starter queries successfully.
-Checked 12,664 local HTML and asset references across 307 HTML files.
-0 broken local references found.
-Browser smoke test passed.
+/tutorials/
+/tutorials/data-foundations/
+/tutorials/excel-data-analytics/
+/tutorials/sql-data-analytics/
+/tutorials/power-bi-data-analytics/
+/exercises/
+/examples/
+/quiz/
+/references/
+/playground/sql/
+/projects/
 ```
 
-## Netlify deployment
+## Deployment
+
+The site is configured for Netlify with no build command:
 
 ```text
-Production branch:  main
-Base directory:     leave empty
-Build command:      leave empty
-Publish directory:  .
+Production branch: main
+Base directory:    empty
+Build command:     empty
+Publish directory: .
 ```
 
-Generated files are committed to the repository, so Netlify serves them directly.
-
-## Privacy
-
-Progress, quiz results, language, theme, bookmarks, and optional learning preferences remain in the visitor’s browser through `localStorage`. Practice data are processed locally.
+See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
 ## Credits
 
@@ -176,15 +128,15 @@ Idea and developed by **Saiful Islam**.
 - Website: https://saifulshuvo.com
 - GitHub: https://github.com/SaifulIslamDS/
 - LinkedIn: https://www.linkedin.com/in/saifulislampro/
-- Inspired by: https://github.com/tafshir027/stats
+
+The project remains conceptually inspired by the public `tafshir027/stats` repository, with original architecture, interface, course structure, code, and educational writing. Attribution remains available on the About/Credits materials rather than the footer-bottom links.
 
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Curriculum](docs/CURRICULUM.md)
 - [Content standards](docs/CONTENT-STANDARDS.md)
-- [Roadmap](docs/ROADMAP.md)
 - [Testing](docs/TESTING.md)
+- [Roadmap](docs/ROADMAP.md)
 - [Deployment](docs/DEPLOYMENT.md)
-- [v2.3.0 release report](docs/RELEASE-REPORT-v2.3.0.md)
-- [v1-to-v2 migration](docs/MIGRATION-v1-to-v2.md)
+- [v2.4.0 release report](docs/RELEASE-REPORT-v2.4.0.md)

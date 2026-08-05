@@ -1,36 +1,70 @@
-# Architecture — v2.3.0
+# Architecture — v2.4.0
 
-Data Learning Hub is generated during development and deployed as static HTML, CSS, JavaScript, datasets, and downloadable files.
+## Runtime model
 
-## Published tutorial sources
+Data Learning Hub is a generated static website. Production uses HTML, CSS, and browser JavaScript only. No backend, API, account system, or hosted database is required.
+
+## Authoring layers
 
 ```text
 content/tutorials/
-├── data_foundations.json        # 21 chapters
-├── excel_data_analytics.json    # 56 chapters
-├── sql_data_analytics.json      # 66 chapters
-└── loader.py
+├── data_foundations.json
+├── excel_data_analytics.json
+├── sql_data_analytics.json
+└── power_bi_data_analytics.json
+
+content/platform/       product identity, domains, storage
+content/tracks/         career paths and tool curriculum metadata
+scripts/                generation and audits
+assets/js/              shared UI and interactive tutorial behavior
+assets/css/             shared responsive design system
 ```
 
-`scripts/tutorial_generator.py` generates course pages, chapter pages, exercises, examples, quizzes, and reference libraries. `scripts/generate.py` produces the remaining platform pages, content bundle, sitemap, and metadata.
+## Generated tutorial routes
 
-## SQL practice architecture
+Every published course receives:
 
 ```text
-Chapter JSON activity
-→ assets/js/sql-practice.js
-→ sql.js 1.14.1 loaded from jsDelivr
-→ SQLite-compatible WASM database in browser memory
-→ deterministic SQL seed file
-→ result table rendered locally
+/tutorials/<course>/
+/tutorials/<course>/<chapter>/
+/exercises/<course>/
+/examples/<course>/
+/quiz/<course>/
+/references/<course>/
 ```
 
-No SQL query is sent to a backend. Refreshing or resetting recreates the in-memory database. PostgreSQL remains the primary teaching dialect; SQLite powers the browser laboratory.
+## Power BI implementation
 
-## Validation layers
+Power BI cannot be executed fully inside a static site. The course therefore combines:
 
-- `audit_tutorials.py` — tutorial structure and completeness
-- `audit_sql.py` — seed integrity and execution of all 66 starter queries
-- `audit_curriculum.py` — publication states and relationships
-- `audit_links.py` — generated local links and downloads
-- `browser_smoke.py` — shared UI, sticky header, courses, SQL editor UI, and mobile navigation
+- Complete text-based tutorials
+- DAX and Power Query examples
+- Browser-side decision simulations
+- Browser-side measure calculations
+- Downloadable star-schema CSV files
+- Project and QA checklists
+- Explicit instructions for implementation in Power BI Desktop and Service
+
+The browser simulation never pretends to replace Power BI. It teaches reasoning about query, model, DAX, report, and service layers.
+
+## Shared shell
+
+`assets/js/site.js` renders the shared sticky header and footer on all generated routes. The footer-bottom links intentionally contain only the About link.
+
+## Local learner state
+
+Versioned `dlh-*` localStorage keys preserve optional language, theme, progress, bookmarks, and tutorial completion. No personal course data leaves the browser.
+
+## Static generation
+
+`scripts/generate.py` loads platform metadata and tutorial JSON, then delegates tutorial routes to `scripts/tutorial_generator.py`. Generated files are committed and deployed directly by Netlify.
+
+## Quality architecture
+
+- `audit_lessons.py`: retained statistics lessons
+- `audit_tutorials.py`: course schemas and files
+- `audit_curriculum.py`: relationships and publication state
+- `audit_sql.py`: SQL database and starter queries
+- `audit_power_bi.py`: Power BI course, star schema, reconciliation, downloads, and official references
+- `audit_links.py`: local link and asset integrity
+- `browser_smoke.py`: real Chromium interaction and responsive regression

@@ -1,0 +1,61 @@
+﻿CustomerKey,CustomerName,Segment,RegionKey,Region,SignupDate,Active
+C001,Amina Mia,Corporate,R04,Rajshahi,2024-10-05,Yes
+C002,Bashir Haque,Small Business,R03,Khulna,2024-10-09,Yes
+C003,Chandra Akter,Consumer,R02,Chattogram,2024-10-13,Yes
+C004,Dalia Rahman,Corporate,R01,Dhaka,2024-10-17,Yes
+C005,Emon Islam,Small Business,R04,Rajshahi,2024-10-21,Yes
+C006,Farhana Chowdhury,Consumer,R03,Khulna,2024-10-25,Yes
+C007,Gopal Roy,Corporate,R02,Chattogram,2024-10-29,Yes
+C008,Hasan Khan,Small Business,R01,Dhaka,2024-11-02,Yes
+C009,Ishrat Das,Consumer,R04,Rajshahi,2024-11-06,Yes
+C010,Jamal Ahmed,Corporate,R03,Khulna,2024-11-10,Yes
+C011,Karim Mia,Small Business,R02,Chattogram,2024-11-14,No
+C012,Laila Haque,Consumer,R01,Dhaka,2024-11-18,Yes
+C013,Mahin Akter,Corporate,R04,Rajshahi,2024-11-22,Yes
+C014,Nusrat Rahman,Small Business,R03,Khulna,2024-11-26,Yes
+C015,Omar Islam,Consumer,R02,Chattogram,2024-11-30,Yes
+C016,Priya Chowdhury,Corporate,R01,Dhaka,2024-12-04,Yes
+C017,Rashed Roy,Small Business,R04,Rajshahi,2024-12-08,Yes
+C018,Salma Khan,Consumer,R03,Khulna,2024-12-12,Yes
+C019,Tariq Das,Corporate,R02,Chattogram,2024-12-16,Yes
+C020,Umme Ahmed,Small Business,R01,Dhaka,2024-12-20,Yes
+C021,Amina Mia,Consumer,R04,Rajshahi,2024-12-24,Yes
+C022,Bashir Haque,Corporate,R03,Khulna,2024-12-28,No
+C023,Chandra Akter,Small Business,R02,Chattogram,2025-01-01,Yes
+C024,Dalia Rahman,Consumer,R01,Dhaka,2025-01-05,Yes
+C025,Emon Islam,Corporate,R04,Rajshahi,2025-01-09,Yes
+C026,Farhana Chowdhury,Small Business,R03,Khulna,2025-01-13,Yes
+C027,Gopal Roy,Consumer,R02,Chattogram,2025-01-17,Yes
+C028,Hasan Khan,Corporate,R01,Dhaka,2025-01-21,Yes
+C029,Ishrat Das,Small Business,R04,Rajshahi,2025-01-25,Yes
+C030,Jamal Ahmed,Consumer,R03,Khulna,2025-01-29,Yes
+C031,Karim Mia,Corporate,R02,Chattogram,2025-02-02,Yes
+C032,Laila Haque,Small Business,R01,Dhaka,2025-02-06,Yes
+C033,Mahin Akter,Consumer,R04,Rajshahi,2025-02-10,No
+C034,Nusrat Rahman,Corporate,R03,Khulna,2025-02-14,Yes
+C035,Omar Islam,Small Business,R02,Chattogram,2025-02-18,Yes
+C036,Priya Chowdhury,Consumer,R01,Dhaka,2025-02-22,Yes
+C037,Rashed Roy,Corporate,R04,Rajshahi,2025-02-26,Yes
+C038,Salma Khan,Small Business,R03,Khulna,2025-03-02,Yes
+C039,Tariq Das,Consumer,R02,Chattogram,2025-03-06,Yes
+C040,Umme Ahmed,Corporate,R01,Dhaka,2025-03-10,Yes
+C041,Amina Mia,Small Business,R04,Rajshahi,2025-03-14,Yes
+C042,Bashir Haque,Consumer,R03,Khulna,2025-03-18,Yes
+C043,Chandra Akter,Corporate,R02,Chattogram,2025-03-22,Yes
+C044,Dalia Rahman,Small Business,R01,Dhaka,2025-03-26,No
+C045,Emon Islam,Consumer,R04,Rajshahi,2025-03-30,Yes
+C046,Farhana Chowdhury,Corporate,R03,Khulna,2025-04-03,Yes
+C047,Gopal Roy,Small Business,R02,Chattogram,2025-04-07,Yes
+C048,Hasan Khan,Consumer,R01,Dhaka,2025-04-11,Yes
+C049,Ishrat Das,Corporate,R04,Rajshahi,2025-04-15,Yes
+C050,Jamal Ahmed,Small Business,R03,Khulna,2025-04-19,Yes
+C051,Karim Mia,Consumer,R02,Chattogram,2025-04-23,Yes
+C052,Laila Haque,Corporate,R01,Dhaka,2025-04-27,Yes
+C053,Mahin Akter,Small Business,R04,Rajshahi,2025-05-01,Yes
+C054,Nusrat Rahman,Consumer,R03,Khulna,2025-05-05,Yes
+C055,Omar Islam,Corporate,R02,Chattogram,2025-05-09,No
+C056,Priya Chowdhury,Small Business,R01,Dhaka,2025-05-13,Yes
+C057,Rashed Roy,Consumer,R04,Rajshahi,2025-05-17,Yes
+C058,Salma Khan,Corporate,R03,Khulna,2025-05-21,Yes
+C059,Tariq Das,Small Business,R02,Chattogram,2025-05-25,Yes
+C060,Umme Ahmed,Consumer,R01,Dhaka,2025-05-29,Yes

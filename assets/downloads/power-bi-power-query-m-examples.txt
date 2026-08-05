@@ -1,0 +1,22 @@
+// Example 1: Load and type FactSales.csv
+let
+    Source = Csv.Document(File.Contents(ParameterFolder & "FactSales.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    Typed = Table.TransformColumnTypes(Headers, {
+        {"SalesLineKey", type text}, {"OrderID", type text}, {"OrderDate", type date}, {"ShipDate", type date},
+        {"CustomerKey", type text}, {"ProductKey", type text}, {"RegionKey", type text}, {"Channel", type text},
+        {"Quantity", Int64.Type}, {"UnitPrice", Currency.Type}, {"DiscountPct", Percentage.Type},
+        {"Revenue", Currency.Type}, {"Cost", Currency.Type}, {"GrossProfit", Currency.Type}
+    })
+in
+    Typed
+
+// Example 2: Add a refresh quality flag
+let
+    Source = FactSales_Staging,
+    QualityFlag = Table.AddColumn(Source, "QualityStatus", each if [Quantity] <= 0 or [Revenue] < 0 then "Check" else "Valid", type text)
+in
+    QualityFlag
+
+// Example 3: Parameterized folder path
+ParameterFolder = "C:\DataLearningHub\PowerBI\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]

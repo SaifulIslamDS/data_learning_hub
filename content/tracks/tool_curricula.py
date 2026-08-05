@@ -51,7 +51,7 @@ TOOL_CURRICULA = [
         "id": "power-bi",
         "title_en": "Power BI for Data Analytics",
         "title_bn": "ডেটা অ্যানালিটিক্সের জন্য Power BI",
-        "status": "curriculum-ready",
+        "status": "tutorial-published",
         "target_release": "v2.4.0",
         "prerequisites": ["Data Foundations", "Excel or SQL basics", "Essential statistics"],
         "outcome_en": "Prepare data, build a star-schema semantic model, create reliable DAX measures and communicate decisions through a report.",

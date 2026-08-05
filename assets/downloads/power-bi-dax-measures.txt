@@ -1,0 +1,28 @@
+// Base measures
+Total Revenue = SUM(FactSales[Revenue])
+Total Cost = SUM(FactSales[Cost])
+Gross Profit = [Total Revenue] - [Total Cost]
+Gross Margin % = DIVIDE([Gross Profit], [Total Revenue])
+Order Count = DISTINCTCOUNT(FactSales[OrderID])
+Units Sold = SUM(FactSales[Quantity])
+Average Order Value = DIVIDE([Total Revenue], [Order Count])
+Customer Count = DISTINCTCOUNT(FactSales[CustomerKey])
+
+// Time intelligence
+Revenue YTD = TOTALYTD([Total Revenue], DimDate[Date])
+Revenue PY = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(DimDate[Date]))
+Revenue YoY = [Total Revenue] - [Revenue PY]
+Revenue YoY % = DIVIDE([Revenue YoY], [Revenue PY])
+Revenue Running =
+VAR MaxDate = MAX(DimDate[Date])
+RETURN CALCULATE([Total Revenue], FILTER(ALLSELECTED(DimDate[Date]), DimDate[Date] <= MaxDate))
+
+// Contribution and ranking
+Revenue Share = DIVIDE([Total Revenue], CALCULATE([Total Revenue], REMOVEFILTERS(DimProduct[Product])))
+Product Rank = RANKX(ALLSELECTED(DimProduct[Product]), [Total Revenue], , DESC, DENSE)
+
+// Target and alternate date
+Revenue Target = SUM(FactTargets[RevenueTarget])
+Revenue Variance = [Total Revenue] - [Revenue Target]
+Revenue Variance % = DIVIDE([Revenue Variance], [Revenue Target])
+Shipped Revenue = CALCULATE([Total Revenue], USERELATIONSHIP(DimDate[Date], FactSales[ShipDate]))

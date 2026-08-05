@@ -129,10 +129,42 @@
     root.querySelectorAll('.activity-checklist input').forEach(input=>input.addEventListener('change',()=>{const all=[...root.querySelectorAll('.activity-checklist input')];const out=root.querySelector('[data-checklist-count]');if(out)out.textContent=`${all.filter(x=>x.checked).length}/${all.length}`;}));
   }
 
+
+  function powerBICategory(op='') {
+    if(/dax|calculate|filter|iterator|division|growth|running|average|ranking|share|target|period|time-prereq/.test(op)) return 'dax';
+    if(/visual|chart|filter-design|interaction|drill|tooltip|format|navigation|dashboard/.test(op)) return 'report';
+    if(/publish|workspace|app-audience|refresh|rls|security|governance/.test(op)) return 'service';
+    if(/model|fact|dimension|grain|schema|relationship|bridge|date-table|metadata/.test(op)) return 'model';
+    if(/query|source|load|transform|profile|type|locale|rows|missing|column|group|pivot|merge|append|m-code/.test(op)) return 'query';
+    return 'workflow';
+  }
+  function renderPowerBIDemo(a) {
+    const items=a.items||[]; const category=powerBICategory(a.operation||'');
+    const controls=category==='dax'
+      ? `<div class="powerbi-metric-grid"><label>Sales<input type="number" data-pbi-sales value="125000"></label><label>Cost<input type="number" data-pbi-cost value="82000"></label><label>Target<input type="number" data-pbi-target value="110000"></label></div>`
+      : `<div class="powerbi-choice-grid">${items.map((x,i)=>`<button type="button" class="powerbi-choice ${i===0?'active':''}" data-pbi-choice="${esc(x)}">${esc(x)}</button>`).join('')}</div>`;
+    return `${prompt(a)}${a.code?`<div class="formula-block activity-formula"><span>Power BI</span><code>${esc(a.code)}</code><button type="button" class="copy-code" data-copy-code>Copy</button></div>`:''}<div class="powerbi-sim" data-powerbi-category="${category}">${controls}<label class="powerbi-priority">${t('Decision priority','Decision priority')}<select data-pbi-priority><option value="accuracy">Accuracy</option><option value="performance">Performance</option><option value="maintainability">Maintainability</option><option value="accessibility">Accessibility</option></select></label><button class="button primary small" type="button" data-run-powerbi>${t('Run simulation','Simulation চালান')}</button>${resultBox()}</div>`;
+  }
+  function bindPowerBIDemo(a,root) {
+    let selected=(a.items||[])[0]||a.operation||'Power BI decision';
+    root.querySelectorAll('[data-pbi-choice]').forEach(btn=>btn.addEventListener('click',()=>{root.querySelectorAll('[data-pbi-choice]').forEach(x=>x.classList.remove('active'));btn.classList.add('active');selected=btn.dataset.pbiChoice;}));
+    root.querySelector('[data-run-powerbi]')?.addEventListener('click',()=>{
+      const out=root.querySelector('.activity-result'); const priority=root.querySelector('[data-pbi-priority]')?.value||'accuracy'; const category=powerBICategory(a.operation||'');
+      if(category==='dax'){
+        const sales=Number(root.querySelector('[data-pbi-sales]')?.value||0),cost=Number(root.querySelector('[data-pbi-cost]')?.value||0),target=Number(root.querySelector('[data-pbi-target]')?.value||0); const profit=sales-cost,margin=sales?profit/sales:0,variance=sales-target;
+        out.innerHTML=`<strong>${t('Measure check','Measure check')}</strong><div class="powerbi-result-grid"><span>Sales <b>${sales.toLocaleString()}</b></span><span>Profit <b>${profit.toLocaleString()}</b></span><span>Margin <b>${(margin*100).toFixed(1)}%</b></span><span>Target variance <b>${variance.toLocaleString()}</b></span></div><p>${t('Validate the measure at total and filtered levels before using it in a decision.','Decision-এ ব্যবহার করার আগে total ও filtered level-এ measure validate করুন।')}</p>`;
+      } else {
+        const guidance={query:'Apply the change in Power Query, inspect data types and row counts, then document the applied step.',model:'Confirm table grain, relationship cardinality and filter direction before adding measures.',report:'Match the visual to the analytical question, then verify labels, interactions and accessibility.',service:'Confirm ownership, permissions, refresh, audience and governance before publishing.',workflow:'Connect the choice to the business question and validate each handoff before moving to the next layer.'}[category];
+        out.innerHTML=`<strong>${esc(selected)}</strong><p>${t(guidance,guidance)}</p><small>Priority: ${esc(priority)}</small>`;
+      }
+    });
+  }
+
   function renderActivity() {
     const a=chapter.activity; let html='';
     if(a.type==='sql-playground' && window.DLHSQLPractice){ activityRoot.innerHTML='<div class="try-panel"><div id="sql-chapter-playground"></div></div>'; window.DLHSQLPractice.renderActivity(activityRoot.querySelector('#sql-chapter-playground'),a); return; }
     if(a.type==='excel-demo') html=renderExcelDemo(a);
+    else if(a.type==='powerbi-demo') html=renderPowerBIDemo(a);
     else if(a.type==='classify' || a.type==='bias-finder' || a.type==='issue-finder') html=renderClassify(a);
     else if(a.type==='table-inspector') html=renderTable(a);
     else if(a.type==='structure-choice') html=renderChoice(a);
@@ -145,6 +177,7 @@
     activityRoot.innerHTML=`<div class="try-panel">${html}</div>`;
     bindCommon(activityRoot);
     activityRoot.querySelector('[data-run-excel]')?.addEventListener('click',()=>computeExcel(a,activityRoot));
+    if(a.type==='powerbi-demo') bindPowerBIDemo(a,activityRoot);
     activityRoot.querySelector('[data-check-activity]')?.addEventListener('click',()=>{let right=0,total=0;activityRoot.querySelectorAll('.classify-row').forEach(row=>{const select=row.querySelector('select');const correct=select.value===select.dataset.answer;row.classList.toggle('correct',correct);row.classList.toggle('incorrect',!correct&&select.value);row.querySelector('b').textContent=select.value?(correct?'✓':'×'):'';if(select.value){total++;if(correct)right++;}});activityRoot.querySelector('.activity-result').innerHTML=`<strong>${right}/${total}</strong> ${t('checked correctly','সঠিক')}`;});
     activityRoot.querySelectorAll('[data-choice]').forEach(btn=>btn.addEventListener('click',()=>{const ok=btn.dataset.choice===chapter.activity.answer;activityRoot.querySelectorAll('[data-choice]').forEach(b=>b.classList.remove('correct','incorrect'));btn.classList.add(ok?'correct':'incorrect');activityRoot.querySelector('.activity-result').textContent=ok?t('Correct.','সঠিক।'):t('Try the other option and compare the structure.','অন্য option try করে structure compare করুন।');}));
     activityRoot.querySelectorAll('[data-chart-question]').forEach(btn=>btn.addEventListener('click',()=>{const choices=['Bar or column chart','Line chart','Histogram','Scatter plot'];activityRoot.querySelector('.activity-result').innerHTML=`Recommended: <strong>${choices[+btn.dataset.chartQuestion]}</strong>`;}));

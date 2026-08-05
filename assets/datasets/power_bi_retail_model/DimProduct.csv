@@ -1,0 +1,13 @@
+﻿ProductKey,Product,Category,UnitCost,ListPrice
+P101,Shirt,Apparel,14.0,24.0
+P102,Polo Shirt,Apparel,18.0,31.0
+P103,Trousers,Apparel,22.0,39.0
+P104,Laptop Stand,Accessories,12.0,23.0
+P105,Keyboard,Accessories,15.0,28.0
+P106,Monitor,Electronics,110.0,169.0
+P107,Headset,Electronics,24.0,42.0
+P108,Notebook,Stationery,2.0,4.0
+P109,Pen Set,Stationery,3.5,7.0
+P110,Backpack,Accessories,19.0,35.0
+P111,Webcam,Electronics,31.0,55.0
+P112,Desk Lamp,Home Office,16.0,30.0

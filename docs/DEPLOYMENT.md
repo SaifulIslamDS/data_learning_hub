@@ -1,31 +1,39 @@
-# Netlify Deployment — v2.3.0
+# Netlify Deployment — v2.4.0
 
-## Settings
+## Netlify settings
 
 ```text
-Production branch:  main
-Base directory:     leave empty
-Build command:      leave empty
-Publish directory:  .
+Production branch: main
+Base directory:    empty
+Build command:     empty
+Publish directory: .
 ```
 
-Generated files are committed to the repository and served directly.
-
-## Browser SQL dependency
-
-The CSP allows scripts and WASM requests from `https://cdn.jsdelivr.net`. The SQL playground loads pinned `sql.js@1.14.1` assets from that origin. All queries execute in browser memory; no backend is used.
-
-## Release commands
+## Pre-deployment verification
 
 ```powershell
 npm run generate
 npm test
 npm run test:browser
-
-git add -A
-git commit -m "feat: add complete SQL analytics tutorial"
-git push origin main
-
-git tag -a v2.3.0 -m "Data Learning Hub v2.3.0 — Complete SQL for Data Analytics Tutorial"
-git push origin v2.3.0
 ```
+
+## Commit
+
+```powershell
+git checkout main
+git pull origin main
+git add -A
+git commit -m "feat: add complete Power BI analytics tutorial"
+git push origin main
+```
+
+## Tag after production verification
+
+```powershell
+git tag -a v2.4.0 -m "Data Learning Hub v2.4.0 — Complete Power BI for Data Analytics Tutorial"
+git push origin v2.4.0
+```
+
+## Production URL
+
+Update `content/platform/config.py` when the final Netlify URL changes, regenerate, test, and commit the generated canonical URLs and sitemap.

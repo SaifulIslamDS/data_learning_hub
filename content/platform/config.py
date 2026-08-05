@@ -21,7 +21,7 @@ SITE = {
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.3.0",
+    "version": "2.4.0",
 }
 
 STORAGE = {

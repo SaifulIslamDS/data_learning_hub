@@ -1,0 +1,12 @@
+﻿Phase,Check,Evidence,Status
+Requirements,"Audience, decisions, questions, and exclusions are documented.",,Not Started
+Source,"Every file/table has an owner, grain, refresh expectation, and quality notes.",,Not Started
+Power Query,"Data types, error/null handling, source filters, and applied steps are reviewed.",,Not Started
+Model,"Fact grain, unique dimension keys, relationships, directions, and inactive dates are tested.",,Not Started
+DAX,Base measures reconcile to independent controls; ratios use safe denominators.,,Not Started
+Reports,"Titles, units, filters, interactions, drill, and tooltips match the business question.",,Not Started
+Security,"Workspace roles, app audience, RLS, and export permissions are tested.",,Not Started
+Accessibility,"Contrast, alt text, tab order, keyboard navigation, and non-color cues are tested.",,Not Started
+Performance,Performance Analyzer evidence is reviewed and slow visuals are investigated.,,Not Started
+Refresh,"Credentials, gateway, schedule, history, owner, and failure response are documented.",,Not Started
+Release,"UAT, sign-off, version note, screenshots, and rollback information are retained.",,Not Started

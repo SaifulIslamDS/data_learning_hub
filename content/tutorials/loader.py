@@ -8,6 +8,7 @@ TUTORIAL_FILES = [
     'data_foundations.json',
     'excel_data_analytics.json',
     'sql_data_analytics.json',
+    'power_bi_data_analytics.json',
 ]
 
 def load_tutorials() -> list[dict]:

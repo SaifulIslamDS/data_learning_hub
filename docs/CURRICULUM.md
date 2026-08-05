@@ -1,22 +1,73 @@
-# Curriculum — v2.3.0
+# Curriculum — v2.4.0
+
+## Published Data Analytics sequence
+
+```text
+Data Foundations
+→ Statistics for Analytics
+→ Excel for Data Analytics
+→ SQL for Data Analytics
+→ Power BI for Data Analytics
+→ Python for Data Analytics (v2.5.0)
+→ Portfolio Projects (v2.6.0)
+```
 
 ## Published tutorials
 
-| Tutorial | Chapters | Exercises | Status |
-|---|---:|---:|---|
-| Data Foundations | 21 | 63 | Published |
-| Excel for Data Analytics | 56 | 168 | Published |
-| SQL for Data Analytics | 66 | 198 | Published |
-| **Total** | **143** | **429** |  |
+| Course | Modules | Chapters | Exercises |
+|---|---:|---:|---:|
+| Data Foundations | 1 course sequence | 21 | 63 |
+| Excel for Data Analytics | 8 | 56 | 168 |
+| SQL for Data Analytics | 9 | 66 | 198 |
+| Power BI for Data Analytics | 9 | 77 | 231 |
 
-## SQL course sequence
+## Power BI course
 
-The SQL track progresses from relational foundations and safe querying through filtering, expressions, aggregation, joins, CTEs, window functions, analytical patterns, data quality, performance concepts, and portfolio projects.
+### Module 1 — Power BI Foundations and Workflow
 
-The course uses one connected retail schema throughout so learners can understand table grain, key relationships, metric reconciliation, and reusable analytical workflows rather than memorizing isolated syntax.
+Desktop, Service, Mobile, Fabric context, installation, interface, analyst workflow, artifacts, and storage modes.
 
-## Future published tutorials
+### Module 2 — Connect and Transform with Power Query
 
-- v2.4.0 — Power BI for Data Analytics
-- v2.5.0 — Python for Data Analytics
-- v2.6.0 — Cross-tool workflows and portfolio projects
+Connectors, Navigator, applied steps, profiling, data types, cleaning, missing values, transformations, grouping, pivot/unpivot, merge, append, dependencies, M, and advanced editor concepts.
+
+### Module 3 — Design the Semantic Model
+
+Fact and dimension tables, grain, star schemas, relationships, cardinality, active/inactive relationships, bridge tables, date tables, metadata, and model cleanup.
+
+### Module 4 — DAX Foundations
+
+DAX overview, measures versus columns, expressions, aggregations, row context, filter context, `CALCULATE`, filter functions, iterators, variables, safe division, and DAX Query View.
+
+### Module 5 — Analytical DAX and Time Intelligence
+
+Date prerequisites, period-to-date measures, growth, running totals, moving averages, ranking, contribution/share, targets, and KPI status.
+
+### Module 6 — Visual Analytics and Report Experience
+
+Visual selection, layouts, standard and specialized visuals, slicers, interactions, drill, drillthrough, tooltips, dynamic formatting, navigation, and dashboard structure.
+
+### Module 7 — Publish, Secure, Refresh, and Govern
+
+Publishing, workspace roles, apps and audiences, refresh, row-level security, security review, and governance.
+
+### Module 8 — Performance, Accessibility, and QA
+
+Performance analysis, accessible reports, report validation, and delivery controls.
+
+### Module 9 — Portfolio Project
+
+Requirements, source audit, Power Query, model, DAX, report pages, validation, deployment plan, and executive narrative.
+
+## Learning design
+
+Every Power BI chapter includes:
+
+- Four objectives
+- Three teaching sections
+- Four terms
+- A worked scenario
+- A chapter-specific browser simulation
+- Three exercises
+- Recap and official Microsoft references
+- Previous/next and local completion state

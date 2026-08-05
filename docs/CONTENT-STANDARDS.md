@@ -1,43 +1,36 @@
-# Content and Accuracy Standards — v2.2.0
+# Content and Accuracy Standards — v2.4.0
 
-## Tutorial-first rule
+## Teaching style
 
-A published subject must contain complete chapters, not curriculum placeholders. Every chapter must teach, demonstrate, provide practice, assess understanding, and connect to adjacent chapters.
+- English first with full Bangla support
+- Define technical terms before depending on them
+- Use plain language without removing necessary precision
+- Connect every topic to a practical analyst scenario
+- Separate concept, implementation, validation, interpretation, and limitation
 
-## Excel teaching baseline
+## Power BI terminology
 
-- Excel for Microsoft 365 is the primary baseline.
-- Features with version limitations must be identified in the chapter or reference material.
-- Excel Tables, structured references, dynamic arrays, XLOOKUP, LET, Power Query, Data Model, and Power Pivot/DAX are treated as distinct tools rather than interchangeable features.
-- Formula examples must use valid syntax and show the expected analytical purpose.
-- Data preparation and analytical results must include validation, reconciliation, and interpretation guidance.
+- Use current Microsoft terminology, including **semantic model** where appropriate
+- Distinguish Power BI Desktop, Power BI service, reports, dashboards, apps, workspaces, and semantic models
+- Distinguish Power Query transformations, semantic-model relationships, DAX calculations, report interactions, and service governance
+- Keep DAX, M, field names, commands, and product labels in their official form in both languages
 
-## Chapter requirements
+## Implementation honesty
 
-Each published chapter requires:
+The browser-side Power BI simulator teaches decisions and calculations. It must never imply that a static webpage can execute or publish a real `.pbix` report.
 
-- English and Bangla title and learner-facing explanation
-- four learning objectives
-- at least three substantive teaching sections
-- four key terms
-- a worked analytical example
-- an interactive or guided activity
-- MCQ, fill, and applied-response exercises
-- recap and authoritative references
-- previous/next navigation
+## Sources
 
-## Language policy
+Power BI chapter references must use official Microsoft Learn pages. Version-sensitive behavior should be verified against current Microsoft documentation before content changes are published.
 
-English is the default. Bangla explanations may retain official function names, commands, code, formulas, and common analytics terminology in English where translation would reduce precision. The Bangla view must still explain the purpose, workflow, checks, and interpretation in understandable Bangla.
+## Practice data
 
-## Source policy
+- Use synthetic data only
+- Document grain, keys, types, relationships, and calculations
+- Reconcile `GrossProfit = Revenue - Cost`
+- Ensure fact-table foreign keys resolve to dimensions
+- Ensure relevant fact dates exist in `DimDate`
 
-Use official Microsoft documentation for Excel behavior and feature-specific claims. Stable analytical concepts may additionally use recognized statistical and data-practice references. Do not invent unsupported software behavior, functions, menu paths, or compatibility claims.
+## Accessibility
 
-## Practice-data policy
-
-Datasets included with the platform are synthetic, documented, and suitable for local practice. Tutorials must state the analytical grain, required quality checks, and limitations before asking learners to draw conclusions.
-
-## Publication honesty
-
-`tutorial-published` is used only when chapters, exercises, examples, quiz, references, downloads, navigation, audit, and browser QA are complete. Planned SQL, Power BI, and Python curriculum pages must not imitate finished tutorials.
+Tutorial pages, activities, forms, tables, language controls, theme controls, and navigation must remain keyboard accessible, responsive, and usable in both light and dark themes.

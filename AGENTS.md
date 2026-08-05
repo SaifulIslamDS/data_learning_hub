@@ -2,22 +2,34 @@
 
 ## Product
 
-Data Learning Hub is a static, tutorial-first bilingual Data Analytics learning platform.
+- Name: Data Learning Hub
+- Current version: v2.4.0
+- Deployment: static Netlify site from `main`
+- Stack: HTML, CSS, Vanilla JavaScript, Python generator
+- Languages: English-first with Bangla toggle
 
-## Current baseline
+## Published tutorial baseline
 
-- Product version: v2.3.0
-- Published tutorials: Data Foundations and Excel for Data Analytics
-- 143 tutorial chapters and 429 chapter exercises
-- 108 retained lessons and 20 retained statistical labs
-- Static HTML/CSS/Vanilla JavaScript; Python is development-time generation only
-- Netlify production branch: `main`
+- Data Foundations: 21 chapters
+- Excel for Data Analytics: 56 chapters
+- SQL for Data Analytics: 66 chapters
+- Power BI for Data Analytics: 77 chapters
+- Total: 220 chapters and 660 exercises
+
+Retain 108 comprehensive statistics lessons and 20 statistical labs.
 
 ## Source of truth
 
-Edit authored files under `content/`, shared assets under `assets/`, and generators/tests under `scripts/`. Do not hand-edit hundreds of generated HTML pages as the primary implementation method.
+- Tutorial content: `content/tutorials/*.json`
+- Tutorial loading: `content/tutorials/loader.py`
+- Platform metadata: `content/platform/`
+- Career and tool curricula: `content/tracks/`
+- Static generation: `scripts/generate.py` and `scripts/tutorial_generator.py`
+- Power BI course builder: `scripts/build_power_bi_course.py`
 
-## Required validation
+Do not hand-edit generated tutorial HTML when the corresponding JSON or generator owns it.
+
+## Required tests
 
 ```powershell
 npm run generate
@@ -25,18 +37,23 @@ npm test
 npm run test:browser
 ```
 
-A release must not be accepted with broken links, missing downloads, invalid curriculum relationships, JavaScript syntax errors, failed browser tests, or planned content labeled as published.
+Do not publish when any link, tutorial, curriculum, SQL, Power BI data-model, syntax, or browser test fails.
 
-## Publication rules
+## UI requirements
 
-- `tutorial-published`: complete course, chapters, exercises, quiz, examples, references, downloads, and QA exist
-- `curriculum-ready`: reviewed future scope only
-- Preserve existing route IDs and browser-local progress keys where possible
-- English is default; Bangla explanations retain official technical names when needed for precision
+- Keep the shared header sticky on every route.
+- Footer bottom links must contain only `<a href="/about/">About</a>`.
+- Do not re-add the inspiration link to `.footer-bottom-links`.
+- Keep English first, EN/BN toggle, and persistent light/dark theme.
 
-## Roadmap
+## Publication honesty
 
-- v2.3.0: complete SQL tutorial
+Only complete courses may use `tutorial-published`. Planned tracks must not link to empty tutorial pages.
+
+## Release roadmap
+
 - v2.4.0: complete Power BI tutorial
-- v2.5.0: complete Python tutorial
-- v2.6.0: cross-tool analytics projects and portfolio
+- v2.5.0: complete Python for Data Analytics tutorial
+- v2.6.0: cross-tool workflows and portfolio projects
+- v3.0.0: Data Science tutorial path
+- v4.0.0: Data Engineering tutorial path

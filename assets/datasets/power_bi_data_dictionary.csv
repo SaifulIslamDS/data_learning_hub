@@ -1,0 +1,20 @@
+﻿Table,Column,Data type,Role,Description
+DimDate,Date,Date,Primary key,One row per calendar date from 2025-01-01 through 2026-12-31.
+DimProduct,ProductKey,Text,Primary key,Unique product identifier.
+DimProduct,Category,Text,Dimension attribute,Product reporting category.
+DimCustomer,CustomerKey,Text,Primary key,Unique customer identifier.
+DimCustomer,Segment,Text,Dimension attribute,Customer segment.
+DimRegion,RegionKey,Text,Primary key,Unique region identifier.
+FactSales,SalesLineKey,Text,Primary key,Unique order-line identifier.
+FactSales,OrderID,Text,Degenerate dimension,Order identifier repeated across lines.
+FactSales,OrderDate,Date,Foreign key,Active relationship to DimDate[Date].
+FactSales,ShipDate,Date,Foreign key,Inactive relationship to DimDate[Date].
+FactSales,CustomerKey,Text,Foreign key,Relationship to DimCustomer.
+FactSales,ProductKey,Text,Foreign key,Relationship to DimProduct.
+FactSales,RegionKey,Text,Foreign key,Relationship to DimRegion.
+FactSales,Revenue,Decimal,Additive measure input,Line revenue after discount.
+FactSales,Cost,Decimal,Additive measure input,Line cost.
+FactSales,GrossProfit,Decimal,Validation column,Revenue minus cost; learners may recalculate as a measure.
+FactTargets,MonthStart,Date,Composite grain,First day of target month.
+FactTargets,RegionKey,Text,Composite grain,Target region.
+FactTargets,RevenueTarget,Decimal,Target value,Monthly revenue target by region.

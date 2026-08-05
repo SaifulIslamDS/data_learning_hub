@@ -1,6 +1,6 @@
-# Testing — v2.3.0
+# Testing — v2.4.0
 
-Run the complete validation suite:
+## Commands
 
 ```powershell
 npm run generate
@@ -8,27 +8,49 @@ npm test
 npm run test:browser
 ```
 
-## Automated checks
+## Automated baseline
 
-- Statistical numerical tests
-- 108-lesson comprehensive content audit
-- 143-chapter tutorial completeness audit
-- Curriculum and dataset relationship audit
-- SQL database and starter-query execution audit
-- Local-link and downloadable-file audit
-- JavaScript syntax checks
-- Playwright browser smoke tests
+- 108 retained bilingual lessons
+- 20 statistical labs
+- 4 published tutorials
+- 220 tutorial chapters
+- 660 chapter exercises
+- 77 Power BI chapters across 9 modules
+- 66 SQL starter queries executed against fresh SQLite databases
+- 389 HTML pages
+- 20,367 local references
+- 0 broken local references
 
-## v2.3.0 baseline
+## Power BI audit
 
-```text
-3 published tutorials
-143 tutorial chapters
-429 chapter exercises
-66/66 SQL starter queries executed successfully
-307 HTML pages
-12,664 local references
-0 broken references
-```
+`scripts/audit_power_bi.py` validates:
 
-The browser test verifies SQL editor rendering and controls but does not depend on external CDN availability. Query correctness is validated independently with Python's SQLite engine against the same generated seed database.
+- Course version, chapter count, and module count
+- `powerbi-demo` activity on every chapter
+- Official Microsoft Learn chapter references
+- Required download files
+- ZIP contents
+- Dimension and fact row counts
+- Unique sales-line keys
+- Foreign-key integrity
+- Date coverage
+- `GrossProfit = Revenue - Cost`
+
+## Browser regression
+
+Chromium smoke tests verify:
+
+- Sticky header
+- Four published tutorial cards
+- Exact footer adjustment
+- 77-chapter Power BI course and nine modules
+- Power BI activity and completion state
+- English/Bangla switching
+- 231 Power BI exercises
+- 30-question Power BI quiz
+- Mobile 77-chapter drawer
+- Data Foundations, Excel, SQL, SQL playground, and statistical-lab regression
+
+## Release rule
+
+Do not tag a release until the complete test suite passes from a freshly extracted release archive.

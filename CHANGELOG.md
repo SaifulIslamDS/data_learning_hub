@@ -1,5 +1,40 @@
 # Changelog
 
+## v2.4.0 — Complete Power BI for Data Analytics Tutorial
+
+### Added
+
+- 77 bilingual Power BI chapters across nine modules
+- 231 chapter exercises, 77 examples, and a 30-question final quiz
+- Browser-side Power BI decision and measure simulations
+- Retail star-schema practice dataset and ZIP download
+- DAX measure library
+- Power Query M examples
+- Project and QA checklist
+- Power BI data dictionary
+- Dedicated Power BI content and practice-data audit
+
+### Changed
+
+- Power BI is now marked `tutorial-published`
+- Platform totals increased to four tutorials, 220 chapters, and 660 exercises
+- v2.4.0 is the current roadmap release
+- Homepage, tutorial library, career path, curriculum, search, and resources include the complete Power BI course
+
+### Footer adjustment
+
+- Removed the `Inspired by tafshir027/stats` link from `.footer-bottom-links`
+- Changed `Privacy & credits` to `About`
+- The footer-bottom links now contain only `<a href="/about/">About</a>`
+
+### Validation
+
+- 389 generated HTML pages
+- 20,367 local references checked
+- 0 broken local references
+- Power BI data-model integrity and browser simulations passed
+- Existing Data Foundations, Excel, SQL, statistics, sticky-header, language, theme, exercises, and quiz behavior passed regression testing
+
 ## v2.3.0 — Complete SQL for Data Analytics Tutorial
 
 ### Added
