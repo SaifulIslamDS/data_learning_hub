@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 import { getRouteManifest } from "@/src/lib/page-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
