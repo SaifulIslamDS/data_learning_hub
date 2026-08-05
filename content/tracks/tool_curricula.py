@@ -30,7 +30,7 @@ TOOL_CURRICULA = [
         "id": "sql",
         "title_en": "SQL for Data Analytics",
         "title_bn": "ডেটা অ্যানালিটিক্সের জন্য SQL",
-        "status": "curriculum-ready",
+        "status": "tutorial-published",
         "target_release": "v2.3.0",
         "prerequisites": ["Data Foundations", "Tables, rows, columns and keys"],
         "outcome_en": "Write readable PostgreSQL queries that answer business questions across multiple related tables.",

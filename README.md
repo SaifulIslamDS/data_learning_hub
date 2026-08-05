@@ -6,18 +6,20 @@ Data Learning Hub is a completely static learning website built with HTML, CSS, 
 
 ## Current release
 
-### v2.2.0 — Complete Excel for Data Analytics Tutorial
+### v2.3.0 — Complete SQL for Data Analytics Tutorial
 
 Published tutorial content now includes:
 
 - Complete **Data Foundations Tutorial** — 21 chapters
 - Complete **Excel for Data Analytics Tutorial** — 56 chapters across 8 modules
-- 77 sequential tutorial chapters in total
-- 231 chapter exercises
+- Complete **SQL for Data Analytics Tutorial** — 66 chapters across 9 modules
+- 143 sequential tutorial chapters in total
+- 429 chapter exercises
 - Interactive activity in every chapter
 - Randomized 30-question final quiz for each tutorial
 - Dedicated exercise, example, quiz, and reference libraries
-- Downloadable Excel practice workbook and synthetic datasets
+- Downloadable Excel practice workbook, SQL database scripts, query collection, data dictionaries, and synthetic datasets
+- Browser-side SQL playground powered by SQLite-compatible sql.js; no backend or server-executed query
 - Persistent desktop chapter sidebar and mobile chapter drawer
 - Browser-local chapter completion and quiz results
 - English-first EN/BN content
@@ -44,6 +46,20 @@ The previous platform resources remain available:
 
 The course progresses from workbook and data-entry fundamentals through formulas, conditional aggregation, text/date functions, XLOOKUP, INDEX/MATCH, dynamic arrays, PivotTables, charts, Power Query, the Data Model, introductory Power Pivot/DAX, auditing, dashboard design, and a two-part retail-sales project.
 
+## SQL tutorial modules
+
+1. SQL and Relational Foundations
+2. Select, Filter, and Sort
+3. Expressions and Functions
+4. Aggregation and Metrics
+5. Joins and Set Operations
+6. Subqueries and Common Table Expressions
+7. Window Functions and Analytical Patterns
+8. Modeling, Quality, and Performance
+9. Portfolio Analytics Projects
+
+The tutorial uses PostgreSQL as the primary explanatory dialect while browser practice runs SQLite-compatible queries locally through sql.js. Every chapter identifies dialect-sensitive behavior where relevant.
+
 ## Primary learning experience
 
 ```text
@@ -66,6 +82,8 @@ No learning-plan setup is required before studying.
 - `/tutorials/` — published tutorial library
 - `/tutorials/data-foundations/` — 21-chapter foundations course
 - `/tutorials/excel-data-analytics/` — 56-chapter Excel course
+- `/tutorials/sql-data-analytics/` — 66-chapter SQL course
+- `/playground/sql/` — standalone browser SQL playground
 - `/exercises/` — tutorial exercise libraries
 - `/quiz/` — tutorial assessments
 - `/examples/` — worked-example libraries
@@ -75,13 +93,17 @@ No learning-plan setup is required before studying.
 - `/learn/` — retained comprehensive lesson library
 - `/my-learning/` — optional browser-local dashboard
 
-## Excel practice files
+## Practice files
 
 - `assets/downloads/excel-analytics-practice-workbook.xlsx`
 - `assets/datasets/retail_sales.csv`
 - `assets/datasets/retail_sales_dictionary.csv`
 
-The workbook contains Raw Sales, Formula Practice, Lookup Tables, Cleaning Practice, Pivot Practice, Dashboard Brief, and Answer Guide sheets.
+The workbook contains Raw Sales, Formula Practice, Lookup Tables, Cleaning Practice, Pivot Practice, Dashboard Brief, and Answer Guide sheets. SQL practice assets include a deterministic six-table retail database, 66 starter queries, and a CSV data dictionary.
+
+- `assets/downloads/sql-analytics-practice-database.sql`
+- `assets/downloads/sql-analytics-practice-queries.sql`
+- `assets/datasets/sql_practice_data_dictionary.csv`
 
 ## Source architecture
 
@@ -90,6 +112,7 @@ content/
 ├── tutorials/
 │   ├── data_foundations.json
 │   ├── excel_data_analytics.json
+│   ├── sql_data_analytics.json
 │   └── loader.py
 ├── platform/
 ├── statistics/
@@ -103,6 +126,8 @@ scripts/
 ├── audit_curriculum.py
 ├── audit_lessons.py
 ├── audit_links.py
+├── audit_sql.py
+├── build_sql_course.py
 ├── browser_smoke.py
 └── test_stats.mjs
 ```
@@ -117,13 +142,14 @@ npm test
 npm run test:browser
 ```
 
-Expected v2.2.0 validation includes:
+Expected v2.3.0 validation includes:
 
 ```text
 All statistical core tests passed.
 Validated 108 comprehensive bilingual lessons.
-Validated 2 published tutorials with 77 complete chapters.
-Checked 6,704 local HTML and asset references across 235 HTML files.
+Validated 3 published tutorials with 143 complete chapters.
+Executed 66/66 SQL chapter starter queries successfully.
+Checked 12,664 local HTML and asset references across 307 HTML files.
 0 broken local references found.
 Browser smoke test passed.
 ```
@@ -160,5 +186,5 @@ Idea and developed by **Saiful Islam**.
 - [Roadmap](docs/ROADMAP.md)
 - [Testing](docs/TESTING.md)
 - [Deployment](docs/DEPLOYMENT.md)
-- [v2.2.0 release report](docs/RELEASE-REPORT-v2.2.0.md)
+- [v2.3.0 release report](docs/RELEASE-REPORT-v2.3.0.md)
 - [v1-to-v2 migration](docs/MIGRATION-v1-to-v2.md)

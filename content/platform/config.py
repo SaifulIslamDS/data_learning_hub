@@ -21,13 +21,13 @@ SITE = {
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.2.0",
+    "version": "2.3.0",
 }
 
 STORAGE = {
     "prefix": "dlh-",
     "legacy_prefix": "slh-",
-    "schema_version": 4,
+    "schema_version": 5,
 }
 
 TOOL_BASELINES = [
@@ -41,8 +41,8 @@ TOOL_BASELINES = [
     {
         "id": "sql",
         "name": "SQL",
-        "baseline_en": "Portable SQL concepts with PostgreSQL as the primary teaching dialect.",
-        "baseline_bn": "Portable SQL concept; primary teaching dialect হিসেবে PostgreSQL।",
+        "baseline_en": "Portable SQL concepts with PostgreSQL as the primary teaching dialect; browser practice runs locally with SQLite-compatible sql.js.",
+        "baseline_bn": "Portable SQL concept; primary teaching dialect PostgreSQL, আর browser practice SQLite-compatible sql.js-এ local run হয়।",
         "official_url": "https://www.postgresql.org/docs/current/",
     },
     {

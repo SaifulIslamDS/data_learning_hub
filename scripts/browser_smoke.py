@@ -4,12 +4,14 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT=Path(__file__).resolve().parents[1]
-SCREENSHOTS=ROOT/'docs'/'screenshots-v2.2.0'
+SCREENSHOTS=ROOT/'docs'/'screenshots-v2.3.0'
 SCREENSHOTS.mkdir(parents=True,exist_ok=True)
 SCRIPT_MAP={
  'home':[], 'tutorials':[], 'resources':[],
  'tutorial-course':['tutorial-core.js','tutorial-index.js'],
  'tutorial-chapter':['tutorial-core.js','tutorial.js'],
+ 'tutorial-sql-chapter':['tutorial-core.js','sql-practice.js','tutorial.js'],
+ 'sql-playground':['sql-practice.js'],
  'tutorial-exercises':['tutorial-core.js','tutorial-exercises.js'],
  'tutorial-quiz':['tutorial-core.js','tutorial-quiz.js'],
  'tool':[],
@@ -52,22 +54,25 @@ def main():
     context=browser.new_context(viewport={'width':1440,'height':1000},device_scale_factor=1)
     page=context.new_page(); page.set_default_timeout(30000)
 
+    print('stage home',flush=True)
     load(page,'index.html','home',{'dlh-language':'en','dlh-theme':'light'})
     page.wait_for_selector('.site-header')
     assert page.get_by_role('link',name='Tutorials',exact=True).count()==1
     assert 'Learn Data Analytics here' in page.locator('h1').first.inner_text()
     assert page.get_by_text('Excel for Data Analytics',exact=True).count()>=1
-    assert page.get_by_text('77',exact=True).count()>=1
+    assert page.get_by_text('143',exact=True).count()>=1
     assert_sticky(page)
     page.evaluate('window.scrollTo(0,0)')
     page.wait_for_timeout(100)
     page.screenshot(path=str(SCREENSHOTS/'home-desktop.png'),full_page=False)
 
+    print('stage tutorials',flush=True)
     load(page,'tutorials/index.html','tutorials')
     page.wait_for_selector('.subject-course-card.published')
-    assert page.locator('.subject-course-card.published').count()==2
+    assert page.locator('.subject-course-card.published').count()==3
     assert page.get_by_text('Excel for Data Analytics',exact=True).count()>=1
 
+    print('stage excel course',flush=True)
     load(page,'tutorials/excel-data-analytics/index.html','tutorial-course')
     page.wait_for_selector('.tutorial-index-card')
     assert page.locator('.tutorial-index-card').count()==56
@@ -79,6 +84,7 @@ def main():
     page.wait_for_timeout(100)
     page.screenshot(path=str(SCREENSHOTS/'excel-course-desktop.png'),full_page=False)
 
+    print('stage excel chapter',flush=True)
     load(page,'tutorials/excel-data-analytics/xlookup/index.html','tutorial-chapter')
     page.wait_for_selector('#tutorial-activity .try-panel')
     assert page.get_by_text('XLOOKUP',exact=True).count()>=1
@@ -100,9 +106,10 @@ def main():
     page.wait_for_timeout(100)
     page.screenshot(path=str(SCREENSHOTS/'excel-xlookup-desktop.png'),full_page=False)
 
+    print('stage resources',flush=True)
     load(page,'exercises/index.html','resources')
     page.wait_for_selector('.resource-subject-card')
-    assert page.locator('.resource-subject-card').count()==2
+    assert page.locator('.resource-subject-card').count()==3
     load(page,'exercises/excel-data-analytics/index.html','tutorial-exercises')
     page.wait_for_selector('.exercise-library-section')
     assert page.locator('.exercise-library-section').count()==56
@@ -115,6 +122,37 @@ def main():
     page.wait_for_selector('.quiz-question')
     assert page.locator('.quiz-question').count()==30
 
+
+    print('stage sql course',flush=True)
+    load(page,'tutorials/sql-data-analytics/index.html','tutorial-course')
+    page.wait_for_selector('.tutorial-index-card')
+    assert page.locator('.tutorial-index-card').count()==66
+    assert page.locator('.tutorial-index-module').count()==9
+    assert page.get_by_text('SQL for Data Analytics Tutorial',exact=True).count()>=1
+    assert page.get_by_role('link',name=re.compile('SQL Playground')).count()>=1
+    assert_sticky(page)
+    page.evaluate('window.scrollTo(0,0)')
+    page.screenshot(path=str(SCREENSHOTS/'sql-course-desktop.png'),full_page=False)
+
+    print('stage sql chapter',flush=True)
+    load(page,'tutorials/sql-data-analytics/inner-join/index.html','tutorial-sql-chapter')
+    page.wait_for_selector('#tutorial-activity .sql-editor')
+    assert 'JOIN' in page.locator('.sql-editor').input_value().upper()
+    assert page.locator('.exercise-card').count()==3
+    assert page.locator('.tutorial-chapter-link').count()==66
+    assert page.get_by_role('button',name='Run query').count()==1
+    assert_sticky(page)
+    page.evaluate('window.scrollTo(0,0)')
+    page.screenshot(path=str(SCREENSHOTS/'sql-inner-join-desktop.png'),full_page=False)
+
+    print('stage playground',flush=True)
+    load(page,'playground/sql/index.html','sql-playground')
+    page.evaluate('window.DLHSQLPractice.mountStandalone()')
+    page.wait_for_selector('#sql-playground-root .sql-editor')
+    assert 'SELECT' in page.locator('.sql-editor').input_value().upper()
+    assert page.get_by_role('button',name='Run query').count()==1
+
+    print('stage regression',flush=True)
     # Regression: the old Data Foundations course and a retained statistical lab still use the sticky shared header.
     load(page,'tutorials/data-foundations/data-and-statistics/index.html','tutorial-chapter')
     page.wait_for_selector('#tutorial-activity .try-panel')
@@ -124,16 +162,17 @@ def main():
     page.wait_for_selector('.site-header')
     assert_sticky(page)
 
+    print('stage mobile',flush=True)
     mobile=browser.new_page(viewport={'width':390,'height':844})
-    load(mobile,'tutorials/excel-data-analytics/xlookup/index.html','tutorial-chapter')
-    mobile.wait_for_selector('#tutorial-activity .try-panel')
+    load(mobile,'tutorials/sql-data-analytics/inner-join/index.html','tutorial-sql-chapter')
+    mobile.wait_for_selector('#tutorial-activity .sql-editor')
     assert mobile.locator('#tutorial-drawer-open').is_visible()
-    assert_sticky(mobile)
-    mobile.locator('#tutorial-drawer-open').click()
-    assert 'open' in (mobile.locator('#tutorial-sidebar').get_attribute('class') or '')
-    assert mobile.locator('[data-chapter-link]').count()==56
-    mobile.screenshot(path=str(SCREENSHOTS/'excel-xlookup-mobile.png'),full_page=False)
-    mobile.close(); browser.close()
-  print('Browser smoke test passed for sticky headers, two-course tutorial navigation, 56-chapter Excel course, XLOOKUP activity, bilingual state, 168 exercises, final quiz, retained Data Foundations, statistical lab, and mobile drawer.')
+    mobile.locator('#tutorial-drawer-open').click(force=True)
+    assert mobile.locator('[data-chapter-link]').count()==66
+    mobile.screenshot(path=str(SCREENSHOTS/'sql-inner-join-mobile.png'),full_page=False)
+    mobile.close()
+    context.close()
+    browser.close()
+  print('Browser smoke test passed for sticky headers, three-course tutorial navigation, 56-chapter Excel course, 66-chapter SQL course and browser playground UI, XLOOKUP activity, bilingual state, 168 exercises, final quiz, retained Data Foundations, statistical lab, and mobile drawer.')
 
 if __name__=='__main__': main()

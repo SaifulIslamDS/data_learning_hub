@@ -1,6 +1,6 @@
-# Testing — v2.2.0
+# Testing — v2.3.0
 
-## Commands
+Run the complete validation suite:
 
 ```powershell
 npm run generate
@@ -8,56 +8,27 @@ npm test
 npm run test:browser
 ```
 
-## Automated test layers
+## Automated checks
 
-### Statistical core
+- Statistical numerical tests
+- 108-lesson comprehensive content audit
+- 143-chapter tutorial completeness audit
+- Curriculum and dataset relationship audit
+- SQL database and starter-query execution audit
+- Local-link and downloadable-file audit
+- JavaScript syntax checks
+- Playwright browser smoke tests
 
-Validates the retained browser-statistics functions.
+## v2.3.0 baseline
 
-### Comprehensive lesson audit
+```text
+3 published tutorials
+143 tutorial chapters
+429 chapter exercises
+66/66 SQL starter queries executed successfully
+307 HTML pages
+12,664 local references
+0 broken references
+```
 
-Confirms that all 108 retained lessons preserve their required content structure.
-
-### Tutorial audit
-
-Validates both published tutorials, chapter IDs, modules, bilingual fields, teaching-section depth, terms, worked examples, activities, exercise types, references, downloads, and generated routes.
-
-Expected tutorial totals:
-
-- Data Foundations: 21 chapters and 63 exercises
-- Excel for Data Analytics: 56 chapters and 168 exercises
-- Combined: 77 chapters and 231 exercises
-
-### Curriculum audit
-
-Checks publication status, domain URLs, curriculum relationships, datasets, project references, tool baselines, active career route, storage migration, and release identity.
-
-### Link audit
-
-Scans every generated HTML file and local asset/download reference. The v2.2.0 baseline is 235 HTML files, 6,704 checked references, and zero broken local references.
-
-### JavaScript syntax
-
-Runs `node --check` against every shared browser module.
-
-### Browser smoke test
-
-Covers:
-
-- sticky header at initial and scrolled positions
-- homepage and tutorial library
-- 56-chapter, eight-module Excel course landing
-- downloadable workbook link
-- XLOOKUP chapter, formula, activity, and completion state
-- EN/BN switch and theme-compatible rendering
-- 168-item Excel exercise library and filtering
-- randomized 30-question Excel quiz
-- retained Data Foundations route
-- retained statistical lab route
-- 56-link mobile course drawer
-
-Screenshots are written to `docs/screenshots-v2.2.0/`.
-
-## Spreadsheet validation
-
-The Excel practice workbook is built with `artifact_tool`, inspected for sheet structure and key formula regions, imported back from the exported `.xlsx`, and checked for formula errors.
+The browser test verifies SQL editor rendering and controls but does not depend on external CDN availability. Query correctness is validated independently with Python's SQLite engine against the same generated seed database.

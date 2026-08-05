@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.3.0 — Complete SQL for Data Analytics Tutorial
+
+### Added
+- Complete 66-chapter bilingual SQL for Data Analytics tutorial across nine modules.
+- Browser-side SQL editor and standalone playground powered by sql.js 1.14.1.
+- Deterministic six-table retail analytics practice database.
+- 198 SQL chapter exercises, final quiz, examples, glossary, and reference library.
+- Downloadable database seed, 66-query collection, and CSV data dictionary.
+- Automated execution audit for all 66 chapter starter queries.
+
+### Changed
+- SQL domain and curriculum status changed from curriculum-ready to tutorial-published.
+- Homepage, tutorials, resource libraries, roadmap, and documentation now reflect three published courses and 143 chapters.
+- CSP permits the pinned jsDelivr sql.js runtime and WASM fetch while retaining a static no-backend architecture.
+
+### Validated
+- 307 HTML pages and 12,664 local references with zero broken links.
+- Sticky header, SQL tutorial navigation, playground UI, exercises, quiz, retained tutorials, statistics labs, and mobile drawer.
+
 All notable changes are documented here.
 
 ## [2.2.0] — Complete Excel for Data Analytics Tutorial

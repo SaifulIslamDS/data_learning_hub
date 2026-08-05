@@ -1,6 +1,6 @@
 {
   "name": "data-learning-hub",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
   "type": "module",
   "description": "A tutorial-first bilingual static Data Analytics learning platform with complete Data Foundations chapters, examples, exercises, references and final assessment.",
@@ -10,9 +10,10 @@
     "audit:lessons": "python scripts/audit_lessons.py",
     "audit:tutorials": "python scripts/audit_tutorials.py",
     "audit:links": "python scripts/audit_links.py",
+    "audit:sql": "python scripts/audit_sql.py",
     "test:stats": "node scripts/test_stats.mjs",
-    "test:syntax": "node --check assets/js/site.js && node --check assets/js/start.js && node --check assets/js/dashboard.js && node --check assets/js/catalog.js && node --check assets/js/tools-index.js && node --check assets/js/tools.js && node --check assets/js/topic.js && node --check assets/js/glossary.js && node --check assets/js/career-paths.js && node --check assets/js/curriculum.js && node --check assets/js/projects.js && node --check assets/js/tutorial-core.js && node --check assets/js/tutorial-index.js && node --check assets/js/tutorial.js && node --check assets/js/tutorial-exercises.js && node --check assets/js/tutorial-quiz.js",
-    "test": "npm run test:stats && npm run audit:lessons && npm run audit:tutorials && npm run audit:curriculum && npm run audit:links && npm run test:syntax",
+    "test:syntax": "node --check assets/js/site.js && node --check assets/js/start.js && node --check assets/js/dashboard.js && node --check assets/js/catalog.js && node --check assets/js/tools-index.js && node --check assets/js/tools.js && node --check assets/js/topic.js && node --check assets/js/glossary.js && node --check assets/js/career-paths.js && node --check assets/js/curriculum.js && node --check assets/js/projects.js && node --check assets/js/tutorial-core.js && node --check assets/js/tutorial-index.js && node --check assets/js/tutorial.js && node --check assets/js/tutorial-exercises.js && node --check assets/js/tutorial-quiz.js && node --check assets/js/sql-practice.js",
+    "test": "npm run test:stats && npm run audit:lessons && npm run audit:tutorials && npm run audit:curriculum && npm run audit:sql && npm run audit:links && npm run test:syntax",
     "test:browser": "python scripts/browser_smoke.py",
     "serve": "python -m http.server 8080"
   }

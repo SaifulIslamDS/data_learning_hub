@@ -34,3 +34,9 @@ Each published lesson should identify suitable references and avoid presenting g
 ## Dataset notice
 
 The bundled practice datasets are synthetic. They do not contain real people, customers, organizations, transactions, or confidential records.
+
+## SQL learning and browser practice
+
+- PostgreSQL documentation — primary SQL teaching reference
+- SQLite documentation — browser-practice dialect reference
+- sql.js 1.14.1 — MIT-licensed SQLite WebAssembly runtime loaded from jsDelivr

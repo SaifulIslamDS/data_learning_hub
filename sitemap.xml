@@ -144,6 +144,7 @@
   <url><loc>https://data-learning-hub.netlify.app/quiz/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/examples/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/references/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/playground/sql/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/exercises/data-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/quiz/data-foundations/</loc></url>
@@ -231,4 +232,75 @@
   <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/excel-analyst-workflow/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/retail-sales-project-data-preparation/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/excel-data-analytics/retail-sales-project-dashboard/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/exercises/sql-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/quiz/sql-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/examples/sql-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/references/sql-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/welcome-to-sql-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/relational-databases-and-tables/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/sql-dialects-postgresql-and-sqlite/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/practice-database-schema/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/select-fundamentals/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/aliases-comments-and-formatting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/logical-query-processing-order/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/distinct-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/where-filtering/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/comparison-operators/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/and-or-not/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/in-and-between/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/like-and-pattern-matching/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/null-and-three-valued-logic/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/order-by-limit-offset/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/arithmetic-expressions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/case-expressions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/coalesce-and-nullif/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/string-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/date-and-time-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/type-conversion-and-cast/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/conditional-aggregation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/sql-data-quality-profiling/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/aggregate-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/group-by/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/having/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/multiple-dimension-grouping/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/ratios-percentages-and-aov/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/deduplication-with-grouping/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/aggregation-pitfalls/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/keys-and-relationships/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/inner-join/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/left-join/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/multiple-table-joins/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/self-join/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/cross-join/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/union-and-union-all/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/exists-semi-and-anti-joins/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/join-debugging-and-reconciliation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/scalar-subqueries/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/subqueries-in-from/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/correlated-subqueries/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/exists-subqueries/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/common-table-expressions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/recursive-ctes/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/modular-query-design/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/window-function-foundations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/row-number-rank-dense-rank/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/running-totals/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/moving-averages/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/lag-and-lead/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/first-value-and-last-value/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/ntile-and-percentile-bands/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/top-n-per-group/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/cohort-retention-with-sql/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/create-table-data-types-constraints/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/insert-update-delete-safely/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/transactions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/views/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/indexes-and-explain/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/star-schema-for-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/sales-kpi-scorecard/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/customer-segmentation-sql-project/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/funnel-analysis-sql-project/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/data-quality-audit-sql-project/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/sql-data-analytics/final-sql-analytics-portfolio-project/</loc></url>
 </urlset>

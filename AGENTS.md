@@ -6,9 +6,9 @@ Data Learning Hub is a static, tutorial-first bilingual Data Analytics learning 
 
 ## Current baseline
 
-- Product version: v2.2.0
+- Product version: v2.3.0
 - Published tutorials: Data Foundations and Excel for Data Analytics
-- 77 tutorial chapters and 231 chapter exercises
+- 143 tutorial chapters and 429 chapter exercises
 - 108 retained lessons and 20 retained statistical labs
 - Static HTML/CSS/Vanilla JavaScript; Python is development-time generation only
 - Netlify production branch: `main`

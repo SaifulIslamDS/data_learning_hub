@@ -131,6 +131,7 @@
 
   function renderActivity() {
     const a=chapter.activity; let html='';
+    if(a.type==='sql-playground' && window.DLHSQLPractice){ activityRoot.innerHTML='<div class="try-panel"><div id="sql-chapter-playground"></div></div>'; window.DLHSQLPractice.renderActivity(activityRoot.querySelector('#sql-chapter-playground'),a); return; }
     if(a.type==='excel-demo') html=renderExcelDemo(a);
     else if(a.type==='classify' || a.type==='bias-finder' || a.type==='issue-finder') html=renderClassify(a);
     else if(a.type==='table-inspector') html=renderTable(a);

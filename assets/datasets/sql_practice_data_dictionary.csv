@@ -1,0 +1,30 @@
+﻿table,grain,column,type,description
+customers,One row per customer,customer_id,INTEGER,Unique customer key
+customers,One row per customer,customer_name,TEXT,Display name
+customers,One row per customer,segment,TEXT,Commercial segment
+customers,One row per customer,city,TEXT,City; may be NULL
+customers,One row per customer,signup_date,TEXT date,Signup date
+customers,One row per customer,active,INTEGER 0/1,Current active flag
+products,One row per product,product_id,INTEGER,Unique product key
+products,One row per product,product_name,TEXT,Product name
+products,One row per product,category,TEXT,Product category
+products,One row per product,unit_cost,REAL,Unit cost
+products,One row per product,list_price,REAL,List price
+orders,One row per order,order_id,INTEGER,Unique order key
+orders,One row per order,customer_id,INTEGER,Customer foreign key
+orders,One row per order,order_date,TEXT date,Order date
+orders,One row per order,region,TEXT,Sales region
+orders,One row per order,channel,TEXT,Sales channel
+orders,One row per order,status,TEXT,Order status
+orders,One row per order,salesperson_id,INTEGER,Employee foreign key
+order_items,One row per order line,order_item_id,INTEGER,Unique line key
+order_items,One row per order line,order_id,INTEGER,Order foreign key
+order_items,One row per order line,product_id,INTEGER,Product foreign key
+order_items,One row per order line,quantity,INTEGER,Units
+order_items,One row per order line,unit_price,REAL,Selling price per unit
+order_items,One row per order line,discount_pct,REAL,Discount as decimal
+employees,One row per employee,employee_id,INTEGER,Unique employee key
+employees,One row per employee,manager_id,INTEGER,Self-referencing manager key
+web_events,One row per event,event_id,INTEGER,Unique event key
+web_events,One row per event,event_name,TEXT,Funnel event
+web_events,One row per event,campaign,TEXT,Acquisition campaign
