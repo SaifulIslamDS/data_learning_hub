@@ -1,0 +1,12 @@
+/* Next.js compatibility layer. The complete v2.6 design system remains in /public/assets/css/main.css. */
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; }
+body > div[data-nextjs-scroll-focus-boundary] { display: contents; }
+.next-offline-card { max-width: 760px; margin: 7rem auto 3rem; padding: 2rem; }
+.next-offline-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+@media (display-mode: standalone) {
+  .site-header { padding-top: env(safe-area-inset-top); }
+  body { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+.next-page-host { display: contents; }

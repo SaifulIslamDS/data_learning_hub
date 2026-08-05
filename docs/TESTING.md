@@ -1,56 +1,48 @@
-# Testing — v2.6.0
+# Testing — v2.7.0
 
-## Commands
+## Pre-install audits
 
 ```powershell
-npm run build:workflows
-npm run generate
-npm test
-npm run test:browser
+python scripts/audit-migration.py
+node scripts/audit-pwa.mjs
+node scripts/audit-source.mjs
 ```
 
-## Automated coverage
+These can run before installing Next.js dependencies.
 
-`npm test` validates:
+## Full application verification
 
-- statistical calculations
-- 108 comprehensive bilingual lessons
-- six published tutorials and 363 chapters
-- 1,089 chapter exercises
-- curriculum relationships and publication states
-- SQL database and all starter queries
-- Power BI star-schema assets and calculations
-- Python datasets, notebooks, packages, and all starter snippets
-- six portfolio projects, 48 workflow phases, datasets, dictionaries, ZIP packages, templates, deliverables, and quality gates
-- every local HTML and asset reference
-- JavaScript syntax
-
-## Browser coverage
-
-The Playwright smoke test verifies:
-
-- sticky header
-- six-course tutorial library
-- Analytics Workflows course and chapter navigation
-- bilingual switching
-- tutorial completion
-- workflow exercises and 30-question quiz
-- six-card Project Center
-- project phase progress and persistence
-- downloadable project package links
-- retained Data Foundations, Excel, SQL, Power BI, Python, and statistics routes
-- exact footer behavior
-- mobile chapter drawer
-
-## Current validated output
-
-```text
-Tutorials:          6
-Tutorial chapters:  363
-Exercises:          1,089
-Portfolio projects: 6
-Project phases:     48
-HTML pages:         549
-Local references:   35,107
-Broken references:  0
+```powershell
+pnpm install
+pnpm typecheck
+pnpm test
+pnpm build
 ```
+
+## Required browser regression
+
+- Homepage and sticky header
+- EN/BN switch
+- Theme switch
+- Tutorial course and chapter
+- Chapter completion and exercise feedback
+- SQL playground query
+- Python playground output and chart
+- Power BI simulation
+- Statistical lab calculation and chart
+- Portfolio phase progress
+- Search
+- Mobile chapter drawer
+- PWA install and offline fallback
+
+## Release gate
+
+Do not tag v2.7.0 until:
+
+- `pnpm-lock.yaml` is committed
+- `pnpm check` passes
+- Netlify production deploy passes
+- Service worker is activated
+- Manifest and icons are valid
+- A visited tutorial page opens offline
+- SQL and Python playgrounds run online

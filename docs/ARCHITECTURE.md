@@ -1,71 +1,52 @@
-# Architecture — v2.6.0
+# Architecture — v2.7.0
 
-## Product model
+## Purpose
 
-Data Learning Hub is a generated static site. Source content is stored as structured Python/JSON modules; `scripts/generate.py` publishes ordinary HTML, CSS, and Vanilla JavaScript pages.
+v2.7.0 converts the complete v2.6.0 static release into a Next.js App Router application without changing or dropping published content, URLs, local progress, exercises, labs, downloads, or browser runtimes.
 
-The primary learner surfaces are:
+## Runtime model
 
-- Tutorials
-- Exercises
-- Examples
-- Quizzes
-- References
-- Browser SQL/Python playgrounds
-- Portfolio Project Center
-- Retained statistics lessons and labs
+1. Next.js statically generates the complete route set through `app/[...slug]/page.tsx`.
+2. `src/generated/routes.json` maps every URL to one page payload.
+3. Each payload contains metadata, body data attributes, the original `<main>` markup, route scripts, and redirect scripts where applicable.
+4. `LegacyPage` renders the content through React and loads the existing v2.6 browser modules in deterministic order.
+5. The global App Router layout provides the shared header/footer mount points and PWA registration.
 
-## Source domains
+This compatibility layer makes the migration safe and immediately deployable. It is not the final desired native-React architecture.
 
-```text
-content/
-├── platform/       # identity, navigation, domains, storage
-├── tutorials/      # six complete tutorial definitions
-├── statistics/     # retained lessons and lab curriculum
-├── tracks/         # career and tool curriculum metadata
-├── datasets/       # legacy reusable datasets
-└── projects/       # portfolio project definitions
-```
+## Why the bridge exists
 
-## Workflow and project generation
+The v2.6.0 release contains 549 HTML routes, 363 tutorial chapters, 1,089 chapter exercises, 108 statistics lessons, 20 interactive statistical labs, six portfolio projects, SQL WebAssembly practice, Python/Pyodide practice, bilingual state, and local progress. Rewriting every interaction simultaneously would create unacceptable regression risk.
 
-`scripts/build_workflows_projects.py` produces:
+## Next.js choices
 
-- `content/tutorials/data_analytics_workflows.json`
-- `content/projects/portfolio_projects.json`
-- synthetic project CSV files and dictionaries
-- starter SQL and Python files
-- Excel and Power BI implementation guides
-- project packages and portfolio templates
+- Next.js 16.2.10
+- App Router
+- TypeScript
+- Static export (`output: "export"`)
+- Static `generateStaticParams()` for all routes
+- Metadata APIs for canonical URLs, robots, sitemap, and manifest
+- No backend, API, authentication, or database
 
-`scripts/generate.py` then publishes tutorial, project, sitemap, and content-payload routes.
+## PWA architecture
 
-## Client-side architecture
+`public/sw.js` provides:
 
-- `site.js` — shared sticky header, footer, language, theme, search, storage migration
-- `tutorial-core.js` — tutorial progress and chapter navigation
-- `tutorial.js` — chapter activities and completion
-- `projects.js` — Project Center rendering
-- `portfolio-project.js` — phase-level project progress
-- `sql-practice.js` — browser SQL editor
-- `python-practice.js` — browser Python editor
+- Core shell precaching
+- Network-first navigation requests
+- Offline fallback
+- Stale-while-revalidate local assets
+- Runtime caching of visited CDN resources
+- Versioned cache cleanup
 
-## Storage
+## Future native migration order
 
-No server-side storage is used. Optional browser-local state includes:
+1. React header/footer and search
+2. Shared language/theme/progress context
+3. Native tutorial course/chapter components
+4. Native exercise and quiz components
+5. Native project center
+6. Native statistics labs
+7. Remove generated HTML payload bridge
 
-- language and theme
-- lesson/tutorial completion
-- bookmarks
-- learner profile
-- portfolio project phase completion
-
-Project progress keys follow:
-
-```text
-dlh-project-<project-id>-tasks
-```
-
-## Static deployment
-
-The repository can be served directly from its root. Netlify is the production target. There is no build command in production because generated pages are committed to the repository.
+Every stage must preserve existing URLs and localStorage keys.

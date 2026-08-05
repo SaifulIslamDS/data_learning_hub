@@ -1,59 +1,33 @@
 # AGENTS.md
 
-## Product
+## Project
 
-- Name: Data Learning Hub
-- Current version: v2.6.0
-- Deployment: static Netlify site from `main`
-- Stack: HTML, CSS, Vanilla JavaScript, Python generator
-- Languages: English-first with Bangla toggle
+Data Learning Hub v2.7.0 is a Next.js 16 App Router PWA deployed to Netlify.
 
-## Published baseline
+## Workflow
 
-- Data Foundations: 21 chapters
-- Excel: 56 chapters
-- SQL: 66 chapters
-- Power BI: 77 chapters
-- Python: 94 chapters
-- Analytics Workflows: 49 chapters
-- Total: 363 chapters and 1,089 exercises
-- Portfolio projects: 6 complete cross-tool cases
-- Retained statistics: 108 lessons and 20 labs
+- Work directly on `main` unless the user explicitly changes the policy.
+- Use pnpm only.
+- Preserve all routes and current production URL.
+- Do not add a backend, API, authentication, or database without explicit approval.
+- Preserve EN/BN, theme, progress, bookmarks, exercises, quizzes, labs, playgrounds, projects, and PWA behavior.
 
-## Source of truth
+## Before changing architecture
 
-- Tutorial content: `content/tutorials/*.json`
-- Portfolio definitions: `content/projects/portfolio_projects.json`
-- Workflow/project builder: `scripts/build_workflows_projects.py`
-- Static generation: `scripts/generate.py` and `scripts/tutorial_generator.py`
-- Project UI: `assets/js/projects.js` and `assets/js/portfolio-project.js`
+Read:
 
-Do not hand-edit generated tutorial or project HTML when structured content or a generator owns it.
+1. `docs/PROJECT-CONTINUATION-v2.7.0.md`
+2. `docs/ARCHITECTURE.md`
+3. `docs/TESTING.md`
+4. `docs/ROADMAP.md`
+5. `README.md`
 
-## Required tests
+## Validation
 
 ```powershell
-npm run build:workflows
-npm run generate
-npm test
-npm run test:browser
+pnpm typecheck
+pnpm test
+pnpm build
 ```
 
-Do not publish when any statistical, tutorial, curriculum, SQL, Power BI, Python, project, link, syntax, or browser test fails.
-
-## UI requirements
-
-- Keep the shared header sticky on every route.
-- Footer bottom links must contain only `<a href="/about/">About</a>`.
-- Keep English first, EN/BN toggle, and persistent light/dark theme.
-
-## Project publication rules
-
-A project may be marked available only when its page, synthetic data, dictionary, complete package, workflow phases, deliverables, quality gates, and portfolio guidance are present.
-
-## Roadmap
-
-- v2.6.0: complete analytics workflows and portfolio projects
-- v2.7.0: assessments, revision, and interview preparation
-- v3.0.0: Data Science tutorial path
-- v4.0.0: Data Engineering tutorial path
+Run browser and PWA checks before a release tag.

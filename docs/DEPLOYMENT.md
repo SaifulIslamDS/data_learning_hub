@@ -1,38 +1,39 @@
-# Netlify Deployment — v2.6.0
+# Deployment — Netlify
 
-## Settings
+Production URL: https://datalearninghub.netlify.app/
+
+## Configuration
 
 ```text
+Build command:     pnpm build
+Publish directory: out
 Production branch: main
-Base directory:    empty
-Build command:     empty
-Publish directory: .
+Node version:      22
+pnpm version:      11.20.0
 ```
 
-Generated HTML and assets are committed to the repository, so Netlify does not need to run Python or npm during deployment.
+`netlify.toml` is included and should be used as the source of truth.
 
-## Before pushing
+## First Next.js deployment
 
 ```powershell
-npm run build:workflows
-npm run generate
-npm test
-npm run test:browser
+corepack enable
+corepack prepare pnpm@11.20.0 --activate
+pnpm install
+pnpm check
+
+git add -A
+git commit -m "feat: migrate Data Learning Hub to Next.js PWA"
+git push origin main
 ```
 
-## Production checks
+After Netlify deploy, perform the PWA and browser checks in `docs/TESTING.md`. Then tag:
 
-After Netlify deploys, verify:
+```powershell
+git tag -a v2.7.0 -m "Data Learning Hub v2.7.0 — Next.js Application and PWA"
+git push origin v2.7.0
+```
 
-1. `/tutorials/data-analytics-workflows/`
-2. `/projects/`
-3. `/projects/retail-sales-360/`
-4. download one project package
-5. complete one project phase and refresh the page
-6. switch EN/BN and light/dark mode
-7. run one SQL example
-8. run one Python example
+## Rollback
 
-## Site URL
-
-Set the final production origin in `content/platform/config.py`, regenerate, retest, and push before tagging the release.
+The stable v2.6.0 tag remains the static-release rollback point. Netlify also supports instant rollback to the previous successful deploy.

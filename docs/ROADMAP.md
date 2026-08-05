@@ -1,28 +1,34 @@
-# Product Roadmap
+# Roadmap After v2.7.0
 
-## Completed
+## v2.8.0 — Native React Shell and Learning State
 
-- **v2.0.0** — Data Analytics architecture and curriculum foundation
-- **v2.1.0** — Tutorial platform core and complete Data Foundations
-- **v2.2.0** — Complete Excel for Data Analytics
-- **v2.3.0** — Complete SQL for Data Analytics with browser practice
-- **v2.4.0** — Complete Power BI for Data Analytics
-- **v2.5.0** — Complete Python for Data Analytics with browser practice
-- **v2.6.0** — Data Analytics Workflows and Portfolio Projects
+- Replace DOM-generated header/footer with React components
+- Add React context/store for language, theme, progress, bookmarks, and profile
+- Preserve existing localStorage keys
+- Add install/update PWA UI
 
-## Recommended next release
+## v2.9.0 — Native Tutorial and Assessment Renderer
 
-### v2.7.0 — Assessments, Revision, and Interview Preparation
+- Render structured tutorial JSON directly in React
+- Native exercises, quizzes, references, and progress
+- Remove tutorial HTML payloads and tutorial-specific legacy scripts
 
-- subject-level diagnostic assessments
-- spaced revision and weak-topic review
-- practical debugging challenges
-- portfolio review rubrics
-- analyst interview questions
-- case-study presentations
-- downloadable completion evidence
+## v2.10.0 — Native Project Center and Analytics Labs
 
-## Future major paths
+- Native portfolio project pages
+- Native statistical lab components
+- Enhanced dashboard and revision system
 
-- **v3.0.0** — Data Science tutorial platform
-- **v4.0.0** — Data Engineering tutorial platform
+## v3.0.0 — Data Science Tutorial Platform
+
+- Mathematics and advanced statistics
+- Machine learning foundations
+- scikit-learn workflows
+- Model evaluation and projects
+
+## v4.0.0 — Data Engineering Tutorial Platform
+
+- Database design
+- Warehousing and lakehouse concepts
+- ETL/ELT and orchestration
+- Batch, streaming, quality, governance, and cloud patterns

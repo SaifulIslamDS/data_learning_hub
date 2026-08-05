@@ -14,14 +14,14 @@ SITE = {
         "Data Analytics শেখার English-first bilingual static platform—Data Foundations ও Statistics থেকে শুরু করে "
         "Excel, SQL, Power BI, Python, complete workflow এবং portfolio project পর্যন্ত।"
     ),
-    "site_url": "https://data-learning-hub.netlify.app",
+    "site_url": "https://datalearninghub.netlify.app",
     "repository": "https://github.com/SaifulIslamDS/statistics_learning_hub",
     "creator": "Saiful Islam",
     "website": "https://saifulshuvo.com",
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.6.0",
+    "version": "2.7.0",
 }
 
 STORAGE = {

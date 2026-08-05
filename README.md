@@ -1,143 +1,95 @@
 # Data Learning Hub
 
-A static, bilingual, tutorial-first platform for learning Data Analytics through complete tutorials, browser practice, exercises, references, synthetic datasets, end-to-end workflows, and portfolio projects.
+**Version:** v2.7.0 — Next.js Application and PWA Migration  
+**Production URL:** https://datalearninghub.netlify.app/  
+**Package manager:** pnpm 11.20.0  
+**Framework:** Next.js 16.2.10 App Router  
+**Deployment:** Netlify static export
 
-## Current release
+Data Learning Hub is a bilingual, tutorial-first Data Analytics learning platform. It includes complete Data Foundations, Excel, SQL, Power BI, Python, Analytics Workflows, Statistics lessons/labs, and six portfolio projects.
 
-### v2.6.0 — Data Analytics Workflows and Portfolio Projects
+## v2.7.0 transformation
 
-This release connects the previously separate subject tutorials into one repeatable analytical lifecycle:
+The complete v2.6.0 static release has been migrated into a Next.js App Router application while preserving all 549 published routes and their existing URLs. The application uses a compatibility content registry: Next.js generates every route, and the proven v2.6 interactive JavaScript modules continue to power language switching, progress, exercises, SQL/Python playgrounds, labs, and project tracking.
 
-```text
-Business question
-→ Data understanding
-→ Data preparation
-→ Analysis plan
-→ Exploratory and statistical analysis
-→ Cross-tool implementation
-→ Validation
-→ Communication
-→ Portfolio delivery
-```
+The application is also an installable PWA with:
 
-It adds a complete 49-chapter Analytics Workflows tutorial and six downloadable cross-tool portfolio projects.
+- App manifest and install metadata
+- 192px, 512px, maskable, and Apple icons
+- Versioned service worker
+- Offline fallback route
+- Runtime caching for visited pages and local assets
+- Standalone display mode and mobile safe-area support
 
-## Published tutorials
+> Core tutorial content works offline after it has been visited. SQL and Python runtime packages may require an online first load because they are loaded from pinned external CDNs.
 
-| Tutorial | Chapters | Exercises |
-|---|---:|---:|
-| Data Foundations | 21 | 63 |
-| Excel for Data Analytics | 56 | 168 |
-| SQL for Data Analytics | 66 | 198 |
-| Power BI for Data Analytics | 77 | 231 |
-| Python for Data Analytics | 94 | 282 |
-| Data Analytics Workflows | 49 | 147 |
-| **Total** | **363** | **1,089** |
+## Requirements
 
-The platform also retains 108 comprehensive statistics lessons and 20 interactive statistical labs.
+- Node.js 20.9 or later (Node 22 recommended)
+- pnpm 11.20.0 or later
 
-## Portfolio Project Center
-
-Six complete synthetic cases are published:
-
-1. Retail Sales 360° Performance Analysis
-2. Customer Retention and Cohort Analysis
-3. Marketing A/B Test and Campaign Evaluation
-4. HR Workforce and Attrition Analytics
-5. Financial Budget and Actual Control
-6. NGO Program Monitoring and Impact Analysis
-
-Each project includes:
-
-- Business brief and analytical questions
-- Documented synthetic datasets and dictionaries
-- Eight-phase implementation workflow
-- Excel build guide
-- SQL starter script
-- Power BI build guide
-- Python starter script
-- Required deliverables and quality gates
-- README, presentation, metric, QA, and insight-log templates
-- Downloadable complete project package
-- Browser-local phase progress
-
-## Technology
-
-- HTML5
-- Modern CSS
-- Vanilla JavaScript
-- Python static-page generator
-- Pyodide for browser-side Python
-- sql.js for browser-side SQL
-- Chart.js for statistical visualizations
-- Browser `localStorage` for optional progress, bookmarks, theme, language, and project phases
-- No backend, account, API, or hosted database
-
-## Generate and test
+## Local development
 
 ```powershell
-npm run build:workflows
-npm run generate
-npm test
-npm run test:browser
+corepack enable
+corepack prepare pnpm@11.20.0 --activate
+pnpm install
+pnpm dev
 ```
 
-The quality suite validates:
+Open `http://localhost:3000`.
 
-- Statistical core
-- 108 retained lessons
-- 363 tutorial chapters and 1,089 exercises
-- All SQL, Power BI, and Python practice assets
-- Six project definitions, datasets, packages, deliverables, and quality gates
-- Curriculum and publication relationships
-- Local links and assets
-- JavaScript syntax
-- Sticky header, bilingual UI, workflow course, project progress, quizzes, retained courses, and mobile navigation
+## Validation
 
-## Main routes
-
-```text
-/tutorials/
-/tutorials/data-analytics-workflows/
-/projects/
-/projects/retail-sales-360/
-/exercises/
-/examples/
-/quiz/
-/references/
-/playground/sql/
-/playground/python/
+```powershell
+pnpm typecheck
+pnpm test
+pnpm build
 ```
 
-## Deployment
+The migration audit validates 549 routes, all generated page payloads, local scripts, PWA files, and Netlify configuration.
 
-The site is configured for Netlify with no build command:
+## Netlify
+
+Use the existing site and URL:
 
 ```text
+https://datalearninghub.netlify.app/
+```
+
+Netlify settings:
+
+```text
+Build command:     pnpm build
+Publish directory: out
 Production branch: main
-Base directory:    empty
-Build command:     empty
-Publish directory: .
+Node version:      22
+pnpm version:      11.20.0
 ```
 
-See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+`netlify.toml` already contains these settings and PWA/security headers.
 
-## Credits
+## Source architecture
 
-Idea and developed by **Saiful Islam**.
+```text
+app/                        Next.js App Router, metadata, manifest, sitemap, offline page
+src/components/             React migration bridge
+src/lib/                    Server-side generated-page registry loader
+src/generated/              549 route payloads migrated from v2.6.0
+public/assets/               Existing design system, downloads, datasets, and runtime modules
+public/sw.js                 PWA service worker
+content/                     Preserved structured tutorial/project/statistics source
+scripts/legacy/              Preserved v2.6 generator and audits for reference
+scripts/                     v2.7 migration, source, and PWA audits
+docs/                        Architecture, deployment, testing, migration, continuation
+```
 
-- Website: https://saifulshuvo.com
-- GitHub: https://github.com/SaifulIslamDS/
-- LinkedIn: https://www.linkedin.com/in/saifulislampro/
+## Maintenance rule
 
-The project remains conceptually inspired by the public `tafshir027/stats` repository, with original architecture, interface, curriculum, code, and educational writing. Attribution remains in About/Credits materials rather than the footer-bottom links.
+v2.7.0 is a controlled framework migration. The current compatibility renderer intentionally preserves proven v2.6 behavior. Future releases should gradually replace legacy page payloads and DOM scripts with native React Server and Client Components, beginning with the shared header, footer, tutorial chapter renderer, and progress store.
 
-## Documentation
+## Main-branch workflow
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [Curriculum](docs/CURRICULUM.md)
-- [Content standards](docs/CONTENT-STANDARDS.md)
-- [Testing](docs/TESTING.md)
-- [Roadmap](docs/ROADMAP.md)
-- [Deployment](docs/DEPLOYMENT.md)
-- [v2.6.0 release report](docs/RELEASE-REPORT-v2.6.0.md)
+The project continues directly on `main`. Create a release tag only after Netlify deploy and PWA verification pass.
+
+See [PROJECT-CONTINUATION-v2.7.0.md](docs/PROJECT-CONTINUATION-v2.7.0.md) for the complete continuation context.

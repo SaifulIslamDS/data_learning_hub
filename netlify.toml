@@ -1,46 +1,39 @@
 [build]
-  publish = "."
+  command = "pnpm build"
+  publish = "out"
 
-[[redirects]]
-  from = "/catalog"
-  to = "/learn/"
-  status = 301
-
-[[redirects]]
-  from = "/catalog/*"
-  to = "/learn/"
-  status = 301
-
-[[redirects]]
-  from = "/paths"
-  to = "/career-paths/"
-  status = 301
-
-[[redirects]]
-  from = "/paths/*"
-  to = "/career-paths/"
-  status = 301
-
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
+[build.environment]
+  NODE_VERSION = "22"
+  PNPM_VERSION = "11.20.0"
+  PNPM_FLAGS = "--no-frozen-lockfile --shamefully-hoist"
 
 [[headers]]
-  for = "/*"
+  for = "/sw.js"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cdn.jsdelivr.net; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Service-Worker-Allowed = "/"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600, must-revalidate"
+    Cache-Control = "public, max-age=86400"
 
 [[headers]]
-  for = "/*.html"
+  for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self' https://cdn.jsdelivr.net; worker-src 'self' blob:; child-src 'self' blob:; frame-src 'self'; manifest-src 'self'"
