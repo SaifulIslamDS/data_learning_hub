@@ -1,8 +1,8 @@
-# Architecture — v2.4.0
+# Architecture — v2.5.0
 
 ## Runtime model
 
-Data Learning Hub is a generated static website. Production uses HTML, CSS, and browser JavaScript only. No backend, API, account system, or hosted database is required.
+Data Learning Hub is a generated static website. Production uses HTML, CSS, browser JavaScript, and optional WebAssembly runtimes only. No backend, API, account system, or hosted database is required.
 
 ## Authoring layers
 
@@ -11,11 +11,12 @@ content/tutorials/
 ├── data_foundations.json
 ├── excel_data_analytics.json
 ├── sql_data_analytics.json
-└── power_bi_data_analytics.json
+├── power_bi_data_analytics.json
+└── python_data_analytics.json
 
 content/platform/       product identity, domains, storage
 content/tracks/         career paths and tool curriculum metadata
-scripts/                generation and audits
+scripts/                generation, course builders, and audits
 assets/js/              shared UI and interactive tutorial behavior
 assets/css/             shared responsive design system
 ```
@@ -33,19 +34,31 @@ Every published course receives:
 /references/<course>/
 ```
 
-## Power BI implementation
+SQL and Python also receive standalone browser practice routes:
 
-Power BI cannot be executed fully inside a static site. The course therefore combines:
+```text
+/playground/sql/
+/playground/python/
+```
 
-- Complete text-based tutorials
-- DAX and Power Query examples
-- Browser-side decision simulations
-- Browser-side measure calculations
-- Downloadable star-schema CSV files
-- Project and QA checklists
-- Explicit instructions for implementation in Power BI Desktop and Service
+## Python implementation
 
-The browser simulation never pretends to replace Power BI. It teaches reasoning about query, model, DAX, report, and service layers.
+`assets/js/python-practice.js` loads pinned Pyodide 314.0.2 from jsDelivr when a learner first runs code. It then:
+
+1. Initializes CPython compiled to WebAssembly.
+2. Copies the synthetic practice CSV files into the browser runtime filesystem.
+3. Loads only the packages required by the chapter.
+4. Executes edited learner code.
+5. Captures stdout, exceptions, and Matplotlib figures.
+6. Displays output and charts without sending code or course data to a backend.
+
+The Netlify CSP includes `wasm-unsafe-eval` for WebAssembly compilation and permits the pinned jsDelivr runtime.
+
+## Python authoring and validation
+
+- `scripts/build_python_course.py` owns the Python tutorial JSON, datasets, notebooks, scripts, requirements, and practice ZIP.
+- `scripts/audit_python.py` validates the 94 chapters, assets, notebooks, ZIP contents, dataset row counts, and executes every starter snippet in an isolated temporary directory.
+- `scripts/browser_smoke.py` validates the browser editor interface, progress state, course navigation, exercises, quiz, sticky header, and mobile drawer.
 
 ## Shared shell
 
@@ -62,9 +75,10 @@ Versioned `dlh-*` localStorage keys preserve optional language, theme, progress,
 ## Quality architecture
 
 - `audit_lessons.py`: retained statistics lessons
-- `audit_tutorials.py`: course schemas and files
+- `audit_tutorials.py`: five-course schemas and generated files
 - `audit_curriculum.py`: relationships and publication state
-- `audit_sql.py`: SQL database and starter queries
-- `audit_power_bi.py`: Power BI course, star schema, reconciliation, downloads, and official references
+- `audit_sql.py`: SQL database and 66 starter queries
+- `audit_power_bi.py`: Power BI course, star schema, reconciliation, downloads, and references
+- `audit_python.py`: Python course, datasets, notebooks, downloads, and 94 starter snippets
 - `audit_links.py`: local link and asset integrity
-- `browser_smoke.py`: real Chromium interaction and responsive regression
+- `browser_smoke.py`: Chromium interaction and responsive regression

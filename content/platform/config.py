@@ -21,13 +21,13 @@ SITE = {
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.4.0",
+    "version": "2.5.0",
 }
 
 STORAGE = {
     "prefix": "dlh-",
     "legacy_prefix": "slh-",
-    "schema_version": 5,
+    "schema_version": 6,
 }
 
 TOOL_BASELINES = [
@@ -55,7 +55,7 @@ TOOL_BASELINES = [
     {
         "id": "python",
         "name": "Python",
-        "baseline_en": "Python 3 with Jupyter, NumPy, pandas and Matplotlib for analytical workflows.",
+        "baseline_en": "Stable Python 3.14 with Jupyter, NumPy 2.x, pandas 3.x, Matplotlib 3.x and SciPy for analytical workflows; browser practice uses pinned Pyodide 314.0.2.",
         "baseline_bn": "Analytical workflow-এর জন্য Python 3, Jupyter, NumPy, pandas ও Matplotlib।",
         "official_url": "https://docs.python.org/3/tutorial/",
     },

@@ -1,4 +1,4 @@
-# Content and Accuracy Standards — v2.4.0
+# Content and Accuracy Standards — v2.5.0
 
 ## Teaching style
 
@@ -8,29 +8,40 @@
 - Connect every topic to a practical analyst scenario
 - Separate concept, implementation, validation, interpretation, and limitation
 
-## Power BI terminology
+## Python baseline
 
-- Use current Microsoft terminology, including **semantic model** where appropriate
-- Distinguish Power BI Desktop, Power BI service, reports, dashboards, apps, workspaces, and semantic models
-- Distinguish Power Query transformations, semantic-model relationships, DAX calculations, report interactions, and service governance
-- Keep DAX, M, field names, commands, and product labels in their official form in both languages
+- Teach stable Python 3.14 behavior.
+- Use official Python, NumPy, pandas, Matplotlib, SciPy, Jupyter, and Pyodide documentation as primary references.
+- Keep Python names, code, functions, methods, exceptions, package names, and field names in their official form in both languages.
+- Explain version-sensitive behavior rather than presenting it as timeless syntax.
+- Distinguish local Python/Jupyter workflows from browser-side Pyodide execution.
 
-## Implementation honesty
+## Code standards
 
-The browser-side Power BI simulator teaches decisions and calculations. It must never imply that a static webpage can execute or publish a real `.pbix` report.
+- Every example must run independently or state its prerequisite state.
+- Preserve raw input data and create transformed outputs separately.
+- Use explicit imports and descriptive names.
+- Define row grain, units, assumptions, and expected output.
+- Validate types, missing values, row counts, keys, totals, boundaries, and analytical assumptions where relevant.
+- Avoid hidden state, unexplained magic values, destructive file changes, and unsupported causal claims.
+- Examples must not require secrets, private credentials, or user data.
 
-## Sources
+## Browser execution honesty
 
-Power BI chapter references must use official Microsoft Learn pages. Version-sensitive behavior should be verified against current Microsoft documentation before content changes are published.
+Pyodide provides browser-side CPython and selected packages. The site must explain that:
+
+- The first run downloads a WebAssembly runtime and requested packages.
+- Browser execution has memory, performance, package, filesystem, and concurrency constraints.
+- It is suitable for learning and small analytical examples, not a replacement for every local or production Python environment.
+- Learner code and supplied datasets remain local to the browser in this implementation.
 
 ## Practice data
 
-- Use synthetic data only
-- Document grain, keys, types, relationships, and calculations
-- Reconcile `GrossProfit = Revenue - Cost`
-- Ensure fact-table foreign keys resolve to dimensions
-- Ensure relevant fact dates exist in `DimDate`
+- Use synthetic data only.
+- Document grain, keys, types, units, and calculations.
+- Include deliberately messy data only when the exercise identifies its purpose.
+- Reconcile calculated revenue, cost, profit, and margin fields.
 
 ## Accessibility
 
-Tutorial pages, activities, forms, tables, language controls, theme controls, and navigation must remain keyboard accessible, responsive, and usable in both light and dark themes.
+Tutorial pages, editors, outputs, plots, forms, tables, language controls, theme controls, and navigation must remain keyboard accessible, responsive, and usable in light and dark themes.

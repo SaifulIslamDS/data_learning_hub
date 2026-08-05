@@ -145,6 +145,7 @@
   <url><loc>https://data-learning-hub.netlify.app/examples/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/references/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/playground/sql/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/playground/python/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/data-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/exercises/data-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/quiz/data-foundations/</loc></url>
@@ -385,4 +386,103 @@
   <url><loc>https://data-learning-hub.netlify.app/tutorials/power-bi-data-analytics/report-quality-assurance-and-release-checklist/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/power-bi-data-analytics/power-bi-project-requirements-and-model-plan/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/power-bi-data-analytics/power-bi-project-build-and-present/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/exercises/python-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/quiz/python-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/examples/python-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/references/python-data-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/welcome-to-python-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/install-python-and-create-environment/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/jupyter-notebooks-and-cells/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-scripts-and-project-folders/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/install-and-import-packages/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/read-errors-and-tracebacks/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/comments-docstrings-and-style/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/first-analytical-program/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/variables-and-assignment/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/numbers-booleans-and-none/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/strings-and-formatting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/lists-and-sequences/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/tuples-and-unpacking/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/dictionaries-and-key-value-data/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/sets-and-unique-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/comparison-and-logical-operators/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/conditional-statements/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/for-loops/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/while-loops-and-control-flow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/list-comprehensions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/functions-and-return-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/function-arguments-and-defaults/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/scope-and-pure-functions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/exceptions-and-defensive-code/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/modules-pathlib-and-files/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/numpy-arrays/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/array-shape-size-and-dtype/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/creating-arrays/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/indexing-and-slicing-arrays/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/vectorized-operations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/broadcasting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/boolean-masks/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/aggregation-and-axis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/missing-and-invalid-numbers/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/random-generation-and-reproducibility/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/series-and-dataframes/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/create-dataframes/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/read-csv-files/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/read-excel-and-json/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/inspect-a-dataframe/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/select-columns/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/select-rows-with-loc-and-iloc/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/filter-rows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/sort-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/create-and-assign-columns/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/rename-drop-and-reorder/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/data-types-and-conversion/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/parse-dates/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/export-dataframes/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/profile-data-quality/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/handle-missing-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/detect-and-remove-duplicates/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/clean-text-and-categories/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/validate-ranges-and-business-rules/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/detect-and-treat-outliers/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/groupby-and-aggregation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/transform-and-window-like-calculations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/pivot-tables-and-crosstabs/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/reshape-with-melt-and-pivot/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/merge-and-join-dataframes/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/concat-and-append-datasets/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/method-chaining-and-pipelines/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/eda-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/descriptive-statistics-with-pandas/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/distribution-analysis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/segment-comparison/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/correlation-analysis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/sampling-with-python/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/confidence-intervals-with-scipy/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/hypothesis-tests-with-scipy/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/simple-linear-regression/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/ab-test-analysis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/matplotlib-figure-and-axes/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/line-charts/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/bar-charts/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/histograms/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/box-plots/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/scatter-plots/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/subplots-and-small-multiples/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/labels-legends-and-annotations/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/responsible-chart-formatting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/save-and-export-figures/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/datetime-index-and-time-series/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/resampling-time-series/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/rolling-windows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/reproducible-notebook-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/manage-environments-and-requirements/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/logging-and-quality-checks/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/write-analytical-outputs/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/privacy-security-and-responsible-python/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-brief-and-questions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-clean-and-validate/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-analyze-and-visualize/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-report-and-publish/</loc></url>
 </urlset>

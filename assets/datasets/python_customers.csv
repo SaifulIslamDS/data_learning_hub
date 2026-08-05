@@ -1,0 +1,121 @@
+customer_id,segment,home_region,signup_date,status
+C001,Corporate,Rajshahi,2024-01-05,Active
+C002,Small Business,Khulna,2024-01-09,Active
+C003,Consumer,Chattogram,2024-01-13,Active
+C004,Corporate,Dhaka,2024-01-17,Active
+C005,Small Business,Rajshahi,2024-01-21,Active
+C006,Consumer,Khulna,2024-01-25,Active
+C007,Corporate,Chattogram,2024-01-29,Active
+C008,Small Business,Dhaka,2024-02-02,Active
+C009,Consumer,Rajshahi,2024-02-06,Inactive
+C010,Corporate,Khulna,2024-02-10,Active
+C011,Small Business,Chattogram,2024-02-14,Active
+C012,Consumer,Dhaka,2024-02-18,Active
+C013,Corporate,Rajshahi,2024-02-22,Active
+C014,Small Business,Khulna,2024-02-26,Active
+C015,Consumer,Chattogram,2024-03-01,Active
+C016,Corporate,Dhaka,2024-03-05,Active
+C017,Small Business,Rajshahi,2024-03-09,Active
+C018,Consumer,Khulna,2024-03-13,Inactive
+C019,Corporate,Chattogram,2024-03-17,Active
+C020,Small Business,Dhaka,2024-03-21,Active
+C021,Consumer,Rajshahi,2024-03-25,Active
+C022,Corporate,Khulna,2024-03-29,Active
+C023,Small Business,Chattogram,2024-04-02,Active
+C024,Consumer,Dhaka,2024-04-06,Active
+C025,Corporate,Rajshahi,2024-04-10,Active
+C026,Small Business,Khulna,2024-04-14,Active
+C027,Consumer,Chattogram,2024-04-18,Inactive
+C028,Corporate,Dhaka,2024-04-22,Active
+C029,Small Business,Rajshahi,2024-04-26,Active
+C030,Consumer,Khulna,2024-04-30,Active
+C031,Corporate,Chattogram,2024-05-04,Active
+C032,Small Business,Dhaka,2024-05-08,Active
+C033,Consumer,Rajshahi,2024-05-12,Active
+C034,Corporate,Khulna,2024-05-16,Active
+C035,Small Business,Chattogram,2024-05-20,Active
+C036,Consumer,Dhaka,2024-05-24,Inactive
+C037,Corporate,Rajshahi,2024-05-28,Active
+C038,Small Business,Khulna,2024-06-01,Active
+C039,Consumer,Chattogram,2024-06-05,Active
+C040,Corporate,Dhaka,2024-06-09,Active
+C041,Small Business,Rajshahi,2024-06-13,Active
+C042,Consumer,Khulna,2024-06-17,Active
+C043,Corporate,Chattogram,2024-06-21,Active
+C044,Small Business,Dhaka,2024-06-25,Active
+C045,Consumer,Rajshahi,2024-06-29,Inactive
+C046,Corporate,Khulna,2024-07-03,Active
+C047,Small Business,Chattogram,2024-07-07,Active
+C048,Consumer,Dhaka,2024-07-11,Active
+C049,Corporate,Rajshahi,2024-07-15,Active
+C050,Small Business,Khulna,2024-07-19,Active
+C051,Consumer,Chattogram,2024-07-23,Active
+C052,Corporate,Dhaka,2024-07-27,Active
+C053,Small Business,Rajshahi,2024-07-31,Active
+C054,Consumer,Khulna,2024-08-04,Inactive
+C055,Corporate,Chattogram,2024-08-08,Active
+C056,Small Business,Dhaka,2024-08-12,Active
+C057,Consumer,Rajshahi,2024-08-16,Active
+C058,Corporate,Khulna,2024-08-20,Active
+C059,Small Business,Chattogram,2024-08-24,Active
+C060,Consumer,Dhaka,2024-08-28,Active
+C061,Corporate,Rajshahi,2024-09-01,Active
+C062,Small Business,Khulna,2024-09-05,Active
+C063,Consumer,Chattogram,2024-09-09,Inactive
+C064,Corporate,Dhaka,2024-09-13,Active
+C065,Small Business,Rajshahi,2024-09-17,Active
+C066,Consumer,Khulna,2024-09-21,Active
+C067,Corporate,Chattogram,2024-09-25,Active
+C068,Small Business,Dhaka,2024-09-29,Active
+C069,Consumer,Rajshahi,2024-10-03,Active
+C070,Corporate,Khulna,2024-10-07,Active
+C071,Small Business,Chattogram,2024-10-11,Active
+C072,Consumer,Dhaka,2024-10-15,Inactive
+C073,Corporate,Rajshahi,2024-10-19,Active
+C074,Small Business,Khulna,2024-10-23,Active
+C075,Consumer,Chattogram,2024-10-27,Active
+C076,Corporate,Dhaka,2024-10-31,Active
+C077,Small Business,Rajshahi,2024-11-04,Active
+C078,Consumer,Khulna,2024-11-08,Active
+C079,Corporate,Chattogram,2024-11-12,Active
+C080,Small Business,Dhaka,2024-11-16,Active
+C081,Consumer,Rajshahi,2024-11-20,Inactive
+C082,Corporate,Khulna,2024-11-24,Active
+C083,Small Business,Chattogram,2024-11-28,Active
+C084,Consumer,Dhaka,2024-12-02,Active
+C085,Corporate,Rajshahi,2024-12-06,Active
+C086,Small Business,Khulna,2024-12-10,Active
+C087,Consumer,Chattogram,2024-12-14,Active
+C088,Corporate,Dhaka,2024-12-18,Active
+C089,Small Business,Rajshahi,2024-12-22,Active
+C090,Consumer,Khulna,2024-12-26,Inactive
+C091,Corporate,Chattogram,2024-12-30,Active
+C092,Small Business,Dhaka,2025-01-03,Active
+C093,Consumer,Rajshahi,2025-01-07,Active
+C094,Corporate,Khulna,2025-01-11,Active
+C095,Small Business,Chattogram,2025-01-15,Active
+C096,Consumer,Dhaka,2025-01-19,Active
+C097,Corporate,Rajshahi,2025-01-23,Active
+C098,Small Business,Khulna,2025-01-27,Active
+C099,Consumer,Chattogram,2025-01-31,Inactive
+C100,Corporate,Dhaka,2025-02-04,Active
+C101,Small Business,Rajshahi,2025-02-08,Active
+C102,Consumer,Khulna,2025-02-12,Active
+C103,Corporate,Chattogram,2025-02-16,Active
+C104,Small Business,Dhaka,2025-02-20,Active
+C105,Consumer,Rajshahi,2025-02-24,Active
+C106,Corporate,Khulna,2025-02-28,Active
+C107,Small Business,Chattogram,2025-03-04,Active
+C108,Consumer,Dhaka,2025-03-08,Inactive
+C109,Corporate,Rajshahi,2025-03-12,Active
+C110,Small Business,Khulna,2025-03-16,Active
+C111,Consumer,Chattogram,2025-03-20,Active
+C112,Corporate,Dhaka,2025-03-24,Active
+C113,Small Business,Rajshahi,2025-03-28,Active
+C114,Consumer,Khulna,2025-04-01,Active
+C115,Corporate,Chattogram,2025-04-05,Active
+C116,Small Business,Dhaka,2025-04-09,Active
+C117,Consumer,Rajshahi,2025-04-13,Inactive
+C118,Corporate,Khulna,2025-04-17,Active
+C119,Small Business,Chattogram,2025-04-21,Active
+C120,Consumer,Dhaka,2025-04-25,Active

@@ -7,12 +7,9 @@
 - **v2.2.0** — Complete Excel for Data Analytics
 - **v2.3.0** — Complete SQL for Data Analytics with browser practice
 - **v2.4.0** — Complete Power BI for Data Analytics
+- **v2.5.0** — Complete Python for Data Analytics with browser practice
 
 ## Next
-
-### v2.5.0 — Complete Python for Data Analytics
-
-Python foundations, Jupyter workflow, NumPy, pandas, cleaning, EDA, Matplotlib, statistics, exercises, browser-compatible examples where suitable, and a portfolio project.
 
 ### v2.6.0 — Data Analytics Workflows and Portfolio Projects
 

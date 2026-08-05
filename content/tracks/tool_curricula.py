@@ -72,7 +72,7 @@ TOOL_CURRICULA = [
         "id": "python",
         "title_en": "Python for Data Analytics",
         "title_bn": "ডেটা অ্যানালিটিক্সের জন্য Python",
-        "status": "curriculum-ready",
+        "status": "tutorial-published",
         "target_release": "v2.5.0",
         "prerequisites": ["Data Foundations", "Essential statistics"],
         "outcome_en": "Use a reproducible notebook workflow to clean, analyze, visualize and communicate a real dataset.",

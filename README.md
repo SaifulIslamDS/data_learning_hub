@@ -4,11 +4,11 @@ A static, bilingual, tutorial-first platform for learning Data Analytics through
 
 ## Current release
 
-### v2.4.0 — Complete Power BI for Data Analytics Tutorial
+### v2.5.0 — Complete Python for Data Analytics Tutorial
 
-This release adds a complete 77-chapter Power BI course across Power BI Desktop and Service, Power Query, semantic modeling, DAX, visual analytics, publishing, security, governance, performance, accessibility, QA, and a portfolio project.
+This release adds a complete 94-chapter Python course covering the analyst workflow from Python and notebooks through NumPy, pandas, cleaning, exploratory analysis, statistics, Matplotlib, time series, reproducibility, delivery, and a portfolio project.
 
-The shared sticky header remains active on every route. The footer now contains one bottom link—`About`—and no longer displays the original inspiration link.
+Python examples can run inside the browser through the pinned Pyodide runtime. The site remains static: no backend, account, API, or hosted execution service is required.
 
 ## Published tutorials
 
@@ -18,40 +18,36 @@ The shared sticky header remains active on every route. The footer now contains 
 | Excel for Data Analytics | 56 | 168 |
 | SQL for Data Analytics | 66 | 198 |
 | Power BI for Data Analytics | 77 | 231 |
-| **Total** | **220** | **660** |
+| Python for Data Analytics | 94 | 282 |
+| **Total** | **314** | **942** |
 
 The platform also retains 108 comprehensive statistics lessons and 20 interactive statistical labs.
 
-## Power BI course modules
+## Python course modules
 
-1. Power BI Foundations and Workflow
-2. Connect and Transform with Power Query
-3. Design the Semantic Model
-4. DAX Foundations
-5. Analytical DAX and Time Intelligence
-6. Visual Analytics and Report Experience
-7. Publish, Secure, Refresh, and Govern
-8. Performance, Accessibility, and Quality Assurance
-9. Portfolio Project
+1. Python and Notebook Workflow
+2. Python Language Foundations
+3. NumPy for Numerical Analysis
+4. pandas DataFrame Foundations
+5. Data Cleaning and Transformation
+6. Exploratory Analysis and Statistics
+7. Visualization with Matplotlib
+8. Time Series, Reproducibility, and Delivery
+9. Python Analytics Portfolio Project
 
-## Power BI practice assets
+## Python practice assets
 
-- `assets/downloads/power-bi-retail-practice-data.zip`
-- `assets/downloads/power-bi-dax-measures.txt`
-- `assets/downloads/power-bi-power-query-m-examples.txt`
-- `assets/downloads/power-bi-project-qa-checklist.csv`
-- `assets/datasets/power_bi_data_dictionary.csv`
+- `assets/downloads/python-retail-analytics-practice-package.zip`
+- `assets/downloads/python-retail-analytics-starter.ipynb`
+- `assets/downloads/python-retail-analytics-completed.ipynb`
+- `assets/downloads/python-analytics-practice-scripts.py`
+- `assets/downloads/python-analytics-requirements.txt`
+- `assets/datasets/python_retail_sales.csv` — 720 rows
+- `assets/datasets/python_customers.csv` — 120 rows
+- `assets/datasets/python_messy_orders.csv` — deliberately messy practice data
+- `assets/datasets/python_retail_data_dictionary.csv`
 
-The practice ZIP contains a connected retail star-schema dataset:
-
-- `DimDate.csv` — 730 rows
-- `DimProduct.csv` — 12 rows
-- `DimCustomer.csv` — 60 rows
-- `DimRegion.csv` — 4 rows
-- `FactSales.csv` — 360 rows
-- `FactTargets.csv` — 96 rows
-
-All data is synthetic.
+All course data is synthetic.
 
 ## Technology
 
@@ -59,6 +55,7 @@ All data is synthetic.
 - Modern CSS
 - Vanilla JavaScript
 - Python static-page generator
+- Pyodide 314.0.2 for browser-side Python
 - Chart.js for retained statistical visualizations
 - sql.js for browser-side SQL practice
 - Browser `localStorage` for optional progress, bookmarks, theme, and language
@@ -72,6 +69,8 @@ python -m http.server 8080
 
 Open `http://localhost:8080`.
 
+Browser Python requires internet access on the first run to download the pinned Pyodide runtime and requested packages from jsDelivr.
+
 ## Generate and test
 
 ```powershell
@@ -80,17 +79,19 @@ npm test
 npm run test:browser
 ```
 
-The main test suite validates:
+The test suite validates:
 
 - Statistical core
 - 108 retained lessons
-- 220 tutorial chapters
-- 660 chapter exercises
-- Curriculum relationships
-- SQL database and 66 starter queries
+- 314 tutorial chapters
+- 942 chapter exercises
+- Curriculum relationships and publication status
+- SQL database and all 66 starter queries
 - Power BI star-schema practice data and downloads
+- Python course structure, notebooks, datasets, package ZIP, and all 94 starter snippets
 - Local links and assets
 - JavaScript syntax
+- Sticky header, bilingual UI, exercises, quizzes, course navigation, and mobile drawers
 
 ## Main routes
 
@@ -100,11 +101,13 @@ The main test suite validates:
 /tutorials/excel-data-analytics/
 /tutorials/sql-data-analytics/
 /tutorials/power-bi-data-analytics/
+/tutorials/python-data-analytics/
+/playground/sql/
+/playground/python/
 /exercises/
 /examples/
 /quiz/
 /references/
-/playground/sql/
 /projects/
 ```
 
@@ -129,7 +132,7 @@ Idea and developed by **Saiful Islam**.
 - GitHub: https://github.com/SaifulIslamDS/
 - LinkedIn: https://www.linkedin.com/in/saifulislampro/
 
-The project remains conceptually inspired by the public `tafshir027/stats` repository, with original architecture, interface, course structure, code, and educational writing. Attribution remains available on the About/Credits materials rather than the footer-bottom links.
+The project remains conceptually inspired by the public `tafshir027/stats` repository, with original architecture, interface, course structure, code, and educational writing. Attribution remains available in About/Credits materials rather than the footer-bottom links.
 
 ## Documentation
 
@@ -139,4 +142,4 @@ The project remains conceptually inspired by the public `tafshir027/stats` repos
 - [Testing](docs/TESTING.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Deployment](docs/DEPLOYMENT.md)
-- [v2.4.0 release report](docs/RELEASE-REPORT-v2.4.0.md)
+- [v2.5.0 release report](docs/RELEASE-REPORT-v2.5.0.md)

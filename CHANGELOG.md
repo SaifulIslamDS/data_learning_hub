@@ -1,5 +1,37 @@
 # Changelog
 
+## v2.5.0 — Complete Python for Data Analytics Tutorial
+
+### Added
+
+- 94 bilingual Python chapters across nine modules
+- 282 chapter exercises, 94 worked examples, and a randomized 30-question final quiz
+- Browser-side Python editor powered by pinned Pyodide 314.0.2
+- Standalone `/playground/python/` route
+- NumPy, pandas, Matplotlib, SciPy, Jupyter, cleaning, EDA, statistics, time-series, reproducibility, and portfolio-project coverage
+- Synthetic retail sales, customer, and deliberately messy practice datasets
+- Starter and completed Jupyter notebooks
+- Downloadable practice scripts, requirements file, data dictionary, and combined ZIP package
+- Dedicated Python course and starter-code audit
+- Netlify CSP support for WebAssembly execution
+
+### Changed
+
+- Python is now marked `tutorial-published`
+- Platform totals increased to five tutorials, 314 chapters, and 942 exercises
+- Homepage, tutorial library, career path, curriculum, search, examples, exercises, quizzes, and references include Python
+- v2.5.0 is the current roadmap release
+
+### Validation
+
+- 489 generated HTML pages
+- 31,454 local references checked
+- 0 broken local references
+- 94/94 Python chapter starter snippets executed successfully in the local audit environment
+- Python browser editor UI, standalone playground UI, course completion, EN/BN switching, exercises, quiz, sticky header, and mobile 94-chapter drawer passed Chromium regression testing
+- Existing Data Foundations, Excel, SQL, Power BI, statistics, and footer behavior passed regression testing
+
+
 ## v2.4.0 — Complete Power BI for Data Analytics Tutorial
 
 ### Added

@@ -1,4 +1,4 @@
-# Curriculum — v2.4.0
+# Curriculum — v2.5.0
 
 ## Published Data Analytics sequence
 
@@ -8,7 +8,7 @@ Data Foundations
 → Excel for Data Analytics
 → SQL for Data Analytics
 → Power BI for Data Analytics
-→ Python for Data Analytics (v2.5.0)
+→ Python for Data Analytics
 → Portfolio Projects (v2.6.0)
 ```
 
@@ -20,54 +20,56 @@ Data Foundations
 | Excel for Data Analytics | 8 | 56 | 168 |
 | SQL for Data Analytics | 9 | 66 | 198 |
 | Power BI for Data Analytics | 9 | 77 | 231 |
+| Python for Data Analytics | 9 | 94 | 282 |
+| **Total** |  | **314** | **942** |
 
-## Power BI course
+## Python course
 
-### Module 1 — Power BI Foundations and Workflow
+### Module 1 — Python and Notebook Workflow
 
-Desktop, Service, Mobile, Fabric context, installation, interface, analyst workflow, artifacts, and storage modes.
+Python’s analyst role, installation and environments, Jupyter, scripts and folders, packages, tracebacks, readable style, and a first analytical program.
 
-### Module 2 — Connect and Transform with Power Query
+### Module 2 — Python Language Foundations
 
-Connectors, Navigator, applied steps, profiling, data types, cleaning, missing values, transformations, grouping, pivot/unpivot, merge, append, dependencies, M, and advanced editor concepts.
+Variables, types, strings, lists, tuples, dictionaries, sets, operators, conditions, loops, comprehensions, functions, scope, exceptions, modules, paths, and files.
 
-### Module 3 — Design the Semantic Model
+### Module 3 — NumPy for Numerical Analysis
 
-Fact and dimension tables, grain, star schemas, relationships, cardinality, active/inactive relationships, bridge tables, date tables, metadata, and model cleanup.
+Arrays, shape, dtype, creation, indexing, vectorization, broadcasting, masks, aggregation, missing values, random generation, and matrix operations.
 
-### Module 4 — DAX Foundations
+### Module 4 — pandas DataFrame Foundations
 
-DAX overview, measures versus columns, expressions, aggregations, row context, filter context, `CALCULATE`, filter functions, iterators, variables, safe division, and DAX Query View.
+Series, DataFrames, CSV and Excel input, inspection, selection, sorting, column creation, index behavior, copying, exporting, and memory awareness.
 
-### Module 5 — Analytical DAX and Time Intelligence
+### Module 5 — Data Cleaning and Transformation
 
-Date prerequisites, period-to-date measures, growth, running totals, moving averages, ranking, contribution/share, targets, and KPI status.
+Missing values, duplicates, strings, categories, dates, numerical conversion, outliers, validation, groupby, transform, pivot, merge, reshape, and method chaining.
 
-### Module 6 — Visual Analytics and Report Experience
+### Module 6 — Exploratory Analysis and Statistics
 
-Visual selection, layouts, standard and specialized visuals, slicers, interactions, drill, drillthrough, tooltips, dynamic formatting, navigation, and dashboard structure.
+EDA planning, descriptive statistics, distributions, categorical analysis, segment comparison, correlation, confidence intervals, hypothesis tests, regression, and responsible interpretation.
 
-### Module 7 — Publish, Secure, Refresh, and Govern
+### Module 7 — Visualization with Matplotlib
 
-Publishing, workspace roles, apps and audiences, refresh, row-level security, security review, and governance.
+Figure/Axes, line, bar, histogram, box, scatter, subplots, annotations, formatting, accessibility, and exporting evidence.
 
-### Module 8 — Performance, Accessibility, and QA
+### Module 8 — Time Series, Reproducibility, and Delivery
 
-Performance analysis, accessible reports, report validation, and delivery controls.
+Datetime indexes, resampling, rolling windows, reusable notebooks, environments, tests, logging, output delivery, and privacy.
 
-### Module 9 — Portfolio Project
+### Module 9 — Python Analytics Portfolio Project
 
-Requirements, source audit, Power Query, model, DAX, report pages, validation, deployment plan, and executive narrative.
+Brief, stakeholder questions, cleaning and validation, analysis and visualization, reproducible packaging, findings, limitations, and publication.
 
 ## Learning design
 
-Every Power BI chapter includes:
+Every Python chapter includes:
 
 - Four objectives
 - Three teaching sections
 - Four terms
 - A worked scenario
-- A chapter-specific browser simulation
+- An editable Python activity
 - Three exercises
-- Recap and official Microsoft references
-- Previous/next and local completion state
+- Recap and official references
+- Previous/next navigation and local completion state

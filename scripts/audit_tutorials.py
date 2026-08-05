@@ -9,7 +9,7 @@ if not raw.startswith(prefix): raise SystemExit('Invalid content payload')
 data=json.loads(raw[len(prefix):].rstrip().rstrip(';'))
 errors=[]
 tutorials=data.get('tutorials',[])
-expected={'data-foundations':21,'excel-data-analytics':56,'sql-data-analytics':66,'power-bi-data-analytics':77}
+expected={'data-foundations':21,'excel-data-analytics':56,'sql-data-analytics':66,'power-bi-data-analytics':77,'python-data-analytics':94}
 if len(tutorials)!=len(expected): errors.append(f'Expected {len(expected)} published tutorials, found {len(tutorials)}')
 summary=[]
 for tutorial in tutorials:

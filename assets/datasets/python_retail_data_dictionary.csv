@@ -1,0 +1,21 @@
+file,field,type,description
+python_retail_sales.csv,order_id,text,Synthetic order identifier
+python_retail_sales.csv,order_date,date,Order date in ISO format
+python_retail_sales.csv,customer_id,text,Synthetic customer identifier
+python_retail_sales.csv,product_id,text,Product key
+python_retail_sales.csv,product_name,text,Product label
+python_retail_sales.csv,category,text,Product category
+python_retail_sales.csv,region,text,Sales region
+python_retail_sales.csv,channel,text,Sales channel
+python_retail_sales.csv,quantity,number,Units sold
+python_retail_sales.csv,unit_price,number,Unit price in BDT
+python_retail_sales.csv,discount,number,Proportional discount
+python_retail_sales.csv,revenue,number,Net revenue in BDT
+python_retail_sales.csv,cost,number,Estimated cost in BDT
+python_retail_sales.csv,profit,number,Revenue minus cost
+python_retail_sales.csv,margin,number,Profit divided by revenue
+python_customers.csv,customer_id,text,Customer key
+python_customers.csv,segment,text,Customer segment
+python_customers.csv,home_region,text,Customer home region
+python_customers.csv,signup_date,date,Signup date
+python_customers.csv,status,text,Customer status

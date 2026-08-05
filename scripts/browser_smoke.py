@@ -4,14 +4,16 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT=Path(__file__).resolve().parents[1]
-SCREENSHOTS=ROOT/'docs'/'screenshots-v2.4.0'
+SCREENSHOTS=ROOT/'docs'/'screenshots-v2.5.0'
 SCREENSHOTS.mkdir(parents=True,exist_ok=True)
 SCRIPT_MAP={
  'home':[], 'tutorials':[], 'resources':[],
  'tutorial-course':['tutorial-core.js','tutorial-index.js'],
  'tutorial-chapter':['tutorial-core.js','tutorial.js'],
  'tutorial-sql-chapter':['tutorial-core.js','sql-practice.js','tutorial.js'],
+ 'tutorial-python-chapter':['tutorial-core.js','python-practice.js','tutorial.js'],
  'sql-playground':['sql-practice.js'],
+ 'python-playground':['python-practice.js'],
  'tutorial-exercises':['tutorial-core.js','tutorial-exercises.js'],
  'tutorial-quiz':['tutorial-core.js','tutorial-quiz.js'],
  'tool':[],
@@ -60,7 +62,8 @@ def main():
     assert page.get_by_role('link',name='Tutorials',exact=True).count()==1
     assert 'Learn Data Analytics here' in page.locator('h1').first.inner_text()
     assert page.get_by_text('Excel for Data Analytics',exact=True).count()>=1
-    assert page.get_by_text('220',exact=True).count()>=1
+    assert page.get_by_text('314',exact=True).count()>=1
+    assert page.get_by_text('Python Analytics',exact=True).count()>=1
     assert_sticky(page)
     footer_links=page.locator('.footer-bottom-links a')
     assert footer_links.count()==1
@@ -73,7 +76,7 @@ def main():
     print('stage tutorials',flush=True)
     load(page,'tutorials/index.html','tutorials')
     page.wait_for_selector('.subject-course-card.published')
-    assert page.locator('.subject-course-card.published').count()==4
+    assert page.locator('.subject-course-card.published').count()==5
     assert page.get_by_text('Excel for Data Analytics',exact=True).count()>=1
 
     print('stage excel course',flush=True)
@@ -113,7 +116,7 @@ def main():
     print('stage resources',flush=True)
     load(page,'exercises/index.html','resources')
     page.wait_for_selector('.resource-subject-card')
-    assert page.locator('.resource-subject-card').count()==4
+    assert page.locator('.resource-subject-card').count()==5
     load(page,'exercises/excel-data-analytics/index.html','tutorial-exercises')
     page.wait_for_selector('.exercise-library-section')
     assert page.locator('.exercise-library-section').count()==56
@@ -194,6 +197,52 @@ def main():
     page.wait_for_selector('.quiz-question')
     assert page.locator('.quiz-question').count()==30
 
+    print('stage python course',flush=True)
+    load(page,'tutorials/python-data-analytics/index.html','tutorial-course')
+    page.wait_for_selector('.tutorial-index-card')
+    assert page.locator('.tutorial-index-card').count()==94
+    assert page.locator('.tutorial-index-module').count()==9
+    assert page.get_by_text('Python for Data Analytics Tutorial',exact=True).count()>=1
+    assert page.get_by_role('link',name=re.compile('Python Retail Practice Package')).count()>=1
+    assert page.locator('a[href="/playground/python/"]').count()>=1
+    assert_sticky(page)
+    page.evaluate('window.scrollTo(0,0)')
+    page.screenshot(path=str(SCREENSHOTS/'python-course-desktop.png'),full_page=False)
+
+    print('stage python chapter',flush=True)
+    load(page,'tutorials/python-data-analytics/groupby-and-aggregation/index.html','tutorial-python-chapter')
+    page.wait_for_selector('#tutorial-activity .python-editor')
+    assert page.locator('.tutorial-chapter-link').count()==94
+    assert page.locator('.exercise-card').count()==3
+    assert 'groupby' in page.locator('.python-editor').input_value().lower()
+    assert page.get_by_role('button',name='Run Python').count()==1
+    page.get_by_role('button',name='Mark complete').first.click()
+    stored=page.evaluate("localStorage.getItem('dlh-tutorial-python-data-analytics-completed')")
+    assert 'groupby-and-aggregation' in stored
+    page.get_by_role('button',name='বাংলা').click()
+    assert page.locator('html').get_attribute('lang')=='bn'
+    page.get_by_role('button',name='English').click()
+    assert_sticky(page)
+    page.evaluate('window.scrollTo(0,0)')
+    page.screenshot(path=str(SCREENSHOTS/'python-groupby-desktop.png'),full_page=False)
+
+    load(page,'exercises/python-data-analytics/index.html','tutorial-exercises')
+    page.wait_for_selector('.exercise-library-section')
+    assert page.locator('.exercise-library-section').count()==94
+    assert page.locator('.exercise-card').count()==282
+    load(page,'quiz/python-data-analytics/index.html','tutorial-quiz')
+    page.get_by_role('button',name='Start quiz').click()
+    page.wait_for_selector('.quiz-question')
+    assert page.locator('.quiz-question').count()==30
+
+    print('stage python playground',flush=True)
+    load(page,'playground/python/index.html','python-playground')
+    page.evaluate("window.DLHPythonPractice.renderStandalone(document.getElementById(\'python-playground-root\'))")
+    page.wait_for_selector('#python-playground-root .python-editor')
+    assert 'pandas' in page.locator('.python-editor').input_value().lower()
+    assert page.get_by_role('button',name='Run Python').count()==1
+    page.screenshot(path=str(SCREENSHOTS/'python-playground-desktop.png'),full_page=False)
+
     print('stage regression',flush=True)
     # Regression: the old Data Foundations course and a retained statistical lab still use the sticky shared header.
     load(page,'tutorials/data-foundations/data-and-statistics/index.html','tutorial-chapter')
@@ -206,15 +255,15 @@ def main():
 
     print('stage mobile',flush=True)
     mobile=browser.new_page(viewport={'width':390,'height':844})
-    load(mobile,'tutorials/power-bi-data-analytics/dax-overview/index.html','tutorial-chapter')
-    mobile.wait_for_selector('#tutorial-activity .powerbi-sim')
+    load(mobile,'tutorials/python-data-analytics/groupby-and-aggregation/index.html','tutorial-python-chapter')
+    mobile.wait_for_selector('#tutorial-activity .python-editor')
     assert mobile.locator('#tutorial-drawer-open').is_visible()
     mobile.locator('#tutorial-drawer-open').click(force=True)
-    assert mobile.locator('[data-chapter-link]').count()==77
-    mobile.screenshot(path=str(SCREENSHOTS/'power-bi-dax-overview-mobile.png'),full_page=False)
+    assert mobile.locator('[data-chapter-link]').count()==94
+    mobile.screenshot(path=str(SCREENSHOTS/'python-groupby-mobile.png'),full_page=False)
     mobile.close()
     context.close()
     browser.close()
-  print('Browser smoke test passed for sticky headers, four-course tutorial navigation, 56-chapter Excel, 66-chapter SQL, 77-chapter Power BI, SQL playground UI, Power BI simulations, bilingual state, exercises, quizzes, retained Data Foundations, statistical lab, footer adjustments, and mobile drawer.')
+  print('Browser smoke test passed for sticky headers, five-course tutorial navigation, 56-chapter Excel, 66-chapter SQL, 77-chapter Power BI, 94-chapter Python, SQL and Python playground UIs, Power BI simulations, bilingual state, exercises, quizzes, retained Data Foundations, statistical lab, footer adjustments, and mobile drawer.')
 
 if __name__=='__main__': main()

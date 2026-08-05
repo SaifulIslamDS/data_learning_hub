@@ -1,0 +1,5 @@
+order_id,order_date,region,revenue,status
+O001,01/02/2026, dhaka,1200,complete
+O001,01/02/2026,DHAKA ,1200,complete
+O002,not-a-date,Ctg,-50,pending
+O003,2026-02-05,Khulna,,Complete
