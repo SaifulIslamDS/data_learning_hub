@@ -1,6 +1,6 @@
-# Netlify Deployment — v2.5.0
+# Netlify Deployment — v2.6.0
 
-## Netlify settings
+## Settings
 
 ```text
 Production branch: main
@@ -9,49 +9,30 @@ Build command:     empty
 Publish directory: .
 ```
 
-## Pre-deployment verification
+Generated HTML and assets are committed to the repository, so Netlify does not need to run Python or npm during deployment.
+
+## Before pushing
 
 ```powershell
+npm run build:workflows
 npm run generate
 npm test
 npm run test:browser
 ```
 
-## Browser Python deployment requirements
+## Production checks
 
-`netlify.toml` permits:
+After Netlify deploys, verify:
 
-- Version-pinned scripts and runtime files from `https://cdn.jsdelivr.net`
-- WebAssembly compilation through `wasm-unsafe-eval`
-- Runtime package and data connections to the same pinned CDN
+1. `/tutorials/data-analytics-workflows/`
+2. `/projects/`
+3. `/projects/retail-sales-360/`
+4. download one project package
+5. complete one project phase and refresh the page
+6. switch EN/BN and light/dark mode
+7. run one SQL example
+8. run one Python example
 
-Do not replace the pinned Pyodide URL with an unversioned or development path.
+## Site URL
 
-After deployment, open `/playground/python/`, run:
-
-```python
-print("Python runtime ready", 2 + 3)
-```
-
-Confirm that the output contains `Python runtime ready 5`. Then run one pandas chapter before tagging the release.
-
-## Commit
-
-```powershell
-git checkout main
-git pull origin main
-git add -A
-git commit -m "feat: add complete Python analytics tutorial"
-git push origin main
-```
-
-## Tag after production verification
-
-```powershell
-git tag -a v2.5.0 -m "Data Learning Hub v2.5.0 — Complete Python for Data Analytics Tutorial"
-git push origin v2.5.0
-```
-
-## Production URL
-
-Update `content/platform/config.py` when the final Netlify URL changes, regenerate, test, and commit the generated canonical URLs and sitemap.
+Set the final production origin in `content/platform/config.py`, regenerate, retest, and push before tagging the release.

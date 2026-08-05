@@ -24,8 +24,8 @@ CAREER_PATHS = [
             {"id": "excel", "title_en": "Excel", "title_bn": "Excel", "status": "tutorial-published", "release": "v2.2.0"},
             {"id": "sql", "title_en": "SQL", "title_bn": "SQL", "status": "tutorial-published", "release": "v2.3.0"},
             {"id": "power-bi", "title_en": "Power BI", "title_bn": "Power BI", "status": "tutorial-published", "release": "v2.4.0"},
-            {"id": "python", "title_en": "Python", "title_bn": "Python", "status": "curriculum-ready", "release": "v2.5.0"},
-            {"id": "projects", "title_en": "Portfolio Projects", "title_bn": "পোর্টফোলিও প্রজেক্ট", "status": "foundation-ready", "release": "v2.6.0"},
+            {"id": "python", "title_en": "Python", "title_bn": "Python", "status": "tutorial-published", "release": "v2.5.0"},
+            {"id": "projects", "title_en": "Workflows & Portfolio Projects", "title_bn": "Workflow ও Portfolio Project", "status": "tutorial-published", "release": "v2.6.0"},
         ],
     },
     {

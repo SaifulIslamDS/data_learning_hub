@@ -1,9 +1,9 @@
 {
   "name": "data-learning-hub",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "private": true,
   "type": "module",
-  "description": "Static bilingual Data Analytics tutorial platform with complete Data Foundations, Excel, SQL, Power BI, Python, statistics lessons and interactive practice.",
+  "description": "Static bilingual Data Analytics tutorial platform with complete Data Foundations, Excel, SQL, Power BI, Python, Analytics Workflows, statistics labs, and six portfolio projects.",
   "scripts": {
     "generate": "python scripts/generate.py",
     "audit:curriculum": "python scripts/audit_curriculum.py",
@@ -12,13 +12,15 @@
     "audit:links": "python scripts/audit_links.py",
     "audit:sql": "python scripts/audit_sql.py",
     "test:stats": "node scripts/test_stats.mjs",
-    "test:syntax": "node --check assets/js/site.js && node --check assets/js/start.js && node --check assets/js/dashboard.js && node --check assets/js/catalog.js && node --check assets/js/tools-index.js && node --check assets/js/tools.js && node --check assets/js/topic.js && node --check assets/js/glossary.js && node --check assets/js/career-paths.js && node --check assets/js/curriculum.js && node --check assets/js/projects.js && node --check assets/js/tutorial-core.js && node --check assets/js/tutorial-index.js && node --check assets/js/tutorial.js && node --check assets/js/tutorial-exercises.js && node --check assets/js/tutorial-quiz.js && node --check assets/js/sql-practice.js && node --check assets/js/python-practice.js",
+    "test:syntax": "node --check assets/js/site.js && node --check assets/js/start.js && node --check assets/js/dashboard.js && node --check assets/js/catalog.js && node --check assets/js/tools-index.js && node --check assets/js/tools.js && node --check assets/js/topic.js && node --check assets/js/glossary.js && node --check assets/js/career-paths.js && node --check assets/js/curriculum.js && node --check assets/js/projects.js && node --check assets/js/tutorial-core.js && node --check assets/js/tutorial-index.js && node --check assets/js/tutorial.js && node --check assets/js/tutorial-exercises.js && node --check assets/js/tutorial-quiz.js && node --check assets/js/sql-practice.js && node --check assets/js/python-practice.js && node --check assets/js/portfolio-project.js",
     "audit:python": "python scripts/audit_python.py",
-    "test": "npm run test:stats && npm run audit:lessons && npm run audit:tutorials && npm run audit:curriculum && npm run audit:sql && npm run audit:power-bi && npm run audit:python && npm run audit:links && npm run test:syntax",
+    "test": "npm run test:stats && npm run audit:lessons && npm run audit:tutorials && npm run audit:curriculum && npm run audit:sql && npm run audit:power-bi && npm run audit:python && npm run audit:projects && npm run audit:links && npm run test:syntax",
     "test:browser": "python scripts/browser_smoke.py",
     "serve": "python -m http.server 8080",
     "build:power-bi": "python scripts/build_power_bi_course.py",
     "build:python": "python scripts/build_python_course.py",
-    "audit:power-bi": "python scripts/audit_power_bi.py"
+    "audit:power-bi": "python scripts/audit_power_bi.py",
+    "build:workflows": "python scripts/build_workflows_projects.py",
+    "audit:projects": "python scripts/audit_projects.py"
   }
 }

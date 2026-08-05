@@ -1,0 +1,6 @@
+-- NGO Program Monitoring and Expense Utilization
+-- 1. Inspect tables and row grain.
+-- 2. Build quality checks.
+-- 3. Create a validated analytical base.
+-- 4. Calculate project KPIs.
+-- 5. Reconcile totals and document filters.

@@ -6,11 +6,16 @@
   <url><loc>https://data-learning-hub.netlify.app/learn/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/practice/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/projects/</loc></url>
-  <url><loc>https://data-learning-hub.netlify.app/projects/retail-sales-foundations/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/career-paths/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/curriculum/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/glossary/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/about/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/projects/retail-sales-360/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/projects/customer-retention-cohorts/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/projects/marketing-ab-test/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/projects/hr-workforce-analytics/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/projects/financial-budget-control/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/projects/ngo-program-monitoring/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/topics/statistics-and-data/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/topics/population-and-sample/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/topics/variables-and-observations/</loc></url>
@@ -485,4 +490,58 @@
   <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-clean-and-validate/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-analyze-and-visualize/</loc></url>
   <url><loc>https://data-learning-hub.netlify.app/tutorials/python-data-analytics/python-project-report-and-publish/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/exercises/data-analytics-workflows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/quiz/data-analytics-workflows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/examples/data-analytics-workflows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/references/data-analytics-workflows/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/analytics-workflow-overview/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/stakeholder-and-decision-context/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/problem-statement-and-analytical-question/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/scope-constraints-and-success-criteria/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/kpi-tree-and-metric-definitions/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/project-charter-and-assumptions-log/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/source-inventory-and-ownership/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/access-privacy-and-minimization/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/entities-keys-and-row-grain/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/data-dictionary-and-semantic-meaning/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/sampling-and-representativeness/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/initial-profiling-and-data-understanding/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/data-quality-plan/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/missing-duplicate-and-invalid-values/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/standardize-types-categories-and-units/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/joins-merges-and-reconciliation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/outliers-and-unusual-records/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/transformation-lineage-and-audit-trail/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/clean-dataset-handoff/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/analysis-plan-and-evidence-map/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/descriptive-overview-and-baselines/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/segment-comparison-and-drilldown/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/time-trends-seasonality-and-events/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/distributions-and-variability/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/relationships-and-confounding/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/hypotheses-anomalies-and-follow-up/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/exploratory-analysis-checkpoint/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/uncertainty-and-confidence/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/hypothesis-tests-and-effect-size/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/experiments-and-ab-tests/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/regression-and-adjusted-analysis/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/forecast-evaluation-and-backtesting/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/business-significance-and-decision-thresholds/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/choose-the-right-analytical-tool/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/excel-analytical-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/sql-analytical-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/power-bi-analytical-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/python-analytical-workflow/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/cross-tool-reconciliation/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/write-an-evidence-based-insight/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/select-decision-ready-visuals/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/dashboard-and-report-structure/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/recommendations-and-action-plans/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/executive-presentation-and-handoff/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/analytical-qa-checklist/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/peer-review-and-challenge/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/reproducibility-versioning-and-refresh/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/portfolio-case-study-and-readme/</loc></url>
+  <url><loc>https://data-learning-hub.netlify.app/tutorials/data-analytics-workflows/portfolio-presentation-and-interview/</loc></url>
 </urlset>

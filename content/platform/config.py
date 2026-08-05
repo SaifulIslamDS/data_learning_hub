@@ -8,11 +8,11 @@ SITE = {
     "tagline_bn": "ডেটার ভিত্তি থেকে পোর্টফোলিও-রেডি অ্যানালিটিক্স পর্যন্ত।",
     "description_en": (
         "A tutorial-first English-first bilingual static learning platform for Data Analytics, beginning with "
-        "data foundations and statistics, then expanding through Excel, SQL, Power BI, Python and projects."
+        "data foundations and statistics, then expanding through Excel, SQL, Power BI, Python, complete workflows and portfolio projects."
     ),
     "description_bn": (
         "Data Analytics শেখার English-first bilingual static platform—Data Foundations ও Statistics থেকে শুরু করে "
-        "Excel, SQL, Power BI, Python এবং project পর্যন্ত।"
+        "Excel, SQL, Power BI, Python, complete workflow এবং portfolio project পর্যন্ত।"
     ),
     "site_url": "https://data-learning-hub.netlify.app",
     "repository": "https://github.com/SaifulIslamDS/statistics_learning_hub",
@@ -21,13 +21,13 @@ SITE = {
     "github": "https://github.com/SaifulIslamDS/",
     "linkedin": "https://www.linkedin.com/in/saifulislampro/",
     "inspiration": "https://github.com/tafshir027/stats",
-    "version": "2.5.0",
+    "version": "2.6.0",
 }
 
 STORAGE = {
     "prefix": "dlh-",
     "legacy_prefix": "slh-",
-    "schema_version": 6,
+    "schema_version": 7,
 }
 
 TOOL_BASELINES = [

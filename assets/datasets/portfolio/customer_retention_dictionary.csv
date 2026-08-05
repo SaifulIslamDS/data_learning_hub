@@ -1,0 +1,11 @@
+file,field,type,description
+retention_customers.csv,customer_id,text,Customer Id
+retention_customers.csv,signup_date,date,Signup Date
+retention_customers.csv,segment,text,Segment
+retention_customers.csv,region,text,Region
+retention_customers.csv,acquisition_channel,text,Acquisition Channel
+retention_transactions.csv,transaction_id,text,Transaction Id
+retention_transactions.csv,customer_id,text,Customer Id
+retention_transactions.csv,transaction_date,date,Transaction Date
+retention_transactions.csv,revenue,number,Revenue
+retention_transactions.csv,channel,text,Channel

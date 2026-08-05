@@ -8,12 +8,19 @@
 - **v2.3.0** — Complete SQL for Data Analytics with browser practice
 - **v2.4.0** — Complete Power BI for Data Analytics
 - **v2.5.0** — Complete Python for Data Analytics with browser practice
+- **v2.6.0** — Data Analytics Workflows and Portfolio Projects
 
-## Next
+## Recommended next release
 
-### v2.6.0 — Data Analytics Workflows and Portfolio Projects
+### v2.7.0 — Assessments, Revision, and Interview Preparation
 
-Cross-tool case studies using common datasets through Excel, SQL, Power BI, Python, statistics, insight writing, documentation, portfolio packaging, and interview preparation.
+- subject-level diagnostic assessments
+- spaced revision and weak-topic review
+- practical debugging challenges
+- portfolio review rubrics
+- analyst interview questions
+- case-study presentations
+- downloadable completion evidence
 
 ## Future major paths
 

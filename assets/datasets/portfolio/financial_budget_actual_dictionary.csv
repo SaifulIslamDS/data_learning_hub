@@ -1,0 +1,8 @@
+file,field,type,description
+financial_budget_actual.csv,month,date-period,Month
+financial_budget_actual.csv,department,text,Department
+financial_budget_actual.csv,account,text,Account
+financial_budget_actual.csv,budget,number,Budget
+financial_budget_actual.csv,actual,number,Actual
+financial_budget_actual.csv,variance,number,Variance
+financial_budget_actual.csv,approval_status,text,Approval Status

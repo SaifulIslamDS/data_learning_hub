@@ -1,0 +1,301 @@
+customer_id,signup_date,segment,region,acquisition_channel
+C0001,2025-08-15,Small Business,Rajshahi,Organic
+C0002,2025-07-09,Small Business,Chattogram,Social
+C0003,2025-08-08,Corporate,Rajshahi,Paid Search
+C0004,2025-06-19,Consumer,Rajshahi,Paid Search
+C0005,2025-07-14,Small Business,Chattogram,Referral
+C0006,2025-10-16,Consumer,Chattogram,Referral
+C0007,2025-03-26,Small Business,Khulna,Organic
+C0008,2025-03-21,Consumer,Khulna,Social
+C0009,2025-08-14,Corporate,Dhaka,Organic
+C0010,2025-08-05,Corporate,Rajshahi,Organic
+C0011,2025-09-18,Corporate,Chattogram,Paid Search
+C0012,2025-06-15,Consumer,Dhaka,Social
+C0013,2025-11-26,Corporate,Chattogram,Organic
+C0014,2025-06-07,Corporate,Khulna,Paid Search
+C0015,2025-07-25,Corporate,Khulna,Social
+C0016,2025-03-01,Consumer,Khulna,Organic
+C0017,2025-04-16,Corporate,Rajshahi,Organic
+C0018,2025-07-22,Consumer,Rajshahi,Social
+C0019,2025-07-24,Corporate,Chattogram,Organic
+C0020,2025-09-08,Small Business,Chattogram,Referral
+C0021,2025-04-19,Small Business,Dhaka,Paid Search
+C0022,2025-09-23,Small Business,Dhaka,Organic
+C0023,2025-03-13,Consumer,Rajshahi,Social
+C0024,2025-01-16,Consumer,Khulna,Referral
+C0025,2025-01-23,Consumer,Chattogram,Referral
+C0026,2025-02-24,Corporate,Khulna,Paid Search
+C0027,2025-05-31,Consumer,Chattogram,Organic
+C0028,2025-10-15,Corporate,Chattogram,Social
+C0029,2025-10-25,Corporate,Chattogram,Social
+C0030,2025-12-06,Consumer,Dhaka,Referral
+C0031,2025-12-28,Corporate,Rajshahi,Paid Search
+C0032,2025-07-04,Corporate,Khulna,Social
+C0033,2025-12-14,Small Business,Dhaka,Organic
+C0034,2025-05-10,Corporate,Dhaka,Paid Search
+C0035,2025-01-19,Small Business,Dhaka,Organic
+C0036,2025-12-29,Consumer,Khulna,Organic
+C0037,2025-01-27,Small Business,Rajshahi,Organic
+C0038,2025-08-09,Corporate,Rajshahi,Organic
+C0039,2025-07-02,Corporate,Khulna,Social
+C0040,2025-10-13,Consumer,Khulna,Social
+C0041,2025-06-01,Corporate,Khulna,Organic
+C0042,2025-12-20,Corporate,Dhaka,Paid Search
+C0043,2025-04-18,Corporate,Rajshahi,Referral
+C0044,2025-11-01,Corporate,Rajshahi,Social
+C0045,2025-11-25,Small Business,Dhaka,Organic
+C0046,2025-02-07,Consumer,Chattogram,Organic
+C0047,2025-04-17,Small Business,Rajshahi,Social
+C0048,2025-07-27,Corporate,Chattogram,Paid Search
+C0049,2025-11-24,Corporate,Dhaka,Social
+C0050,2025-03-10,Corporate,Khulna,Social
+C0051,2025-11-29,Small Business,Chattogram,Paid Search
+C0052,2025-03-14,Corporate,Rajshahi,Referral
+C0053,2025-09-17,Corporate,Rajshahi,Organic
+C0054,2025-01-16,Corporate,Khulna,Social
+C0055,2025-04-16,Corporate,Chattogram,Organic
+C0056,2025-04-18,Consumer,Rajshahi,Organic
+C0057,2025-12-04,Corporate,Rajshahi,Social
+C0058,2025-02-15,Consumer,Rajshahi,Social
+C0059,2025-09-05,Consumer,Chattogram,Organic
+C0060,2025-07-21,Corporate,Rajshahi,Paid Search
+C0061,2025-09-07,Small Business,Rajshahi,Organic
+C0062,2025-09-25,Corporate,Rajshahi,Referral
+C0063,2025-11-15,Small Business,Khulna,Organic
+C0064,2025-03-26,Corporate,Rajshahi,Paid Search
+C0065,2025-11-22,Consumer,Rajshahi,Referral
+C0066,2025-12-20,Consumer,Khulna,Paid Search
+C0067,2025-09-29,Small Business,Dhaka,Social
+C0068,2025-09-07,Small Business,Khulna,Paid Search
+C0069,2025-01-21,Consumer,Khulna,Organic
+C0070,2025-10-04,Small Business,Dhaka,Paid Search
+C0071,2025-09-01,Small Business,Rajshahi,Paid Search
+C0072,2025-01-29,Consumer,Dhaka,Paid Search
+C0073,2025-03-02,Corporate,Khulna,Social
+C0074,2025-03-27,Corporate,Dhaka,Paid Search
+C0075,2025-09-20,Consumer,Dhaka,Paid Search
+C0076,2025-10-13,Consumer,Chattogram,Organic
+C0077,2025-02-21,Corporate,Rajshahi,Social
+C0078,2025-11-27,Small Business,Dhaka,Social
+C0079,2025-07-01,Corporate,Dhaka,Organic
+C0080,2025-01-14,Corporate,Dhaka,Paid Search
+C0081,2025-12-10,Corporate,Khulna,Social
+C0082,2025-01-08,Consumer,Chattogram,Social
+C0083,2025-01-30,Consumer,Khulna,Paid Search
+C0084,2025-06-23,Corporate,Dhaka,Referral
+C0085,2025-02-02,Corporate,Rajshahi,Social
+C0086,2025-01-16,Corporate,Rajshahi,Organic
+C0087,2025-02-24,Corporate,Khulna,Referral
+C0088,2025-12-27,Small Business,Khulna,Social
+C0089,2025-01-09,Small Business,Khulna,Paid Search
+C0090,2025-12-30,Consumer,Chattogram,Paid Search
+C0091,2025-06-16,Small Business,Chattogram,Referral
+C0092,2025-10-22,Small Business,Dhaka,Social
+C0093,2025-03-26,Small Business,Chattogram,Paid Search
+C0094,2025-09-20,Consumer,Khulna,Social
+C0095,2025-02-11,Small Business,Dhaka,Referral
+C0096,2025-02-26,Consumer,Khulna,Organic
+C0097,2025-11-04,Consumer,Rajshahi,Social
+C0098,2025-03-03,Consumer,Rajshahi,Referral
+C0099,2025-11-02,Corporate,Khulna,Social
+C0100,2025-06-23,Consumer,Dhaka,Referral
+C0101,2025-05-03,Small Business,Khulna,Social
+C0102,2025-10-23,Corporate,Rajshahi,Social
+C0103,2025-11-29,Corporate,Rajshahi,Social
+C0104,2025-10-20,Corporate,Khulna,Organic
+C0105,2025-11-02,Consumer,Dhaka,Paid Search
+C0106,2025-08-21,Small Business,Chattogram,Social
+C0107,2025-11-28,Small Business,Chattogram,Organic
+C0108,2025-07-11,Consumer,Chattogram,Social
+C0109,2025-06-03,Consumer,Dhaka,Organic
+C0110,2025-06-19,Small Business,Rajshahi,Organic
+C0111,2025-01-11,Corporate,Dhaka,Referral
+C0112,2025-10-24,Corporate,Dhaka,Social
+C0113,2025-07-12,Small Business,Khulna,Referral
+C0114,2025-05-09,Consumer,Khulna,Social
+C0115,2025-12-20,Consumer,Khulna,Organic
+C0116,2025-11-18,Small Business,Rajshahi,Referral
+C0117,2025-06-12,Corporate,Chattogram,Paid Search
+C0118,2025-04-28,Consumer,Rajshahi,Referral
+C0119,2025-12-05,Small Business,Chattogram,Referral
+C0120,2025-08-13,Consumer,Khulna,Organic
+C0121,2025-07-15,Consumer,Khulna,Social
+C0122,2025-08-26,Small Business,Rajshahi,Organic
+C0123,2025-10-06,Consumer,Dhaka,Paid Search
+C0124,2025-04-07,Small Business,Rajshahi,Paid Search
+C0125,2025-04-04,Corporate,Chattogram,Referral
+C0126,2025-06-14,Corporate,Chattogram,Referral
+C0127,2025-08-21,Small Business,Dhaka,Organic
+C0128,2025-10-07,Corporate,Khulna,Organic
+C0129,2025-06-14,Corporate,Rajshahi,Referral
+C0130,2025-03-29,Consumer,Khulna,Social
+C0131,2025-10-03,Corporate,Chattogram,Organic
+C0132,2025-03-04,Corporate,Rajshahi,Referral
+C0133,2025-01-05,Consumer,Dhaka,Organic
+C0134,2025-11-13,Small Business,Chattogram,Paid Search
+C0135,2025-12-22,Small Business,Khulna,Paid Search
+C0136,2025-08-02,Small Business,Dhaka,Referral
+C0137,2025-04-24,Small Business,Khulna,Organic
+C0138,2025-05-25,Small Business,Rajshahi,Organic
+C0139,2025-11-23,Corporate,Khulna,Social
+C0140,2025-08-09,Consumer,Chattogram,Referral
+C0141,2025-01-30,Corporate,Khulna,Referral
+C0142,2025-06-22,Corporate,Khulna,Organic
+C0143,2025-12-08,Corporate,Khulna,Organic
+C0144,2025-07-30,Consumer,Dhaka,Paid Search
+C0145,2025-07-01,Consumer,Khulna,Paid Search
+C0146,2025-08-01,Corporate,Khulna,Paid Search
+C0147,2025-01-27,Small Business,Chattogram,Referral
+C0148,2025-09-03,Consumer,Chattogram,Paid Search
+C0149,2025-01-18,Corporate,Khulna,Paid Search
+C0150,2025-11-08,Consumer,Rajshahi,Paid Search
+C0151,2025-09-05,Consumer,Dhaka,Organic
+C0152,2025-08-14,Consumer,Chattogram,Referral
+C0153,2025-04-12,Corporate,Khulna,Referral
+C0154,2025-03-29,Corporate,Khulna,Referral
+C0155,2025-03-23,Consumer,Chattogram,Social
+C0156,2025-01-14,Corporate,Chattogram,Referral
+C0157,2025-11-08,Consumer,Dhaka,Organic
+C0158,2025-06-18,Corporate,Chattogram,Organic
+C0159,2025-10-11,Corporate,Chattogram,Social
+C0160,2025-03-10,Corporate,Dhaka,Referral
+C0161,2025-06-22,Consumer,Dhaka,Referral
+C0162,2025-06-17,Consumer,Dhaka,Organic
+C0163,2025-11-10,Small Business,Rajshahi,Social
+C0164,2025-02-07,Small Business,Chattogram,Referral
+C0165,2025-09-16,Corporate,Chattogram,Organic
+C0166,2025-09-20,Consumer,Dhaka,Referral
+C0167,2025-10-10,Consumer,Chattogram,Organic
+C0168,2025-02-10,Consumer,Chattogram,Social
+C0169,2025-09-20,Corporate,Dhaka,Referral
+C0170,2025-01-15,Small Business,Khulna,Social
+C0171,2025-08-15,Corporate,Dhaka,Paid Search
+C0172,2025-10-05,Corporate,Chattogram,Referral
+C0173,2025-02-23,Consumer,Khulna,Referral
+C0174,2025-07-08,Corporate,Chattogram,Social
+C0175,2025-01-16,Consumer,Rajshahi,Organic
+C0176,2025-06-25,Corporate,Rajshahi,Referral
+C0177,2025-03-31,Small Business,Chattogram,Social
+C0178,2025-01-19,Consumer,Rajshahi,Referral
+C0179,2025-07-06,Small Business,Rajshahi,Organic
+C0180,2025-12-14,Consumer,Chattogram,Referral
+C0181,2025-10-21,Corporate,Khulna,Referral
+C0182,2025-07-15,Consumer,Chattogram,Social
+C0183,2025-09-01,Corporate,Chattogram,Referral
+C0184,2025-06-29,Small Business,Dhaka,Paid Search
+C0185,2025-05-25,Small Business,Rajshahi,Paid Search
+C0186,2025-08-21,Consumer,Chattogram,Paid Search
+C0187,2025-08-19,Consumer,Khulna,Paid Search
+C0188,2025-11-05,Corporate,Dhaka,Organic
+C0189,2025-04-28,Consumer,Chattogram,Paid Search
+C0190,2025-05-30,Corporate,Dhaka,Organic
+C0191,2025-03-31,Consumer,Dhaka,Referral
+C0192,2025-02-13,Consumer,Dhaka,Social
+C0193,2025-10-09,Corporate,Rajshahi,Organic
+C0194,2025-02-27,Small Business,Khulna,Paid Search
+C0195,2025-07-31,Consumer,Khulna,Organic
+C0196,2025-04-09,Consumer,Dhaka,Referral
+C0197,2025-08-21,Small Business,Dhaka,Organic
+C0198,2025-01-05,Corporate,Chattogram,Referral
+C0199,2025-01-29,Consumer,Dhaka,Organic
+C0200,2025-03-16,Consumer,Chattogram,Organic
+C0201,2025-09-23,Consumer,Chattogram,Referral
+C0202,2025-10-18,Consumer,Khulna,Organic
+C0203,2025-10-03,Small Business,Khulna,Paid Search
+C0204,2025-12-02,Consumer,Dhaka,Social
+C0205,2025-11-15,Corporate,Chattogram,Paid Search
+C0206,2025-10-17,Consumer,Khulna,Referral
+C0207,2025-10-25,Small Business,Khulna,Paid Search
+C0208,2025-10-02,Small Business,Dhaka,Organic
+C0209,2025-12-17,Corporate,Dhaka,Paid Search
+C0210,2025-12-06,Corporate,Dhaka,Referral
+C0211,2025-02-24,Corporate,Rajshahi,Paid Search
+C0212,2025-08-07,Small Business,Chattogram,Referral
+C0213,2025-10-27,Consumer,Rajshahi,Paid Search
+C0214,2025-12-13,Small Business,Khulna,Paid Search
+C0215,2025-05-06,Small Business,Khulna,Paid Search
+C0216,2025-07-01,Corporate,Khulna,Referral
+C0217,2025-12-08,Consumer,Chattogram,Organic
+C0218,2025-02-03,Corporate,Rajshahi,Referral
+C0219,2025-01-09,Small Business,Dhaka,Social
+C0220,2025-07-23,Consumer,Khulna,Social
+C0221,2025-08-04,Consumer,Rajshahi,Social
+C0222,2025-04-29,Consumer,Rajshahi,Referral
+C0223,2025-01-30,Small Business,Rajshahi,Social
+C0224,2025-11-22,Corporate,Rajshahi,Organic
+C0225,2025-09-18,Consumer,Chattogram,Paid Search
+C0226,2025-10-17,Small Business,Rajshahi,Paid Search
+C0227,2025-10-27,Corporate,Chattogram,Organic
+C0228,2025-08-13,Corporate,Chattogram,Social
+C0229,2025-09-20,Consumer,Dhaka,Organic
+C0230,2025-02-14,Corporate,Chattogram,Referral
+C0231,2025-05-30,Small Business,Chattogram,Referral
+C0232,2025-07-13,Small Business,Chattogram,Organic
+C0233,2025-09-05,Consumer,Rajshahi,Organic
+C0234,2025-12-05,Small Business,Dhaka,Organic
+C0235,2025-05-09,Consumer,Khulna,Referral
+C0236,2025-08-23,Consumer,Dhaka,Paid Search
+C0237,2025-07-03,Consumer,Rajshahi,Referral
+C0238,2025-04-05,Corporate,Rajshahi,Paid Search
+C0239,2025-09-04,Consumer,Chattogram,Social
+C0240,2025-03-24,Small Business,Khulna,Paid Search
+C0241,2025-06-02,Consumer,Dhaka,Organic
+C0242,2025-08-04,Corporate,Rajshahi,Organic
+C0243,2025-10-18,Small Business,Chattogram,Social
+C0244,2025-10-28,Consumer,Chattogram,Organic
+C0245,2025-03-31,Consumer,Chattogram,Paid Search
+C0246,2025-01-12,Small Business,Rajshahi,Organic
+C0247,2025-02-06,Corporate,Khulna,Social
+C0248,2025-08-07,Consumer,Chattogram,Referral
+C0249,2025-01-30,Consumer,Chattogram,Social
+C0250,2025-12-20,Consumer,Dhaka,Paid Search
+C0251,2025-10-30,Small Business,Dhaka,Referral
+C0252,2025-07-21,Corporate,Rajshahi,Social
+C0253,2025-08-22,Small Business,Chattogram,Organic
+C0254,2025-06-23,Small Business,Rajshahi,Referral
+C0255,2025-04-11,Small Business,Chattogram,Paid Search
+C0256,2025-12-15,Small Business,Chattogram,Organic
+C0257,2025-11-04,Small Business,Rajshahi,Organic
+C0258,2025-06-18,Small Business,Khulna,Organic
+C0259,2025-09-21,Small Business,Khulna,Social
+C0260,2025-07-10,Small Business,Khulna,Organic
+C0261,2025-09-01,Consumer,Khulna,Social
+C0262,2025-08-22,Consumer,Dhaka,Organic
+C0263,2025-05-15,Consumer,Khulna,Paid Search
+C0264,2025-07-15,Consumer,Dhaka,Organic
+C0265,2025-06-17,Small Business,Dhaka,Referral
+C0266,2025-11-17,Small Business,Khulna,Referral
+C0267,2025-10-28,Corporate,Chattogram,Organic
+C0268,2025-07-10,Consumer,Rajshahi,Referral
+C0269,2025-05-21,Small Business,Dhaka,Referral
+C0270,2025-09-05,Consumer,Dhaka,Referral
+C0271,2025-11-23,Corporate,Rajshahi,Paid Search
+C0272,2025-01-15,Corporate,Rajshahi,Social
+C0273,2025-06-05,Consumer,Khulna,Referral
+C0274,2025-10-28,Consumer,Chattogram,Social
+C0275,2025-09-10,Small Business,Chattogram,Social
+C0276,2025-06-15,Consumer,Rajshahi,Social
+C0277,2025-04-05,Small Business,Rajshahi,Organic
+C0278,2025-09-01,Small Business,Khulna,Referral
+C0279,2025-09-25,Consumer,Chattogram,Paid Search
+C0280,2025-04-13,Small Business,Rajshahi,Organic
+C0281,2025-10-10,Small Business,Khulna,Social
+C0282,2025-03-27,Consumer,Rajshahi,Paid Search
+C0283,2025-06-04,Corporate,Dhaka,Referral
+C0284,2025-08-25,Consumer,Dhaka,Organic
+C0285,2025-03-10,Small Business,Chattogram,Paid Search
+C0286,2025-04-23,Consumer,Khulna,Social
+C0287,2025-09-01,Consumer,Rajshahi,Social
+C0288,2025-07-03,Small Business,Khulna,Paid Search
+C0289,2025-01-11,Consumer,Dhaka,Social
+C0290,2025-09-18,Small Business,Dhaka,Organic
+C0291,2025-11-28,Small Business,Dhaka,Referral
+C0292,2025-09-12,Consumer,Rajshahi,Paid Search
+C0293,2025-02-10,Consumer,Chattogram,Social
+C0294,2025-09-21,Small Business,Dhaka,Paid Search
+C0295,2025-12-26,Corporate,Dhaka,Referral
+C0296,2025-10-05,Small Business,Khulna,Referral
+C0297,2025-10-28,Consumer,Chattogram,Organic
+C0298,2025-12-13,Corporate,Chattogram,Referral
+C0299,2025-07-01,Consumer,Chattogram,Referral
+C0300,2025-06-09,Consumer,Chattogram,Paid Search

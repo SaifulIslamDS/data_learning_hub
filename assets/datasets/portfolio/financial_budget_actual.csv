@@ -1,0 +1,769 @@
+month,department,account,budget,actual,variance,approval_status
+2025-01,Operations,Salaries,105362.68,104698.19,-664.49,Approved
+2025-01,Operations,Rent,297025.35,258639.8,-38385.55,Approved
+2025-01,Operations,Travel,123174.3,102727.62,-20446.68,Approved
+2025-01,Operations,IT Services,187394.86,163050.8,-24344.06,Additional Approval
+2025-01,Operations,Training,217677.8,212528.9,-5148.9,Additional Approval
+2025-01,Operations,Marketing,247119.23,270263.29,23144.06,Approved
+2025-01,Operations,Professional Fees,69973.08,54426.84,-15546.24,Additional Approval
+2025-01,Operations,Utilities,44121.55,48369.31,4247.76,Approved
+2025-01,Sales,Salaries,176086.58,225246.79,49160.21,Additional Approval
+2025-01,Sales,Rent,128897.33,155376.25,26478.92,Approved
+2025-01,Sales,Travel,262102.97,303345.73,41242.76,Approved
+2025-01,Sales,IT Services,41318.41,48879.66,7561.25,Approved
+2025-01,Sales,Training,180977.05,143769.23,-37207.82,Additional Approval
+2025-01,Sales,Marketing,219475.78,252161.85,32686.07,Approved
+2025-01,Sales,Professional Fees,63235.51,78207.55,14972.04,Approved
+2025-01,Sales,Utilities,43929.74,37280.62,-6649.12,Approved
+2025-01,Finance,Salaries,170538.79,209917.96,39379.17,Additional Approval
+2025-01,Finance,Rent,124468.2,112774.43,-11693.77,Approved
+2025-01,Finance,Travel,197440.1,228568.14,31128.04,Approved
+2025-01,Finance,IT Services,264184.59,283718.78,19534.19,Additional Approval
+2025-01,Finance,Training,184601.66,188922.97,4321.31,Approved
+2025-01,Finance,Marketing,204610.6,221516.39,16905.79,Additional Approval
+2025-01,Finance,Professional Fees,241222.08,305320.11,64098.03,Approved
+2025-01,Finance,Utilities,111204.24,90616.6,-20587.64,Additional Approval
+2025-01,IT,Salaries,81459.56,79367.8,-2091.76,Additional Approval
+2025-01,IT,Rent,232194.31,195556.61,-36637.7,Approved
+2025-01,IT,Travel,218466.77,252114.43,33647.66,Approved
+2025-01,IT,IT Services,44080.22,46464.29,2384.07,Additional Approval
+2025-01,IT,Training,98806.64,111245.08,12438.44,Additional Approval
+2025-01,IT,Marketing,95395.19,72568.36,-22826.83,Approved
+2025-01,IT,Professional Fees,177829.58,188705.78,10876.2,Additional Approval
+2025-01,IT,Utilities,136362.49,145029.27,8666.78,Approved
+2025-02,Operations,Salaries,286547.05,318206.1,31659.05,Approved
+2025-02,Operations,Rent,274126.26,295970.25,21843.99,Additional Approval
+2025-02,Operations,Travel,62213.51,73830.45,11616.94,Approved
+2025-02,Operations,IT Services,90762.16,99645.04,8882.88,Approved
+2025-02,Operations,Training,133829.35,166918.77,33089.42,Approved
+2025-02,Operations,Marketing,203330.73,161325.45,-42005.28,Approved
+2025-02,Operations,Professional Fees,197217.74,203810.36,6592.62,Approved
+2025-02,Operations,Utilities,231464.79,196710.04,-34754.75,Approved
+2025-02,Sales,Salaries,190717.51,211777.12,21059.61,Approved
+2025-02,Sales,Rent,122796.51,94838.28,-27958.23,Additional Approval
+2025-02,Sales,Travel,221106.12,189683.39,-31422.73,Approved
+2025-02,Sales,IT Services,219052.44,229322.11,10269.67,Additional Approval
+2025-02,Sales,Training,295409.11,278213.56,-17195.55,Additional Approval
+2025-02,Sales,Marketing,126882.96,125808.96,-1074.0,Approved
+2025-02,Sales,Professional Fees,124052.27,122161.73,-1890.54,Approved
+2025-02,Sales,Utilities,41347.72,37712.51,-3635.21,Additional Approval
+2025-02,Finance,Salaries,164944.23,141062.25,-23881.98,Additional Approval
+2025-02,Finance,Rent,258927.39,275645.17,16717.78,Approved
+2025-02,Finance,Travel,159638.87,188231.32,28592.45,Additional Approval
+2025-02,Finance,IT Services,237135.12,219048.19,-18086.93,Additional Approval
+2025-02,Finance,Training,65333.25,82182.92,16849.67,Approved
+2025-02,Finance,Marketing,296527.92,320077.28,23549.36,Additional Approval
+2025-02,Finance,Professional Fees,57234.19,67416.24,10182.05,Additional Approval
+2025-02,Finance,Utilities,60051.53,70207.1,10155.57,Additional Approval
+2025-02,IT,Salaries,238157.2,236604.23,-1552.97,Approved
+2025-02,IT,Rent,93052.35,117670.54,24618.19,Approved
+2025-02,IT,Travel,161658.37,209694.14,48035.77,Approved
+2025-02,IT,IT Services,111301.44,91236.75,-20064.69,Approved
+2025-02,IT,Training,256372.22,272078.05,15705.83,Approved
+2025-02,IT,Marketing,92830.63,79073.43,-13757.2,Approved
+2025-02,IT,Professional Fees,225730.34,263088.8,37358.46,Approved
+2025-02,IT,Utilities,208242.04,267009.75,58767.71,Approved
+2025-03,Operations,Salaries,230175.89,245309.48,15133.59,Approved
+2025-03,Operations,Rent,187764.16,161891.78,-25872.38,Approved
+2025-03,Operations,Travel,211861.07,211510.23,-350.84,Approved
+2025-03,Operations,IT Services,202377.66,228371.65,25993.99,Additional Approval
+2025-03,Operations,Training,238009.07,292286.12,54277.05,Approved
+2025-03,Operations,Marketing,106081.52,99389.6,-6691.92,Additional Approval
+2025-03,Operations,Professional Fees,266658.54,235071.08,-31587.46,Approved
+2025-03,Operations,Utilities,141787.82,146921.51,5133.69,Approved
+2025-03,Sales,Salaries,57549.0,43738.19,-13810.81,Approved
+2025-03,Sales,Rent,259143.25,287787.87,28644.62,Approved
+2025-03,Sales,Travel,61410.07,67771.04,6360.97,Additional Approval
+2025-03,Sales,IT Services,114539.23,96017.9,-18521.33,Approved
+2025-03,Sales,Training,121289.85,133557.64,12267.79,Approved
+2025-03,Sales,Marketing,94168.14,112664.28,18496.14,Additional Approval
+2025-03,Sales,Professional Fees,168265.49,141092.73,-27172.76,Approved
+2025-03,Sales,Utilities,100010.75,88718.63,-11292.12,Additional Approval
+2025-03,Finance,Salaries,155530.68,184868.62,29337.94,Approved
+2025-03,Finance,Rent,131223.63,112134.17,-19089.46,Additional Approval
+2025-03,Finance,Travel,269887.2,349339.51,79452.31,Additional Approval
+2025-03,Finance,IT Services,84751.18,97330.48,12579.3,Approved
+2025-03,Finance,Training,215890.61,255085.15,39194.54,Approved
+2025-03,Finance,Marketing,59290.97,45192.96,-14098.01,Approved
+2025-03,Finance,Professional Fees,85192.95,101265.04,16072.09,Approved
+2025-03,Finance,Utilities,102162.74,114492.46,12329.72,Approved
+2025-03,IT,Salaries,74570.9,68410.77,-6160.13,Additional Approval
+2025-03,IT,Rent,106549.62,102796.34,-3753.28,Approved
+2025-03,IT,Travel,128956.82,131432.53,2475.71,Additional Approval
+2025-03,IT,IT Services,190490.66,184898.49,-5592.17,Approved
+2025-03,IT,Training,291261.46,233493.65,-57767.81,Approved
+2025-03,IT,Marketing,221494.6,234952.1,13457.5,Approved
+2025-03,IT,Professional Fees,140910.79,139012.62,-1898.17,Approved
+2025-03,IT,Utilities,122219.64,141984.9,19765.26,Approved
+2025-04,Operations,Salaries,116965.73,120795.74,3830.01,Approved
+2025-04,Operations,Rent,189853.55,161728.29,-28125.26,Additional Approval
+2025-04,Operations,Travel,204119.71,196461.94,-7657.77,Additional Approval
+2025-04,Operations,IT Services,155165.03,122801.6,-32363.43,Approved
+2025-04,Operations,Training,132097.04,117604.94,-14492.1,Approved
+2025-04,Operations,Marketing,109781.56,104278.82,-5502.74,Approved
+2025-04,Operations,Professional Fees,188187.79,231100.51,42912.72,Approved
+2025-04,Operations,Utilities,277617.57,272916.29,-4701.28,Approved
+2025-04,Sales,Salaries,126249.38,121143.83,-5105.55,Additional Approval
+2025-04,Sales,Rent,248604.46,213811.47,-34792.99,Approved
+2025-04,Sales,Travel,156321.88,144260.89,-12060.99,Approved
+2025-04,Sales,IT Services,137056.43,150255.7,13199.27,Approved
+2025-04,Sales,Training,175607.13,222699.88,47092.75,Approved
+2025-04,Sales,Marketing,118527.42,132029.14,13501.72,Approved
+2025-04,Sales,Professional Fees,61515.26,52452.1,-9063.16,Approved
+2025-04,Sales,Utilities,64167.4,61813.83,-2353.57,Approved
+2025-04,Finance,Salaries,210338.18,212560.16,2221.98,Approved
+2025-04,Finance,Rent,243233.17,231953.19,-11279.98,Additional Approval
+2025-04,Finance,Travel,298224.19,273392.03,-24832.16,Additional Approval
+2025-04,Finance,IT Services,79751.87,80794.49,1042.62,Approved
+2025-04,Finance,Training,113208.83,90486.03,-22722.8,Approved
+2025-04,Finance,Marketing,183479.47,211101.55,27622.08,Additional Approval
+2025-04,Finance,Professional Fees,183426.16,187369.14,3942.98,Approved
+2025-04,Finance,Utilities,179612.01,136048.01,-43564.0,Approved
+2025-04,IT,Salaries,199860.91,237480.11,37619.2,Approved
+2025-04,IT,Rent,65988.73,75091.51,9102.78,Approved
+2025-04,IT,Travel,76790.49,89445.0,12654.51,Additional Approval
+2025-04,IT,IT Services,283372.79,257676.17,-25696.62,Approved
+2025-04,IT,Training,91168.69,88503.19,-2665.5,Approved
+2025-04,IT,Marketing,285834.75,360582.39,74747.64,Additional Approval
+2025-04,IT,Professional Fees,56221.25,55783.33,-437.92,Approved
+2025-04,IT,Utilities,49756.02,58991.64,9235.62,Additional Approval
+2025-05,Operations,Salaries,107390.66,107674.04,283.38,Approved
+2025-05,Operations,Rent,177895.87,206162.46,28266.59,Approved
+2025-05,Operations,Travel,210688.75,268160.8,57472.05,Additional Approval
+2025-05,Operations,IT Services,43768.63,49461.78,5693.15,Approved
+2025-05,Operations,Training,276661.75,208976.61,-67685.14,Approved
+2025-05,Operations,Marketing,271084.2,234235.08,-36849.12,Additional Approval
+2025-05,Operations,Professional Fees,58448.88,62384.41,3935.53,Approved
+2025-05,Operations,Utilities,288031.07,295672.21,7641.14,Additional Approval
+2025-05,Sales,Salaries,100150.05,129467.56,29317.51,Additional Approval
+2025-05,Sales,Rent,224697.11,182741.52,-41955.59,Additional Approval
+2025-05,Sales,Travel,267443.73,208532.92,-58910.81,Approved
+2025-05,Sales,IT Services,46570.61,60116.31,13545.7,Additional Approval
+2025-05,Sales,Training,56380.55,47579.34,-8801.21,Approved
+2025-05,Sales,Marketing,60525.96,70050.03,9524.07,Approved
+2025-05,Sales,Professional Fees,175335.5,214601.37,39265.87,Additional Approval
+2025-05,Sales,Utilities,146573.76,156988.07,10414.31,Approved
+2025-05,Finance,Salaries,187546.35,232507.89,44961.54,Approved
+2025-05,Finance,Rent,55846.66,48513.53,-7333.13,Approved
+2025-05,Finance,Travel,169969.55,215821.02,45851.47,Approved
+2025-05,Finance,IT Services,67021.69,67206.48,184.79,Approved
+2025-05,Finance,Training,151245.59,116393.4,-34852.19,Additional Approval
+2025-05,Finance,Marketing,61928.15,61943.43,15.28,Approved
+2025-05,Finance,Professional Fees,53273.76,55102.45,1828.69,Approved
+2025-05,Finance,Utilities,286258.19,252607.46,-33650.73,Approved
+2025-05,IT,Salaries,280398.38,348674.05,68275.67,Approved
+2025-05,IT,Rent,107457.23,127053.98,19596.75,Additional Approval
+2025-05,IT,Travel,73289.41,60077.14,-13212.27,Approved
+2025-05,IT,IT Services,288737.6,227498.27,-61239.33,Approved
+2025-05,IT,Training,170241.32,203250.46,33009.14,Approved
+2025-05,IT,Marketing,248773.66,256461.43,7687.77,Approved
+2025-05,IT,Professional Fees,231334.68,253181.54,21846.86,Approved
+2025-05,IT,Utilities,94621.84,81451.07,-13170.77,Approved
+2025-06,Operations,Salaries,188517.48,222305.81,33788.33,Approved
+2025-06,Operations,Rent,160946.78,121376.09,-39570.69,Approved
+2025-06,Operations,Travel,236660.46,292251.15,55590.69,Approved
+2025-06,Operations,IT Services,192899.47,226746.86,33847.39,Approved
+2025-06,Operations,Training,234545.64,235307.23,761.59,Approved
+2025-06,Operations,Marketing,201769.9,262170.46,60400.56,Additional Approval
+2025-06,Operations,Professional Fees,139210.8,176191.68,36980.88,Additional Approval
+2025-06,Operations,Utilities,235610.15,196289.98,-39320.17,Approved
+2025-06,Sales,Salaries,167056.9,125732.58,-41324.32,Approved
+2025-06,Sales,Rent,288293.61,287785.38,-508.23,Approved
+2025-06,Sales,Travel,170061.68,213589.47,43527.79,Approved
+2025-06,Sales,IT Services,239875.35,235067.59,-4807.76,Approved
+2025-06,Sales,Training,290757.35,263879.45,-26877.9,Additional Approval
+2025-06,Sales,Marketing,120129.49,96931.44,-23198.05,Additional Approval
+2025-06,Sales,Professional Fees,59234.88,50258.51,-8976.37,Additional Approval
+2025-06,Sales,Utilities,62906.89,75369.39,12462.5,Additional Approval
+2025-06,Finance,Salaries,133871.43,143188.97,9317.54,Approved
+2025-06,Finance,Rent,180572.85,191021.69,10448.84,Approved
+2025-06,Finance,Travel,141160.08,141920.8,760.72,Additional Approval
+2025-06,Finance,IT Services,193351.15,167487.02,-25864.13,Additional Approval
+2025-06,Finance,Training,193514.43,159660.67,-33853.76,Approved
+2025-06,Finance,Marketing,265104.06,273615.0,8510.94,Additional Approval
+2025-06,Finance,Professional Fees,258792.48,239903.71,-18888.77,Additional Approval
+2025-06,Finance,Utilities,72027.78,92442.02,20414.24,Approved
+2025-06,IT,Salaries,94566.21,116482.22,21916.01,Approved
+2025-06,IT,Rent,68443.42,65133.29,-3310.13,Additional Approval
+2025-06,IT,Travel,64712.0,60575.59,-4136.41,Approved
+2025-06,IT,IT Services,62023.67,59704.72,-2318.95,Approved
+2025-06,IT,Training,203681.5,251890.7,48209.2,Approved
+2025-06,IT,Marketing,93801.72,105222.26,11420.54,Approved
+2025-06,IT,Professional Fees,248770.29,191610.05,-57160.24,Approved
+2025-06,IT,Utilities,277488.71,287350.36,9861.65,Approved
+2025-07,Operations,Salaries,55825.32,64602.81,8777.49,Approved
+2025-07,Operations,Rent,248740.22,316697.25,67957.03,Approved
+2025-07,Operations,Travel,189377.13,231734.23,42357.1,Approved
+2025-07,Operations,IT Services,255884.91,316089.86,60204.95,Additional Approval
+2025-07,Operations,Training,92181.88,89274.31,-2907.57,Approved
+2025-07,Operations,Marketing,96611.92,89126.1,-7485.82,Approved
+2025-07,Operations,Professional Fees,290760.9,321919.72,31158.82,Additional Approval
+2025-07,Operations,Utilities,172306.67,157241.79,-15064.88,Additional Approval
+2025-07,Sales,Salaries,208432.7,237769.57,29336.87,Approved
+2025-07,Sales,Rent,166272.02,195546.89,29274.87,Additional Approval
+2025-07,Sales,Travel,210467.97,203171.59,-7296.38,Additional Approval
+2025-07,Sales,IT Services,57666.97,60852.64,3185.67,Additional Approval
+2025-07,Sales,Training,225989.84,264766.28,38776.44,Approved
+2025-07,Sales,Marketing,198870.82,256910.57,58039.75,Approved
+2025-07,Sales,Professional Fees,165870.78,159862.75,-6008.03,Approved
+2025-07,Sales,Utilities,126087.39,117180.37,-8907.02,Additional Approval
+2025-07,Finance,Salaries,57106.75,47057.2,-10049.55,Approved
+2025-07,Finance,Rent,53775.72,64421.79,10646.07,Approved
+2025-07,Finance,Travel,86728.93,89536.74,2807.81,Approved
+2025-07,Finance,IT Services,67093.23,85986.12,18892.89,Approved
+2025-07,Finance,Training,233642.0,194179.05,-39462.95,Approved
+2025-07,Finance,Marketing,46894.78,54859.82,7965.04,Additional Approval
+2025-07,Finance,Professional Fees,132548.51,156088.44,23539.93,Approved
+2025-07,Finance,Utilities,273164.97,205235.11,-67929.86,Approved
+2025-07,IT,Salaries,45968.96,43659.86,-2309.1,Approved
+2025-07,IT,Rent,257679.21,301232.64,43553.43,Additional Approval
+2025-07,IT,Travel,81633.49,73211.58,-8421.91,Approved
+2025-07,IT,IT Services,209850.97,254926.25,45075.28,Additional Approval
+2025-07,IT,Training,137222.35,122332.04,-14890.31,Approved
+2025-07,IT,Marketing,166676.74,208035.79,41359.05,Approved
+2025-07,IT,Professional Fees,113816.55,91866.32,-21950.23,Approved
+2025-07,IT,Utilities,148982.35,161720.52,12738.17,Additional Approval
+2025-08,Operations,Salaries,130477.86,144513.83,14035.97,Approved
+2025-08,Operations,Rent,183472.03,196013.43,12541.4,Additional Approval
+2025-08,Operations,Travel,247121.71,243155.99,-3965.72,Approved
+2025-08,Operations,IT Services,43160.16,54766.93,11606.77,Approved
+2025-08,Operations,Training,292194.11,270209.77,-21984.34,Approved
+2025-08,Operations,Marketing,74637.2,96062.1,21424.9,Approved
+2025-08,Operations,Professional Fees,129241.83,143385.11,14143.28,Approved
+2025-08,Operations,Utilities,270626.73,342472.26,71845.53,Additional Approval
+2025-08,Sales,Salaries,258140.25,293617.01,35476.76,Approved
+2025-08,Sales,Rent,259719.71,297573.75,37854.04,Approved
+2025-08,Sales,Travel,179858.3,174074.75,-5783.55,Approved
+2025-08,Sales,IT Services,71730.44,63787.26,-7943.18,Additional Approval
+2025-08,Sales,Training,219143.66,243799.16,24655.5,Approved
+2025-08,Sales,Marketing,169102.7,131626.34,-37476.36,Approved
+2025-08,Sales,Professional Fees,78679.42,88160.19,9480.77,Additional Approval
+2025-08,Sales,Utilities,209639.51,221448.75,11809.24,Additional Approval
+2025-08,Finance,Salaries,210705.76,244336.29,33630.53,Approved
+2025-08,Finance,Rent,201351.72,255165.96,53814.24,Additional Approval
+2025-08,Finance,Travel,40973.07,47375.93,6402.86,Approved
+2025-08,Finance,IT Services,41646.04,53896.1,12250.06,Additional Approval
+2025-08,Finance,Training,284799.58,308080.59,23281.01,Approved
+2025-08,Finance,Marketing,287996.19,278433.14,-9563.05,Approved
+2025-08,Finance,Professional Fees,85141.13,109949.68,24808.55,Approved
+2025-08,Finance,Utilities,91727.09,101074.02,9346.93,Approved
+2025-08,IT,Salaries,115299.68,100496.65,-14803.03,Approved
+2025-08,IT,Rent,220048.85,265324.15,45275.3,Approved
+2025-08,IT,Travel,41046.73,33876.45,-7170.28,Additional Approval
+2025-08,IT,IT Services,65202.16,64283.35,-918.81,Approved
+2025-08,IT,Training,134516.38,173868.06,39351.68,Additional Approval
+2025-08,IT,Marketing,137233.96,113288.86,-23945.1,Approved
+2025-08,IT,Professional Fees,123300.75,137421.72,14120.97,Additional Approval
+2025-08,IT,Utilities,136334.73,107412.64,-28922.09,Additional Approval
+2025-09,Operations,Salaries,229009.12,229541.98,532.86,Approved
+2025-09,Operations,Rent,53934.35,59853.45,5919.1,Approved
+2025-09,Operations,Travel,41508.3,47022.25,5513.95,Additional Approval
+2025-09,Operations,IT Services,172906.96,159357.51,-13549.45,Additional Approval
+2025-09,Operations,Training,167561.42,166022.0,-1539.42,Additional Approval
+2025-09,Operations,Marketing,199244.77,150470.09,-48774.68,Approved
+2025-09,Operations,Professional Fees,195966.49,238459.45,42492.96,Approved
+2025-09,Operations,Utilities,76856.06,67681.85,-9174.21,Approved
+2025-09,Sales,Salaries,88435.58,87089.45,-1346.13,Approved
+2025-09,Sales,Rent,60423.27,63684.9,3261.63,Approved
+2025-09,Sales,Travel,297331.64,277225.98,-20105.66,Approved
+2025-09,Sales,IT Services,273331.39,211939.15,-61392.24,Additional Approval
+2025-09,Sales,Training,292706.66,356290.23,63583.57,Approved
+2025-09,Sales,Marketing,143450.62,113707.28,-29743.34,Approved
+2025-09,Sales,Professional Fees,247834.92,213023.49,-34811.43,Additional Approval
+2025-09,Sales,Utilities,105186.19,125907.38,20721.19,Approved
+2025-09,Finance,Salaries,135260.93,143231.29,7970.36,Approved
+2025-09,Finance,Rent,93229.91,85494.67,-7735.24,Additional Approval
+2025-09,Finance,Travel,284311.14,274508.76,-9802.38,Additional Approval
+2025-09,Finance,IT Services,193412.33,197752.8,4340.47,Approved
+2025-09,Finance,Training,273393.44,260892.44,-12501.0,Additional Approval
+2025-09,Finance,Marketing,266025.73,229539.94,-36485.79,Approved
+2025-09,Finance,Professional Fees,283775.32,351198.09,67422.77,Additional Approval
+2025-09,Finance,Utilities,173449.75,192830.54,19380.79,Approved
+2025-09,IT,Salaries,200276.18,211119.5,10843.32,Approved
+2025-09,IT,Rent,143801.88,175536.67,31734.79,Additional Approval
+2025-09,IT,Travel,263130.35,258092.42,-5037.93,Approved
+2025-09,IT,IT Services,293225.1,291028.94,-2196.16,Approved
+2025-09,IT,Training,63956.27,66043.83,2087.56,Additional Approval
+2025-09,IT,Marketing,60540.05,45554.04,-14986.01,Approved
+2025-09,IT,Professional Fees,299130.81,363045.14,63914.33,Additional Approval
+2025-09,IT,Utilities,66016.03,83747.09,17731.06,Approved
+2025-10,Operations,Salaries,65311.09,73985.94,8674.85,Additional Approval
+2025-10,Operations,Rent,255914.19,281589.69,25675.5,Approved
+2025-10,Operations,Travel,139568.54,122220.01,-17348.53,Additional Approval
+2025-10,Operations,IT Services,242318.41,198469.86,-43848.55,Approved
+2025-10,Operations,Training,212398.74,161364.89,-51033.85,Additional Approval
+2025-10,Operations,Marketing,292888.2,267498.98,-25389.22,Additional Approval
+2025-10,Operations,Professional Fees,286771.49,273641.56,-13129.93,Approved
+2025-10,Operations,Utilities,140807.65,142979.15,2171.5,Approved
+2025-10,Sales,Salaries,211142.68,202642.12,-8500.56,Additional Approval
+2025-10,Sales,Rent,264090.34,301484.16,37393.82,Additional Approval
+2025-10,Sales,Travel,274646.36,304841.26,30194.9,Approved
+2025-10,Sales,IT Services,173868.55,157067.97,-16800.58,Additional Approval
+2025-10,Sales,Training,51901.91,53407.12,1505.21,Approved
+2025-10,Sales,Marketing,291336.71,259389.35,-31947.36,Additional Approval
+2025-10,Sales,Professional Fees,259574.51,207669.17,-51905.34,Approved
+2025-10,Sales,Utilities,253431.1,314301.54,60870.44,Additional Approval
+2025-10,Finance,Salaries,233181.72,246142.24,12960.52,Approved
+2025-10,Finance,Rent,40501.79,32345.74,-8156.05,Approved
+2025-10,Finance,Travel,94044.76,100091.58,6046.82,Approved
+2025-10,Finance,IT Services,122106.69,92831.68,-29275.01,Approved
+2025-10,Finance,Training,212229.54,162701.17,-49528.37,Additional Approval
+2025-10,Finance,Marketing,226313.76,180085.18,-46228.58,Additional Approval
+2025-10,Finance,Professional Fees,169989.08,169195.3,-793.78,Approved
+2025-10,Finance,Utilities,280408.64,294571.19,14162.55,Approved
+2025-10,IT,Salaries,118590.66,128711.45,10120.79,Additional Approval
+2025-10,IT,Rent,108861.91,140122.12,31260.21,Approved
+2025-10,IT,Travel,122510.82,103743.16,-18767.66,Approved
+2025-10,IT,IT Services,144657.47,151566.98,6909.51,Approved
+2025-10,IT,Training,217096.65,280849.2,63752.55,Additional Approval
+2025-10,IT,Marketing,285691.28,264918.77,-20772.51,Additional Approval
+2025-10,IT,Professional Fees,135210.87,128295.51,-6915.36,Approved
+2025-10,IT,Utilities,238706.41,218469.82,-20236.59,Approved
+2025-11,Operations,Salaries,169049.45,130473.59,-38575.86,Approved
+2025-11,Operations,Rent,296062.17,269878.8,-26183.37,Additional Approval
+2025-11,Operations,Travel,138482.75,118945.4,-19537.35,Approved
+2025-11,Operations,IT Services,275106.96,356862.35,81755.39,Approved
+2025-11,Operations,Training,252599.7,258113.03,5513.33,Additional Approval
+2025-11,Operations,Marketing,215540.34,234374.97,18834.63,Additional Approval
+2025-11,Operations,Professional Fees,235583.84,202778.09,-32805.75,Approved
+2025-11,Operations,Utilities,281909.17,365507.57,83598.4,Approved
+2025-11,Sales,Salaries,42307.95,36385.94,-5922.01,Approved
+2025-11,Sales,Rent,179554.43,160358.31,-19196.12,Additional Approval
+2025-11,Sales,Travel,139528.72,117971.17,-21557.55,Approved
+2025-11,Sales,IT Services,242038.65,247770.69,5732.04,Approved
+2025-11,Sales,Training,269498.63,253895.37,-15603.26,Approved
+2025-11,Sales,Marketing,113597.06,144913.31,31316.25,Additional Approval
+2025-11,Sales,Professional Fees,171745.63,166165.33,-5580.3,Approved
+2025-11,Sales,Utilities,203041.2,184211.46,-18829.74,Additional Approval
+2025-11,Finance,Salaries,255330.2,210354.43,-44975.77,Approved
+2025-11,Finance,Rent,203207.63,253239.01,50031.38,Approved
+2025-11,Finance,Travel,167107.87,197597.42,30489.55,Additional Approval
+2025-11,Finance,IT Services,122820.03,133785.93,10965.9,Additional Approval
+2025-11,Finance,Training,274634.24,318575.52,43941.28,Approved
+2025-11,Finance,Marketing,144356.34,183520.65,39164.31,Approved
+2025-11,Finance,Professional Fees,73501.5,56884.36,-16617.14,Approved
+2025-11,Finance,Utilities,135765.78,142274.57,6508.79,Approved
+2025-11,IT,Salaries,223672.38,196402.12,-27270.26,Additional Approval
+2025-11,IT,Rent,145142.67,179833.93,34691.26,Approved
+2025-11,IT,Travel,109522.17,85370.87,-24151.3,Approved
+2025-11,IT,IT Services,182425.55,232796.47,50370.92,Additional Approval
+2025-11,IT,Training,106308.93,129810.42,23501.49,Approved
+2025-11,IT,Marketing,160189.86,121669.84,-38520.02,Approved
+2025-11,IT,Professional Fees,73307.52,79200.2,5892.68,Additional Approval
+2025-11,IT,Utilities,128375.82,138865.76,10489.94,Additional Approval
+2025-12,Operations,Salaries,147274.53,142784.02,-4490.51,Approved
+2025-12,Operations,Rent,236675.92,213482.4,-23193.52,Approved
+2025-12,Operations,Travel,171303.24,140647.62,-30655.62,Additional Approval
+2025-12,Operations,IT Services,183302.29,199488.61,16186.32,Approved
+2025-12,Operations,Training,109901.4,134702.83,24801.43,Approved
+2025-12,Operations,Marketing,61796.07,71849.77,10053.7,Approved
+2025-12,Operations,Professional Fees,285751.85,277770.15,-7981.7,Additional Approval
+2025-12,Operations,Utilities,69626.56,86362.35,16735.79,Approved
+2025-12,Sales,Salaries,168898.81,176763.51,7864.7,Additional Approval
+2025-12,Sales,Rent,51344.63,42738.3,-8606.33,Approved
+2025-12,Sales,Travel,214410.22,210078.48,-4331.74,Approved
+2025-12,Sales,IT Services,268335.71,226894.88,-41440.83,Approved
+2025-12,Sales,Training,194772.87,231326.41,36553.54,Approved
+2025-12,Sales,Marketing,89499.56,112755.16,23255.6,Approved
+2025-12,Sales,Professional Fees,262899.78,315887.58,52987.8,Approved
+2025-12,Sales,Utilities,166743.59,187690.31,20946.72,Approved
+2025-12,Finance,Salaries,183320.6,171696.2,-11624.4,Approved
+2025-12,Finance,Rent,110475.29,116298.48,5823.19,Approved
+2025-12,Finance,Travel,227535.85,248764.22,21228.37,Additional Approval
+2025-12,Finance,IT Services,213206.9,167294.58,-45912.32,Additional Approval
+2025-12,Finance,Training,131570.66,117026.93,-14543.73,Approved
+2025-12,Finance,Marketing,241286.73,214893.39,-26393.34,Approved
+2025-12,Finance,Professional Fees,294543.65,252943.85,-41599.8,Approved
+2025-12,Finance,Utilities,171368.26,169129.4,-2238.86,Approved
+2025-12,IT,Salaries,89846.26,100727.37,10881.11,Approved
+2025-12,IT,Rent,189074.66,174101.03,-14973.63,Approved
+2025-12,IT,Travel,209531.46,263685.72,54154.26,Approved
+2025-12,IT,IT Services,281203.82,218624.08,-62579.74,Approved
+2025-12,IT,Training,117180.37,122092.78,4912.41,Approved
+2025-12,IT,Marketing,92047.51,99198.18,7150.67,Approved
+2025-12,IT,Professional Fees,295836.84,257795.9,-38040.94,Approved
+2025-12,IT,Utilities,110524.45,87047.95,-23476.5,Approved
+2026-01,Operations,Salaries,131112.2,113602.68,-17509.52,Approved
+2026-01,Operations,Rent,283845.43,287847.7,4002.27,Approved
+2026-01,Operations,Travel,266569.05,255022.25,-11546.8,Additional Approval
+2026-01,Operations,IT Services,267035.97,287824.15,20788.18,Approved
+2026-01,Operations,Training,208091.46,227986.09,19894.63,Approved
+2026-01,Operations,Marketing,65904.72,55460.2,-10444.52,Approved
+2026-01,Operations,Professional Fees,272366.38,238168.0,-34198.38,Additional Approval
+2026-01,Operations,Utilities,197743.03,184212.62,-13530.41,Approved
+2026-01,Sales,Salaries,109773.39,98326.4,-11446.99,Approved
+2026-01,Sales,Rent,63789.64,64521.39,731.75,Approved
+2026-01,Sales,Travel,203020.82,212161.82,9141.0,Additional Approval
+2026-01,Sales,IT Services,289388.04,334573.11,45185.07,Additional Approval
+2026-01,Sales,Training,56891.67,47379.21,-9512.46,Approved
+2026-01,Sales,Marketing,123011.98,153959.34,30947.36,Approved
+2026-01,Sales,Professional Fees,273222.62,247604.55,-25618.07,Approved
+2026-01,Sales,Utilities,204994.19,237720.41,32726.22,Additional Approval
+2026-01,Finance,Salaries,157497.84,201320.63,43822.79,Approved
+2026-01,Finance,Rent,156672.35,124069.2,-32603.15,Additional Approval
+2026-01,Finance,Travel,53967.93,48371.18,-5596.75,Approved
+2026-01,Finance,IT Services,80809.57,73736.71,-7072.86,Approved
+2026-01,Finance,Training,276704.39,292610.85,15906.46,Additional Approval
+2026-01,Finance,Marketing,258616.98,313809.16,55192.18,Additional Approval
+2026-01,Finance,Professional Fees,109493.9,117663.05,8169.15,Approved
+2026-01,Finance,Utilities,230695.91,290376.94,59681.03,Approved
+2026-01,IT,Salaries,238504.2,199179.01,-39325.19,Additional Approval
+2026-01,IT,Rent,102270.28,79287.52,-22982.76,Approved
+2026-01,IT,Travel,46194.83,42329.46,-3865.37,Approved
+2026-01,IT,IT Services,238592.03,255812.23,17220.2,Approved
+2026-01,IT,Training,203400.17,175340.57,-28059.6,Approved
+2026-01,IT,Marketing,40872.84,37367.56,-3505.28,Approved
+2026-01,IT,Professional Fees,204750.82,224913.73,20162.91,Approved
+2026-01,IT,Utilities,50060.1,57112.07,7051.97,Additional Approval
+2026-02,Operations,Salaries,67744.78,75158.08,7413.3,Approved
+2026-02,Operations,Rent,146282.59,128671.15,-17611.44,Additional Approval
+2026-02,Operations,Travel,78296.88,87339.08,9042.2,Approved
+2026-02,Operations,IT Services,55298.96,62660.34,7361.38,Additional Approval
+2026-02,Operations,Training,176762.17,198190.96,21428.79,Approved
+2026-02,Operations,Marketing,184512.91,180836.98,-3675.93,Approved
+2026-02,Operations,Professional Fees,266812.88,282542.14,15729.26,Approved
+2026-02,Operations,Utilities,233586.92,217543.14,-16043.78,Approved
+2026-02,Sales,Salaries,148474.74,111996.11,-36478.63,Additional Approval
+2026-02,Sales,Rent,46091.65,47188.61,1096.96,Additional Approval
+2026-02,Sales,Travel,237355.68,217479.18,-19876.5,Approved
+2026-02,Sales,IT Services,185473.62,159141.04,-26332.58,Additional Approval
+2026-02,Sales,Training,207358.45,220076.08,12717.63,Approved
+2026-02,Sales,Marketing,114974.47,115402.62,428.15,Additional Approval
+2026-02,Sales,Professional Fees,55128.55,69814.7,14686.15,Approved
+2026-02,Sales,Utilities,157793.54,138758.17,-19035.37,Approved
+2026-02,Finance,Salaries,61770.99,69709.72,7938.73,Approved
+2026-02,Finance,Rent,287637.1,325359.95,37722.85,Approved
+2026-02,Finance,Travel,273494.0,300638.66,27144.66,Approved
+2026-02,Finance,IT Services,293849.44,279482.48,-14366.96,Additional Approval
+2026-02,Finance,Training,46747.29,36728.26,-10019.03,Approved
+2026-02,Finance,Marketing,264350.47,336789.69,72439.22,Approved
+2026-02,Finance,Professional Fees,162507.9,156831.2,-5676.7,Additional Approval
+2026-02,Finance,Utilities,277163.28,326889.67,49726.39,Additional Approval
+2026-02,IT,Salaries,44829.59,45905.01,1075.42,Additional Approval
+2026-02,IT,Rent,60713.57,60253.07,-460.5,Approved
+2026-02,IT,Travel,123806.45,138256.97,14450.52,Approved
+2026-02,IT,IT Services,252989.61,227493.31,-25496.3,Additional Approval
+2026-02,IT,Training,198922.37,221433.25,22510.88,Additional Approval
+2026-02,IT,Marketing,144377.04,139946.72,-4430.32,Approved
+2026-02,IT,Professional Fees,232872.61,199155.62,-33716.99,Additional Approval
+2026-02,IT,Utilities,211497.08,195218.52,-16278.56,Approved
+2026-03,Operations,Salaries,66560.27,66844.58,284.31,Approved
+2026-03,Operations,Rent,269962.09,220954.02,-49008.07,Additional Approval
+2026-03,Operations,Travel,230124.91,196770.78,-33354.13,Approved
+2026-03,Operations,IT Services,191973.41,168918.15,-23055.26,Additional Approval
+2026-03,Operations,Training,108186.29,126931.49,18745.2,Approved
+2026-03,Operations,Marketing,253913.81,237028.39,-16885.42,Approved
+2026-03,Operations,Professional Fees,106165.05,124912.54,18747.49,Additional Approval
+2026-03,Operations,Utilities,120500.11,100075.51,-20424.6,Approved
+2026-03,Sales,Salaries,177546.77,217059.05,39512.28,Approved
+2026-03,Sales,Rent,206212.94,185224.68,-20988.26,Approved
+2026-03,Sales,Travel,84515.41,63593.57,-20921.84,Approved
+2026-03,Sales,IT Services,290408.47,230399.35,-60009.12,Approved
+2026-03,Sales,Training,206881.49,243933.15,37051.66,Approved
+2026-03,Sales,Marketing,99051.07,80070.7,-18980.37,Additional Approval
+2026-03,Sales,Professional Fees,170461.33,162236.41,-8224.92,Additional Approval
+2026-03,Sales,Utilities,88971.13,69540.35,-19430.78,Approved
+2026-03,Finance,Salaries,83229.83,89868.7,6638.87,Approved
+2026-03,Finance,Rent,96406.46,78821.79,-17584.67,Approved
+2026-03,Finance,Travel,85607.52,85182.47,-425.05,Additional Approval
+2026-03,Finance,IT Services,175624.19,136425.65,-39198.54,Additional Approval
+2026-03,Finance,Training,185719.08,169029.64,-16689.44,Additional Approval
+2026-03,Finance,Marketing,55802.84,58015.85,2213.01,Additional Approval
+2026-03,Finance,Professional Fees,123487.04,137642.62,14155.58,Approved
+2026-03,Finance,Utilities,76785.92,88180.55,11394.63,Additional Approval
+2026-03,IT,Salaries,195034.64,163669.21,-31365.43,Additional Approval
+2026-03,IT,Rent,231563.04,257574.24,26011.2,Approved
+2026-03,IT,Travel,210799.96,208289.52,-2510.44,Approved
+2026-03,IT,IT Services,200147.52,257909.03,57761.51,Approved
+2026-03,IT,Training,129039.68,118373.64,-10666.04,Approved
+2026-03,IT,Marketing,119250.33,95011.13,-24239.2,Approved
+2026-03,IT,Professional Fees,115527.26,97948.02,-17579.24,Approved
+2026-03,IT,Utilities,270215.18,294832.45,24617.27,Approved
+2026-04,Operations,Salaries,271756.07,258998.92,-12757.15,Additional Approval
+2026-04,Operations,Rent,68701.15,82451.88,13750.73,Approved
+2026-04,Operations,Travel,91668.93,91335.71,-333.22,Additional Approval
+2026-04,Operations,IT Services,292906.85,243658.73,-49248.12,Approved
+2026-04,Operations,Training,227759.71,266091.62,38331.91,Additional Approval
+2026-04,Operations,Marketing,65939.68,59147.99,-6791.69,Approved
+2026-04,Operations,Professional Fees,206722.52,167384.2,-39338.32,Approved
+2026-04,Operations,Utilities,242431.64,279800.66,37369.02,Approved
+2026-04,Sales,Salaries,57357.67,43431.78,-13925.89,Additional Approval
+2026-04,Sales,Rent,56893.85,59474.66,2580.81,Approved
+2026-04,Sales,Travel,149233.13,131946.41,-17286.72,Additional Approval
+2026-04,Sales,IT Services,276907.34,225301.77,-51605.57,Approved
+2026-04,Sales,Training,179382.81,223953.91,44571.1,Approved
+2026-04,Sales,Marketing,196255.81,247734.72,51478.91,Approved
+2026-04,Sales,Professional Fees,297729.24,261391.23,-36338.01,Approved
+2026-04,Sales,Utilities,80149.65,102516.57,22366.92,Approved
+2026-04,Finance,Salaries,267521.56,211052.41,-56469.15,Approved
+2026-04,Finance,Rent,103249.45,132588.58,29339.13,Additional Approval
+2026-04,Finance,Travel,152764.14,134343.94,-18420.2,Approved
+2026-04,Finance,IT Services,180311.26,198534.33,18223.07,Approved
+2026-04,Finance,Training,217786.42,274792.2,57005.78,Approved
+2026-04,Finance,Marketing,191445.98,190118.89,-1327.09,Approved
+2026-04,Finance,Professional Fees,241540.05,193979.56,-47560.49,Approved
+2026-04,Finance,Utilities,216985.81,179686.99,-37298.82,Approved
+2026-04,IT,Salaries,232022.85,248466.86,16444.01,Approved
+2026-04,IT,Rent,232361.92,196102.91,-36259.01,Additional Approval
+2026-04,IT,Travel,87810.47,87341.54,-468.93,Additional Approval
+2026-04,IT,IT Services,162606.34,136622.66,-25983.68,Approved
+2026-04,IT,Training,142557.32,109162.77,-33394.55,Additional Approval
+2026-04,IT,Marketing,46110.59,36792.42,-9318.17,Approved
+2026-04,IT,Professional Fees,285951.43,323632.63,37681.2,Approved
+2026-04,IT,Utilities,94819.01,78322.94,-16496.07,Additional Approval
+2026-05,Operations,Salaries,57132.85,53064.93,-4067.92,Approved
+2026-05,Operations,Rent,172563.51,193182.48,20618.97,Additional Approval
+2026-05,Operations,Travel,78523.08,101069.82,22546.74,Approved
+2026-05,Operations,IT Services,188572.5,156529.92,-32042.58,Additional Approval
+2026-05,Operations,Training,185146.46,217031.57,31885.11,Approved
+2026-05,Operations,Marketing,63070.84,61178.68,-1892.16,Approved
+2026-05,Operations,Professional Fees,227281.94,252644.18,25362.24,Approved
+2026-05,Operations,Utilities,197493.43,215240.35,17746.92,Approved
+2026-05,Sales,Salaries,183490.42,215810.01,32319.59,Additional Approval
+2026-05,Sales,Rent,157116.86,132694.11,-24422.75,Approved
+2026-05,Sales,Travel,265576.24,258995.96,-6580.28,Additional Approval
+2026-05,Sales,IT Services,298665.37,299897.41,1232.04,Additional Approval
+2026-05,Sales,Training,237061.59,231157.66,-5903.93,Additional Approval
+2026-05,Sales,Marketing,56752.06,71287.68,14535.62,Approved
+2026-05,Sales,Professional Fees,199359.0,226335.56,26976.56,Approved
+2026-05,Sales,Utilities,187638.97,210505.86,22866.89,Approved
+2026-05,Finance,Salaries,124471.77,112970.35,-11501.42,Approved
+2026-05,Finance,Rent,209075.58,199434.0,-9641.58,Approved
+2026-05,Finance,Travel,230025.99,215730.55,-14295.44,Additional Approval
+2026-05,Finance,IT Services,129444.56,105941.83,-23502.73,Approved
+2026-05,Finance,Training,296300.03,372991.97,76691.94,Approved
+2026-05,Finance,Marketing,289576.23,285568.62,-4007.61,Approved
+2026-05,Finance,Professional Fees,220626.15,247588.31,26962.16,Approved
+2026-05,Finance,Utilities,243432.94,203928.39,-39504.55,Approved
+2026-05,IT,Salaries,257726.94,314641.56,56914.62,Approved
+2026-05,IT,Rent,141438.55,159420.96,17982.41,Approved
+2026-05,IT,Travel,196124.85,181133.25,-14991.6,Approved
+2026-05,IT,IT Services,188224.24,240490.87,52266.63,Approved
+2026-05,IT,Training,154408.89,117900.89,-36508.0,Approved
+2026-05,IT,Marketing,293428.21,262408.12,-31020.09,Additional Approval
+2026-05,IT,Professional Fees,103972.1,83379.77,-20592.33,Approved
+2026-05,IT,Utilities,113766.25,139876.39,26110.14,Additional Approval
+2026-06,Operations,Salaries,81855.05,85761.06,3906.01,Additional Approval
+2026-06,Operations,Rent,100989.47,81812.17,-19177.3,Approved
+2026-06,Operations,Travel,284259.75,262550.59,-21709.16,Approved
+2026-06,Operations,IT Services,211972.79,170276.79,-41696.0,Additional Approval
+2026-06,Operations,Training,236643.55,211832.96,-24810.59,Approved
+2026-06,Operations,Marketing,293768.02,346353.34,52585.32,Additional Approval
+2026-06,Operations,Professional Fees,146876.59,128440.84,-18435.75,Approved
+2026-06,Operations,Utilities,149048.05,131903.61,-17144.44,Approved
+2026-06,Sales,Salaries,263369.01,216171.45,-47197.56,Additional Approval
+2026-06,Sales,Rent,282644.02,270932.95,-11711.07,Approved
+2026-06,Sales,Travel,110902.82,133519.37,22616.55,Approved
+2026-06,Sales,IT Services,189040.81,211168.68,22127.87,Approved
+2026-06,Sales,Training,90814.44,91697.61,883.17,Approved
+2026-06,Sales,Marketing,167424.89,161885.11,-5539.78,Approved
+2026-06,Sales,Professional Fees,235014.75,194760.73,-40254.02,Approved
+2026-06,Sales,Utilities,81118.56,80345.65,-772.91,Approved
+2026-06,Finance,Salaries,163041.2,203373.42,40332.22,Additional Approval
+2026-06,Finance,Rent,119605.42,97383.19,-22222.23,Approved
+2026-06,Finance,Travel,171885.4,137590.69,-34294.71,Approved
+2026-06,Finance,IT Services,160129.59,186189.68,26060.09,Additional Approval
+2026-06,Finance,Training,77780.45,100506.5,22726.05,Approved
+2026-06,Finance,Marketing,197684.64,249737.25,52052.61,Approved
+2026-06,Finance,Professional Fees,176958.07,223670.92,46712.85,Approved
+2026-06,Finance,Utilities,116383.68,89669.1,-26714.58,Approved
+2026-06,IT,Salaries,222999.03,287456.97,64457.94,Additional Approval
+2026-06,IT,Rent,213379.33,241184.79,27805.46,Additional Approval
+2026-06,IT,Travel,90132.81,95581.72,5448.91,Approved
+2026-06,IT,IT Services,191874.7,160879.33,-30995.37,Approved
+2026-06,IT,Training,252723.75,300630.39,47906.64,Additional Approval
+2026-06,IT,Marketing,269897.3,244008.14,-25889.16,Additional Approval
+2026-06,IT,Professional Fees,206590.22,236728.25,30138.03,Additional Approval
+2026-06,IT,Utilities,163360.21,156049.84,-7310.37,Approved
+2026-07,Operations,Salaries,186715.65,229543.41,42827.76,Additional Approval
+2026-07,Operations,Rent,154801.6,167832.38,13030.78,Approved
+2026-07,Operations,Travel,175555.71,227489.68,51933.97,Approved
+2026-07,Operations,IT Services,274498.73,206808.64,-67690.09,Approved
+2026-07,Operations,Training,48582.05,50985.22,2403.17,Approved
+2026-07,Operations,Marketing,167149.22,191669.73,24520.51,Additional Approval
+2026-07,Operations,Professional Fees,233397.99,256591.83,23193.84,Additional Approval
+2026-07,Operations,Utilities,86761.22,107557.45,20796.23,Approved
+2026-07,Sales,Salaries,112249.07,108068.7,-4180.37,Additional Approval
+2026-07,Sales,Rent,84661.95,81367.41,-3294.54,Approved
+2026-07,Sales,Travel,94835.97,118710.28,23874.31,Approved
+2026-07,Sales,IT Services,182972.17,208282.33,25310.16,Additional Approval
+2026-07,Sales,Training,205881.02,213467.91,7586.89,Approved
+2026-07,Sales,Marketing,295882.44,258786.86,-37095.58,Approved
+2026-07,Sales,Professional Fees,68173.37,54683.53,-13489.84,Additional Approval
+2026-07,Sales,Utilities,95922.26,116910.26,20988.0,Approved
+2026-07,Finance,Salaries,245398.2,234654.42,-10743.78,Approved
+2026-07,Finance,Rent,211323.29,195923.42,-15399.87,Approved
+2026-07,Finance,Travel,255522.06,243715.26,-11806.8,Approved
+2026-07,Finance,IT Services,185295.47,216967.0,31671.53,Approved
+2026-07,Finance,Training,70384.49,60902.53,-9481.96,Approved
+2026-07,Finance,Marketing,138255.03,114213.17,-24041.86,Additional Approval
+2026-07,Finance,Professional Fees,177460.25,134526.06,-42934.19,Approved
+2026-07,Finance,Utilities,55092.0,67339.82,12247.82,Approved
+2026-07,IT,Salaries,252047.63,306851.86,54804.23,Approved
+2026-07,IT,Rent,102654.13,131743.21,29089.08,Additional Approval
+2026-07,IT,Travel,133162.39,124580.2,-8582.19,Additional Approval
+2026-07,IT,IT Services,59516.01,74124.78,14608.77,Approved
+2026-07,IT,Training,215511.85,221051.7,5539.85,Approved
+2026-07,IT,Marketing,188377.26,201863.66,13486.4,Approved
+2026-07,IT,Professional Fees,157335.66,169553.42,12217.76,Approved
+2026-07,IT,Utilities,272955.88,297760.33,24804.45,Additional Approval
+2026-08,Operations,Salaries,292530.55,245606.62,-46923.93,Additional Approval
+2026-08,Operations,Rent,253564.36,268210.12,14645.76,Approved
+2026-08,Operations,Travel,136023.58,134554.52,-1469.06,Approved
+2026-08,Operations,IT Services,93174.74,70468.84,-22705.9,Additional Approval
+2026-08,Operations,Training,61466.28,48333.74,-13132.54,Additional Approval
+2026-08,Operations,Marketing,60734.54,60473.81,-260.73,Additional Approval
+2026-08,Operations,Professional Fees,41121.73,34902.68,-6219.05,Additional Approval
+2026-08,Operations,Utilities,254911.2,282148.5,27237.3,Approved
+2026-08,Sales,Salaries,276344.77,301398.05,25053.28,Approved
+2026-08,Sales,Rent,110623.58,105414.6,-5208.98,Approved
+2026-08,Sales,Travel,239719.07,274636.04,34916.97,Additional Approval
+2026-08,Sales,IT Services,271870.64,214696.99,-57173.65,Additional Approval
+2026-08,Sales,Training,155895.86,179698.72,23802.86,Approved
+2026-08,Sales,Marketing,261741.62,203350.65,-58390.97,Approved
+2026-08,Sales,Professional Fees,182754.14,224376.5,41622.36,Approved
+2026-08,Sales,Utilities,96993.14,118215.0,21221.86,Approved
+2026-08,Finance,Salaries,91631.28,93328.06,1696.78,Approved
+2026-08,Finance,Rent,81021.22,61556.27,-19464.95,Additional Approval
+2026-08,Finance,Travel,288568.79,314335.36,25766.57,Approved
+2026-08,Finance,IT Services,79380.99,69348.18,-10032.81,Approved
+2026-08,Finance,Training,170521.25,214880.22,44358.97,Additional Approval
+2026-08,Finance,Marketing,145090.24,161631.85,16541.61,Additional Approval
+2026-08,Finance,Professional Fees,238837.95,247603.5,8765.55,Additional Approval
+2026-08,Finance,Utilities,87444.25,76232.61,-11211.64,Approved
+2026-08,IT,Salaries,154716.69,177639.86,22923.17,Approved
+2026-08,IT,Rent,103930.25,106564.43,2634.18,Additional Approval
+2026-08,IT,Travel,273715.75,262371.87,-11343.88,Additional Approval
+2026-08,IT,IT Services,79911.18,81867.88,1956.7,Approved
+2026-08,IT,Training,79983.09,103544.05,23560.96,Approved
+2026-08,IT,Marketing,168368.71,209578.97,41210.26,Approved
+2026-08,IT,Professional Fees,176812.74,218207.08,41394.34,Approved
+2026-08,IT,Utilities,198669.48,170350.6,-28318.88,Approved
+2026-09,Operations,Salaries,214740.0,199867.08,-14872.92,Additional Approval
+2026-09,Operations,Rent,119737.59,140771.69,21034.1,Approved
+2026-09,Operations,Travel,232431.79,295010.48,62578.69,Approved
+2026-09,Operations,IT Services,245535.5,294802.1,49266.6,Approved
+2026-09,Operations,Training,128543.28,146163.01,17619.73,Approved
+2026-09,Operations,Marketing,185021.28,217593.56,32572.28,Additional Approval
+2026-09,Operations,Professional Fees,130282.61,115266.57,-15016.04,Additional Approval
+2026-09,Operations,Utilities,240870.47,182839.03,-58031.44,Additional Approval
+2026-09,Sales,Salaries,295811.52,313740.95,17929.43,Approved
+2026-09,Sales,Rent,250445.9,198340.53,-52105.37,Approved
+2026-09,Sales,Travel,149423.92,155459.22,6035.3,Additional Approval
+2026-09,Sales,IT Services,167467.19,146802.95,-20664.24,Approved
+2026-09,Sales,Training,129706.31,101451.56,-28254.75,Additional Approval
+2026-09,Sales,Marketing,186545.96,242344.52,55798.56,Approved
+2026-09,Sales,Professional Fees,170439.85,208250.68,37810.83,Approved
+2026-09,Sales,Utilities,256835.19,245731.33,-11103.86,Approved
+2026-09,Finance,Salaries,227474.87,223515.7,-3959.17,Approved
+2026-09,Finance,Rent,55413.74,46158.41,-9255.33,Additional Approval
+2026-09,Finance,Travel,261887.42,315360.35,53472.93,Approved
+2026-09,Finance,IT Services,67831.22,61447.44,-6383.78,Approved
+2026-09,Finance,Training,198780.12,184388.27,-14391.85,Approved
+2026-09,Finance,Marketing,40371.65,31621.08,-8750.57,Approved
+2026-09,Finance,Professional Fees,196541.45,197161.99,620.54,Additional Approval
+2026-09,Finance,Utilities,47334.37,49069.26,1734.89,Approved
+2026-09,IT,Salaries,87403.69,102480.65,15076.96,Additional Approval
+2026-09,IT,Rent,92121.06,108151.91,16030.85,Approved
+2026-09,IT,Travel,297903.93,274002.43,-23901.5,Approved
+2026-09,IT,IT Services,43495.81,33410.69,-10085.12,Additional Approval
+2026-09,IT,Training,168273.77,149623.52,-18650.25,Additional Approval
+2026-09,IT,Marketing,48538.38,48820.81,282.43,Additional Approval
+2026-09,IT,Professional Fees,203756.37,210274.58,6518.21,Additional Approval
+2026-09,IT,Utilities,156111.04,197573.34,41462.3,Approved
+2026-10,Operations,Salaries,87928.43,81654.87,-6273.56,Additional Approval
+2026-10,Operations,Rent,86727.15,97988.11,11260.96,Additional Approval
+2026-10,Operations,Travel,214035.25,272213.37,58178.12,Approved
+2026-10,Operations,IT Services,292672.96,269234.51,-23438.45,Approved
+2026-10,Operations,Training,140455.44,153767.22,13311.78,Approved
+2026-10,Operations,Marketing,63516.76,50195.73,-13321.03,Additional Approval
+2026-10,Operations,Professional Fees,249061.27,239151.85,-9909.42,Approved
+2026-10,Operations,Utilities,123054.08,158296.07,35241.99,Additional Approval
+2026-10,Sales,Salaries,58385.03,53987.46,-4397.57,Approved
+2026-10,Sales,Rent,50622.73,58377.37,7754.64,Approved
+2026-10,Sales,Travel,244011.46,218259.72,-25751.74,Approved
+2026-10,Sales,IT Services,275017.74,270219.75,-4797.99,Approved
+2026-10,Sales,Training,138148.44,174281.58,36133.14,Approved
+2026-10,Sales,Marketing,76613.92,60001.16,-16612.76,Approved
+2026-10,Sales,Professional Fees,110257.92,116866.47,6608.55,Approved
+2026-10,Sales,Utilities,235069.68,214983.86,-20085.82,Additional Approval
+2026-10,Finance,Salaries,97216.73,115242.27,18025.54,Approved
+2026-10,Finance,Rent,96218.13,111721.05,15502.92,Approved
+2026-10,Finance,Travel,150722.36,195172.91,44450.55,Approved
+2026-10,Finance,IT Services,144045.35,123280.71,-20764.64,Additional Approval
+2026-10,Finance,Training,229918.59,189481.0,-40437.59,Approved
+2026-10,Finance,Marketing,283809.66,241205.77,-42603.89,Approved
+2026-10,Finance,Professional Fees,191595.89,147772.56,-43823.33,Approved
+2026-10,Finance,Utilities,238449.96,252998.21,14548.25,Approved
+2026-10,IT,Salaries,115366.29,125479.51,10113.22,Additional Approval
+2026-10,IT,Rent,198780.28,152666.64,-46113.64,Approved
+2026-10,IT,Travel,120981.5,113387.89,-7593.61,Approved
+2026-10,IT,IT Services,240396.44,213647.63,-26748.81,Approved
+2026-10,IT,Training,167916.21,168279.37,363.16,Approved
+2026-10,IT,Marketing,177355.9,205830.66,28474.76,Approved
+2026-10,IT,Professional Fees,244194.28,222763.11,-21431.17,Approved
+2026-10,IT,Utilities,269507.89,208952.79,-60555.1,Approved
+2026-11,Operations,Salaries,283675.22,261891.67,-21783.55,Approved
+2026-11,Operations,Rent,222016.55,220784.3,-1232.25,Approved
+2026-11,Operations,Travel,69580.89,84025.36,14444.47,Approved
+2026-11,Operations,IT Services,74459.02,74997.85,538.83,Additional Approval
+2026-11,Operations,Training,271886.56,212924.47,-58962.09,Approved
+2026-11,Operations,Marketing,94331.2,107973.36,13642.16,Approved
+2026-11,Operations,Professional Fees,262373.21,283683.65,21310.44,Additional Approval
+2026-11,Operations,Utilities,79339.25,88325.06,8985.81,Additional Approval
+2026-11,Sales,Salaries,66869.03,59363.56,-7505.47,Approved
+2026-11,Sales,Rent,161653.32,129022.42,-32630.9,Approved
+2026-11,Sales,Travel,92372.35,111034.45,18662.1,Approved
+2026-11,Sales,IT Services,42692.87,52447.28,9754.41,Approved
+2026-11,Sales,Training,141278.87,148594.02,7315.15,Approved
+2026-11,Sales,Marketing,160002.14,164365.56,4363.42,Approved
+2026-11,Sales,Professional Fees,277434.24,254721.31,-22712.93,Approved
+2026-11,Sales,Utilities,169789.12,144077.15,-25711.97,Approved
+2026-11,Finance,Salaries,89135.52,93149.33,4013.81,Approved
+2026-11,Finance,Rent,138125.34,125261.15,-12864.19,Approved
+2026-11,Finance,Travel,134246.05,115821.87,-18424.18,Additional Approval
+2026-11,Finance,IT Services,244041.77,263776.86,19735.09,Approved
+2026-11,Finance,Training,209086.83,190977.24,-18109.59,Additional Approval
+2026-11,Finance,Marketing,275185.15,337815.89,62630.74,Approved
+2026-11,Finance,Professional Fees,67459.98,62461.32,-4998.66,Additional Approval
+2026-11,Finance,Utilities,134488.51,159508.56,25020.05,Approved
+2026-11,IT,Salaries,168562.82,185980.1,17417.28,Approved
+2026-11,IT,Rent,78488.94,90652.5,12163.56,Additional Approval
+2026-11,IT,Travel,188066.39,233421.36,45354.97,Approved
+2026-11,IT,IT Services,231811.78,245081.07,13269.29,Approved
+2026-11,IT,Training,102892.05,106604.39,3712.34,Approved
+2026-11,IT,Marketing,240877.04,301623.28,60746.24,Approved
+2026-11,IT,Professional Fees,148451.27,141082.52,-7368.75,Approved
+2026-11,IT,Utilities,247104.66,198899.13,-48205.53,Approved
+2026-12,Operations,Salaries,163056.56,133712.73,-29343.83,Additional Approval
+2026-12,Operations,Rent,93853.01,81875.38,-11977.63,Additional Approval
+2026-12,Operations,Travel,105879.34,117973.72,12094.38,Approved
+2026-12,Operations,IT Services,174871.86,224543.81,49671.95,Approved
+2026-12,Operations,Training,285019.72,256991.33,-28028.39,Approved
+2026-12,Operations,Marketing,280625.68,284329.29,3703.61,Additional Approval
+2026-12,Operations,Professional Fees,171491.36,218621.99,47130.63,Approved
+2026-12,Operations,Utilities,203441.73,195092.66,-8349.07,Approved
+2026-12,Sales,Salaries,164140.33,202599.85,38459.52,Approved
+2026-12,Sales,Rent,144077.58,140114.93,-3962.65,Additional Approval
+2026-12,Sales,Travel,42184.48,32667.17,-9517.31,Approved
+2026-12,Sales,IT Services,153156.99,131575.86,-21581.13,Approved
+2026-12,Sales,Training,91534.51,110437.75,18903.24,Approved
+2026-12,Sales,Marketing,277209.74,358239.08,81029.34,Approved
+2026-12,Sales,Professional Fees,162379.42,186339.51,23960.09,Approved
+2026-12,Sales,Utilities,228840.22,225436.21,-3404.01,Approved
+2026-12,Finance,Salaries,105519.07,97834.35,-7684.72,Additional Approval
+2026-12,Finance,Rent,173413.5,202112.31,28698.81,Approved
+2026-12,Finance,Travel,248320.37,192924.03,-55396.34,Approved
+2026-12,Finance,IT Services,207303.2,247727.88,40424.68,Additional Approval
+2026-12,Finance,Training,231843.41,259469.4,27625.99,Approved
+2026-12,Finance,Marketing,148448.87,143711.91,-4736.96,Approved
+2026-12,Finance,Professional Fees,263034.9,304885.32,41850.42,Approved
+2026-12,Finance,Utilities,94947.27,111429.38,16482.11,Approved
+2026-12,IT,Salaries,289970.17,372799.93,82829.76,Approved
+2026-12,IT,Rent,206989.83,159659.99,-47329.84,Approved
+2026-12,IT,Travel,171205.79,145201.86,-26003.93,Additional Approval
+2026-12,IT,IT Services,237191.23,289133.84,51942.61,Approved
+2026-12,IT,Training,167427.27,178640.82,11213.55,Approved
+2026-12,IT,Marketing,166043.26,163272.13,-2771.13,Additional Approval
+2026-12,IT,Professional Fees,137641.44,108348.6,-29292.84,Additional Approval
+2026-12,IT,Utilities,236338.57,200511.65,-35826.92,Additional Approval

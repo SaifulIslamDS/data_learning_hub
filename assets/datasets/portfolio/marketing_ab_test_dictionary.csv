@@ -1,0 +1,10 @@
+file,field,type,description
+marketing_ab_test.csv,visitor_id,text,Visitor Id
+marketing_ab_test.csv,variant,text,Variant
+marketing_ab_test.csv,device,text,Device
+marketing_ab_test.csv,source,text,Source
+marketing_ab_test.csv,visit_date,date,Visit Date
+marketing_ab_test.csv,converted,number,Converted
+marketing_ab_test.csv,revenue,number,Revenue
+marketing_ab_test.csv,session_seconds,number,Session Seconds
+marketing_ab_test.csv,complaint_flag,number,Complaint Flag

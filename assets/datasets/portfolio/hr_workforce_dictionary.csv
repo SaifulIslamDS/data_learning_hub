@@ -1,0 +1,13 @@
+file,field,type,description
+hr_workforce.csv,employee_id,text,Employee Id
+hr_workforce.csv,department,text,Department
+hr_workforce.csv,job_role,text,Job Role
+hr_workforce.csv,location,text,Location
+hr_workforce.csv,hire_date,date,Hire Date
+hr_workforce.csv,age,number,Age
+hr_workforce.csv,gender,text,Gender
+hr_workforce.csv,monthly_salary,number,Monthly Salary
+hr_workforce.csv,performance_rating,number,Performance Rating
+hr_workforce.csv,overtime,text,Overtime
+hr_workforce.csv,absence_days,number,Absence Days
+hr_workforce.csv,left_company,number,Left Company

@@ -1,0 +1,711 @@
+[
+  {
+    "id": "retail-sales-360",
+    "title_en": "Retail Sales 360° Performance Analysis",
+    "title_bn": "Retail Sales 360° Performance Analysis",
+    "summary_en": "Analyze revenue, profit, margin, products, regions, channels, customers, and trends across Excel, SQL, Power BI, Python, and Statistics.",
+    "summary_bn": "Excel, SQL, Power BI, Python ও Statistics দিয়ে revenue, profit, margin, product, region, channel, customer ও trend analyze করুন।",
+    "level": "Intermediate",
+    "estimated_hours": 28,
+    "tools": [
+      "Statistics",
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Python"
+    ],
+    "files": [
+      "retail_sales_360.csv",
+      "retail_sales_360_dictionary.csv"
+    ],
+    "questions": [
+      "Which regions, channels, and products drive revenue and profit?",
+      "How do sales and margins change over time?",
+      "Where do product mix and discounting create risk?"
+    ],
+    "deliverables": [
+      "Data-quality audit",
+      "Metric dictionary",
+      "Excel analysis workbook",
+      "SQL analytical query set",
+      "Power BI report plan",
+      "Python EDA notebook",
+      "Executive insight brief"
+    ],
+    "status": "available",
+    "url": "/projects/retail-sales-360/",
+    "workflow": [
+      {
+        "id": "01",
+        "title_en": "Frame",
+        "title_bn": "Frame",
+        "summary_en": "Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables.",
+        "summary_bn": "Frame phase-এ Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables."
+      },
+      {
+        "id": "02",
+        "title_en": "Understand",
+        "title_bn": "Understand",
+        "summary_en": "Read the dictionary, state row grain, profile fields, and document source coverage and limitations.",
+        "summary_bn": "Understand phase-এ Read the dictionary, state row grain, profile fields, and document source coverage and limitations."
+      },
+      {
+        "id": "03",
+        "title_en": "Prepare",
+        "title_bn": "Prepare",
+        "summary_en": "Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data.",
+        "summary_bn": "Prepare phase-এ Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data."
+      },
+      {
+        "id": "04",
+        "title_en": "Analyze",
+        "title_bn": "Analyze",
+        "summary_en": "Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation.",
+        "summary_bn": "Analyze phase-এ Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation."
+      },
+      {
+        "id": "05",
+        "title_en": "Implement",
+        "title_bn": "Implement",
+        "summary_en": "Reproduce agreed metrics in the relevant tools and reconcile totals across implementations.",
+        "summary_bn": "Implement phase-এ Reproduce agreed metrics in the relevant tools and reconcile totals across implementations."
+      },
+      {
+        "id": "06",
+        "title_en": "Communicate",
+        "title_bn": "Communicate",
+        "summary_en": "Create decision-ready visuals, findings, recommendations, limitations, and an executive summary.",
+        "summary_bn": "Communicate phase-এ Create decision-ready visuals, findings, recommendations, limitations, and an executive summary."
+      },
+      {
+        "id": "07",
+        "title_en": "Validate",
+        "title_bn": "Validate",
+        "summary_en": "Complete QA, peer review, refresh instructions, and evidence links before publication.",
+        "summary_bn": "Validate phase-এ Complete QA, peer review, refresh instructions, and evidence links before publication."
+      },
+      {
+        "id": "08",
+        "title_en": "Portfolio",
+        "title_bn": "Portfolio",
+        "summary_en": "Package README, code, queries, report screenshots, data notes, and interview walkthrough.",
+        "summary_bn": "Portfolio phase-এ Package README, code, queries, report screenshots, data notes, and interview walkthrough."
+      }
+    ],
+    "quality_gates": [
+      "Row grain and key uniqueness documented",
+      "All metric definitions include filters and denominators",
+      "Control totals reconcile across tools",
+      "Charts match the stated analytical question",
+      "Findings distinguish evidence, interpretation, and limitation",
+      "README and reproduction steps are complete"
+    ],
+    "portfolio_sections": [
+      "Executive summary",
+      "Business problem and stakeholders",
+      "Data sources and dictionary",
+      "Workflow and tool choices",
+      "Analysis and evidence",
+      "Findings and recommendations",
+      "Validation and limitations",
+      "Repository structure and reproduction"
+    ],
+    "downloads": [
+      {
+        "title_en": "Complete project package",
+        "title_bn": "Complete project package",
+        "url": "/assets/downloads/portfolio/retail-sales-360-project-package.zip"
+      }
+    ]
+  },
+  {
+    "id": "customer-retention-cohorts",
+    "title_en": "Customer Retention and Cohort Analysis",
+    "title_bn": "Customer Retention ও Cohort Analysis",
+    "summary_en": "Measure repeat purchase, cohort retention, customer value, segment differences, and churn signals using relational and time-based analysis.",
+    "summary_bn": "Relational ও time-based analysis দিয়ে repeat purchase, cohort retention, customer value, segment difference ও churn signal measure করুন।",
+    "level": "Intermediate",
+    "estimated_hours": 32,
+    "tools": [
+      "SQL",
+      "Power BI",
+      "Python",
+      "Statistics"
+    ],
+    "files": [
+      "retention_customers.csv",
+      "retention_transactions.csv",
+      "customer_retention_dictionary.csv"
+    ],
+    "questions": [
+      "How does retention vary by signup cohort and acquisition source?",
+      "Which segments create the strongest repeat revenue?",
+      "Which early behaviors are associated with inactivity?"
+    ],
+    "deliverables": [
+      "Cohort table",
+      "Retention curves",
+      "Customer segment summary",
+      "SQL query pack",
+      "Power BI model plan",
+      "Python cohort notebook",
+      "Retention recommendation"
+    ],
+    "status": "available",
+    "url": "/projects/customer-retention-cohorts/",
+    "workflow": [
+      {
+        "id": "01",
+        "title_en": "Frame",
+        "title_bn": "Frame",
+        "summary_en": "Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables.",
+        "summary_bn": "Frame phase-এ Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables."
+      },
+      {
+        "id": "02",
+        "title_en": "Understand",
+        "title_bn": "Understand",
+        "summary_en": "Read the dictionary, state row grain, profile fields, and document source coverage and limitations.",
+        "summary_bn": "Understand phase-এ Read the dictionary, state row grain, profile fields, and document source coverage and limitations."
+      },
+      {
+        "id": "03",
+        "title_en": "Prepare",
+        "title_bn": "Prepare",
+        "summary_en": "Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data.",
+        "summary_bn": "Prepare phase-এ Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data."
+      },
+      {
+        "id": "04",
+        "title_en": "Analyze",
+        "title_bn": "Analyze",
+        "summary_en": "Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation.",
+        "summary_bn": "Analyze phase-এ Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation."
+      },
+      {
+        "id": "05",
+        "title_en": "Implement",
+        "title_bn": "Implement",
+        "summary_en": "Reproduce agreed metrics in the relevant tools and reconcile totals across implementations.",
+        "summary_bn": "Implement phase-এ Reproduce agreed metrics in the relevant tools and reconcile totals across implementations."
+      },
+      {
+        "id": "06",
+        "title_en": "Communicate",
+        "title_bn": "Communicate",
+        "summary_en": "Create decision-ready visuals, findings, recommendations, limitations, and an executive summary.",
+        "summary_bn": "Communicate phase-এ Create decision-ready visuals, findings, recommendations, limitations, and an executive summary."
+      },
+      {
+        "id": "07",
+        "title_en": "Validate",
+        "title_bn": "Validate",
+        "summary_en": "Complete QA, peer review, refresh instructions, and evidence links before publication.",
+        "summary_bn": "Validate phase-এ Complete QA, peer review, refresh instructions, and evidence links before publication."
+      },
+      {
+        "id": "08",
+        "title_en": "Portfolio",
+        "title_bn": "Portfolio",
+        "summary_en": "Package README, code, queries, report screenshots, data notes, and interview walkthrough.",
+        "summary_bn": "Portfolio phase-এ Package README, code, queries, report screenshots, data notes, and interview walkthrough."
+      }
+    ],
+    "quality_gates": [
+      "Row grain and key uniqueness documented",
+      "All metric definitions include filters and denominators",
+      "Control totals reconcile across tools",
+      "Charts match the stated analytical question",
+      "Findings distinguish evidence, interpretation, and limitation",
+      "README and reproduction steps are complete"
+    ],
+    "portfolio_sections": [
+      "Executive summary",
+      "Business problem and stakeholders",
+      "Data sources and dictionary",
+      "Workflow and tool choices",
+      "Analysis and evidence",
+      "Findings and recommendations",
+      "Validation and limitations",
+      "Repository structure and reproduction"
+    ],
+    "downloads": [
+      {
+        "title_en": "Complete project package",
+        "title_bn": "Complete project package",
+        "url": "/assets/downloads/portfolio/customer-retention-cohorts-project-package.zip"
+      }
+    ]
+  },
+  {
+    "id": "marketing-ab-test",
+    "title_en": "Marketing Campaign and A/B Test Evaluation",
+    "title_bn": "Marketing Campaign ও A/B Test Evaluation",
+    "summary_en": "Evaluate conversion, revenue, segment response, sample balance, uncertainty, effect size, and guardrail metrics for a controlled campaign test.",
+    "summary_bn": "Controlled campaign test-এর conversion, revenue, segment response, sample balance, uncertainty, effect size ও guardrail metric evaluate করুন।",
+    "level": "Intermediate",
+    "estimated_hours": 26,
+    "tools": [
+      "Statistics",
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Python"
+    ],
+    "files": [
+      "marketing_ab_test.csv",
+      "marketing_ab_test_dictionary.csv"
+    ],
+    "questions": [
+      "Did treatment improve conversion and revenue?",
+      "Are results consistent across device and source?",
+      "Did complaints or session behavior create a guardrail concern?"
+    ],
+    "deliverables": [
+      "Experiment audit",
+      "Conversion and revenue estimates",
+      "Confidence interval and test",
+      "Segment analysis",
+      "Decision memo",
+      "Monitoring plan"
+    ],
+    "status": "available",
+    "url": "/projects/marketing-ab-test/",
+    "workflow": [
+      {
+        "id": "01",
+        "title_en": "Frame",
+        "title_bn": "Frame",
+        "summary_en": "Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables.",
+        "summary_bn": "Frame phase-এ Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables."
+      },
+      {
+        "id": "02",
+        "title_en": "Understand",
+        "title_bn": "Understand",
+        "summary_en": "Read the dictionary, state row grain, profile fields, and document source coverage and limitations.",
+        "summary_bn": "Understand phase-এ Read the dictionary, state row grain, profile fields, and document source coverage and limitations."
+      },
+      {
+        "id": "03",
+        "title_en": "Prepare",
+        "title_bn": "Prepare",
+        "summary_en": "Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data.",
+        "summary_bn": "Prepare phase-এ Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data."
+      },
+      {
+        "id": "04",
+        "title_en": "Analyze",
+        "title_bn": "Analyze",
+        "summary_en": "Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation.",
+        "summary_bn": "Analyze phase-এ Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation."
+      },
+      {
+        "id": "05",
+        "title_en": "Implement",
+        "title_bn": "Implement",
+        "summary_en": "Reproduce agreed metrics in the relevant tools and reconcile totals across implementations.",
+        "summary_bn": "Implement phase-এ Reproduce agreed metrics in the relevant tools and reconcile totals across implementations."
+      },
+      {
+        "id": "06",
+        "title_en": "Communicate",
+        "title_bn": "Communicate",
+        "summary_en": "Create decision-ready visuals, findings, recommendations, limitations, and an executive summary.",
+        "summary_bn": "Communicate phase-এ Create decision-ready visuals, findings, recommendations, limitations, and an executive summary."
+      },
+      {
+        "id": "07",
+        "title_en": "Validate",
+        "title_bn": "Validate",
+        "summary_en": "Complete QA, peer review, refresh instructions, and evidence links before publication.",
+        "summary_bn": "Validate phase-এ Complete QA, peer review, refresh instructions, and evidence links before publication."
+      },
+      {
+        "id": "08",
+        "title_en": "Portfolio",
+        "title_bn": "Portfolio",
+        "summary_en": "Package README, code, queries, report screenshots, data notes, and interview walkthrough.",
+        "summary_bn": "Portfolio phase-এ Package README, code, queries, report screenshots, data notes, and interview walkthrough."
+      }
+    ],
+    "quality_gates": [
+      "Row grain and key uniqueness documented",
+      "All metric definitions include filters and denominators",
+      "Control totals reconcile across tools",
+      "Charts match the stated analytical question",
+      "Findings distinguish evidence, interpretation, and limitation",
+      "README and reproduction steps are complete"
+    ],
+    "portfolio_sections": [
+      "Executive summary",
+      "Business problem and stakeholders",
+      "Data sources and dictionary",
+      "Workflow and tool choices",
+      "Analysis and evidence",
+      "Findings and recommendations",
+      "Validation and limitations",
+      "Repository structure and reproduction"
+    ],
+    "downloads": [
+      {
+        "title_en": "Complete project package",
+        "title_bn": "Complete project package",
+        "url": "/assets/downloads/portfolio/marketing-ab-test-project-package.zip"
+      }
+    ]
+  },
+  {
+    "id": "hr-workforce-analytics",
+    "title_en": "HR Workforce and Attrition Analytics",
+    "title_bn": "HR Workforce ও Attrition Analytics",
+    "summary_en": "Analyze workforce composition, turnover, absence, salary, performance, overtime, and attrition patterns without overstating individual-level causality.",
+    "summary_bn": "Individual-level causality overstate না করে workforce composition, turnover, absence, salary, performance, overtime ও attrition pattern analyze করুন।",
+    "level": "Intermediate",
+    "estimated_hours": 28,
+    "tools": [
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Python",
+      "Statistics"
+    ],
+    "files": [
+      "hr_workforce.csv",
+      "hr_workforce_dictionary.csv"
+    ],
+    "questions": [
+      "Where is turnover concentrated?",
+      "How do overtime, absence, tenure, and role differ between groups?",
+      "Which workforce metrics should management monitor?"
+    ],
+    "deliverables": [
+      "HR metric dictionary",
+      "Workforce profile",
+      "Attrition segment analysis",
+      "Accessible HR dashboard plan",
+      "Ethics and privacy note",
+      "Management recommendations"
+    ],
+    "status": "available",
+    "url": "/projects/hr-workforce-analytics/",
+    "workflow": [
+      {
+        "id": "01",
+        "title_en": "Frame",
+        "title_bn": "Frame",
+        "summary_en": "Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables.",
+        "summary_bn": "Frame phase-এ Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables."
+      },
+      {
+        "id": "02",
+        "title_en": "Understand",
+        "title_bn": "Understand",
+        "summary_en": "Read the dictionary, state row grain, profile fields, and document source coverage and limitations.",
+        "summary_bn": "Understand phase-এ Read the dictionary, state row grain, profile fields, and document source coverage and limitations."
+      },
+      {
+        "id": "03",
+        "title_en": "Prepare",
+        "title_bn": "Prepare",
+        "summary_en": "Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data.",
+        "summary_bn": "Prepare phase-এ Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data."
+      },
+      {
+        "id": "04",
+        "title_en": "Analyze",
+        "title_bn": "Analyze",
+        "summary_en": "Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation.",
+        "summary_bn": "Analyze phase-এ Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation."
+      },
+      {
+        "id": "05",
+        "title_en": "Implement",
+        "title_bn": "Implement",
+        "summary_en": "Reproduce agreed metrics in the relevant tools and reconcile totals across implementations.",
+        "summary_bn": "Implement phase-এ Reproduce agreed metrics in the relevant tools and reconcile totals across implementations."
+      },
+      {
+        "id": "06",
+        "title_en": "Communicate",
+        "title_bn": "Communicate",
+        "summary_en": "Create decision-ready visuals, findings, recommendations, limitations, and an executive summary.",
+        "summary_bn": "Communicate phase-এ Create decision-ready visuals, findings, recommendations, limitations, and an executive summary."
+      },
+      {
+        "id": "07",
+        "title_en": "Validate",
+        "title_bn": "Validate",
+        "summary_en": "Complete QA, peer review, refresh instructions, and evidence links before publication.",
+        "summary_bn": "Validate phase-এ Complete QA, peer review, refresh instructions, and evidence links before publication."
+      },
+      {
+        "id": "08",
+        "title_en": "Portfolio",
+        "title_bn": "Portfolio",
+        "summary_en": "Package README, code, queries, report screenshots, data notes, and interview walkthrough.",
+        "summary_bn": "Portfolio phase-এ Package README, code, queries, report screenshots, data notes, and interview walkthrough."
+      }
+    ],
+    "quality_gates": [
+      "Row grain and key uniqueness documented",
+      "All metric definitions include filters and denominators",
+      "Control totals reconcile across tools",
+      "Charts match the stated analytical question",
+      "Findings distinguish evidence, interpretation, and limitation",
+      "README and reproduction steps are complete"
+    ],
+    "portfolio_sections": [
+      "Executive summary",
+      "Business problem and stakeholders",
+      "Data sources and dictionary",
+      "Workflow and tool choices",
+      "Analysis and evidence",
+      "Findings and recommendations",
+      "Validation and limitations",
+      "Repository structure and reproduction"
+    ],
+    "downloads": [
+      {
+        "title_en": "Complete project package",
+        "title_bn": "Complete project package",
+        "url": "/assets/downloads/portfolio/hr-workforce-analytics-project-package.zip"
+      }
+    ]
+  },
+  {
+    "id": "financial-budget-control",
+    "title_en": "Financial Budget vs Actual Control Analysis",
+    "title_bn": "Financial Budget vs Actual Control Analysis",
+    "summary_en": "Analyze budget, actuals, variance, utilization, approvals, recurring overspend, and forecast risk across departments and accounts.",
+    "summary_bn": "Department ও account অনুযায়ী budget, actual, variance, utilization, approval, recurring overspend ও forecast risk analyze করুন।",
+    "level": "Intermediate",
+    "estimated_hours": 24,
+    "tools": [
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Python"
+    ],
+    "files": [
+      "financial_budget_actual.csv",
+      "financial_budget_actual_dictionary.csv"
+    ],
+    "questions": [
+      "Which departments and accounts are over or under budget?",
+      "Is overspend recurring or event-specific?",
+      "Which approvals and forecasts require management action?"
+    ],
+    "deliverables": [
+      "Budget-control table",
+      "Variance bridge",
+      "Monthly trend report",
+      "Exception list",
+      "Power BI management dashboard plan",
+      "Control recommendation"
+    ],
+    "status": "available",
+    "url": "/projects/financial-budget-control/",
+    "workflow": [
+      {
+        "id": "01",
+        "title_en": "Frame",
+        "title_bn": "Frame",
+        "summary_en": "Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables.",
+        "summary_bn": "Frame phase-এ Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables."
+      },
+      {
+        "id": "02",
+        "title_en": "Understand",
+        "title_bn": "Understand",
+        "summary_en": "Read the dictionary, state row grain, profile fields, and document source coverage and limitations.",
+        "summary_bn": "Understand phase-এ Read the dictionary, state row grain, profile fields, and document source coverage and limitations."
+      },
+      {
+        "id": "03",
+        "title_en": "Prepare",
+        "title_bn": "Prepare",
+        "summary_en": "Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data.",
+        "summary_bn": "Prepare phase-এ Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data."
+      },
+      {
+        "id": "04",
+        "title_en": "Analyze",
+        "title_bn": "Analyze",
+        "summary_en": "Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation.",
+        "summary_bn": "Analyze phase-এ Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation."
+      },
+      {
+        "id": "05",
+        "title_en": "Implement",
+        "title_bn": "Implement",
+        "summary_en": "Reproduce agreed metrics in the relevant tools and reconcile totals across implementations.",
+        "summary_bn": "Implement phase-এ Reproduce agreed metrics in the relevant tools and reconcile totals across implementations."
+      },
+      {
+        "id": "06",
+        "title_en": "Communicate",
+        "title_bn": "Communicate",
+        "summary_en": "Create decision-ready visuals, findings, recommendations, limitations, and an executive summary.",
+        "summary_bn": "Communicate phase-এ Create decision-ready visuals, findings, recommendations, limitations, and an executive summary."
+      },
+      {
+        "id": "07",
+        "title_en": "Validate",
+        "title_bn": "Validate",
+        "summary_en": "Complete QA, peer review, refresh instructions, and evidence links before publication.",
+        "summary_bn": "Validate phase-এ Complete QA, peer review, refresh instructions, and evidence links before publication."
+      },
+      {
+        "id": "08",
+        "title_en": "Portfolio",
+        "title_bn": "Portfolio",
+        "summary_en": "Package README, code, queries, report screenshots, data notes, and interview walkthrough.",
+        "summary_bn": "Portfolio phase-এ Package README, code, queries, report screenshots, data notes, and interview walkthrough."
+      }
+    ],
+    "quality_gates": [
+      "Row grain and key uniqueness documented",
+      "All metric definitions include filters and denominators",
+      "Control totals reconcile across tools",
+      "Charts match the stated analytical question",
+      "Findings distinguish evidence, interpretation, and limitation",
+      "README and reproduction steps are complete"
+    ],
+    "portfolio_sections": [
+      "Executive summary",
+      "Business problem and stakeholders",
+      "Data sources and dictionary",
+      "Workflow and tool choices",
+      "Analysis and evidence",
+      "Findings and recommendations",
+      "Validation and limitations",
+      "Repository structure and reproduction"
+    ],
+    "downloads": [
+      {
+        "title_en": "Complete project package",
+        "title_bn": "Complete project package",
+        "url": "/assets/downloads/portfolio/financial-budget-control-project-package.zip"
+      }
+    ]
+  },
+  {
+    "id": "ngo-program-monitoring",
+    "title_en": "NGO Program Monitoring and Expense Utilization",
+    "title_bn": "NGO Program Monitoring ও Expense Utilization",
+    "summary_en": "Evaluate beneficiary reach, target achievement, expense utilization, project status, quality issues, and cost efficiency across programs and locations.",
+    "summary_bn": "Program ও location অনুযায়ী beneficiary reach, target achievement, expense utilization, project status, quality issue ও cost efficiency evaluate করুন।",
+    "level": "Intermediate",
+    "estimated_hours": 30,
+    "tools": [
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Python",
+      "Statistics"
+    ],
+    "files": [
+      "ngo_program_monitoring.csv",
+      "ngo_program_monitoring_dictionary.csv"
+    ],
+    "questions": [
+      "Which projects and locations meet targets within budget?",
+      "Where are utilization and delivery misaligned?",
+      "Which quality issues require follow-up before donor reporting?"
+    ],
+    "deliverables": [
+      "Program KPI dictionary",
+      "Target-versus-achievement analysis",
+      "Expense utilization dashboard plan",
+      "Exception and quality log",
+      "Donor-ready narrative",
+      "Follow-up action plan"
+    ],
+    "status": "available",
+    "url": "/projects/ngo-program-monitoring/",
+    "workflow": [
+      {
+        "id": "01",
+        "title_en": "Frame",
+        "title_bn": "Frame",
+        "summary_en": "Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables.",
+        "summary_bn": "Frame phase-এ Confirm the stakeholder decision, project scope, success criteria, assumptions, and required deliverables."
+      },
+      {
+        "id": "02",
+        "title_en": "Understand",
+        "title_bn": "Understand",
+        "summary_en": "Read the dictionary, state row grain, profile fields, and document source coverage and limitations.",
+        "summary_bn": "Understand phase-এ Read the dictionary, state row grain, profile fields, and document source coverage and limitations."
+      },
+      {
+        "id": "03",
+        "title_en": "Prepare",
+        "title_bn": "Prepare",
+        "summary_en": "Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data.",
+        "summary_bn": "Prepare phase-এ Create reproducible cleaning, type, category, join, and reconciliation steps while preserving raw data."
+      },
+      {
+        "id": "04",
+        "title_en": "Analyze",
+        "title_bn": "Analyze",
+        "summary_en": "Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation.",
+        "summary_bn": "Analyze phase-এ Build overview metrics, segments, trends, distributions, relationships, and required statistical evaluation."
+      },
+      {
+        "id": "05",
+        "title_en": "Implement",
+        "title_bn": "Implement",
+        "summary_en": "Reproduce agreed metrics in the relevant tools and reconcile totals across implementations.",
+        "summary_bn": "Implement phase-এ Reproduce agreed metrics in the relevant tools and reconcile totals across implementations."
+      },
+      {
+        "id": "06",
+        "title_en": "Communicate",
+        "title_bn": "Communicate",
+        "summary_en": "Create decision-ready visuals, findings, recommendations, limitations, and an executive summary.",
+        "summary_bn": "Communicate phase-এ Create decision-ready visuals, findings, recommendations, limitations, and an executive summary."
+      },
+      {
+        "id": "07",
+        "title_en": "Validate",
+        "title_bn": "Validate",
+        "summary_en": "Complete QA, peer review, refresh instructions, and evidence links before publication.",
+        "summary_bn": "Validate phase-এ Complete QA, peer review, refresh instructions, and evidence links before publication."
+      },
+      {
+        "id": "08",
+        "title_en": "Portfolio",
+        "title_bn": "Portfolio",
+        "summary_en": "Package README, code, queries, report screenshots, data notes, and interview walkthrough.",
+        "summary_bn": "Portfolio phase-এ Package README, code, queries, report screenshots, data notes, and interview walkthrough."
+      }
+    ],
+    "quality_gates": [
+      "Row grain and key uniqueness documented",
+      "All metric definitions include filters and denominators",
+      "Control totals reconcile across tools",
+      "Charts match the stated analytical question",
+      "Findings distinguish evidence, interpretation, and limitation",
+      "README and reproduction steps are complete"
+    ],
+    "portfolio_sections": [
+      "Executive summary",
+      "Business problem and stakeholders",
+      "Data sources and dictionary",
+      "Workflow and tool choices",
+      "Analysis and evidence",
+      "Findings and recommendations",
+      "Validation and limitations",
+      "Repository structure and reproduction"
+    ],
+    "downloads": [
+      {
+        "title_en": "Complete project package",
+        "title_bn": "Complete project package",
+        "url": "/assets/downloads/portfolio/ngo-program-monitoring-project-package.zip"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+file,field,type,description
+retail_sales_360.csv,order_id,text,Order Id
+retail_sales_360.csv,order_date,date,Order Date
+retail_sales_360.csv,customer_id,text,Customer Id
+retail_sales_360.csv,product_id,text,Product Id
+retail_sales_360.csv,product_name,text,Product Name
+retail_sales_360.csv,category,text,Category
+retail_sales_360.csv,region,text,Region
+retail_sales_360.csv,channel,text,Channel
+retail_sales_360.csv,quantity,number,Quantity
+retail_sales_360.csv,unit_price,number,Unit Price
+retail_sales_360.csv,discount,number,Discount
+retail_sales_360.csv,revenue,number,Revenue
+retail_sales_360.csv,cost,number,Cost
+retail_sales_360.csv,profit,number,Profit

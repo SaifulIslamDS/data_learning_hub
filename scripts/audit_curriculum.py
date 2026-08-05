@@ -66,8 +66,10 @@ for career in data.get("career_paths", []):
 for domain in data.get("domains", []):
     status = domain.get("status")
     url = domain.get("url") or ""
-    if status == "available" and not url.startswith("/learn/"):
+    if status == "available" and domain.get("id") != "projects" and not url.startswith("/learn/"):
         errors.append(f"domain {domain.get('id')}: available domain must point to /learn/")
+    if domain.get("id") == "projects" and status == "available" and not url.startswith("/projects/"):
+        errors.append("domain projects: available project domain must point to /projects/")
     if status == "tutorial-published" and not url.startswith("/tutorials/"):
         errors.append(f"domain {domain.get('id')}: tutorial-published domain must point to /tutorials/")
     if status == "curriculum-ready" and not url.startswith("/curriculum/"):
@@ -98,17 +100,21 @@ for dataset in data.get("datasets", []):
             errors.append(f"dataset {dataset.get('id')}: metadata says {dataset.get('rows')} rows, found {rows}")
 
 for project in data.get("projects", []):
-    if project.get("dataset") not in dataset_ids:
-        errors.append(f"project {project.get('id')}: unknown dataset {project.get('dataset')}")
     if project.get("status") == "available" and not project.get("url"):
         errors.append(f"project {project.get('id')}: available project has no URL")
     if project.get("status") == "roadmap" and project.get("url"):
         errors.append(f"project {project.get('id')}: roadmap project must not expose a URL")
+    if len(project.get("workflow", [])) != 8:
+        errors.append(f"project {project.get('id')}: expected eight workflow phases")
+    for filename in project.get("files", []):
+        file_path = ROOT / "assets" / "datasets" / "portfolio" / filename
+        if not file_path.exists():
+            errors.append(f"project {project.get('id')}: missing portfolio dataset file {filename}")
 
 site = data.get("site", {})
 storage = data.get("storage", {})
-if site.get("name") != "Data Learning Hub" or site.get("version") != "2.5.0":
-    errors.append("site identity/version is not Data Learning Hub v2.5.0")
+if site.get("name") != "Data Learning Hub" or site.get("version") != "2.6.0":
+    errors.append("site identity/version is not Data Learning Hub v2.6.0")
 if storage.get("prefix") != "dlh-" or storage.get("legacy_prefix") != "slh-":
     errors.append("storage migration prefixes are not configured")
 if not any(c.get("id") == "data-analyst" and c.get("status") == "active" for c in data.get("career_paths", [])):
@@ -121,5 +127,5 @@ if errors:
     raise SystemExit(1)
 
 print(f"Validated {len(domain_ids)} domains, {len(module_ids)} retained modules, {len(topic_ids)} lessons and {len(tool_ids)} labs.")
-print(f"Validated {len(curriculum_ids)} tool-track definitions, including the published Excel, SQL, Power BI and Python tutorials, {len(dataset_ids)} synthetic datasets and {len(project_ids)} project definitions.")
+print(f"Validated {len(curriculum_ids)} tool-track definitions, including the published Excel, SQL, Power BI, Python and Analytics Workflows tutorials, {len(dataset_ids)} synthetic datasets and {len(project_ids)} project definitions.")
 print("No orphaned curriculum relationships, false roadmap links or dataset row-count mismatches found.")

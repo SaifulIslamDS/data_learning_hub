@@ -1,47 +1,51 @@
-# Content and Accuracy Standards — v2.5.0
+# Content and Accuracy Standards
 
-## Teaching style
+## Tutorial standards
 
-- English first with full Bangla support
-- Define technical terms before depending on them
-- Use plain language without removing necessary precision
-- Connect every topic to a practical analyst scenario
-- Separate concept, implementation, validation, interpretation, and limitation
+Every published tutorial chapter must contain:
 
-## Python baseline
+- English and Bangla title, summary, and teaching content
+- at least four learning objectives
+- at least three topic-specific teaching sections
+- at least four defined terms
+- one worked example
+- one practical activity
+- multiple-choice, fill, and applied exercises
+- recap and authoritative references
+- previous and next navigation
 
-- Teach stable Python 3.14 behavior.
-- Use official Python, NumPy, pandas, Matplotlib, SciPy, Jupyter, and Pyodide documentation as primary references.
-- Keep Python names, code, functions, methods, exceptions, package names, and field names in their official form in both languages.
-- Explain version-sensitive behavior rather than presenting it as timeless syntax.
-- Distinguish local Python/Jupyter workflows from browser-side Pyodide execution.
+## Workflow standards
 
-## Code standards
+Workflow chapters must distinguish:
 
-- Every example must run independently or state its prerequisite state.
-- Preserve raw input data and create transformed outputs separately.
-- Use explicit imports and descriptive names.
-- Define row grain, units, assumptions, and expected output.
-- Validate types, missing values, row counts, keys, totals, boundaries, and analytical assumptions where relevant.
-- Avoid hidden state, unexplained magic values, destructive file changes, and unsupported causal claims.
-- Examples must not require secrets, private credentials, or user data.
+- stakeholder decision from analytical question
+- row grain from metric grain
+- evidence from interpretation
+- statistical significance from business significance
+- exploratory findings from causal claims
+- transformation steps from final outputs
+- validation evidence from presentation polish
 
-## Browser execution honesty
+## Portfolio project standards
 
-Pyodide provides browser-side CPython and selected packages. The site must explain that:
+Every complete project must include:
 
-- The first run downloads a WebAssembly runtime and requested packages.
-- Browser execution has memory, performance, package, filesystem, and concurrency constraints.
-- It is suitable for learning and small analytical examples, not a replacement for every local or production Python environment.
-- Learner code and supplied datasets remain local to the browser in this implementation.
+- a documented business brief
+- at least three analytical questions
+- synthetic source data and data dictionary
+- eight workflow phases
+- at least five deliverables
+- at least five publication quality gates
+- starter implementation guidance across relevant tools
+- portfolio README and presentation guidance
+- limitations and reproduction instructions
 
-## Practice data
+No project may be labelled complete if its data, package, or project page is missing.
 
-- Use synthetic data only.
-- Document grain, keys, types, units, and calculations.
-- Include deliberately messy data only when the exercise identifies its purpose.
-- Reconcile calculated revenue, cost, profit, and margin fields.
+## Reference policy
 
-## Accessibility
+Stable concepts may use recognized educational or standards references. Tool-specific behavior must use official product documentation wherever available. Version-sensitive features must state their baseline.
 
-Tutorial pages, editors, outputs, plots, forms, tables, language controls, theme controls, and navigation must remain keyboard accessible, responsive, and usable in light and dark themes.
+## Data policy
+
+All downloadable project data is synthetic. No real personal, organizational, patient, donor, employee, customer, or commercial data is included.

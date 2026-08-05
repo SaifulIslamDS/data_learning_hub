@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.6.0 — Data Analytics Workflows and Portfolio Projects
+
+### Added
+
+- 49 bilingual Analytics Workflows chapters across eight modules
+- 147 workflow exercises and a randomized 30-question final quiz
+- Six complete cross-tool portfolio projects
+- Synthetic retail, retention, marketing, HR, finance, and NGO program datasets
+- Eight-phase project workflow and browser-local progress tracking
+- Complete downloadable project packages for Excel, SQL, Power BI, Python, and Statistics implementation
+- Reusable project charter, analysis plan, metric dictionary, data-quality audit, insight log, README, presentation, and QA templates
+- Dedicated project-content and package audit
+
+### Changed
+
+- Platform totals increased to six tutorials, 363 chapters, and 1,089 exercises
+- Projects domain is now fully available rather than curriculum-only
+- Homepage, tutorials, career path, curriculum, search, footer, sitemap, and documentation include Analytics Workflows and the Project Center
+- v2.6.0 is the current roadmap release
+
+### Validation
+
+- 549 generated HTML pages
+- 35,107 local references checked
+- 0 broken local references
+- Six projects, 48 workflow phases, 6,690 project data rows, packages, templates, deliverables, and quality gates validated
+- Browser tests passed for workflow navigation, exercises, quiz, project cards, project progress, bilingual state, sticky header, retained courses, footer behavior, and mobile drawer
+
 ## v2.5.0 — Complete Python for Data Analytics Tutorial
 
 ### Added

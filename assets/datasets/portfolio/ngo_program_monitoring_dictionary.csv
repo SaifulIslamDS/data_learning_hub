@@ -1,0 +1,11 @@
+file,field,type,description
+ngo_program_monitoring.csv,month,date-period,Month
+ngo_program_monitoring.csv,project,text,Project
+ngo_program_monitoring.csv,location,text,Location
+ngo_program_monitoring.csv,beneficiary_target,number,Beneficiary Target
+ngo_program_monitoring.csv,beneficiary_reached,number,Beneficiary Reached
+ngo_program_monitoring.csv,budget,number,Budget
+ngo_program_monitoring.csv,expense,number,Expense
+ngo_program_monitoring.csv,utilization_rate,number,Utilization Rate
+ngo_program_monitoring.csv,quality_issues,number,Quality Issues
+ngo_program_monitoring.csv,status,text,Status

@@ -1,0 +1,385 @@
+month,project,location,beneficiary_target,beneficiary_reached,budget,expense,utilization_rate,quality_issues,status
+2025-01,Education,Dhaka,277,259,284272.33,312025.78,1.0976,3,Delayed
+2025-01,Education,Chattogram,312,254,207246.03,147057.96,0.7096,2,On track
+2025-01,Education,Khulna,321,299,230761.23,214476.9,0.9294,5,Delayed
+2025-01,Education,Rajshahi,367,375,296939.41,238581.18,0.8035,0,On track
+2025-01,Primary Health,Dhaka,234,273,158512.19,170701.71,1.0769,1,On track
+2025-01,Primary Health,Chattogram,314,205,123991.96,131677.33,1.062,3,Delayed
+2025-01,Primary Health,Khulna,285,260,134234.98,104770.72,0.7805,2,On track
+2025-01,Primary Health,Rajshahi,187,128,265378.12,303204.4,1.1425,3,At risk
+2025-01,Climate Action,Dhaka,386,390,147325.93,112801.62,0.7657,6,On track
+2025-01,Climate Action,Chattogram,229,152,225152.65,215947.44,0.9591,1,At risk
+2025-01,Climate Action,Khulna,127,145,287473.66,211087.0,0.7343,7,On track
+2025-01,Climate Action,Rajshahi,157,107,67608.32,47372.27,0.7007,0,Delayed
+2025-01,Women Empowerment,Dhaka,162,126,162151.58,124210.27,0.766,5,Delayed
+2025-01,Women Empowerment,Chattogram,192,150,293555.66,225623.93,0.7686,0,At risk
+2025-01,Women Empowerment,Khulna,124,135,51677.28,55862.69,1.081,1,Delayed
+2025-01,Women Empowerment,Rajshahi,314,300,270633.48,204863.32,0.757,2,Delayed
+2025-02,Education,Dhaka,331,362,64087.26,53147.86,0.8293,4,At risk
+2025-02,Education,Chattogram,121,108,94172.62,95979.36,1.0192,7,On track
+2025-02,Education,Khulna,249,256,271472.97,262105.49,0.9655,3,At risk
+2025-02,Education,Rajshahi,111,88,88747.38,71347.85,0.8039,1,At risk
+2025-02,Primary Health,Dhaka,354,312,132242.09,121687.8,0.9202,0,Delayed
+2025-02,Primary Health,Chattogram,253,244,271333.3,204811.29,0.7548,3,At risk
+2025-02,Primary Health,Khulna,80,79,265844.51,281297.13,1.0581,4,Delayed
+2025-02,Primary Health,Rajshahi,292,308,212713.99,205751.47,0.9673,1,On track
+2025-02,Climate Action,Dhaka,419,377,53367.16,44062.72,0.8257,5,On track
+2025-02,Climate Action,Chattogram,400,377,181207.79,149451.14,0.8248,4,On track
+2025-02,Climate Action,Khulna,353,361,200622.9,186305.08,0.9286,1,At risk
+2025-02,Climate Action,Rajshahi,304,208,295262.51,307401.1,1.0411,3,At risk
+2025-02,Women Empowerment,Dhaka,236,209,218290.83,233133.61,1.068,2,On track
+2025-02,Women Empowerment,Chattogram,121,98,224476.0,248624.42,1.1076,3,Delayed
+2025-02,Women Empowerment,Khulna,95,97,92638.89,95410.95,1.0299,4,Delayed
+2025-02,Women Empowerment,Rajshahi,262,275,199762.43,163521.36,0.8186,2,At risk
+2025-03,Education,Dhaka,226,151,243051.17,177932.91,0.7321,6,On track
+2025-03,Education,Chattogram,341,318,271109.96,248929.89,0.9182,3,On track
+2025-03,Education,Khulna,263,193,198907.42,204550.05,1.0284,6,On track
+2025-03,Education,Rajshahi,133,159,254633.7,263069.5,1.0331,6,Delayed
+2025-03,Primary Health,Dhaka,219,166,63819.9,62649.68,0.9817,2,Delayed
+2025-03,Primary Health,Chattogram,418,317,115335.19,107570.12,0.9327,6,Delayed
+2025-03,Primary Health,Khulna,368,361,122543.65,130665.55,1.0663,2,Delayed
+2025-03,Primary Health,Rajshahi,419,423,185739.7,201120.44,1.0828,6,Delayed
+2025-03,Climate Action,Dhaka,398,344,138936.07,144841.38,1.0425,1,Delayed
+2025-03,Climate Action,Chattogram,291,270,162901.57,169302.27,1.0393,7,On track
+2025-03,Climate Action,Khulna,254,173,123805.25,106276.53,0.8584,7,Delayed
+2025-03,Climate Action,Rajshahi,346,272,205609.89,168144.83,0.8178,4,Delayed
+2025-03,Women Empowerment,Dhaka,287,223,68490.74,63883.62,0.9327,3,Delayed
+2025-03,Women Empowerment,Chattogram,279,238,213258.67,200697.39,0.9411,2,At risk
+2025-03,Women Empowerment,Khulna,163,177,264773.99,249777.45,0.9434,6,Delayed
+2025-03,Women Empowerment,Rajshahi,219,156,103204.95,116423.38,1.1281,2,Delayed
+2025-04,Education,Dhaka,396,398,214008.26,233518.47,1.0912,7,On track
+2025-04,Education,Chattogram,150,135,113974.62,80140.75,0.7031,5,At risk
+2025-04,Education,Khulna,89,89,192167.81,195801.67,1.0189,2,On track
+2025-04,Education,Rajshahi,194,225,273013.9,214514.45,0.7857,4,On track
+2025-04,Primary Health,Dhaka,347,241,191105.27,162121.43,0.8483,2,Delayed
+2025-04,Primary Health,Chattogram,372,389,297340.02,267988.05,0.9013,6,At risk
+2025-04,Primary Health,Khulna,259,222,166533.64,130438.85,0.7833,3,Delayed
+2025-04,Primary Health,Rajshahi,288,303,155577.02,154963.13,0.9961,0,On track
+2025-04,Climate Action,Dhaka,272,282,200830.19,178793.74,0.8903,5,Delayed
+2025-04,Climate Action,Chattogram,254,187,87856.51,85221.34,0.97,3,Delayed
+2025-04,Climate Action,Khulna,203,174,128344.0,124142.21,0.9673,0,At risk
+2025-04,Climate Action,Rajshahi,257,237,292316.47,317574.68,1.0864,2,At risk
+2025-04,Women Empowerment,Dhaka,323,292,77672.67,67837.04,0.8734,5,At risk
+2025-04,Women Empowerment,Chattogram,305,202,218656.18,234484.86,1.0724,5,Delayed
+2025-04,Women Empowerment,Khulna,364,386,201859.19,164605.37,0.8154,7,On track
+2025-04,Women Empowerment,Rajshahi,113,118,104019.89,88699.02,0.8527,3,On track
+2025-05,Education,Dhaka,90,61,277120.02,287704.87,1.0382,5,Delayed
+2025-05,Education,Chattogram,407,364,234348.35,208781.61,0.8909,3,Delayed
+2025-05,Education,Khulna,274,231,69328.11,67839.94,0.9785,0,At risk
+2025-05,Education,Rajshahi,411,412,188407.26,161284.45,0.856,5,Delayed
+2025-05,Primary Health,Dhaka,190,149,262469.96,218918.63,0.8341,0,On track
+2025-05,Primary Health,Chattogram,368,395,239638.13,199923.17,0.8343,3,At risk
+2025-05,Primary Health,Khulna,319,251,258571.73,281969.73,1.0905,0,Delayed
+2025-05,Primary Health,Rajshahi,418,459,285230.5,282613.57,0.9908,2,At risk
+2025-05,Climate Action,Dhaka,107,117,81791.43,60951.85,0.7452,3,On track
+2025-05,Climate Action,Chattogram,364,294,216334.38,243767.2,1.1268,6,Delayed
+2025-05,Climate Action,Khulna,299,240,137617.79,140293.91,1.0194,7,At risk
+2025-05,Climate Action,Rajshahi,407,483,166715.16,170593.46,1.0233,4,Delayed
+2025-05,Women Empowerment,Dhaka,248,295,133570.86,124691.46,0.9335,4,On track
+2025-05,Women Empowerment,Chattogram,150,172,291769.88,219505.41,0.7523,0,Delayed
+2025-05,Women Empowerment,Khulna,83,74,138845.56,142808.06,1.0285,4,At risk
+2025-05,Women Empowerment,Rajshahi,124,81,206614.92,199396.29,0.9651,0,On track
+2025-06,Education,Dhaka,263,223,298820.38,270288.69,0.9045,1,Delayed
+2025-06,Education,Chattogram,388,302,284249.62,240846.42,0.8473,7,Delayed
+2025-06,Education,Khulna,255,175,59493.8,64295.58,1.0807,4,On track
+2025-06,Education,Rajshahi,419,274,107764.49,95504.89,0.8862,0,At risk
+2025-06,Primary Health,Dhaka,288,257,173589.02,141132.52,0.813,7,At risk
+2025-06,Primary Health,Chattogram,162,152,269147.11,280828.42,1.0434,2,At risk
+2025-06,Primary Health,Khulna,238,258,196536.29,184871.97,0.9407,2,Delayed
+2025-06,Primary Health,Rajshahi,211,243,249445.27,244816.29,0.9814,5,On track
+2025-06,Climate Action,Dhaka,378,290,238655.4,198121.38,0.8302,3,Delayed
+2025-06,Climate Action,Chattogram,383,415,113838.0,105121.65,0.9234,4,Delayed
+2025-06,Climate Action,Khulna,323,239,83420.67,68630.26,0.8227,5,Delayed
+2025-06,Climate Action,Rajshahi,175,143,209553.42,237191.28,1.1319,5,At risk
+2025-06,Women Empowerment,Dhaka,254,207,110280.36,94458.67,0.8565,5,On track
+2025-06,Women Empowerment,Chattogram,292,268,274990.36,274275.49,0.9974,7,At risk
+2025-06,Women Empowerment,Khulna,173,175,153035.71,122288.54,0.7991,7,On track
+2025-06,Women Empowerment,Rajshahi,93,87,194191.0,220716.2,1.1366,2,On track
+2025-07,Education,Dhaka,182,146,197943.92,203626.17,1.0287,0,At risk
+2025-07,Education,Chattogram,138,109,250384.57,278143.46,1.1109,7,On track
+2025-07,Education,Khulna,329,307,68388.57,72789.88,1.0644,4,On track
+2025-07,Education,Rajshahi,136,153,135294.74,128877.56,0.9526,1,Delayed
+2025-07,Primary Health,Dhaka,331,314,109591.16,86239.32,0.7869,1,At risk
+2025-07,Primary Health,Chattogram,254,183,287612.01,224097.84,0.7792,5,On track
+2025-07,Primary Health,Khulna,213,157,64299.32,49760.93,0.7739,3,Delayed
+2025-07,Primary Health,Rajshahi,220,201,218973.53,161372.0,0.7369,2,On track
+2025-07,Climate Action,Dhaka,140,127,288500.09,329287.95,1.1414,4,On track
+2025-07,Climate Action,Chattogram,105,126,236150.59,170917.86,0.7238,0,At risk
+2025-07,Climate Action,Khulna,230,204,199721.72,162068.1,0.8115,6,Delayed
+2025-07,Climate Action,Rajshahi,278,184,220556.86,250894.2,1.1375,3,On track
+2025-07,Women Empowerment,Dhaka,289,280,232070.51,165686.12,0.7139,3,At risk
+2025-07,Women Empowerment,Chattogram,270,263,211766.02,241780.95,1.1417,3,On track
+2025-07,Women Empowerment,Khulna,370,242,287733.35,327584.18,1.1385,7,On track
+2025-07,Women Empowerment,Rajshahi,335,364,70737.19,50035.94,0.7073,7,On track
+2025-08,Education,Dhaka,192,216,86547.97,99303.24,1.1474,4,At risk
+2025-08,Education,Chattogram,277,261,256943.12,225971.95,0.8795,5,Delayed
+2025-08,Education,Khulna,176,170,180544.0,197686.25,1.0949,1,At risk
+2025-08,Education,Rajshahi,160,108,227180.23,253766.16,1.117,0,On track
+2025-08,Primary Health,Dhaka,358,406,112577.82,117895.43,1.0472,6,On track
+2025-08,Primary Health,Chattogram,338,377,208530.69,207862.65,0.9968,1,On track
+2025-08,Primary Health,Khulna,415,495,92117.18,68281.48,0.7412,1,At risk
+2025-08,Primary Health,Rajshahi,259,273,151813.41,134978.16,0.8891,4,Delayed
+2025-08,Climate Action,Dhaka,202,155,173260.83,179993.16,1.0389,0,Delayed
+2025-08,Climate Action,Chattogram,227,250,131137.46,107185.24,0.8174,1,Delayed
+2025-08,Climate Action,Khulna,341,225,83818.66,63496.78,0.7575,5,At risk
+2025-08,Climate Action,Rajshahi,391,425,173989.19,143232.3,0.8232,4,Delayed
+2025-08,Women Empowerment,Dhaka,376,248,182778.86,139873.41,0.7653,6,At risk
+2025-08,Women Empowerment,Chattogram,207,188,122496.58,115263.82,0.941,1,On track
+2025-08,Women Empowerment,Khulna,339,396,286262.27,219479.08,0.7667,3,On track
+2025-08,Women Empowerment,Rajshahi,315,211,122054.44,104704.56,0.8579,3,Delayed
+2025-09,Education,Dhaka,298,266,232977.03,228752.53,0.9819,2,Delayed
+2025-09,Education,Chattogram,97,79,253775.13,195069.74,0.7687,3,At risk
+2025-09,Education,Khulna,311,221,266613.67,258518.22,0.9696,7,At risk
+2025-09,Education,Rajshahi,192,211,72346.87,53365.77,0.7376,0,Delayed
+2025-09,Primary Health,Dhaka,219,231,237813.09,176362.54,0.7416,7,Delayed
+2025-09,Primary Health,Chattogram,396,365,120673.95,122468.07,1.0149,3,At risk
+2025-09,Primary Health,Khulna,357,234,217691.8,239572.78,1.1005,4,At risk
+2025-09,Primary Health,Rajshahi,375,290,75311.26,71106.22,0.9442,0,On track
+2025-09,Climate Action,Dhaka,84,61,71614.01,60724.95,0.8479,1,On track
+2025-09,Climate Action,Chattogram,347,330,283137.82,225818.09,0.7976,2,At risk
+2025-09,Climate Action,Khulna,273,187,286083.96,231454.08,0.809,6,On track
+2025-09,Climate Action,Rajshahi,274,205,240347.4,215334.04,0.8959,5,At risk
+2025-09,Women Empowerment,Dhaka,233,237,224576.6,211349.14,0.9411,6,On track
+2025-09,Women Empowerment,Chattogram,128,149,234017.55,196990.87,0.8418,5,Delayed
+2025-09,Women Empowerment,Khulna,287,213,147624.9,130405.62,0.8834,1,At risk
+2025-09,Women Empowerment,Rajshahi,190,173,180199.24,155733.2,0.8642,2,On track
+2025-10,Education,Dhaka,285,321,298279.81,229723.05,0.7702,4,At risk
+2025-10,Education,Chattogram,137,92,255303.12,247458.55,0.9693,4,On track
+2025-10,Education,Khulna,405,468,285343.1,206055.41,0.7221,3,At risk
+2025-10,Education,Rajshahi,335,371,164601.05,166905.5,1.014,1,At risk
+2025-10,Primary Health,Dhaka,228,213,156358.55,171794.19,1.0987,4,At risk
+2025-10,Primary Health,Chattogram,266,271,65506.36,46540.36,0.7105,0,On track
+2025-10,Primary Health,Khulna,253,172,64592.73,55832.55,0.8644,4,On track
+2025-10,Primary Health,Rajshahi,259,280,143368.37,137422.08,0.9585,3,On track
+2025-10,Climate Action,Dhaka,121,125,265684.7,254231.48,0.9569,6,On track
+2025-10,Climate Action,Chattogram,227,251,52965.39,55973.76,1.0568,3,On track
+2025-10,Climate Action,Khulna,223,214,152629.48,140938.06,0.9234,1,On track
+2025-10,Climate Action,Rajshahi,386,405,96964.54,91041.34,0.9389,1,On track
+2025-10,Women Empowerment,Dhaka,358,298,60933.51,54515.66,0.8947,5,On track
+2025-10,Women Empowerment,Chattogram,302,239,289533.43,327742.78,1.132,6,Delayed
+2025-10,Women Empowerment,Khulna,242,241,280432.3,269488.71,0.961,0,Delayed
+2025-10,Women Empowerment,Rajshahi,126,95,89133.49,71487.36,0.802,4,On track
+2025-11,Education,Dhaka,247,246,275472.06,252422.28,0.9163,4,Delayed
+2025-11,Education,Chattogram,120,119,130089.39,133303.06,1.0247,4,Delayed
+2025-11,Education,Khulna,396,451,268833.53,243235.14,0.9048,2,At risk
+2025-11,Education,Rajshahi,102,113,232286.46,244837.34,1.054,6,On track
+2025-11,Primary Health,Dhaka,173,174,272428.57,312328.02,1.1465,2,On track
+2025-11,Primary Health,Chattogram,290,223,79354.42,89898.54,1.1329,6,Delayed
+2025-11,Primary Health,Khulna,104,73,285941.71,260240.36,0.9101,7,On track
+2025-11,Primary Health,Rajshahi,371,253,105876.44,74402.21,0.7027,1,Delayed
+2025-11,Climate Action,Dhaka,103,93,254234.8,231763.54,0.9116,1,At risk
+2025-11,Climate Action,Chattogram,120,133,135869.32,149898.64,1.1033,7,Delayed
+2025-11,Climate Action,Khulna,239,175,86198.41,60385.65,0.7005,3,On track
+2025-11,Climate Action,Rajshahi,312,307,61774.8,65343.36,1.0578,2,On track
+2025-11,Women Empowerment,Dhaka,151,165,105899.23,115825.26,1.0937,2,On track
+2025-11,Women Empowerment,Chattogram,136,148,256411.3,263214.13,1.0265,6,On track
+2025-11,Women Empowerment,Khulna,379,297,235998.69,223519.4,0.9471,2,At risk
+2025-11,Women Empowerment,Rajshahi,367,389,221482.64,246485.06,1.1129,6,At risk
+2025-12,Education,Dhaka,217,246,83555.9,62937.38,0.7532,6,On track
+2025-12,Education,Chattogram,374,405,197998.64,189287.5,0.956,6,Delayed
+2025-12,Education,Khulna,286,336,53386.84,46102.14,0.8635,3,Delayed
+2025-12,Education,Rajshahi,198,176,255234.0,211908.9,0.8303,7,At risk
+2025-12,Primary Health,Dhaka,279,316,154000.65,157027.04,1.0197,0,At risk
+2025-12,Primary Health,Chattogram,213,237,159194.2,121682.4,0.7644,3,Delayed
+2025-12,Primary Health,Khulna,373,301,130629.58,130285.01,0.9974,4,At risk
+2025-12,Primary Health,Rajshahi,341,399,163486.69,163606.38,1.0007,1,Delayed
+2025-12,Climate Action,Dhaka,172,153,188230.31,216118.24,1.1482,4,Delayed
+2025-12,Climate Action,Chattogram,164,171,93196.15,82877.6,0.8893,4,On track
+2025-12,Climate Action,Khulna,292,215,277745.81,305173.32,1.0988,4,At risk
+2025-12,Climate Action,Rajshahi,233,219,274845.52,232870.14,0.8473,4,At risk
+2025-12,Women Empowerment,Dhaka,280,199,131427.83,97994.2,0.7456,7,Delayed
+2025-12,Women Empowerment,Chattogram,406,429,88061.15,99261.31,1.1272,4,Delayed
+2025-12,Women Empowerment,Khulna,243,182,289835.35,213706.99,0.7373,6,On track
+2025-12,Women Empowerment,Rajshahi,258,232,134527.45,126120.4,0.9375,5,At risk
+2026-01,Education,Dhaka,103,111,135805.26,144420.63,1.0634,0,Delayed
+2026-01,Education,Chattogram,365,370,235959.64,172378.85,0.7305,0,At risk
+2026-01,Education,Khulna,371,311,194202.23,207728.48,1.0697,5,At risk
+2026-01,Education,Rajshahi,186,124,151365.73,107430.7,0.7097,4,Delayed
+2026-01,Primary Health,Dhaka,108,118,235917.73,219851.81,0.9319,1,On track
+2026-01,Primary Health,Chattogram,191,188,237250.79,186726.72,0.787,3,On track
+2026-01,Primary Health,Khulna,180,214,281429.17,220899.97,0.7849,5,Delayed
+2026-01,Primary Health,Rajshahi,147,116,273020.4,274329.03,1.0048,5,At risk
+2026-01,Climate Action,Dhaka,336,251,166978.19,180452.64,1.0807,5,At risk
+2026-01,Climate Action,Chattogram,104,106,268278.35,218491.14,0.8144,0,Delayed
+2026-01,Climate Action,Khulna,190,128,249048.77,256780.71,1.031,1,On track
+2026-01,Climate Action,Rajshahi,324,339,296637.65,323399.48,1.0902,1,Delayed
+2026-01,Women Empowerment,Dhaka,154,115,163380.77,141666.32,0.8671,2,At risk
+2026-01,Women Empowerment,Chattogram,105,85,124168.28,103956.84,0.8372,2,At risk
+2026-01,Women Empowerment,Khulna,211,236,91987.96,72298.79,0.786,1,Delayed
+2026-01,Women Empowerment,Rajshahi,293,261,71709.33,67530.48,0.9417,4,At risk
+2026-02,Education,Dhaka,354,391,249422.6,207024.59,0.83,2,Delayed
+2026-02,Education,Chattogram,115,81,246919.73,190183.59,0.7702,5,On track
+2026-02,Education,Khulna,385,283,234032.54,213046.68,0.9103,0,On track
+2026-02,Education,Rajshahi,152,114,92480.24,74627.2,0.807,3,Delayed
+2026-02,Primary Health,Dhaka,85,84,74244.53,64437.68,0.8679,6,On track
+2026-02,Primary Health,Chattogram,255,242,124599.26,125194.22,1.0048,1,On track
+2026-02,Primary Health,Khulna,87,97,123164.75,93923.73,0.7626,1,At risk
+2026-02,Primary Health,Rajshahi,223,175,150475.99,127028.69,0.8442,1,Delayed
+2026-02,Climate Action,Dhaka,215,229,75494.98,73766.5,0.9771,2,At risk
+2026-02,Climate Action,Chattogram,299,313,102097.39,110986.39,1.0871,2,At risk
+2026-02,Climate Action,Khulna,111,85,79558.98,75277.22,0.9462,6,At risk
+2026-02,Climate Action,Rajshahi,307,242,248896.09,242989.28,0.9763,3,On track
+2026-02,Women Empowerment,Dhaka,259,247,285029.78,326050.15,1.1439,2,Delayed
+2026-02,Women Empowerment,Chattogram,299,317,167419.28,143172.36,0.8552,0,At risk
+2026-02,Women Empowerment,Khulna,228,169,108288.03,88926.17,0.8212,5,On track
+2026-02,Women Empowerment,Rajshahi,166,115,290584.76,305520.72,1.0514,4,Delayed
+2026-03,Education,Dhaka,109,111,116793.52,122110.59,1.0455,4,On track
+2026-03,Education,Chattogram,111,117,261019.75,283294.95,1.0853,5,Delayed
+2026-03,Education,Khulna,204,151,175334.69,138618.39,0.7906,1,At risk
+2026-03,Education,Rajshahi,222,184,74101.27,79351.89,1.0709,0,Delayed
+2026-03,Primary Health,Dhaka,399,399,234731.16,206811.62,0.8811,2,Delayed
+2026-03,Primary Health,Chattogram,221,198,244222.85,209134.68,0.8563,4,At risk
+2026-03,Primary Health,Khulna,361,377,257831.92,280418.88,1.0876,3,At risk
+2026-03,Primary Health,Rajshahi,364,342,122477.97,125748.38,1.0267,6,On track
+2026-03,Climate Action,Dhaka,350,314,59889.62,43102.7,0.7197,5,Delayed
+2026-03,Climate Action,Chattogram,93,78,141416.27,137580.99,0.9729,6,At risk
+2026-03,Climate Action,Khulna,189,218,254142.17,191106.32,0.752,2,At risk
+2026-03,Climate Action,Rajshahi,155,131,248883.8,234267.09,0.9413,5,On track
+2026-03,Women Empowerment,Dhaka,178,118,248985.21,233435.17,0.9375,7,On track
+2026-03,Women Empowerment,Chattogram,86,62,298520.16,255116.34,0.8546,4,On track
+2026-03,Women Empowerment,Khulna,322,277,215565.07,239135.53,1.1093,3,At risk
+2026-03,Women Empowerment,Rajshahi,258,297,56502.17,48798.86,0.8637,5,Delayed
+2026-04,Education,Dhaka,162,163,223938.2,219585.49,0.9806,3,At risk
+2026-04,Education,Chattogram,195,139,73090.59,55820.05,0.7637,0,Delayed
+2026-04,Education,Khulna,96,80,56441.54,44371.52,0.7862,3,At risk
+2026-04,Education,Rajshahi,357,370,283325.36,304876.49,1.0761,4,Delayed
+2026-04,Primary Health,Dhaka,109,99,125326.41,103609.86,0.8267,5,At risk
+2026-04,Primary Health,Chattogram,85,85,165052.05,182124.06,1.1034,7,Delayed
+2026-04,Primary Health,Khulna,124,94,76381.06,66492.73,0.8705,3,On track
+2026-04,Primary Health,Rajshahi,346,309,218447.79,229214.34,1.0493,2,On track
+2026-04,Climate Action,Dhaka,310,223,91552.42,73767.68,0.8057,3,Delayed
+2026-04,Climate Action,Chattogram,416,465,106609.33,121647.91,1.1411,7,Delayed
+2026-04,Climate Action,Khulna,272,252,264111.77,239586.83,0.9071,4,On track
+2026-04,Climate Action,Rajshahi,263,173,262418.81,221459.64,0.8439,6,Delayed
+2026-04,Women Empowerment,Dhaka,128,124,219863.97,157124.05,0.7146,4,Delayed
+2026-04,Women Empowerment,Chattogram,151,112,165069.81,117172.35,0.7098,1,At risk
+2026-04,Women Empowerment,Khulna,180,166,164498.1,158249.58,0.962,5,At risk
+2026-04,Women Empowerment,Rajshahi,102,69,107121.67,101144.79,0.9442,7,At risk
+2026-05,Education,Dhaka,184,180,143119.8,123722.12,0.8645,4,At risk
+2026-05,Education,Chattogram,384,293,289879.57,251211.77,0.8666,5,At risk
+2026-05,Education,Khulna,419,427,99989.21,91007.01,0.9102,7,At risk
+2026-05,Education,Rajshahi,97,77,256588.43,235423.43,0.9175,4,Delayed
+2026-05,Primary Health,Dhaka,255,268,286684.56,285529.86,0.996,4,On track
+2026-05,Primary Health,Chattogram,271,281,162183.25,179783.27,1.1085,7,On track
+2026-05,Primary Health,Khulna,125,142,73308.25,65952.54,0.8997,1,On track
+2026-05,Primary Health,Rajshahi,156,124,251966.53,270585.29,1.0739,3,On track
+2026-05,Climate Action,Dhaka,326,349,184208.41,176528.28,0.9583,2,Delayed
+2026-05,Climate Action,Chattogram,195,139,51325.23,53240.39,1.0373,6,Delayed
+2026-05,Climate Action,Khulna,395,456,255509.77,244289.92,0.9561,3,At risk
+2026-05,Climate Action,Rajshahi,393,399,139482.28,117237.5,0.8405,4,Delayed
+2026-05,Women Empowerment,Dhaka,418,442,116455.89,96092.53,0.8251,5,Delayed
+2026-05,Women Empowerment,Chattogram,273,218,97577.2,82094.79,0.8413,1,At risk
+2026-05,Women Empowerment,Khulna,336,244,133930.17,103231.33,0.7708,3,At risk
+2026-05,Women Empowerment,Rajshahi,169,131,257920.84,230977.41,0.8955,7,At risk
+2026-06,Education,Dhaka,214,163,197313.15,200920.33,1.0183,0,At risk
+2026-06,Education,Chattogram,111,120,269927.38,271496.34,1.0058,5,At risk
+2026-06,Education,Khulna,255,249,114866.23,107900.73,0.9394,1,At risk
+2026-06,Education,Rajshahi,194,137,77399.05,69731.85,0.9009,6,Delayed
+2026-06,Primary Health,Dhaka,413,482,60996.66,62232.39,1.0203,0,Delayed
+2026-06,Primary Health,Chattogram,296,297,73247.45,58649.09,0.8007,6,At risk
+2026-06,Primary Health,Khulna,252,192,57173.08,47848.13,0.8369,1,On track
+2026-06,Primary Health,Rajshahi,377,438,267886.47,240677.05,0.8984,7,On track
+2026-06,Climate Action,Dhaka,163,130,255246.88,242637.86,0.9506,7,On track
+2026-06,Climate Action,Chattogram,330,392,76600.93,61845.05,0.8074,6,Delayed
+2026-06,Climate Action,Khulna,318,295,108727.33,90001.07,0.8278,4,On track
+2026-06,Climate Action,Rajshahi,108,80,287919.16,228616.33,0.794,4,At risk
+2026-06,Women Empowerment,Dhaka,300,330,126879.02,142776.97,1.1253,6,Delayed
+2026-06,Women Empowerment,Chattogram,315,316,184354.57,176537.62,0.9576,1,At risk
+2026-06,Women Empowerment,Khulna,400,305,55681.63,47100.39,0.8459,5,On track
+2026-06,Women Empowerment,Rajshahi,173,159,184151.42,190442.93,1.0342,7,Delayed
+2026-07,Education,Dhaka,294,337,293691.28,335387.89,1.142,7,At risk
+2026-07,Education,Chattogram,142,105,220623.24,252857.28,1.1461,7,On track
+2026-07,Education,Khulna,131,141,214001.86,215091.64,1.0051,1,At risk
+2026-07,Education,Rajshahi,189,178,96570.03,80901.38,0.8377,0,Delayed
+2026-07,Primary Health,Dhaka,220,159,114402.07,101289.53,0.8854,2,Delayed
+2026-07,Primary Health,Chattogram,228,211,73581.71,80826.99,1.0985,1,On track
+2026-07,Primary Health,Khulna,215,236,185117.1,164350.4,0.8878,7,At risk
+2026-07,Primary Health,Rajshahi,258,301,238861.9,235139.36,0.9844,0,Delayed
+2026-07,Climate Action,Dhaka,326,260,237707.96,204351.01,0.8597,2,On track
+2026-07,Climate Action,Chattogram,283,326,165531.6,148244.61,0.8956,5,On track
+2026-07,Climate Action,Khulna,165,151,186149.97,169116.65,0.9085,6,On track
+2026-07,Climate Action,Rajshahi,232,236,243210.76,214240.12,0.8809,0,On track
+2026-07,Women Empowerment,Dhaka,238,177,189032.02,172122.55,0.9105,0,Delayed
+2026-07,Women Empowerment,Chattogram,228,160,61491.95,67149.79,1.092,4,At risk
+2026-07,Women Empowerment,Khulna,195,165,54235.51,40919.13,0.7545,0,On track
+2026-07,Women Empowerment,Rajshahi,81,94,249094.68,251183.64,1.0084,0,At risk
+2026-08,Education,Dhaka,324,336,122023.96,115320.75,0.9451,6,On track
+2026-08,Education,Chattogram,302,253,209782.88,193691.66,0.9233,7,At risk
+2026-08,Education,Khulna,194,200,54464.22,55095.85,1.0116,5,At risk
+2026-08,Education,Rajshahi,325,228,276600.65,257782.86,0.932,4,Delayed
+2026-08,Primary Health,Dhaka,147,130,92657.5,103680.42,1.119,0,Delayed
+2026-08,Primary Health,Chattogram,97,99,109479.54,108874.29,0.9945,3,Delayed
+2026-08,Primary Health,Khulna,315,210,279102.53,211363.19,0.7573,4,On track
+2026-08,Primary Health,Rajshahi,96,104,141199.28,134658.71,0.9537,5,At risk
+2026-08,Climate Action,Dhaka,392,380,94851.73,104775.52,1.1046,3,On track
+2026-08,Climate Action,Chattogram,346,276,188402.2,136842.17,0.7263,6,At risk
+2026-08,Climate Action,Khulna,393,396,272142.49,268074.14,0.9851,2,Delayed
+2026-08,Climate Action,Rajshahi,307,304,95384.96,67419.26,0.7068,6,Delayed
+2026-08,Women Empowerment,Dhaka,288,271,251072.96,267534.04,1.0656,1,Delayed
+2026-08,Women Empowerment,Chattogram,122,95,114013.47,104663.64,0.918,3,At risk
+2026-08,Women Empowerment,Khulna,106,76,172295.54,123263.37,0.7154,3,At risk
+2026-08,Women Empowerment,Rajshahi,192,195,139622.24,137315.55,0.9835,0,At risk
+2026-09,Education,Dhaka,278,319,162222.64,172833.44,1.0654,7,On track
+2026-09,Education,Chattogram,367,408,284607.99,242359.91,0.8516,4,On track
+2026-09,Education,Khulna,413,342,66274.68,70138.02,1.0583,5,On track
+2026-09,Education,Rajshahi,269,272,80992.7,80808.54,0.9977,0,On track
+2026-09,Primary Health,Dhaka,157,124,269756.74,288848.76,1.0708,2,At risk
+2026-09,Primary Health,Chattogram,398,354,103144.32,117694.75,1.1411,4,At risk
+2026-09,Primary Health,Khulna,141,161,177986.28,167377.6,0.9404,5,Delayed
+2026-09,Primary Health,Rajshahi,266,178,65472.59,62668.4,0.9572,2,On track
+2026-09,Climate Action,Dhaka,387,312,129194.16,98441.78,0.762,6,At risk
+2026-09,Climate Action,Chattogram,288,286,238645.57,262155.82,1.0985,6,On track
+2026-09,Climate Action,Khulna,137,110,295811.48,306345.23,1.0356,7,Delayed
+2026-09,Climate Action,Rajshahi,168,113,50851.26,58180.53,1.1441,3,On track
+2026-09,Women Empowerment,Dhaka,207,149,225723.63,177938.36,0.7883,0,On track
+2026-09,Women Empowerment,Chattogram,245,276,106154.9,81545.01,0.7682,3,At risk
+2026-09,Women Empowerment,Khulna,339,239,240657.01,254266.96,1.0566,1,On track
+2026-09,Women Empowerment,Rajshahi,306,325,117446.18,112946.63,0.9617,1,On track
+2026-10,Education,Dhaka,253,197,145243.32,138435.42,0.9531,4,Delayed
+2026-10,Education,Chattogram,391,296,134605.18,145114.05,1.0781,5,On track
+2026-10,Education,Khulna,270,184,131173.02,102921.84,0.7846,1,At risk
+2026-10,Education,Rajshahi,186,174,175552.41,162289.17,0.9244,3,At risk
+2026-10,Primary Health,Dhaka,156,119,124420.78,94705.79,0.7612,5,Delayed
+2026-10,Primary Health,Chattogram,358,306,115919.21,97670.63,0.8426,6,On track
+2026-10,Primary Health,Khulna,123,147,163328.5,134668.66,0.8245,1,At risk
+2026-10,Primary Health,Rajshahi,236,267,157195.26,121467.09,0.7727,5,Delayed
+2026-10,Climate Action,Dhaka,126,96,213066.75,192596.36,0.9039,0,At risk
+2026-10,Climate Action,Chattogram,323,348,283917.16,247940.17,0.8733,5,On track
+2026-10,Climate Action,Khulna,160,130,233739.16,246151.26,1.0531,5,At risk
+2026-10,Climate Action,Rajshahi,114,79,105678.17,97288.76,0.9206,1,At risk
+2026-10,Women Empowerment,Dhaka,373,379,121469.44,121626.08,1.0013,2,At risk
+2026-10,Women Empowerment,Chattogram,296,255,246423.02,269331.54,1.093,7,Delayed
+2026-10,Women Empowerment,Khulna,88,87,136934.59,152327.56,1.1124,5,Delayed
+2026-10,Women Empowerment,Rajshahi,251,186,150813.52,142773.75,0.9467,3,Delayed
+2026-11,Education,Dhaka,301,296,97536.7,92180.64,0.9451,6,Delayed
+2026-11,Education,Chattogram,187,166,195510.26,169892.31,0.869,0,At risk
+2026-11,Education,Khulna,122,140,117208.64,102694.33,0.8762,3,At risk
+2026-11,Education,Rajshahi,112,109,289050.47,206015.75,0.7127,6,Delayed
+2026-11,Primary Health,Dhaka,358,406,77965.3,85378.9,1.0951,3,At risk
+2026-11,Primary Health,Chattogram,225,227,134925.04,142441.94,1.0557,3,On track
+2026-11,Primary Health,Khulna,324,307,279696.93,211453.24,0.756,1,Delayed
+2026-11,Primary Health,Rajshahi,310,298,106381.4,117684.59,1.1063,6,At risk
+2026-11,Climate Action,Dhaka,93,83,240192.22,225795.17,0.9401,0,At risk
+2026-11,Climate Action,Chattogram,160,131,77987.68,62314.18,0.799,0,On track
+2026-11,Climate Action,Khulna,219,158,73370.94,70660.17,0.9631,5,At risk
+2026-11,Climate Action,Rajshahi,126,130,255750.05,195836.97,0.7657,3,Delayed
+2026-11,Women Empowerment,Dhaka,408,370,120635.78,103210.62,0.8556,3,Delayed
+2026-11,Women Empowerment,Chattogram,177,188,143893.39,150166.27,1.0436,4,On track
+2026-11,Women Empowerment,Khulna,155,164,279088.03,239722.77,0.859,4,At risk
+2026-11,Women Empowerment,Rajshahi,352,382,67250.9,59050.94,0.8781,2,Delayed
+2026-12,Education,Dhaka,262,217,232284.59,249942.67,1.076,0,Delayed
+2026-12,Education,Chattogram,384,380,275724.81,297317.68,1.0783,1,On track
+2026-12,Education,Khulna,382,259,253719.19,222450.4,0.8768,0,At risk
+2026-12,Education,Rajshahi,225,260,56313.23,44949.06,0.7982,1,On track
+2026-12,Primary Health,Dhaka,411,492,200367.44,211061.34,1.0534,7,Delayed
+2026-12,Primary Health,Chattogram,293,219,150290.07,141480.91,0.9414,6,At risk
+2026-12,Primary Health,Khulna,292,318,109203.27,99615.24,0.9122,4,On track
+2026-12,Primary Health,Rajshahi,371,341,136787.67,149526.33,1.0931,4,On track
+2026-12,Climate Action,Dhaka,97,73,131869.59,108581.5,0.8234,2,On track
+2026-12,Climate Action,Chattogram,321,265,69612.07,69960.62,1.005,3,On track
+2026-12,Climate Action,Khulna,278,190,96306.0,77436.44,0.8041,3,Delayed
+2026-12,Climate Action,Rajshahi,129,91,69653.93,64036.84,0.9194,1,At risk
+2026-12,Women Empowerment,Dhaka,185,191,199108.97,208538.01,1.0474,0,On track
+2026-12,Women Empowerment,Chattogram,268,230,111672.94,112399.8,1.0065,5,At risk
+2026-12,Women Empowerment,Khulna,233,218,271251.06,296603.8,1.0935,6,Delayed
+2026-12,Women Empowerment,Rajshahi,248,192,159071.76,179324.7,1.1273,6,Delayed
