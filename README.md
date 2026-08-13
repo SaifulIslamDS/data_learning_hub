@@ -1,18 +1,57 @@
 # Data Learning Hub
 
-**Version:** v2.7.0 — Next.js Application and PWA Migration  
+**Version:** v2.7.1 — Documentation & Content Integrity Foundation  
 **Production URL:** https://datalearninghub.netlify.app/  
 **Package manager:** pnpm 11.20.0  
 **Framework:** Next.js 16.2.10 App Router  
 **Deployment:** Netlify static export
 
-Data Learning Hub is a bilingual, tutorial-first Data Analytics learning platform. It includes complete Data Foundations, Excel, SQL, Power BI, Python, Analytics Workflows, Statistics lessons/labs, and six portfolio projects.
+Data Learning Hub is a bilingual, tutorial-first practical data learning platform focused on real text tutorials, worked examples, hands-on practice, exercises, labs, and projects.
 
-## v2.7.0 transformation
+The current stable learning stack covers:
 
-The complete v2.6.0 static release has been migrated into a Next.js App Router application while preserving all 549 published routes and their existing URLs. The application uses a compatibility content registry: Next.js generates every route, and the proven v2.6 interactive JavaScript modules continue to power language switching, progress, exercises, SQL/Python playgrounds, labs, and project tracking.
+- Data Foundations
+- Statistics
+- Excel for Data Analytics
+- SQL for Data Analytics
+- Power BI for Data Analytics
+- Python for Data Analytics
+- Analytics Workflows
+- Portfolio Projects
 
-The application is also an installable PWA with:
+The long-term platform roadmap expands the same practical learning system into Data Science, Machine Learning, Data Engineering, LLMs, and AI Engineering.
+
+## Product principle
+
+Data Learning Hub should teach the subject directly.
+
+The learning experience should be simple:
+
+**Read → See a real example → Practice → Check → Continue**
+
+The platform should avoid dummy content, generic generated examples, unnecessary onboarding, fake application experiences, and "how to learn" filler in the learner-facing experience.
+
+## v2.7.1 focus
+
+v2.7.1 establishes the documentation and content-quality foundation for the next stage of development.
+
+This release:
+
+- Formalizes `docs/` as the documentation source of truth
+- Adds the long-term product vision
+- Adds mandatory content and practice standards
+- Replaces the short roadmap with the complete staged roadmap
+- Adds a versioned v2.7.1 release note
+- Adds a v2.7.1 project continuation document
+- Preserves the current application architecture and published learning experience
+
+No major learner-facing feature migration is introduced in this release.
+
+## Current application foundation
+
+The v2.7 architecture preserves the complete v2.6 static release through a Next.js App Router compatibility layer while retaining all 549 published routes and their existing URLs.
+
+The current application remains an installable PWA with:
 
 - App manifest and install metadata
 - 192px, 512px, maskable, and Apple icons
@@ -47,11 +86,28 @@ pnpm test
 pnpm build
 ```
 
-The migration audit validates 549 routes, all generated page payloads, local scripts, PWA files, and Netlify configuration.
+## Documentation
+
+The root `README.md` is the main repository entry point.
+
+All detailed project documentation belongs in [`docs/`](docs/).
+
+Start here:
+
+- [Documentation Index](docs/README.md)
+- [Product Vision](docs/PRODUCT-VISION.md)
+- [Content Standards](docs/CONTENT-STANDARDS.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Release Notes — v2.7.1](docs/RELEASE-NOTES-v2.7.1.md)
+- [Project Continuation — v2.7.1](docs/PROJECT-CONTINUATION-v2.7.1.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Testing](docs/TESTING.md)
+- [Deployment](docs/DEPLOYMENT.md)
+- [PWA](docs/PWA.md)
 
 ## Netlify
 
-Use the existing site and URL:
+Use the existing production site:
 
 ```text
 https://datalearninghub.netlify.app/
@@ -67,7 +123,7 @@ Node version:      22
 pnpm version:      11.20.0
 ```
 
-`netlify.toml` already contains these settings and PWA/security headers.
+`netlify.toml` contains the current deployment and PWA/security configuration.
 
 ## Source architecture
 
@@ -75,21 +131,32 @@ pnpm version:      11.20.0
 app/                        Next.js App Router, metadata, manifest, sitemap, offline page
 src/components/             React migration bridge
 src/lib/                    Server-side generated-page registry loader
-src/generated/              549 route payloads migrated from v2.6.0
-public/assets/               Existing design system, downloads, datasets, and runtime modules
+src/generated/              Migrated route payloads
+public/assets/               Design system, downloads, datasets, and runtime modules
 public/sw.js                 PWA service worker
-content/                     Preserved structured tutorial/project/statistics source
+content/                     Structured tutorial/project/statistics source
 scripts/legacy/              Preserved v2.6 generator and audits for reference
-scripts/                     v2.7 migration, source, and PWA audits
-docs/                        Architecture, deployment, testing, migration, continuation
+scripts/                     Migration, source, and PWA audits
+docs/                        Project documentation and version records
 ```
 
 ## Maintenance rule
 
-v2.7.0 is a controlled framework migration. The current compatibility renderer intentionally preserves proven v2.6 behavior. Future releases should gradually replace legacy page payloads and DOM scripts with native React Server and Client Components, beginning with the shared header, footer, tutorial chapter renderer, and progress store.
+The current compatibility renderer is a controlled migration bridge. New development should gradually replace legacy page payloads and DOM scripts with native React components and structured content.
 
-## Main-branch workflow
+Before large Data Science, Machine Learning, Data Engineering, LLM, or AI Engineering expansion, the Data Analytics platform should first complete:
 
-The project continues directly on `main`. Create a release tag only after Netlify deploy and PWA verification pass.
+1. Content integrity remediation
+2. Engineering quality automation
+3. Native React platform shell
+4. Typed content engine
+5. Native tutorial renderer
+6. Inline practical exercise engine
+7. Real dataset registry and provenance system
+8. Native Statistics, Excel, Power BI, SQL, Python, and project learning loops
 
-See [PROJECT-CONTINUATION-v2.7.0.md](docs/PROJECT-CONTINUATION-v2.7.0.md) for the complete continuation context.
+See [ROADMAP.md](docs/ROADMAP.md) for the complete sequence.
+
+## Release workflow
+
+A release tag should be created only after local validation, production deployment, and PWA verification pass.

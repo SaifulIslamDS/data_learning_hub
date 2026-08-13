@@ -1,8 +1,8 @@
 {
   "name": "data-learning-hub",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "private": true,
-  "description": "Next.js App Router PWA for bilingual Data Analytics tutorials, practice, workflows, and portfolio projects.",
+  "description": "Next.js App Router PWA for a bilingual, tutorial-first practical data learning platform.",
   "packageManager": "pnpm@11.20.0",
   "engines": {
     "node": ">=20.9.0",

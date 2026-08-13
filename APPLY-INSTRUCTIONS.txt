@@ -1,0 +1,45 @@
+DATA LEARNING HUB v2.7.1 DOCS PATCH
+
+This ZIP is an overlay patch, not a full repository.
+
+FILES ADDED / REPLACED
+- README.md
+- package.json
+- public/sw.js
+- docs/README.md
+- docs/PRODUCT-VISION.md
+- docs/CONTENT-STANDARDS.md
+- docs/ROADMAP.md
+- docs/RELEASE-NOTES-v2.7.1.md
+- docs/PROJECT-CONTINUATION-v2.7.1.md
+
+SAFE APPLY
+1. Extract this ZIP.
+2. Copy the extracted files/folders into the ROOT of your local data_learning_hub repository.
+3. Choose Replace when Windows asks about README.md, package.json, public/sw.js, and docs/ROADMAP.md.
+4. Existing docs such as ARCHITECTURE.md, TESTING.md, DEPLOYMENT.md, PWA.md, v2.7.0 release report, and v2.7.0 continuation remain untouched.
+
+OPTIONAL ROOT CLEANUP
+The current GitHub repository contains a duplicate root continuation document:
+Data-Learning-Hub-Project-Continuation-v2.7.0.md
+
+A canonical v2.7.0 continuation already exists in docs/.
+After confirming the docs copy is present, you may remove the root duplicate:
+
+Remove-Item ".\Data-Learning-Hub-Project-Continuation-v2.7.0.md"
+
+VALIDATE
+pnpm install
+pnpm typecheck
+pnpm test
+pnpm build
+
+GIT
+git status
+git add .
+git commit -m "release: prepare v2.7.1 documentation and content standards"
+git push origin main
+
+After Netlify production and PWA checks pass:
+git tag -a v2.7.1 -m "v2.7.1 - Documentation & Content Integrity Foundation"
+git push origin v2.7.1
