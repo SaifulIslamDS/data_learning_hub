@@ -65,9 +65,10 @@
   migrateV1Storage();
 
   const state = {
-    language: safeStorage.get('dlh-language', 'en') === 'bn' ? 'bn' : 'en',
+    language: 'en',
     theme: document.documentElement.dataset.theme || 'light',
   };
+  safeStorage.set('dlh-language', 'en');
 
   function t(en, bn) { return state.language === 'bn' ? bn : en; }
   function escapeHtml(value) {
@@ -190,7 +191,7 @@
     return `<a href="${href}" class="${active ? 'active' : ''}" data-en="${en}" data-bn="${bn}">${t(en, bn)}</a>`;
   }
   function languageSwitch() {
-    return `<div class="language-switch" role="group" aria-label="Language"><button class="language-button ${state.language === 'en' ? 'active' : ''}" data-lang="en" type="button" aria-label="English" aria-pressed="${state.language === 'en'}">EN</button><button class="language-button ${state.language === 'bn' ? 'active' : ''}" data-lang="bn" type="button" aria-label="বাংলা" aria-pressed="${state.language === 'bn'}">BN</button></div>`;
+    return '';
   }
   function renderHeader() {
     const root = document.getElementById('site-header');

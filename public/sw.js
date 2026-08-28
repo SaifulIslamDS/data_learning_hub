@@ -1,4 +1,4 @@
-const VERSION = 'dlh-v2.7.1';
+const VERSION = 'dlh-v2.7.2';
 const STATIC_CACHE = `${VERSION}-static`;
 const PAGE_CACHE = `${VERSION}-pages`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;

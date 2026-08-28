@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     id: "/",
     name: "Data Learning Hub",
     short_name: "Data Learning Hub",
-    description: "Learn Data Analytics through complete bilingual tutorials, browser practice, workflows, and portfolio projects.",
+    description: "Learn Data Analytics through direct tutorials, browser practice, workflows, exercises, and portfolio projects.",
     start_url: "/",
     scope: "/",
     display: "standalone",

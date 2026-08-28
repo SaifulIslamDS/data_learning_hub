@@ -5,7 +5,7 @@ import "./next-overrides.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://datalearninghub.netlify.app"),
   title: { default: "Data Learning Hub", template: "%s | Data Learning Hub" },
-  description: "A bilingual Data Analytics learning platform covering foundations, statistics, Excel, SQL, Power BI, Python, workflows, and portfolio projects.",
+  description: "A tutorial-first Data Analytics learning platform covering foundations, statistics, Excel, SQL, Power BI, Python, workflows, practice, and portfolio projects.",
   applicationName: "Data Learning Hub",
   manifest: "/manifest.webmanifest",
   alternates: { canonical: "/" },
