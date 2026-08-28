@@ -64,18 +64,35 @@ Lock the clarified product direction into the current application, source-genera
 
 ## v2.7.3 — Engineering Quality Foundation
 
-Add:
+### Goal
+
+Add automated engineering quality gates before the native React migration.
+
+### Delivered
 
 - GitHub Actions CI
 - ESLint
 - Prettier
 - Vitest
 - React Testing Library
-- Playwright smoke tests
+- Playwright Chromium smoke tests
 - axe accessibility checks
-- automated typecheck/audit/build/E2E release gates
+- tutorial-first UI regression audit
+- production static-export test server
+- automated lint, format, typecheck, audit, unit-test, build, E2E, and accessibility gates
+- regression coverage for the removed objective card
+- regression coverage ensuring the Bangla toggle remains absent until full-site localization
 
-Regression coverage must explicitly confirm that the generic tutorial-objective card does not return.
+### Release gate
+
+- `pnpm check` passes
+- Playwright browser tests pass
+- GitHub Actions passes
+- `pnpm-lock.yaml` is refreshed and committed
+- Netlify production deployment is verified
+
+---
+
 
 ---
 

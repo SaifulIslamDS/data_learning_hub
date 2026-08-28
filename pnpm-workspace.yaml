@@ -2,7 +2,9 @@ packages:
   - .
 
 allowBuilds:
+  esbuild: set this to true or false
   sharp: true
+  unrs-resolver: set this to true or false
 
 minimumReleaseAge: 1440
 strictPeerDependencies: true

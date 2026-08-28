@@ -1,9 +1,9 @@
 {
   "name": "data-learning-hub",
-  "version": "2.7.2",
+  "version": "2.7.3",
   "private": true,
   "description": "Next.js App Router PWA for an English-first, tutorial-first practical data learning platform.",
-  "packageManager": "pnpm@11.24.0+sha512.bd27e345e976dcb0be0b7a1228217b049a817e21b1f355c90dbe7dc46671895a8bc1e6d06c24554505ea93ea0b45f489a27ec1bfbc8de6a9659fca0f16fa0000",
+  "packageManager": "pnpm@11.24.0",
   "engines": {
     "node": ">=20.9.0",
     "pnpm": ">=11.20.0"
@@ -13,12 +13,22 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint app src tests vitest.config.ts playwright.config.ts",
+    "format": "prettier --write \"src/lib/tutorial-html.ts\" \"tests/**/*.{ts,tsx}\" \"scripts/{audit-ui,serve-static}.mjs\" \"eslint.config.mjs\" \"prettier.config.mjs\" \"vitest.config.ts\" \"vitest.setup.ts\" \"playwright.config.ts\" \".github/workflows/ci.yml\" \"package.json\"",
+    "format:check": "prettier --check \"src/lib/tutorial-html.ts\" \"tests/**/*.{ts,tsx}\" \"scripts/{audit-ui,serve-static}.mjs\" \"eslint.config.mjs\" \"prettier.config.mjs\" \"vitest.config.ts\" \"vitest.setup.ts\" \"playwright.config.ts\" \".github/workflows/ci.yml\" \"package.json\"",
     "migrate:static": "python scripts/migrate-static-release.py",
     "audit:migration": "python scripts/audit-migration.py",
     "audit:pwa": "node scripts/audit-pwa.mjs",
     "audit:source": "node scripts/audit-source.mjs",
-    "test": "pnpm audit:migration && pnpm audit:pwa && pnpm audit:source",
-    "check": "pnpm typecheck && pnpm test && pnpm build"
+    "audit:ui": "node scripts/audit-ui.mjs",
+    "audit": "pnpm audit:migration && pnpm audit:pwa && pnpm audit:source && pnpm audit:ui",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "test": "pnpm audit && pnpm test:unit",
+    "test:e2e": "pnpm build && playwright test",
+    "test:e2e:ci": "playwright test",
+    "test:a11y": "pnpm build && playwright test tests/e2e/accessibility.spec.ts",
+    "check": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm build"
   },
   "dependencies": {
     "next": "16.2.10",
@@ -26,9 +36,18 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
     "@types/node": "^22.15.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
-    "typescript": "^5.9.0"
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.2.10",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.4"
   }
 }

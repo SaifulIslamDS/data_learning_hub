@@ -1,0 +1,11 @@
+.next/
+out/
+node_modules/
+src/generated/
+public/assets/
+scripts/legacy/
+content/
+pnpm-lock.yaml
+playwright-report/
+test-results/
+coverage/

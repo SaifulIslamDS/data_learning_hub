@@ -1,20 +1,44 @@
 # Changelog
 
-## v2.7.2 — 2026-08-28
+## v2.7.3 — 2026-08-28
+
+### Added
+
+- GitHub Actions engineering quality gate
+- ESLint with Next.js/TypeScript rules
+- Prettier formatting gate
+- Vitest unit-test runner
+- React Testing Library test coverage
+- Playwright Chromium smoke tests
+- axe accessibility regression test
+- Tutorial-first UI source audit
+- Static export test server
+- Unit tests for tutorial HTML normalization
+- Browser regression for objective-card removal, theme behavior, and English-only UI
 
 ### Changed
 
-- Locked Data Learning Hub to tutorial-first direct teaching.
-- Removed visible START HERE / What you will learn objective UI.
-- Removed Objectives jump navigation.
-- Made active learner-facing UI English-only.
-- Added Tutorial Page Standard.
-- Locked roadmap around tutorial core → practice → projects → career layer → domain expansion.
-- Fixed PWA version/audit drift.
+- Removed remaining Bangla-toggle rendering/wiring from the active interface
+- Extracted tutorial HTML normalization into a testable library function
+- Expanded `pnpm check` to include lint, formatting, typecheck, audits, unit tests, and production build
+- CI now runs browser/accessibility tests after the build
 
 ### Preserved
 
-Routes, exercises, quizzes, SQL/Python practice, Power BI simulations, Statistics labs, projects, theme, progress/bookmarks, and PWA behavior.
+- Existing routes
+- Tutorial content
+- Exercises and quizzes
+- SQL/Python browser practice
+- Power BI simulations
+- Statistics labs
+- Projects
+- Theme/progress/bookmark storage
+- PWA/offline behavior
+- Dormant legacy Bangla content fields for possible future full-site localization
+
+## v2.7.2 — 2026-08-28
+
+Tutorial-First Alignment.
 
 ## v2.7.1 — 2026-08-13
 

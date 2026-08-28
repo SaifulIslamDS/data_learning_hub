@@ -157,11 +157,6 @@
     root.querySelectorAll('[data-placeholder-en][data-placeholder-bn]').forEach(element => {
       element.placeholder = state.language === 'bn' ? element.dataset.placeholderBn : element.dataset.placeholderEn;
     });
-    document.querySelectorAll('.language-button').forEach(button => {
-      const active = button.dataset.lang === state.language;
-      button.classList.toggle('active', active);
-      button.setAttribute('aria-pressed', String(active));
-    });
     window.dispatchEvent(new CustomEvent('dlh:language', { detail: state.language }));
   }
   function setLanguage(language) {
@@ -190,9 +185,6 @@
     const active = page === key || (page === 'topic' && key === 'learn') || (page === 'tool' && key === 'practice') || (page === 'project' && key === 'projects');
     return `<a href="${href}" class="${active ? 'active' : ''}" data-en="${en}" data-bn="${bn}">${t(en, bn)}</a>`;
   }
-  function languageSwitch() {
-    return '';
-  }
   function renderHeader() {
     const root = document.getElementById('site-header');
     if (!root) return;
@@ -200,9 +192,8 @@
     const journeyHref = profile ? '/my-learning/' : '/start/';
     const journeyEn = profile ? 'My Learning' : 'Start Here';
     const journeyBn = profile ? 'আমার শেখা' : 'শুরু করুন';
-    root.innerHTML = `<header class="site-header" id="site-header-bar"><div class="container navbar"><a class="brand" href="/" aria-label="Data Learning Hub home"><span class="brand-mark">${icons.logo}</span><span class="brand-text">Data Learning Hub<small data-en="Analytics first · careers next" data-bn="প্রথমে Analytics · পরে career">${t('Analytics first · careers next', 'প্রথমে Analytics · পরে career')}</small></span></a><nav class="nav-links" aria-label="Primary navigation">${navLink('/tutorials/', 'Tutorials', 'টিউটোরিয়াল', 'tutorials')}${navLink('/exercises/', 'Exercises', 'Exercise', 'tutorial-exercises')}${navLink('/examples/', 'Examples', 'Example', 'tutorial-examples')}${navLink('/projects/', 'Projects', 'প্রজেক্ট', 'projects')}${navLink('/references/', 'References', 'Reference', 'tutorial-references')}${navLink('/career-paths/', 'Career Paths', 'Career Path', 'career-paths')}</nav><div class="nav-actions"><button class="icon-button" type="button" data-action="search" aria-label="${t('Open search', 'সার্চ খুলুন')}" title="${t('Open search', 'সার্চ খুলুন')}">${icons.search}</button>${languageSwitch()}<button class="icon-button" type="button" data-action="theme"></button><button class="menu-button" id="menu-button" type="button" aria-label="${t('Open navigation', 'নেভিগেশন খুলুন')}" aria-expanded="false">${icons.menu}</button></div></div><div class="container mobile-panel" id="mobile-panel">${navLink('/tutorials/', 'Tutorials', 'টিউটোরিয়াল', 'tutorials')}${navLink('/exercises/', 'Exercises', 'Exercise', 'tutorial-exercises')}${navLink('/examples/', 'Examples', 'Example', 'tutorial-examples')}${navLink('/projects/', 'Projects', 'প্রজেক্ট', 'projects')}${navLink('/references/', 'References', 'Reference', 'tutorial-references')}${navLink('/career-paths/', 'Career Paths', 'Career Path', 'career-paths')}${navLink(journeyHref, journeyEn, journeyBn, profile ? 'my-learning' : 'start')}${navLink('/practice/', 'Statistics Labs', 'Statistics Lab', 'practice')}${navLink('/learn/', 'Legacy Lesson Library', 'Legacy Lesson Library', 'learn')}${navLink('/curriculum/', 'Curriculum', 'Curriculum', 'curriculum')}${navLink('/about/', 'About', 'সম্পর্কে', 'about')}${languageSwitch()}</div></header>`;
+    root.innerHTML = `<header class="site-header" id="site-header-bar"><div class="container navbar"><a class="brand" href="/" aria-label="Data Learning Hub home"><span class="brand-mark">${icons.logo}</span><span class="brand-text">Data Learning Hub<small data-en="Analytics first · careers next" data-bn="প্রথমে Analytics · পরে career">${t('Analytics first · careers next', 'প্রথমে Analytics · পরে career')}</small></span></a><nav class="nav-links" aria-label="Primary navigation">${navLink('/tutorials/', 'Tutorials', 'টিউটোরিয়াল', 'tutorials')}${navLink('/exercises/', 'Exercises', 'Exercise', 'tutorial-exercises')}${navLink('/examples/', 'Examples', 'Example', 'tutorial-examples')}${navLink('/projects/', 'Projects', 'প্রজেক্ট', 'projects')}${navLink('/references/', 'References', 'Reference', 'tutorial-references')}${navLink('/career-paths/', 'Career Paths', 'Career Path', 'career-paths')}</nav><div class="nav-actions"><button class="icon-button" type="button" data-action="search" aria-label="${t('Open search', 'সার্চ খুলুন')}" title="${t('Open search', 'সার্চ খুলুন')}">${icons.search}</button><button class="icon-button" type="button" data-action="theme"></button><button class="menu-button" id="menu-button" type="button" aria-label="${t('Open navigation', 'নেভিগেশন খুলুন')}" aria-expanded="false">${icons.menu}</button></div></div><div class="container mobile-panel" id="mobile-panel">${navLink('/tutorials/', 'Tutorials', 'টিউটোরিয়াল', 'tutorials')}${navLink('/exercises/', 'Exercises', 'Exercise', 'tutorial-exercises')}${navLink('/examples/', 'Examples', 'Example', 'tutorial-examples')}${navLink('/projects/', 'Projects', 'প্রজেক্ট', 'projects')}${navLink('/references/', 'References', 'Reference', 'tutorial-references')}${navLink('/career-paths/', 'Career Paths', 'Career Path', 'career-paths')}${navLink(journeyHref, journeyEn, journeyBn, profile ? 'my-learning' : 'start')}${navLink('/practice/', 'Statistics Labs', 'Statistics Lab', 'practice')}${navLink('/learn/', 'Legacy Lesson Library', 'Legacy Lesson Library', 'learn')}${navLink('/curriculum/', 'Curriculum', 'Curriculum', 'curriculum')}${navLink('/about/', 'About', 'সম্পর্কে', 'about')}</div></header>`;
     updateThemeButtons();
-    root.querySelectorAll('.language-button').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
     root.querySelectorAll('[data-action="theme"]').forEach(button => button.addEventListener('click', () => setTheme(state.theme === 'dark' ? 'light' : 'dark')));
     root.querySelectorAll('[data-action="search"]').forEach(button => button.addEventListener('click', openSearch));
     const menuButton = document.getElementById('menu-button');

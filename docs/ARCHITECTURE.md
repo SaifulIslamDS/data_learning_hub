@@ -1,52 +1,48 @@
-# Architecture — v2.7.0
+# Architecture — v2.7.3
 
-## Purpose
+## Current runtime
 
-v2.7.0 converts the complete v2.6.0 static release into a Next.js App Router application without changing or dropping published content, URLs, local progress, exercises, labs, downloads, or browser runtimes.
+Data Learning Hub uses Next.js 16 App Router with static export.
 
-## Runtime model
+The v2.7 compatibility bridge still preserves the complete migrated learning runtime:
 
-1. Next.js statically generates the complete route set through `app/[...slug]/page.tsx`.
-2. `src/generated/routes.json` maps every URL to one page payload.
-3. Each payload contains metadata, body data attributes, the original `<main>` markup, route scripts, and redirect scripts where applicable.
-4. `LegacyPage` renders the content through React and loads the existing v2.6 browser modules in deterministic order.
-5. The global App Router layout provides the shared header/footer mount points and PWA registration.
+1. Next.js statically generates published routes.
+2. `src/generated/routes.json` maps routes to migrated page payloads.
+3. `LegacyPage` renders migrated HTML and loads the preserved browser modules.
+4. `src/lib/tutorial-html.ts` normalizes tutorial HTML so legacy objective UI does not reappear.
+5. Shared browser behavior remains in `public/assets/js/` until the native React shell migration.
 
-This compatibility layer makes the migration safe and immediately deployable. It is not the final desired native-React architecture.
+No backend, API, authentication, or database is required.
 
-## Why the bridge exists
+## Engineering quality layer
 
-The v2.6.0 release contains 549 HTML routes, 363 tutorial chapters, 1,089 chapter exercises, 108 statistics lessons, 20 interactive statistical labs, six portfolio projects, SQL WebAssembly practice, Python/Pyodide practice, bilingual state, and local progress. Rewriting every interaction simultaneously would create unacceptable regression risk.
+v2.7.3 adds a release-quality system around the compatibility architecture:
 
-## Next.js choices
+- ESLint for active Next.js/TypeScript/test source
+- Prettier for new quality/native files
+- Vitest for unit tests
+- React Testing Library for component tests
+- Playwright for production-export browser tests
+- axe for accessibility regression
+- source/UI audits for migration invariants
+- GitHub Actions CI
 
-- Next.js 16.2.10
-- App Router
-- TypeScript
-- Static export (`output: "export"`)
-- Static `generateStaticParams()` for all routes
-- Metadata APIs for canonical URLs, robots, sitemap, and manifest
-- No backend, API, authentication, or database
+The formatting gate intentionally does not rewrite generated, legacy, content, or public runtime files. Formatting coverage should expand naturally as those areas move into native typed source.
 
-## PWA architecture
+## Browser test model
 
-`public/sw.js` provides:
+`pnpm build` creates the static `out/` export.
 
-- Core shell precaching
-- Network-first navigation requests
-- Offline fallback
-- Stale-while-revalidate local assets
-- Runtime caching of visited CDN resources
-- Versioned cache cleanup
+`scripts/serve-static.mjs` serves that exact export on port 4173.
 
-## Future native migration order
+Playwright therefore tests the production-style static output rather than only the development server.
 
-1. React header/footer and search
-2. Shared language/theme/progress context
-3. Native tutorial course/chapter components
-4. Native exercise and quiz components
-5. Native project center
-6. Native statistics labs
-7. Remove generated HTML payload bridge
+## Language state
 
-Every stage must preserve existing URLs and localStorage keys.
+The active interface is English-only.
+
+The Bangla toggle and its UI wiring are removed. Existing `data-bn` and migrated Bangla content can remain dormant until a future full-site localization release.
+
+## Next architecture milestone
+
+v2.8.0 moves the shared header, footer, navigation, search, theme, progress/bookmark state, and PWA UI into native React while preserving routes and compatible browser-local state.
